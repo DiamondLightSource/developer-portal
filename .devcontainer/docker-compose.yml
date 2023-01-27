@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  backstage:
+    image: node:18-bullseye
+    volumes:
+      - ..:/workspace:cached,Z
+    network_mode: service:database
+    command: sleep infinity
+
+  database:
+    image: postgres:15-bullseye
+    restart: unless-stopped
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+
+volumes:
+  postgres-data:
