@@ -85,6 +85,19 @@ catalog:
     pullRequestBranchName: backstage-integration
   rules:
     - allow: [Component, System, API, Resource, Location]
+  providers:
+    github:
+      DiamondLightSource:
+        organization: 'DiamondLightSource'
+        catalogPath: '/catalog-info.yaml'
+        filters:
+          branch: 'main'
+          repository: '.*'
+        schedule:
+          frequency:
+            minutes: 30
+          timeout:
+            minutes: 3
   locations:
     # Local example data, file locations are relative to the backend process, typically `packages/backend`
     - type: file
