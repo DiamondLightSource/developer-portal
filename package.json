@@ -22,6 +22,10 @@
     "prettier:check": "prettier --check .",
     "new": "backstage-cli new --scope internal"
   },
+  "pre-commit": [
+    "test:all",
+    "lint:all"
+  ],
   "workspaces": {
     "packages": [
       "packages/*",
@@ -34,6 +38,7 @@
     "concurrently": "^6.0.0",
     "lerna": "^6.4.1",
     "node-gyp": "^9.0.0",
+    "pre-commit": "^1.2.2",
     "prettier": "^2.3.2",
     "typescript": "~4.6.4"
   },
