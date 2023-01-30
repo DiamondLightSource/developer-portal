@@ -14616,9 +14616,9 @@ pg-pool@^3.5.2:
   version "3.5.2"
   resolved "https://registry.npmjs.org/pg-pool/-/pg-pool-3.5.2.tgz"
 
-pg-protocol@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.npmjs.org/pg-protocol/-/pg-protocol-1.5.0.tgz"
+pg-protocol@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/pg-protocol/-/pg-protocol-1.6.0.tgz#4c91613c0315349363af2084608db843502f8833"
 
 pg-types@^2.1.0:
   version "2.2.0"
@@ -14631,14 +14631,14 @@ pg-types@^2.1.0:
     postgres-interval "^1.1.0"
 
 pg@^8.8.0:
-  version "8.8.0"
-  resolved "https://registry.npmjs.org/pg/-/pg-8.8.0.tgz"
+  version "8.9.0"
+  resolved "https://registry.yarnpkg.com/pg/-/pg-8.9.0.tgz#73c5d77a854d36b0e185450dacb8b90c669e040b"
   dependencies:
     buffer-writer "2.0.0"
     packet-reader "1.0.0"
     pg-connection-string "^2.5.0"
     pg-pool "^3.5.2"
-    pg-protocol "^1.5.0"
+    pg-protocol "^1.6.0"
     pg-types "^2.1.0"
     pgpass "1.x"
 
