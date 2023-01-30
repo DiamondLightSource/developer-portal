@@ -12,7 +12,10 @@ services:
       - ..:/workspace:cached,Z
     network_mode: service:database
     command: sleep infinity
-    environment: *postgres-variables
+    environment:
+      <<: *postgres-variables
+    env_file:
+      - .env
 
   database:
     image: postgres:15-bullseye
