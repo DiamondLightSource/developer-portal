@@ -5965,7 +5965,7 @@
   version "14.18.36"
   resolved "https://registry.npmjs.org/@types/node/-/node-14.18.36.tgz"
 
-"@types/node@^16.11.26", "@types/node@^16.9.2":
+"@types/node@^16.9.2":
   version "16.18.11"
   resolved "https://registry.npmjs.org/@types/node/-/node-16.18.11.tgz"
 
