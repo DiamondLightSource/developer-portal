@@ -24,6 +24,7 @@
     "@backstage/plugin-auth-backend": "^0.17.3",
     "@backstage/plugin-auth-node": "^0.2.9",
     "@backstage/plugin-catalog-backend": "^1.7.0",
+    "@backstage/plugin-catalog-backend-module-github": "^0.2.4",
     "@backstage/plugin-permission-common": "^0.7.3",
     "@backstage/plugin-permission-node": "^0.7.3",
     "@backstage/plugin-proxy-backend": "^0.2.34",
