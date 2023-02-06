@@ -5935,10 +5935,10 @@
   resolved "https://registry.yarnpkg.com/@spotify/eslint-config-typescript/-/eslint-config-typescript-14.1.5.tgz#ac2d2a236ee90e932620481d56e20c6c19d6c914"
   integrity sha512-lPdQRV3BjZs2zc08ABh3376x2Larq7Wxz4RY5nxpQEJgzNxXjlGdHUSNPAmwoGJ6O8AWqj8T2jng+9V0H4yrkg==
 
-"@spotify/prettier-config@^12.0.0":
-  version "12.0.0"
-  resolved "https://registry.yarnpkg.com/@spotify/prettier-config/-/prettier-config-12.0.0.tgz#936ca5e977cfccbccd1731ab98b1f2bf65852b5d"
-  integrity sha512-64WWqE40U/WwWV8iIQBseTU+b2t+SdJSyQoCLdVPCKM9uf7KOjRivVwXe4KlWoV3y7duNSGuB2UgWhkXzscVmQ==
+"@spotify/prettier-config@^14.1.5":
+  version "14.1.5"
+  resolved "https://registry.yarnpkg.com/@spotify/prettier-config/-/prettier-config-14.1.5.tgz#fc281797af1b854bc448b73ae40f67a7a52b187a"
+  integrity sha512-GpxiaCzMBMu44ckWFrECtVMNWoqUrkskgGNwpgXa65NdQwNZc9846xixCtHccqfxD47+MKzJn4qOWUpzwsZvBQ==
 
 "@sucrase/webpack-loader@^2.0.0":
   version "2.0.0"
