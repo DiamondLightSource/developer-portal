@@ -14,6 +14,10 @@
     - `read:org`
     - `read:user`
     - `user:email`
+  - `GITLAB_TOKEN` - a GitLab personal access token used to retrieve organisation & repository data, with:
+    - `api`
+    - `read_repository`
+    - `write_repository`
   - `GITHUB_APP_CLIENT_ID` - a GitHub OAuth App client ID used to provide user authentication
   - `GITHUB_APP_SECRET` - the corresponding GitHub OAuth App secret
 - Start the app, with:

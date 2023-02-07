@@ -2824,6 +2824,26 @@
     uuid "^8.0.0"
     winston "^3.2.1"
 
+"@backstage/plugin-catalog-backend-module-gitlab@^0.1.12":
+  version "0.1.12"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-backend-module-gitlab/-/plugin-catalog-backend-module-gitlab-0.1.12.tgz#650f24f143747dfd3b192e3978c2fb6d0b0e4154"
+  integrity sha512-cgMdLMi/Ss4F/ehke1DzKoLy1gzisKtdr6VrDBPj0kRkaCr77ebsYEyowAqj7/giQx24VD6ngWQw9NYXVt4oBQ==
+  dependencies:
+    "@backstage/backend-common" "^0.18.1"
+    "@backstage/backend-plugin-api" "^0.3.1"
+    "@backstage/backend-tasks" "^0.4.2"
+    "@backstage/catalog-model" "^1.1.5"
+    "@backstage/config" "^1.0.6"
+    "@backstage/errors" "^1.1.4"
+    "@backstage/integration" "^1.4.2"
+    "@backstage/plugin-catalog-backend" "^1.7.1"
+    "@backstage/plugin-catalog-node" "^1.3.2"
+    "@backstage/types" "^1.0.2"
+    lodash "^4.17.21"
+    node-fetch "^2.6.7"
+    uuid "^8.0.0"
+    winston "^3.2.1"
+
 "@backstage/plugin-catalog-backend@^1.7.0", "@backstage/plugin-catalog-backend@^1.7.1":
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-backend/-/plugin-catalog-backend-1.7.1.tgz#801857b8ee680fc2c8dffa0e04fca2dc8f39f55b"
@@ -6694,7 +6714,7 @@
   resolved "https://registry.yarnpkg.com/@types/range-parser/-/range-parser-1.2.4.tgz#cd667bcfdd025213aafb7ca5915a932590acdcdc"
   integrity sha512-EEhsLsD6UsDM1yFhAvy0Cjr6VwmpMWqFBCb9w07wVugF7w9nfajxLuVmngTIpgS6svCnm6Vaw+MZhoDCKnOfsw==
 
-"@types/react-dom@*", "@types/react-dom@<18.0.0", "@types/react-dom@^17":
+"@types/react-dom@*", "@types/react-dom@<18.0.0":
   version "17.0.18"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.18.tgz#8f7af38f5d9b42f79162eea7492e5a1caff70dc2"
   integrity sha512-rLVtIfbwyur2iFKykP2w0pl/1unw26b5td16d5xMgp7/yjTHomkyxPYChFoCr/FtEX1lN9wY6lFj1qvKdS5kDw==
