@@ -22,11 +22,13 @@ jobs:
         uses: borales/actions-yarn@v4
         with:
           cmd: install --frozen-lockfile
+          dir: backstage
           
       - name: Lint all
         uses: borales/actions-yarn@v4
         with:
           cmd: lint:all
+          dir: backstage
 
   test:
     if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.repository
@@ -44,8 +46,10 @@ jobs:
         uses: borales/actions-yarn@v4
         with:
           cmd: install --frozen-lockfile
+          dir: backstage
 
       - name: Run all tests
         uses: borales/actions-yarn@v4
         with:
           cmd: test:all
+          dir: backstage
