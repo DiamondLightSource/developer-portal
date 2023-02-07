@@ -8,7 +8,8 @@
 		"vscode": {
 			"extensions": [
 				"ms-vscode.vscode-typescript-next",
-				"dbaeumer.vscode-eslint"
+				"dbaeumer.vscode-eslint",
+				"ckolkman.vscode-postgres"
 			]
 		}
 	},
