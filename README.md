@@ -22,6 +22,7 @@
   - `GITHUB_APP_SECRET` - the corresponding GitHub OAuth App secret
 - Start the app, with:
   ```sh
+  cd backstage
   yarn install
   yarn dev
   ```
