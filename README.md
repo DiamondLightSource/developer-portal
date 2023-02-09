@@ -3,7 +3,7 @@
 ## Developing Locally (VSCode)
 
 - [Install docker-compose](https://docs.docker.com/compose/install/other/)
-- Enable the podman socket with `systemctl --user enable podman.socket`
+- Start the podman socket with `systemctl --user start podman.socket`
 - Add `export DOCKER_HOST=unix:///run/user/$UID/podman/podman.sock` to your `~/.bashrc`
 - Install `ms-vscode-remote.remote-containers`
 - Set `remote.containers.dockerPath` to `podman`
