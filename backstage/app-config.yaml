@@ -89,6 +89,7 @@ catalog:
     github:
       GitHub-DiamondLightSource:
         organization: 'DiamondLightSource'
+        validateLocationsExist: true
         schedule:
           frequency:
             minutes: 60
