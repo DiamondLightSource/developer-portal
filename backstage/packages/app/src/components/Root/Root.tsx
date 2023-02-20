@@ -1,13 +1,13 @@
 import {
   Link,
   Sidebar,
+  sidebarConfig,
   SidebarDivider,
   SidebarGroup,
   SidebarItem,
   SidebarPage,
   SidebarScrollWrapper,
   SidebarSpace,
-  sidebarConfig,
   useSidebarOpenState,
 } from '@backstage/core-components';
 import { SidebarSearchModal } from '@backstage/plugin-search';
@@ -16,9 +16,7 @@ import {
   UserSettingsSignInAvatar,
 } from '@backstage/plugin-user-settings';
 import { makeStyles } from '@material-ui/core';
-import ExtensionIcon from '@material-ui/icons/Extension';
 import HomeIcon from '@material-ui/icons/Home';
-import LibraryBooks from '@material-ui/icons/LibraryBooks';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import React, { PropsWithChildren } from 'react';
@@ -63,9 +61,7 @@ export const Root = ({ children }: PropsWithChildren<{}>) => (
       <SidebarDivider />
       <SidebarGroup label="Menu" icon={<MenuIcon />}>
         {/* Global nav, not org-specific */}
-        <SidebarItem icon={HomeIcon} to="catalog" text="Home" />
-        <SidebarItem icon={ExtensionIcon} to="api-docs" text="APIs" />
-        <SidebarItem icon={LibraryBooks} to="docs" text="Docs" />
+        <SidebarItem icon={HomeIcon} to="/" text="Home" />
         {/* End global nav */}
         <SidebarDivider />
         <SidebarScrollWrapper>

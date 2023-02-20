@@ -1,4 +1,4 @@
-import { ApiExplorerPage, apiDocsPlugin } from '@backstage/plugin-api-docs';
+import { apiDocsPlugin } from '@backstage/plugin-api-docs';
 import {
   CatalogEntityPage,
   CatalogIndexPage,
@@ -11,19 +11,15 @@ import {
 import { orgPlugin } from '@backstage/plugin-org';
 import { ScaffolderPage, scaffolderPlugin } from '@backstage/plugin-scaffolder';
 import { SearchPage } from '@backstage/plugin-search';
-import {
-  TechDocsIndexPage,
-  TechDocsReaderPage,
-  techdocsPlugin,
-} from '@backstage/plugin-techdocs';
+import { techdocsPlugin, TechDocsReaderPage } from '@backstage/plugin-techdocs';
 import { ReportIssue } from '@backstage/plugin-techdocs-module-addons-contrib';
 import { TechDocsAddons } from '@backstage/plugin-techdocs-react';
 import { UserSettingsPage } from '@backstage/plugin-user-settings';
 import React from 'react';
-import { Navigate, Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import { apis } from './apis';
-import { Root } from './components/Root';
 import { entityPage } from './components/catalog/EntityPage';
+import { Root } from './components/Root';
 import { searchPage } from './components/search/SearchPage';
 
 import { createApp } from '@backstage/app-defaults';
@@ -54,7 +50,6 @@ const app = createApp({
 
 const routes = (
   <FlatRoutes>
-    <Route path="/" element={<Navigate to="catalog" />} />
     <Route path="/catalog" element={<CatalogIndexPage />} />
     <Route
       path="/catalog/:namespace/:kind/:name"
@@ -62,7 +57,6 @@ const routes = (
     >
       {entityPage}
     </Route>
-    <Route path="/docs" element={<TechDocsIndexPage />} />
     <Route
       path="/docs/:namespace/:kind/:name/*"
       element={<TechDocsReaderPage />}
@@ -72,7 +66,6 @@ const routes = (
       </TechDocsAddons>
     </Route>
     <Route path="/create" element={<ScaffolderPage />} />
-    <Route path="/api-docs" element={<ApiExplorerPage />} />
     <Route
       path="/catalog-import"
       element={
