@@ -85,7 +85,7 @@ ldap:
       users:
         dn: ou=dls,dc=fed,dc=cclrc,dc=ac,dc=uk
         options:
-          filter: (uidNumber=*)
+          filter: (&(objectClass=organizationalPerson)(employeeType=DIAMOND STAFF))
           paged: true
         map:
           name: cn
@@ -93,7 +93,7 @@ ldap:
       groups:
         dn: dc=fed,dc=cclrc,dc=ac,dc=uk
         options:
-          scope: base
+          filter: (objectClass=group)
 
 catalog:
   import:
