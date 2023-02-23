@@ -79,6 +79,22 @@ auth:
 scaffolder:
   # see https://backstage.io/docs/features/software-templates/configuration for software template options
 
+ldap:
+  providers:
+    - target: ldap://ralfed.cclrc.ac.uk
+      users:
+        dn: ou=dls,dc=fed,dc=cclrc,dc=ac,dc=uk
+        options:
+          filter: (uidNumber=*)
+          paged: true
+        map:
+          name: cn
+          displayName: displayName
+      groups:
+        dn: dc=fed,dc=cclrc,dc=ac,dc=uk
+        options:
+          scope: base
+
 catalog:
   import:
     entityFilename: catalog-info.yaml
