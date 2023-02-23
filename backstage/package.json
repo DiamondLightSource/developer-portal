@@ -24,7 +24,8 @@
   },
   "pre-commit": [
     "test:all",
-    "lint:all"
+    "lint:all",
+    "prettier:check"
   ],
   "workspaces": {
     "packages": [

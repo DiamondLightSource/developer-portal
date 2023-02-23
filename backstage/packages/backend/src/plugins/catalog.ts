@@ -18,9 +18,9 @@ export default async function createPlugin(
   builder.addEntityProvider(
     GitlabDiscoveryEntityProvider.fromConfig(env.config, {
       logger: env.logger,
-      scheduler: env.scheduler
-    })
-  )
+      scheduler: env.scheduler,
+    }),
+  );
   builder.addProcessor(new ScaffolderEntitiesProcessor());
   const { processingEngine, router } = await builder.build();
   await processingEngine.start();

@@ -9,7 +9,8 @@
 			"extensions": [
 				"ms-vscode.vscode-typescript-next",
 				"dbaeumer.vscode-eslint",
-				"ckolkman.vscode-postgres"
+				"ckolkman.vscode-postgres",
+				"esbenp.prettier-vscode"
 			]
 		}
 	},

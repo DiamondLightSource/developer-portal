@@ -23,11 +23,17 @@ jobs:
         with:
           cmd: install --frozen-lockfile
           dir: backstage
-          
+
       - name: Lint all
         uses: borales/actions-yarn@v4
         with:
           cmd: lint:all
+          dir: backstage
+
+      - name: Check format
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: prettier:check
           dir: backstage
 
   test:
