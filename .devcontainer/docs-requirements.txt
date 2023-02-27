@@ -1,0 +1,7 @@
+# A set of mkdocs plugins required for building
+# https://gitlab.diamond.ac.uk/dls-staff/developer-portal
+mkdocs
+mkdocs-techdocs-core
+mkdocs-git-revision-date-localized-plugin
+mkdocs-awesome-pages-plugin
+git+https://github.com/Andre601/mkdocs-pagenav-generator

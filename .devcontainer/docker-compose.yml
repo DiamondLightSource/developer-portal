@@ -1,13 +1,13 @@
-version: '3.8'
+version: "3.8"
 
-x-postgres-variables:
-  &postgres-variables
+x-postgres-variables: &postgres-variables
   POSTGRES_PASSWORD: postgres
   POSTGRES_USER: postgres
 
 services:
   backstage:
-    image: node:18-bullseye
+    build:
+      context: .
     volumes:
       - ..:/workspace:cached,Z
     network_mode: service:database
