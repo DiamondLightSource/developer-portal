@@ -11,8 +11,11 @@ import {
 import CategoryIcon from '@material-ui/icons/Category';
 import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const SoftwareCatalogCard = () => {
+  const navigate = useNavigate();
+  const handleOnClick = () => navigate('/catalog');
   const orgName =
     useApi(configApiRef).getOptionalString('organization.name') ?? 'Backstage';
 
@@ -28,7 +31,7 @@ const SoftwareCatalogCard = () => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="medium" color="primary" href="/catalog">
+        <Button size="medium" color="primary" onClick={handleOnClick}>
           Visit
         </Button>
       </CardActions>
@@ -37,6 +40,8 @@ const SoftwareCatalogCard = () => {
 };
 
 const DeveloperGuideCard = () => {
+  const navigate = useNavigate();
+  const handleOnClick = () => navigate('/guide');
   const orgName =
     useApi(configApiRef).getOptionalString('organization.name') ?? 'Backstage';
 
@@ -52,7 +57,7 @@ const DeveloperGuideCard = () => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="medium" color="primary" href="/guide">
+        <Button size="medium" color="primary" onClick={handleOnClick}>
           Visit
         </Button>
       </CardActions>
