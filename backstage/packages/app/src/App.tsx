@@ -11,15 +11,15 @@ import {
 import { orgPlugin } from '@backstage/plugin-org';
 import { ScaffolderPage, scaffolderPlugin } from '@backstage/plugin-scaffolder';
 import { SearchPage } from '@backstage/plugin-search';
-import { techdocsPlugin, TechDocsReaderPage } from '@backstage/plugin-techdocs';
+import { TechDocsReaderPage, techdocsPlugin } from '@backstage/plugin-techdocs';
 import { ReportIssue } from '@backstage/plugin-techdocs-module-addons-contrib';
 import { TechDocsAddons } from '@backstage/plugin-techdocs-react';
 import { UserSettingsPage } from '@backstage/plugin-user-settings';
 import React from 'react';
 import { Route } from 'react-router-dom';
 import { apis } from './apis';
-import { entityPage } from './components/catalog/EntityPage';
 import { Root } from './components/Root';
+import { entityPage } from './components/catalog/EntityPage';
 import { searchPage } from './components/search/SearchPage';
 
 import { createApp } from '@backstage/app-defaults';
@@ -31,6 +31,7 @@ import { RequirePermission } from '@backstage/plugin-permission-react';
 
 import { HomepageCompositionRoot } from '@backstage/plugin-home';
 import { HomePage } from './components/home/HomePage';
+import { DeveloperGuidePage } from './components/techdocs/GuideDocsPage';
 
 const app = createApp({
   apis,
@@ -57,6 +58,7 @@ const routes = (
       <HomePage />
     </Route>
     <Route path="/catalog" element={<CatalogIndexPage />} />
+    <Route path="/guide" element={<DeveloperGuidePage/>} />
     <Route
       path="/catalog/:namespace/:kind/:name"
       element={<CatalogEntityPage />}
