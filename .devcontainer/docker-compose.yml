@@ -7,7 +7,8 @@ x-postgres-variables: &postgres-variables
 services:
   backstage:
     build:
-      context: .
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
     volumes:
       - ..:/workspace:cached,Z
     network_mode: service:database
