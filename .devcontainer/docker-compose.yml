@@ -15,6 +15,8 @@ services:
     command: sleep infinity
     environment:
       <<: *postgres-variables
+      POSTGRES_HOST: 0.0.0.0
+      POSTGRES_PORT: 5432
     env_file:
       - .env
 
