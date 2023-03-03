@@ -1,0 +1,70 @@
+apiVersion: {{ include "common.capabilities.deployment.apiVersion" . }}
+kind: Deployment
+metadata:
+  name: {{ include "common.names.fullname" . }}-backend
+  namespace: {{ .Release.Namespace | quote }}
+  labels: {{ include "common.labels.standard" . | nindent 4 }}
+    app.kubernetes.io/component: {{ .Values.common.componentLabel }}
+    {{- if .Values.commonLabels -}}
+    {{ include "common.tplvalues.render" ( dict "value" .Values.common.labels "context" $ ) | nindent 4 }}
+    {{ end }}
+  annotations:
+    {{- if .Values.common.annotations -}}
+    {{ include "common.tplvalues.render" ( dict "value" .Values.common.annotations "context" $ ) | nindent 4 }}
+    {{ end }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels: {{ include "common.labels.matchLabels" . | nindent 6 }}
+      app.kubernetes.io/component: {{ .Values.common.componentLabel }}
+  template:
+    metadata:
+      labels: {{ include "common.labels.standard" . | nindent 8 }}
+        app.kubernetes.io/component: {{ .Values.common.componentLabel }}
+    spec:
+      serviceAccountName: {{ include "devportal.serviceAccountName" . }}
+      {{- if .Values.backend.podSecurityContext -}}
+      securityContext:
+        {{ include "common.tplvalues.render " ( dict "value" .Values.backend.podSecurityContext "context" $ ) | nindent 8 }}
+      {{ end }}
+      {{- if .Values.backend.tolerations -}}
+      tolerations:
+        {{ include "common.tplvalues.render" ( dict "value" .Values.backend.tolerations "context" $ ) | nindent 8 }}
+      {{ end }}
+      {{- if .Values.backend.image.pullSecrets -}}
+      imagePullSecrets:
+      {{- range .Values.backend.image.pullSecrets -}}
+        - name: {{- . -}}
+      {{ end }}
+      {{ end }}
+      containers:
+        - name: backstage-backend
+          image: {{ include "devportal.backend.image" . }}
+          imagePullPolicy: {{ .Values.backend.image.pullPolicy | quote }}
+          {{- if .Values.backend.containerSecurityContext -}}
+          securityContext: {{ include "common.tplvalues.render" ( dict "value" .Values.backend.containerSecurityContext "context" $ ) | nindent 12 }}
+          {{ end }}
+          {{- if .Values.backend.command -}}
+          command: {{ include "common.tplvalues.render" ( dict "value" .Values.backend.command "context" $ ) | nindent 12 }}
+          {{ end }}
+          args:
+          {{- range .Values.backend.args -}}
+            - {{- . | quote -}}
+          {{ end }}
+          resources: {{ include "common.tplvalues.render" ( dict "value" .Values.backend.resources "context" $ ) | nindent 12 }}
+          env:
+            - name: POSTGRES_HOST
+              value: {{ include "devportal.postgres.host" . }}
+            - name: POSTGRES_PORT
+              value: {{ include "devportal.postgres.port" . }}
+            - name: POSTGRES_USER
+              value: {{ include "devportal.postgres.user" . }}
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "devportal.postgres.secret.name" . }}
+                  key: {{ include "devportal.postgres.secret.passwordKey" . }}
+          ports:
+            - name: backstage-api
+              containerPort: {{ .Values.backend.port }}
+              protocol: TCP

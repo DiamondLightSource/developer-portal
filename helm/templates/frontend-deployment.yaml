@@ -1,0 +1,58 @@
+apiVersion: {{ include "common.capabilities.deployment.apiVersion" . }}
+kind: Deployment
+metadata:
+  name: {{ include "common.names.fullname" . }}-frontend
+  namespace: {{ .Release.Namespace | quote }}
+  labels: {{ include "common.labels.standard" . | nindent 4 }}
+    app.kubernetes.io/component: {{ .Values.common.componentLabel }}
+    {{- if .Values.commonLabels -}}
+    {{ include "common.tplvalues.render" ( dict "value" .Values.common.labels "context" $ ) | nindent 4 }}
+    {{ end }}
+  annotations:
+    {{- if .Values.common.annotations -}}
+    {{ include "common.tplvalues.render" ( dict "value" .Values.common.annotations "context" $ ) | nindent 4 }}
+    {{ end }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels: {{ include "common.labels.matchLabels" . | nindent 6 }}
+      app.kubernetes.io/component: {{ .Values.common.componentLabel }}
+  template:
+    metadata:
+      labels: {{ include "common.labels.standard" . | nindent 8 }}
+        app.kubernetes.io/component: {{ .Values.common.componentLabel }}
+    spec:
+      serviceAccountName: {{ include "devportal.serviceAccountName" . }}
+      {{- if .Values.frontend.podSecurityContext -}}
+      securityContext:
+        {{ include "common.tplvalues.render " ( dict "value" .Values.frontend.podSecurityContext "context" $ ) | nindent 8 }}
+      {{ end }}
+      {{- if .Values.frontend.tolerations -}}
+      tolerations:
+        {{ include "common.tplvalues.render" ( dict "value" .Values.frontend.tolerations "context" $ ) | nindent 8 }}
+      {{ end }}
+      {{- if .Values.frontend.image.pullSecrets -}}
+      imagePullSecrets:
+      {{- range .Values.frontend.image.pullSecrets -}}
+        - name: {{- . -}}
+      {{ end }}
+      {{ end }}
+      containers:
+        - name: backstage-frontend
+          image: {{ include "devportal.frontend.image" . }}
+          imagePullPolicy: {{ .Values.frontend.image.pullPolicy | quote }}
+          {{- if .Values.frontend.containerSecurityContext -}}
+          securityContext: {{ include "common.tplvalues.render" ( dict "value" .Values.frontend.containerSecurityContext "context" $ ) | nindent 12 }}
+          {{ end }}
+          {{- if .Values.frontend.command -}}
+          command: {{ include "common.tplvalues.render" ( dict "value" .Values.frontend.command "context" $ ) | nindent 12 }}
+          {{ end }}
+          args:
+          {{- range .Values.frontend.args -}}
+            - {{- . | quote -}}
+          {{ end }}
+          resources: {{ include "common.tplvalues.render" ( dict "value" .Values.frontend.resources "context" $ ) | nindent 12 }}
+          ports:
+            - name: webpage
+              containerPort: {{ .Values.frontend.port }}
+              protocol: TCP

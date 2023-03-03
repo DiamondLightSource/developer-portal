@@ -1,0 +1,64 @@
+global:
+  imageRegistry: ""
+  imagePullSecrets: []
+
+frontend:
+  image:
+    registry: ghcr.io
+    repository: garryod/backstage-deployment-frontend
+    tag: latest
+    pullPolicy: Always
+    pullSecrets: []
+  command: ""
+  args: []
+  port: 80
+  resources: {}
+  podSecurityContext: {}
+  containerSecurityContext: {}
+  tolerations: []
+
+backend:
+  image:
+    registry: ghcr.io
+    repository: garryod/backstage-deployment-backend
+    tag: latest
+    pullPolicy: Always
+    pullSecrets: []
+  command: ""
+  args: []
+  port: 7007
+  resources: {}
+  podSecurityContext: {}
+  containerSecurityContext: {}
+  tolerations: []
+
+postgresql:
+  create: true
+  existing:
+    host: ""
+    port: 5432
+  auth:
+    username: backstage
+    password: ""
+    existingSecret: ""
+    secretKeys:
+      adminPasswordKey: admin-password
+      userPasswordKey: user-password
+      replicationPasswordKey: replication-password
+  primary:
+    resources:
+      requests:
+        memory: 512Mi
+
+
+serviceAccount:
+  create: false
+  name: ""
+  labels: {}
+  annotations: {}
+  automountServiceAccountToken: true
+
+common:
+  componentLabel: developer-portal
+  labels: {}
+  annotations: {}
