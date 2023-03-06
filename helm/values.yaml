@@ -2,6 +2,11 @@ global:
   imageRegistry: ""
   imagePullSecrets: []
 
+common:
+  componentLabel: developer-portal
+  labels: {}
+  annotations: {}
+
 frontend:
   image:
     registry: ghcr.io
@@ -63,8 +68,3 @@ serviceAccount:
   labels: {}
   annotations: {}
   automountServiceAccountToken: true
-
-common:
-  componentLabel: developer-portal
-  labels: {}
-  annotations: {}
