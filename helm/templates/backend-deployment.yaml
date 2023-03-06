@@ -41,7 +41,7 @@ spec:
         - name: backstage-backend
           image: {{ include "devportal.backend.image" . }}
           imagePullPolicy: {{ .Values.backend.image.pullPolicy | quote }}
-          {{- if .Values.backend.containerSecurityContext -}}
+          {{ if .Values.backend.containerSecurityContext }}
           securityContext: {{ include "common.tplvalues.render" ( dict "value" .Values.backend.containerSecurityContext "context" $ ) | nindent 12 }}
           {{ end }}
           {{- if .Values.backend.command -}}

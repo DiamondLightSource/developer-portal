@@ -9,7 +9,7 @@ frontend:
     tag: latest
     pullPolicy: Always
     pullSecrets: []
-  command: ""
+  command: []
   args: []
   port: 80
   resources: {}
@@ -24,7 +24,7 @@ backend:
     tag: latest
     pullPolicy: Always
     pullSecrets: []
-  command: ""
+  command: []
   args: []
   port: 7007
   resources: {}
