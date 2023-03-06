@@ -50,7 +50,6 @@ postgresql:
       requests:
         memory: 512Mi
 
-
 serviceAccount:
   create: false
   name: ""
