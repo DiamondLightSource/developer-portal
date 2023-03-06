@@ -31,6 +31,13 @@ backend:
   podSecurityContext: {}
   containerSecurityContext: {}
   tolerations: []
+  auth:
+    secret:
+      name: backstage-secrets
+      githubTokenKey: github-token
+      githubAppClientIdKey: github-app-client-id
+      githubAppSecretKey: github-app-secret
+      gitlabTokenKey: gitlab-token
 
 postgresql:
   create: true

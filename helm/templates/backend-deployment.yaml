@@ -64,6 +64,26 @@ spec:
                 secretKeyRef:
                   name: {{ include "devportal.postgres.secret.name" . }}
                   key: {{ include "devportal.postgres.secret.passwordKey" . }}
+            - name: GITHUB_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Values.backend.auth.secret.name }}
+                  key: {{ .Values.backend.auth.secret.githubTokenKey }}
+            - name: GITHUB_APP_CLIENT_ID
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Values.backend.auth.secret.name }}
+                  key: {{ .Values.backend.auth.secret.githubAppClientIdKey }}
+            - name: GITHUB_APP_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Values.backend.auth.secret.name }}
+                  key: {{ .Values.backend.auth.secret.githubAppSecretKey }}
+            - name: GITLAB_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Values.backend.auth.secret.name }}
+                  key: {{ .Values.backend.auth.secret.gitlabTokenKey }}
           ports:
             - name: backstage-api
               containerPort: {{ .Values.backend.port }}
