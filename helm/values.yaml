@@ -72,6 +72,14 @@ postgresql:
       requests:
         memory: 512Mi
 
+ingress:
+  enabled: true
+  className: ""
+  host: dev-portal-demo.diamond.ac.uk
+  tls:
+    enabled: false
+    secretName: ""
+
 serviceAccount:
   create: false
   name: ""
