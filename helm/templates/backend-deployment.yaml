@@ -4,7 +4,8 @@ metadata:
   name: {{ include "common.names.fullname" . }}-backend
   namespace: {{ .Release.Namespace | quote }}
   labels: {{ include "common.labels.standard" . | nindent 4 }}
-    app.kubernetes.io/component: {{ .Values.common.componentLabel }}
+    app.kubernetes.io/component: {{ .Values.common.componentLabel }}-backend
+    app.kubernetes.io/part-of: {{ .Values.common.componentLabel }}
     {{- if .Values.commonLabels -}}
     {{ include "common.tplvalues.render" ( dict "value" .Values.common.labels "context" $ ) | nindent 4 }}
     {{ end }}

@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "common.names.fullname" . }}-frontend
+  namespace: {{ .Release.Namespace | quote }}
+  labels: {{ include "common.labels.standard" . | nindent 4 }}
+    app.kubernetes.io/component: {{ .Values.common.componentLabel }}-frontend
+    app.kubernetes.io/part-of: {{ .Values.common.componentLabel }}
+    {{- if .Values.commonLabels -}}
+    {{ include "common.tplvalues.render" ( dict "value" .Values.common.labels "context" $ ) | nindent 4 }}
+    {{ end }}
+  annotations:
+    {{- if .Values.common.annotations -}}
+    {{ include "common.tplvalues.render" ( dict "value" .Values.common.annotations "context" $ ) | nindent 4 }}
+    {{ end }}
+spec:
+  type: ClusterIP
+  {{- if .Values.frontendService.clusterIP -}}
+  clusterIP: {{ .Values.frontendService.clusterIP }}
+  {{ end }}
+  ports:
+    - name: http-frontend
+      port: {{ .Values.frontendService.port }}
+      targetPort: {{ .Values.frontendService.targetPort }}
+  selector: {{ include "common.labels.matchLabels" . | nindent 4 }}
+    app.kubernetes.io/component: {{ .Values.common.componentLabel }}-frontend

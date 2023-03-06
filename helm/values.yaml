@@ -22,6 +22,11 @@ frontend:
   containerSecurityContext: {}
   tolerations: []
 
+frontendService:
+  clusterIP: ""
+  port: 80
+  targetPort: frontend
+
 backend:
   image:
     registry: ghcr.io
@@ -43,6 +48,11 @@ backend:
       githubAppClientIdKey: github-app-client-id
       githubAppSecretKey: github-app-secret
       gitlabTokenKey: gitlab-token
+
+backendService:
+  clusterIP: ""
+  port: 7007
+  targetPort: backend
 
 postgresql:
   create: true
