@@ -58,7 +58,7 @@ spec:
             - name: POSTGRES_PORT
               value: {{ include "devportal.postgres.port" . }}
             - name: POSTGRES_USER
-              value: {{ include "devportal.postgres.user" . }}
+              value: {{ .Values.postgresql.auth.username }}
             - name: POSTGRES_PASSWORD
               valueFrom:
                 secretKeyRef:

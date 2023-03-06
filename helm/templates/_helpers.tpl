@@ -53,13 +53,6 @@
 {{- end -}}
 
 {{/*
-    Return the postgres user
-*/}}
-{{- define "devportal.postgres.user" -}}
-    {{- .Values.postgresql.auth.username -}}
-{{- end -}}
-
-{{/*
     Return the postgres secret name
 */}}
 {{- define "devportal.postgres.secret.name" -}}
