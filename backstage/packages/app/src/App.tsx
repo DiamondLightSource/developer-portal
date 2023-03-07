@@ -11,15 +11,20 @@ import {
 import { orgPlugin } from '@backstage/plugin-org';
 import { ScaffolderPage, scaffolderPlugin } from '@backstage/plugin-scaffolder';
 import { SearchPage } from '@backstage/plugin-search';
-import { TechDocsReaderPage, techdocsPlugin } from '@backstage/plugin-techdocs';
+import {
+  DefaultTechDocsHome,
+  TechDocsIndexPage,
+  techdocsPlugin,
+  TechDocsReaderPage,
+} from '@backstage/plugin-techdocs';
 import { ReportIssue } from '@backstage/plugin-techdocs-module-addons-contrib';
 import { TechDocsAddons } from '@backstage/plugin-techdocs-react';
 import { UserSettingsPage } from '@backstage/plugin-user-settings';
 import React from 'react';
 import { Route } from 'react-router-dom';
 import { apis } from './apis';
-import { Root } from './components/Root';
 import { entityPage } from './components/catalog/EntityPage';
+import { Root } from './components/Root';
 import { searchPage } from './components/search/SearchPage';
 
 import { createApp } from '@backstage/app-defaults';
@@ -64,6 +69,9 @@ const routes = (
       element={<CatalogEntityPage />}
     >
       {entityPage}
+    </Route>
+    <Route path="/docs" element={<TechDocsIndexPage />}>
+      <DefaultTechDocsHome />
     </Route>
     <Route
       path="/docs/:namespace/:kind/:name/*"
