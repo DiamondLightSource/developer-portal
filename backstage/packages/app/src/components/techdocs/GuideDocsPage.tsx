@@ -12,7 +12,7 @@ export const DeveloperGuidePage = () => (
         name: 'developer-guide',
       }}
     >
-      <TechDocsReaderPageContent withSearch={false} />
+      <TechDocsReaderPageContent />
     </TechDocsReaderPageProvider>
   </PageWithHeader>
 );
