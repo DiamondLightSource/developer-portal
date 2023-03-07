@@ -1,0 +1,9 @@
+.devcontainer/
+.git/
+.github/
+.vscode/
+
+helm/
+
+catalog-info.yaml
+README.md
