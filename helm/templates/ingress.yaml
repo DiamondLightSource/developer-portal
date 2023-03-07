@@ -34,10 +34,10 @@ spec:
                 name: {{ include "common.names.fullname" . }}-frontend
                 port:
                   number: {{ .Values.frontendService.port }}
-    - host: {{ print "api." }}{{ .Values.ingress.host }}
+    - host: {{ .Values.ingress.host }}
       http:
         paths:
-          - path: /
+          - path: /api
             pathType: Prefix
             backend:
               service:
