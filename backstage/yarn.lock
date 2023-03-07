@@ -5890,6 +5890,11 @@
   resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.3.1.tgz#3bb0b6ddc0a276e8dc1138d08f63035e4e23e8bf"
   integrity sha512-+eun1Wtf72RNRSqgU7qM2AMX/oHp+dnx7BHk1qhK5ZHzdHTUU4LA1mGG1vT+jMc8sbhG3orvsfOmryjzx2PzQw==
 
+"@remix-run/router@1.3.3", "@remix-run/router@^1.3.3":
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.3.3.tgz#d6d531d69c0fa3a44fda7dc00b20d49b44549164"
+  integrity sha512-YRHie1yQEj0kqqCTCJEfHqYSSNlZQ696QJG+MMiW4mxSl9I0ojz/eRhJS4fs88Z5i6D1SmoF9d3K99/QOhI8/w==
+
 "@rjsf/core-v5@npm:@rjsf/core@5.0.0-beta.16":
   version "5.0.0-beta.16"
   resolved "https://registry.yarnpkg.com/@rjsf/core/-/core-5.0.0-beta.16.tgz#a56f42d014632d8289ada6b676c9aae6650b3319"
@@ -6846,7 +6851,7 @@
   resolved "https://registry.yarnpkg.com/@types/range-parser/-/range-parser-1.2.4.tgz#cd667bcfdd025213aafb7ca5915a932590acdcdc"
   integrity sha512-EEhsLsD6UsDM1yFhAvy0Cjr6VwmpMWqFBCb9w07wVugF7w9nfajxLuVmngTIpgS6svCnm6Vaw+MZhoDCKnOfsw==
 
-"@types/react-dom@*", "@types/react-dom@<18.0.0", "@types/react-dom@^17":
+"@types/react-dom@*", "@types/react-dom@<18.0.0":
   version "17.0.19"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.19.tgz#36feef3aa35d045cacd5ed60fe0eef5272f19492"
   integrity sha512-PiYG40pnQRdPHnlf7tZnp0aQ6q9tspYr72vD61saO6zFCybLfMqwUCN0va1/P+86DXn18ZWeW30Bk7xlC5eEAQ==
@@ -7551,42 +7556,6 @@ anymatch@^3.0.3, anymatch@~3.1.2:
   dependencies:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
-
-"app@file:packages/app":
-  version "0.0.0"
-  dependencies:
-    "@backstage/app-defaults" "^1.1.0"
-    "@backstage/catalog-model" "^1.1.5"
-    "@backstage/cli" "^0.22.1"
-    "@backstage/core-app-api" "^1.4.0"
-    "@backstage/core-components" "^0.12.3"
-    "@backstage/core-plugin-api" "^1.3.0"
-    "@backstage/integration-react" "^1.1.9"
-    "@backstage/plugin-api-docs" "^0.8.14"
-    "@backstage/plugin-catalog" "^1.7.2"
-    "@backstage/plugin-catalog-common" "^1.0.10"
-    "@backstage/plugin-catalog-graph" "^0.2.26"
-    "@backstage/plugin-catalog-import" "^0.9.4"
-    "@backstage/plugin-catalog-react" "^1.2.4"
-    "@backstage/plugin-github-actions" "^0.5.14"
-    "@backstage/plugin-home" "^0.4.31"
-    "@backstage/plugin-org" "^0.6.4"
-    "@backstage/plugin-permission-react" "^0.4.9"
-    "@backstage/plugin-scaffolder" "^1.10.0"
-    "@backstage/plugin-search" "^1.0.7"
-    "@backstage/plugin-search-react" "^1.4.0"
-    "@backstage/plugin-techdocs" "^1.4.3"
-    "@backstage/plugin-techdocs-module-addons-contrib" "^1.0.9"
-    "@backstage/plugin-techdocs-react" "^1.1.2"
-    "@backstage/plugin-user-settings" "^0.6.2"
-    "@backstage/theme" "^0.2.16"
-    "@material-ui/core" "^4.12.2"
-    "@material-ui/icons" "^4.9.1"
-    history "^5.0.0"
-    react "^17.0.2"
-    react-dom "^17.0.2"
-    react-router-dom "^6.3.0"
-    react-use "^17.2.4"
 
 "aproba@^1.0.3 || ^2.0.0", aproba@^2.0.0:
   version "2.0.0"
@@ -17728,6 +17697,13 @@ react-router@6.8.0:
   integrity sha512-760bk7y3QwabduExtudhWbd88IBbuD1YfwzpuDUAlJUJ7laIIcqhMvdhSVh1Fur1PE8cGl84L0dxhR3/gvHF7A==
   dependencies:
     "@remix-run/router" "1.3.1"
+
+react-router@^6.8.2:
+  version "6.8.2"
+  resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.8.2.tgz#98f83582a73f316a3287118b440f0cee30ed6f33"
+  integrity sha512-lF7S0UmXI5Pd8bmHvMdPKI4u4S5McxmHnzJhrYi9ZQ6wE+DA8JN5BzVC5EEBuduWWDaiJ8u6YhVOCmThBli+rw==
+  dependencies:
+    "@remix-run/router" "1.3.3"
 
 react-side-effect@^2.1.0:
   version "2.1.2"
