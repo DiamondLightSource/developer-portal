@@ -84,7 +84,6 @@ catalog:
     gitlab:
       GitLab:
         host: gitlab.diamond.ac.uk
-        branch: 'main'
         schedule:
           frequency:
             minutes: 60
