@@ -1,14 +1,21 @@
+import { createApp } from '@backstage/app-defaults';
+import { AppRouter, FlatRoutes } from '@backstage/core-app-api';
+import { AlertDisplay, OAuthRequestDialog } from '@backstage/core-components';
 import { apiDocsPlugin } from '@backstage/plugin-api-docs';
 import {
   CatalogEntityPage,
   CatalogIndexPage,
   catalogPlugin,
 } from '@backstage/plugin-catalog';
+import { catalogEntityCreatePermission } from '@backstage/plugin-catalog-common/alpha';
+import { CatalogGraphPage } from '@backstage/plugin-catalog-graph';
 import {
   CatalogImportPage,
   catalogImportPlugin,
 } from '@backstage/plugin-catalog-import';
+import { HomepageCompositionRoot } from '@backstage/plugin-home';
 import { orgPlugin } from '@backstage/plugin-org';
+import { RequirePermission } from '@backstage/plugin-permission-react';
 import { ScaffolderPage, scaffolderPlugin } from '@backstage/plugin-scaffolder';
 import { SearchPage } from '@backstage/plugin-search';
 import {
@@ -24,19 +31,11 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import { apis } from './apis';
 import { entityPage } from './components/catalog/EntityPage';
+import { HomePage } from './components/home/HomePage';
 import { Root } from './components/Root';
 import { searchPage } from './components/search/SearchPage';
-
-import { createApp } from '@backstage/app-defaults';
-import { AppRouter, FlatRoutes } from '@backstage/core-app-api';
-import { AlertDisplay, OAuthRequestDialog } from '@backstage/core-components';
-import { catalogEntityCreatePermission } from '@backstage/plugin-catalog-common/alpha';
-import { CatalogGraphPage } from '@backstage/plugin-catalog-graph';
-import { RequirePermission } from '@backstage/plugin-permission-react';
-
-import { HomepageCompositionRoot } from '@backstage/plugin-home';
-import { HomePage } from './components/home/HomePage';
 import { DeveloperGuidePage } from './components/techdocs/GuideDocsPage';
+import { PrefixNavigate } from './components/utils/PrefixNavigate';
 
 const app = createApp({
   apis,
@@ -81,6 +80,16 @@ const routes = (
         <ReportIssue />
       </TechDocsAddons>
     </Route>
+    <Route
+      path="/docs/default/component/developer-guide/*"
+      element={
+        <PrefixNavigate
+          fromPrefix="/docs/default/component/developer-guide"
+          toPrefix="/guide"
+          replace
+        />
+      }
+    />
     <Route path="/create" element={<ScaffolderPage />} />
     <Route
       path="/catalog-import"
