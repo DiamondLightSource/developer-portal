@@ -32,7 +32,11 @@ FROM docker.io/library/nginx:1.23.3-alpine-slim as frontend
 
 WORKDIR /app
 
+RUN apk add --no-cache \
+        jq
+
 COPY --from=build /app/packages/app/dist /usr/share/nginx/html
+COPY --chmod=700 container_utils/inject-config.sh /docker-entrypoint.d/40-inject-config.sh
 
 FROM docker.io/library/node:18-bullseye-slim as backend
 
