@@ -43,6 +43,16 @@ FROM docker.io/library/node:18-bullseye-slim as backend
 
 WORKDIR /app
 
+COPY docs-requirements.txt /tmp/docs-requirements.txt
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+        git \
+        python3-pip \
+    && pip install -r /tmp/docs-requirements.txt \
+    && rm -rf /var/lib/apt/lists/* \
+    && rm /tmp/docs-requirements.txt
+
 COPY --from=build /app/package.json /app/yarn.lock /app/packages/backend/dist/skeleton ./
 
 RUN --mount=type=cache,target=/home/node/.cache/yarn,sharing=locked \
