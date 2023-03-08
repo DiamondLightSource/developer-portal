@@ -16,12 +16,16 @@ metadata:
 spec:
   replicas: 1
   selector:
-    matchLabels: {{ include "common.labels.matchLabels" . | nindent 6 }}
-      app.kubernetes.io/component: {{ .Values.common.componentLabel }}
+    matchLabels:
+      app.kubernetes.io/name: {{ include "common.names.fullname" . }}-backend
+      app.kubernetes.io/component: {{ .Values.common.componentLabel }}-backend
+      app.kubernetes.io/instance: {{ .Release.Name }}
   template:
     metadata:
-      labels: {{ include "common.labels.standard" . | nindent 8 }}
-        app.kubernetes.io/component: {{ .Values.common.componentLabel }}
+      labels:
+        app.kubernetes.io/name: {{ include "common.names.fullname" . }}-backend
+        app.kubernetes.io/component: {{ .Values.common.componentLabel }}-backend
+        app.kubernetes.io/instance: {{ .Release.Name }}
     spec:
       serviceAccountName: {{ include "devportal.serviceAccountName" . }}
       {{- if .Values.backend.podSecurityContext -}}
@@ -86,6 +90,5 @@ spec:
                   name: {{ .Values.backend.auth.secret.name }}
                   key: {{ .Values.backend.auth.secret.gitlabTokenKey }}
           ports:
-            - name: backstage-api
+            - name: http-api
               containerPort: {{ .Values.backend.port }}
-              protocol: TCP

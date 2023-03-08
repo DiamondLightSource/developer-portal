@@ -19,8 +19,10 @@ spec:
   clusterIP: {{ .Values.frontendService.clusterIP }}
   {{ end }}
   ports:
-    - name: http-frontend
+    - name: http-app
       port: {{ .Values.frontendService.port }}
-      targetPort: {{ .Values.frontendService.targetPort }}
-  selector: {{ include "common.labels.matchLabels" . | nindent 4 }}
+      targetPort: http-app
+  selector:
+    app.kubernetes.io/name: {{ include "common.names.fullname" . }}-frontend
     app.kubernetes.io/component: {{ .Values.common.componentLabel }}-frontend
+    app.kubernetes.io/instance: {{ .Release.Name }}
