@@ -50,7 +50,7 @@ backend:
 
 backendService:
   clusterIP: ""
-  port: 7007
+  port: 80
 
 postgresql:
   create: true
