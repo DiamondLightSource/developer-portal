@@ -19,8 +19,9 @@ spec:
   clusterIP: {{ .Values.backendService.clusterIP }}
   {{ end }}
   ports:
-    - name: http-backend
+    - name: http-api
       port: {{ .Values.backendService.port }}
-      targetPort: {{ .Values.backendService.targetPort }}
-  selector: {{ include "common.labels.matchLabels" . | nindent 4 }}
+      targetPort: http-api
+  selector:
+    app.kubernetes.io/name: {{ include "common.names.fullname" . }}-backend
     app.kubernetes.io/component: {{ .Values.common.componentLabel }}-backend

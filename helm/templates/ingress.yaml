@@ -33,15 +33,12 @@ spec:
               service:
                 name: {{ include "common.names.fullname" . }}-frontend
                 port:
-                  number: {{ .Values.frontendService.port }}
-    - host: {{ .Values.ingress.host }}
-      http:
-        paths:
+                  name: http-app
           - path: /api
             pathType: Prefix
             backend:
               service:
                 name: {{ include "common.names.fullname" . }}-backend
                 port:
-                  number: {{ .Values.backendService.port }}
+                  name: http-api
 {{ end }}

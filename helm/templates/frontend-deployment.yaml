@@ -4,6 +4,7 @@ metadata:
   name: {{ include "common.names.fullname" . }}-frontend
   namespace: {{ .Release.Namespace | quote }}
   labels: {{ include "common.labels.standard" . | nindent 4 }}
+    app.kubernetes.io/name: {{ include "common.names.fullname" . }}-frontend
     app.kubernetes.io/component: {{ .Values.common.componentLabel }}-frontend
     app.kubernetes.io/part-of: {{ .Values.common.componentLabel }}
     {{- if .Values.commonLabels -}}
@@ -16,12 +17,16 @@ metadata:
 spec:
   replicas: 1
   selector:
-    matchLabels: {{ include "common.labels.matchLabels" . | nindent 6 }}
-      app.kubernetes.io/component: {{ .Values.common.componentLabel }}
+    matchLabels:
+      app.kubernetes.io/name: {{ include "common.names.fullname" . }}-frontend
+      app.kubernetes.io/component: {{ .Values.common.componentLabel }}-frontend
+      app.kubernetes.io/instance: {{ .Release.Name }}
   template:
     metadata:
-      labels: {{ include "common.labels.standard" . | nindent 8 }}
-        app.kubernetes.io/component: {{ .Values.common.componentLabel }}
+      labels:
+        app.kubernetes.io/name: {{ include "common.names.fullname" . }}-frontend
+        app.kubernetes.io/component: {{ .Values.common.componentLabel }}-frontend
+        app.kubernetes.io/instance: {{ .Release.Name }}
     spec:
       serviceAccountName: {{ include "devportal.serviceAccountName" . }}
       {{- if .Values.frontend.podSecurityContext -}}
@@ -54,6 +59,5 @@ spec:
           {{ end }}
           resources: {{ include "common.tplvalues.render" ( dict "value" .Values.frontend.resources "context" $ ) | nindent 12 }}
           ports:
-            - name: webpage
+            - name: http-app
               containerPort: {{ .Values.frontend.port }}
-              protocol: TCP
