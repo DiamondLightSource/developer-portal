@@ -37,6 +37,7 @@ RUN apk add --no-cache \
 
 COPY --from=build /app/packages/app/dist /usr/share/nginx/html
 COPY --chmod=700 container_utils/inject-config.sh /docker-entrypoint.d/40-inject-config.sh
+COPY container_utils/default.conf.template /etc/nginx/templates/default.conf.template
 
 FROM docker.io/library/node:18-bullseye-slim as backend
 
