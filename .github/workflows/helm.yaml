@@ -1,0 +1,44 @@
+name: Helm CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  lint-test:
+    # pull requests are a duplicate of a branch push if within the same repo.
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Setup Helm
+        uses: azure/setup-helm@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+
+      - name: Setup chart-testing
+        uses: helm/chart-testing-action@v2.3.1
+
+      - name: Lint
+        run: ct lint --target-branch ${{ github.event.repository.default_branch }}
+
+      - name: List Changed
+        id: list-changed
+        run: |
+          changed=$(ct list-changed --target-branch ${{ github.event.repository.default_branch }})
+          if [[ -n "$changed" ]]; then
+            echo "::set-output name=changed::true"
+          fi
+
+      - name: Create kind cluster
+        uses: helm/kind-action@v1.4.0
+        if: steps.list-changed.outputs.changed == 'true'
+
+      - name: Test install
+        if: steps.list-changed.outputs.changed == 'true'
+        run: ct install --target-branch ${{ github.event.repository.default_branch }}
