@@ -58,6 +58,9 @@ spec:
             - {{- . | quote -}}
           {{ end }}
           resources: {{ include "common.tplvalues.render" ( dict "value" .Values.frontend.resources "context" $ ) | nindent 12 }}
+          env:
+            - name: APP_CONFIG_backend_baseUrl
+              value: {{ print "https://" }}{{ .Values.ingress.host }}
           ports:
             - name: http-app
               containerPort: {{ .Values.frontend.port }}
