@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: developer-portal-frontend
+  description: The diamond developer portal frontend.
+spec:
+  type: website
+  lifecycle: experimental
+  system: developer-portal
+  owner: user:enu43627
+  consumesApis:
+    - developer-portal-backend-rest

@@ -1,13 +1,12 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: Location
 metadata:
-  name: backstage-deployment
-  description: An example of a Backstage application.
-  # Example for optional annotations
-  # annotations:
-  #   github.com/project-slug: backstage/backstage
-  #   backstage.io/techdocs-ref: dir:.
+  name: developer-portal
+  description: The diamond developer portal.
 spec:
-  type: website
-  owner: john@example.com
-  lifecycle: experimental
+  type: file
+  targets:
+    - catalog-info/system.yaml
+    - catalog-info/frontend.yaml
+    - catalog-info/backend.yaml
+    - catalog-info/backend-api.yaml
