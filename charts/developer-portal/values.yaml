@@ -10,7 +10,7 @@
 global:
   # -- Global Docker image registry
   imageRegistry: ""
-  
+
   # -- Global Docker registry secret names as an array
   # </br> E.g. `imagePullSecrets: [myRegistryKeySecretName]`
   imagePullSecrets: []
@@ -28,7 +28,6 @@ common:
 
 frontend:
   image:
-
     # -- Backstage frontend image registry
     registry: ghcr.io
 
@@ -88,7 +87,6 @@ frontend:
 # -- Frontend service parameters
 # @default -- See below
 frontendService:
-
   # -- Backstage frontend service Cluster IP
   #
   # <br /> E.g `clusterIP: None`
@@ -99,7 +97,6 @@ frontendService:
 
 backend:
   image:
-
     # -- Backstage backend image registry
     registry: ghcr.io
 
@@ -156,10 +153,8 @@ backend:
 
   # -- The authentication details to allow the backstage backend to ingeset catalog contents
   auth:
-
     # -- A secret containing the nessacary tokens
     secret:
-
       # -- The name of the secret object containing the tokens
       name: backstage-secrets
 
@@ -180,7 +175,6 @@ backend:
 # -- Backend service parameters
 # @default -- See below
 backendService:
-
   # -- Backstage backend service Cluster IP
   #
   # <br /> E.g `clusterIP: None`
@@ -192,13 +186,11 @@ backendService:
 # -- PostgreSQL [chart configuration](https://github.com/bitnami/charts/blob/master/bitnami/postgresql/values.yaml)
 # @default -- See below
 postgresql:
-
   # -- Switch to enable or disable the PostgreSQL helm chart
   create: true
 
   # -- Location of an existing postgreSQL server to use if create is false
   existing:
-
     # -- The hostname of the existing postgreSQL server
     host: ""
 
@@ -207,7 +199,6 @@ postgresql:
 
   # -- The authentication details of the Postgres database
   auth:
-
     # -- Name for a custom user to create
     username: backstage
 
@@ -219,7 +210,6 @@ postgresql:
 
     # -- The secret keys Postgres will look for to retrieve the relevant password
     secretKeys:
-
       # -- The key in which Postgres will look for, for the admin password, in the existing Secret
       adminPasswordKey: admin-password
 
@@ -232,7 +222,6 @@ postgresql:
   ## @section PostgreSQL Primary parameters
   ##
   primary:
-
     # -- Resource requests/limits
     # <br /> Ref: https://kubernetes.io/docs/user-guide/compute-resources/
     # <!-- E.g.
@@ -250,7 +239,6 @@ postgresql:
 
 # -- Ingress parameters
 ingress:
-
   # -- Enable the creation of the ingress resource
   enabled: true
 
@@ -262,7 +250,6 @@ ingress:
 
   # -- Ingress TLS parameters
   tls:
-
     # -- Enable TLS configuration for the host defined at `ingress.host` parameter
     enabled: true
 
@@ -272,7 +259,6 @@ ingress:
 # -- Service Account Configuration
 # @default -- See below
 serviceAccount:
-
   # -- Enable the creation of a ServiceAccount for Backstage pods
   create: false
 
