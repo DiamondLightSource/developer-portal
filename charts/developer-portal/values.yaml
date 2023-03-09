@@ -32,7 +32,7 @@ frontend:
     registry: ghcr.io
 
     # -- Backstage frontend image repository
-    repository: garryod/backstage-deployment-frontend
+    repository: diamondlightsource/developer-portal-frontend
 
     # -- Backstage frontend image tag (immutable tags are recommended)
     tag: latest
@@ -101,7 +101,7 @@ backend:
     registry: ghcr.io
 
     # -- Backstage backend image repository
-    repository: garryod/backstage-deployment-backend
+    repository: diamondlightsource/developer-portal-backend
 
     # -- Backstage frontend image tag (immutable tags are recommended)
     tag: latest
