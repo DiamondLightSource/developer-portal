@@ -52,7 +52,7 @@ jobs:
       - name: Create nessacary secrets
         if: steps.list-changed.outputs.changed == 'true'
         run: >
-          kubectl create secret generic backstage-secrets
+          kubectl create secret generic developer-portal-secrets
           --namespace=test
           --from-literal=github-token=""
           --from-literal=github-app-client-id=""

@@ -153,11 +153,23 @@ backend:
 
   # -- The authentication details to allow the backstage backend to ingeset catalog contents
   auth:
-    # -- A secret containing the nessacary tokens
-    secret:
-      # -- The name of the secret object containing the tokens
-      name: backstage-secrets
+    # -- A github token with read:org, read:user & user:email permissions
+    githubToken: ""
 
+    # -- A github OAuth App client ID
+    githubAppClientId: ""
+
+    # -- A github OAuth App client secret
+    githubAppSecret: ""
+
+    # -- A gitlab token with api, read_repository & write_repository permissions
+    gitlabToken: ""
+
+    # -- A secret containing the nessacary tokens
+    existingSecret: developer-portal-secrets
+
+    # -- The secret keys baclstage will look for to retrieve the relevant tokens & ids
+    secretKeys:
       # -- The key of a github token with read:org, read:user & user:email permissions
       githubTokenKey: github-token
 
