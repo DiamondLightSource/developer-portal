@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: developer-portal-backend-rest
+  description: The diamond developer portal backend REST API.
+spec:
+  type: openapi
+  lifecycle: experimental
+  owner: user:enu43627
+  system: developer-portal
+  definition: |
+    openapi: 3.0.0
+    info:
+      title: Backstage API
+      version: 0.0.1
