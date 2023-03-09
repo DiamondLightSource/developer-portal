@@ -27,3 +27,13 @@
   yarn install
   yarn dev
   ```
+
+## Deploying on Kubernetes (Diamond Light Source)
+
+- Access the cluster with `module load argus`
+- Adjust configuration in `charts/developer-portal/values.yaml` as appropriate
+- Deploy the portal, with:
+  ```sh
+  cd charts/developer-portal
+  helm install <deployment-name> .
+  ```
