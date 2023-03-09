@@ -13,6 +13,17 @@
 {{- end -}}
 
 {{/*
+    Return the backend secret to use
+*/}}
+{{- define "devportal.backend.auth.secret" -}}
+    {{- if .Values.backend.auth.existingSecret -}}
+        {{ .Values.backend.auth.existingSecret }}
+    {{- else -}}
+        {{ include "common.names.fullname" . }}
+    {{- end -}}
+{{- end -}}
+
+{{/*
     Create the name of the service account to use
 */}}
 {{- define "devportal.serviceAccountName" -}}
