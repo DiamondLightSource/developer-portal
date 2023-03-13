@@ -6,7 +6,7 @@ metadata:
 spec:
   type: file
   targets:
-    - catalog-info/system.yaml
-    - catalog-info/frontend.yaml
-    - catalog-info/backend.yaml
-    - catalog-info/backend-api.yaml
+    - ./catalog-info/system.yaml
+    - ./catalog-info/frontend.yaml
+    - ./catalog-info/backend.yaml
+    - ./catalog-info/backend-api.yaml
