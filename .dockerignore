@@ -4,6 +4,8 @@
 .vscode/
 
 helm/
+docs/
 
 catalog-info.yaml
+mkdocs.yml
 README.md

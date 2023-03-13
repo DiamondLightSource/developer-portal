@@ -1,0 +1,40 @@
+site_name: Developer Portal
+site_url: https://0.0.0.0/
+repo_url: https://github.com/DiamondLightSource/developer-portal
+edit_uri: edit/main/docs/
+plugins:
+  - techdocs-core
+  - include_dir_to_nav:
+      file_pattern: '.*(?<!index)\.md$'
+  - awesome-pages
+  - pagenav-generator
+nav:
+  - Home: index.md
+  - 'User Guide':
+    - Home: user/index.md
+    - Tutorials: 
+      - Home: user/tutorials/index.md
+      - user/tutorials
+    - 'How Tos':
+      - Home: user/how-tos/index.md
+      - user/how-tos
+    - Explanations:
+      - Home: user/explanations/index.md
+      - user/explanations
+    - References:
+      - Home: user/references/index.md
+      - user/references
+  - 'Developer Guide':
+    - Home: developer/index.md
+    - Tutorials: 
+      - Home: developer/tutorials/index.md
+      - developer/tutorials
+    - 'How Tos':
+      - Home: developer/how-tos/index.md
+      - developer/how-tos
+    - Explanations:
+      - Home: developer/explanations/index.md
+      - developer/explanations
+    - References:
+      - Home: developer/references/index.md
+      - developer/references
