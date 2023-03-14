@@ -66,6 +66,7 @@ ldap:
           filter: (objectClass=group)
 
 catalog:
+  readonly: true
   import:
     entityFilename: catalog-info.yaml
     pullRequestBranchName: backstage-integration
