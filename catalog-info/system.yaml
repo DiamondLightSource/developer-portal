@@ -2,6 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
   name: developer-portal
+  title: Developer Portal
   description: The diamond developer portal.
 spec:
   owner: user:enu43627

@@ -1,14 +1,15 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: developer-portal-backend
-  description: The diamond developer portal backend.
+    name: developer-portal-backend
+    title: Developer Portal Backend
+    description: A node application performing discovery and providing the developer portal REST API.
 spec:
-  type: website
-  lifecycle: experimental
-  system: developer-portal
-  owner: user:enu43627
-  dependsOn:
-    - component:developer-guide
-  providesApis:
-    - developer-portal-backend-rest
+    type: service
+    lifecycle: experimental
+    system: developer-portal
+    owner: user:enu43627
+    dependsOn:
+        - component:developer-guide
+    providesApis:
+        - developer-portal-backend-rest
