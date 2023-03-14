@@ -2,6 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: developer-portal-frontend
+  title: Developer Portal Frontend
   description: A single page application which displays the developer portal as provided by the backend.
 spec:
   type: website
