@@ -1,8 +1,0 @@
-apiVersion: backstage.io/v1alpha1
-kind: Location
-metadata:
-  name: developer-portal-backend-rest
-  description: The diamond developer portal backend REST API.
-spec:
-  type: url
-  target: https://diamondlightsource.github.io/developer-portal/api-catalog-info.yaml
