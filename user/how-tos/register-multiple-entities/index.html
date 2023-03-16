@@ -1072,20 +1072,18 @@
 </code></pre></div>
 </td></tr></table>
 <h3 id="location-spec">Location Spec<a class="headerlink" href="#location-spec" title="Permanent link">&para;</a></h3>
-<p>Finally, we will fill out the <code>Location</code> <code>spec</code>. For this a <code>type</code> and <code>targets</code> are required but again we may optionally include several others. The <code>type</code> field must be either <code>url</code> or <code>file</code>, however as <code>file</code> refers to a local file only <code>url</code> is useful; The <code>targets</code> entry should consist a list of <code>url</code>s directing the discovery task to other entity descriptors. E.g.:</p>
+<p>Finally, we will fill out the <code>Location</code> <code>spec</code>. For this a <code>targets</code> is required but again we may optionally include several others; It should be noted that <code>type</code> is intentionally left blank such that it is inherited from the parent location - this allows for relative locations under VCS and other useful, discovery location specific, features. The <code>targets</code> entry should consist a list of relative locations directing the discovery task to other entity descriptors. E.g.:</p>
 <table class="language-yaml highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><div class="language-yaml highlight"><pre><span></span><code><span class="nt">spec</span><span class="p">:</span>
-  <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">url</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div class="language-yaml highlight"><pre><span></span><code><span class="nt">spec</span><span class="p">:</span>
   <span class="nt">targets</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">https://github.com/DiamondLightSource/developer-portal/blob/main/catalog-info/system.yaml</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">https://github.com/DiamondLightSource/developer-portal/blob/main/catalog-info/frontend.yaml</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">https://github.com/DiamondLightSource/developer-portal/blob/main/catalog-info/backend.yaml</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">https://github.com/DiamondLightSource/developer-portal/blob/main/catalog-info/backend-rest.yaml</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./catalog-info/system.yaml</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./catalog-info/frontend.yaml</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./catalog-info/backend.yaml</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./catalog-info/backend-rest.yaml</span>
 </code></pre></div>
 </td></tr></table>
 <details class="note">
@@ -1109,10 +1107,10 @@
 <span class="nt">spec</span><span class="p">:</span>
     <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">url</span>
     <span class="nt">targets</span><span class="p">:</span>
-        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">https://github.com/DiamondLightSource/developer-portal/blob/main/catalog-info/system.yaml</span>
-        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">https://github.com/DiamondLightSource/developer-portal/blob/main/catalog-info/frontend.yaml</span>
-        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">https://github.com/DiamondLightSource/developer-portal/blob/main/catalog-info/backend.yaml</span>
-        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">https://github.com/DiamondLightSource/developer-portal/blob/main/catalog-info/backend-rest.yaml</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./catalog-info/system.yaml</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./catalog-info/frontend.yaml</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./catalog-info/backend.yaml</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./catalog-info/backend-rest.yaml</span>
 </code></pre></div>
 </td></tr></table>
 </details>
