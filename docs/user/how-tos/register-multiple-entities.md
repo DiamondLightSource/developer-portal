@@ -40,16 +40,15 @@ metadata:
 
 ### Location Spec
 
-Finally, we will fill out the `Location` `spec`. For this a `type` and `targets` are required but again we may optionally include several others. The `type` field must be either `url` or `file`, however as `file` refers to a local file only `url` is useful; The `targets` entry should consist a list of `url`s directing the discovery task to other entity descriptors. E.g.:
+Finally, we will fill out the `Location` `spec`. For this a `targets` is required but again we may optionally include several others; It should be noted that `type` is intentionally left blank such that it is inherited from the parent location - this allows for relative locations under VCS and other useful, discovery location specific, features. The `targets` entry should consist a list of relative locations directing the discovery task to other entity descriptors. E.g.:
 
 ```yaml
 spec:
-  type: url
   targets:
-    - https://github.com/DiamondLightSource/developer-portal/blob/main/catalog-info/system.yaml
-    - https://github.com/DiamondLightSource/developer-portal/blob/main/catalog-info/frontend.yaml
-    - https://github.com/DiamondLightSource/developer-portal/blob/main/catalog-info/backend.yaml
-    - https://github.com/DiamondLightSource/developer-portal/blob/main/catalog-info/backend-rest.yaml
+    - ./catalog-info/system.yaml
+    - ./catalog-info/frontend.yaml
+    - ./catalog-info/backend.yaml
+    - ./catalog-info/backend-rest.yaml
 ```
 
 ??? note "Completed Descriptor Example"
@@ -61,12 +60,11 @@ spec:
         name: developer-portal
         description: A RESTful API exposed by the developer portal backend.
     spec:
-        type: url
         targets:
-            - https://github.com/DiamondLightSource/developer-portal/blob/main/catalog-info/system.yaml
-            - https://github.com/DiamondLightSource/developer-portal/blob/main/catalog-info/frontend.yaml
-            - https://github.com/DiamondLightSource/developer-portal/blob/main/catalog-info/backend.yaml
-            - https://github.com/DiamondLightSource/developer-portal/blob/main/catalog-info/backend-rest.yaml
+            - ./catalog-info/system.yaml
+            - ./catalog-info/frontend.yaml
+            - ./catalog-info/backend.yaml
+            - ./catalog-info/backend-rest.yaml
     ```
 
 ## Push & Wait
