@@ -4,9 +4,8 @@ metadata:
   name: developer-portal
   description: The diamond developer portal.
 spec:
-  type: url
   targets:
-    - https://github.com/DiamondLightSource/developer-portal/blob/main/catalog-info/system.yaml
-    - https://github.com/DiamondLightSource/developer-portal/blob/main/catalog-info/frontend.yaml
-    - https://github.com/DiamondLightSource/developer-portal/blob/main/catalog-info/backend.yaml
-    - https://github.com/DiamondLightSource/developer-portal/blob/main/catalog-info/backend-rest.yaml
+    - ./catalog-info/system.yaml
+    - ./catalog-info/frontend.yaml
+    - ./catalog-info/backend.yaml
+    - ./catalog-info/backend-rest.yaml
