@@ -35,12 +35,12 @@ frontend:
     repository: diamondlightsource/developer-portal-frontend
 
     # -- Backstage frontend image tag (immutable tags are recommended)
-    tag: latest
+    tag: 0.0.3
 
     # -- Specify a imagePullPolicy.
     # Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
     # <br /> Ref: https://kubernetes.io/docs/user-guide/images/#pre-pulling-images
-    pullPolicy: Always
+    pullPolicy: 'IfNotPresent'
 
     # -- Optionally specify an array of imagePullSecrets.
     #  Secrets must be manually created in the namespace.
@@ -104,12 +104,12 @@ backend:
     repository: diamondlightsource/developer-portal-backend
 
     # -- Backstage frontend image tag (immutable tags are recommended)
-    tag: latest
+    tag: 0.0.3
 
     # -- Specify a imagePullPolicy.
     # Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
     # <br /> Ref: https://kubernetes.io/docs/user-guide/images/#pre-pulling-images
-    pullPolicy: Always
+    pullPolicy: 'IfNotPresent'
 
     # -- Optionally specify an array of imagePullSecrets.
     #  Secrets must be manually created in the namespace.
