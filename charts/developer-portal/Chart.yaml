@@ -26,4 +26,4 @@ dependencies:
   - name: postgresql
     repository: https://charts.bitnami.com/bitnami
     version: 11.x.x
-    condition: developer-portal.postgres.create
+    condition: developer-portal.postgresql.create
