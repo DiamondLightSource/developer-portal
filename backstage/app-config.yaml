@@ -38,6 +38,8 @@ techdocs:
   builder: local # Alternatives - 'external'
   generator:
     runIn: local # Alternatives - 'local'
+    mkdocs:
+      omitTechdocsCorePlugin: true
   publisher:
     type: local # Alternatives - 'googleGcs' or 'awsS3'. Read documentation for using alternatives.
 
