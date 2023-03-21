@@ -4,6 +4,7 @@ repo_url: https://github.com/DiamondLightSource/developer-portal
 edit_uri: edit/main/docs/
 plugins:
   - techdocs-core
+  - include-markdown
   - include_dir_to_nav:
       file_pattern: '.*(?<!index)\.md$'
   - awesome-pages
