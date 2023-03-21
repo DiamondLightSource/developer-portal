@@ -25,7 +25,7 @@ jobs:
         run: pip install -r docs/requirements.txt
 
       - name: Build docs
-        run: mkdocs build
+        run: mkdocs build --strict
 
       - name: Publish Docs to gh-pages
         if: github.ref == 'refs/heads/main'
