@@ -2,102 +2,127 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://0.0.0.0/</loc>
-         <lastmod>2023-03-20</lastmod>
+         <lastmod>2023-03-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/developer/</loc>
-         <lastmod>2023-03-20</lastmod>
+         <lastmod>2023-03-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/developer/explanations/</loc>
-         <lastmod>2023-03-20</lastmod>
+         <lastmod>2023-03-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://0.0.0.0/developer/explanations/placeholder/</loc>
+         <lastmod>2023-03-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/developer/how-tos/</loc>
-         <lastmod>2023-03-20</lastmod>
+         <lastmod>2023-03-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://0.0.0.0/developer/how-tos/placeholder/</loc>
+         <lastmod>2023-03-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/developer/references/</loc>
-         <lastmod>2023-03-20</lastmod>
+         <lastmod>2023-03-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://0.0.0.0/developer/references/placeholder/</loc>
+         <lastmod>2023-03-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/developer/tutorials/</loc>
-         <lastmod>2023-03-20</lastmod>
+         <lastmod>2023-03-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://0.0.0.0/developer/tutorials/placeholder/</loc>
+         <lastmod>2023-03-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/</loc>
-         <lastmod>2023-03-20</lastmod>
+         <lastmod>2023-03-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/explanations/</loc>
-         <lastmod>2023-03-20</lastmod>
+         <lastmod>2023-03-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/explanations/entity-ingress/</loc>
-         <lastmod>2023-03-20</lastmod>
+         <lastmod>2023-03-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/how-tos/</loc>
-         <lastmod>2023-03-20</lastmod>
+         <lastmod>2023-03-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/how-tos/register-a-component/</loc>
-         <lastmod>2023-03-20</lastmod>
+         <lastmod>2023-03-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/how-tos/register-a-static-api/</loc>
-         <lastmod>2023-03-20</lastmod>
+         <lastmod>2023-03-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/how-tos/register-a-system/</loc>
-         <lastmod>2023-03-20</lastmod>
+         <lastmod>2023-03-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/how-tos/register-multiple-entities/</loc>
-         <lastmod>2023-03-20</lastmod>
+         <lastmod>2023-03-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/references/</loc>
-         <lastmod>2023-03-20</lastmod>
+         <lastmod>2023-03-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/references/common-api-types/</loc>
-         <lastmod>2023-03-20</lastmod>
+         <lastmod>2023-03-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/references/common-component-types/</loc>
-         <lastmod>2023-03-20</lastmod>
+         <lastmod>2023-03-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/references/common-lifecycle-stages/</loc>
-         <lastmod>2023-03-20</lastmod>
+         <lastmod>2023-03-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/references/discovery-locations/</loc>
-         <lastmod>2023-03-20</lastmod>
+         <lastmod>2023-03-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/tutorials/</loc>
-         <lastmod>2023-03-20</lastmod>
+         <lastmod>2023-03-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://0.0.0.0/user/tutorials/placeholder/</loc>
+         <lastmod>2023-03-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
