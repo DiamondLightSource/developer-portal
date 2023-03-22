@@ -8,6 +8,6 @@ The catalogue is configured to ingress the nine entity types described in [Backs
 - `Group`
 - `User`
 - `Resource`
-- `System`
+- [`System`](../explanations/system.md)
 - `Domain`
 - `Location`
