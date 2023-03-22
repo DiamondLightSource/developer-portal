@@ -40,11 +40,11 @@ An [entity reference](https://backstage.io/docs/features/software-catalog/refere
 
 ## `providesApis` [Optional]
 
-An array of [entity references](https://backstage.io/docs/features/software-catalog/references#string-references) to the APIs that are provided by the Component, e.g. `providesApis: [developer-portal-backend-rest]`
+An array of [entity references](https://backstage.io/docs/features/software-catalog/references#string-references) to the [APIs](../explanations/api.md) that are provided by the Component, e.g. `providesApis: [developer-portal-backend-rest]`
 
 ## `consumesApis` [Optional]
 
-An array of [entity references](https://backstage.io/docs/features/software-catalog/references#string-references) to the APIs that are consumed by the Component, e.g. `consumesApis: [developer-portal-backend-rest]`
+An array of [entity references](https://backstage.io/docs/features/software-catalog/references#string-references) to the [APIs](../explanations/api.md) that are consumed by the Component, e.g. `consumesApis: [developer-portal-backend-rest]`
 
 ## `dependsOn` [Optional]
 
