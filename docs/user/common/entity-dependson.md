@@ -1,0 +1,1 @@
+An array of [entity references](https://backstage.io/docs/features/software-catalog/references#string-references) to the Components and Resources that this entity depends on, e.g. `dependsOn: [component:developer-portal-backend]`

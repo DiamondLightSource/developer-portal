@@ -48,6 +48,8 @@ An array of [entity references](https://backstage.io/docs/features/software-cata
 
 ## `dependsOn` [Optional]
 
-An array of [entity references](https://backstage.io/docs/features/software-catalog/references#string-references) to the Components and Resources that the Component depends on, e.g. `dependsOn: [component:developer-portal-backend]`
+{%
+    include-markdown "../common/entity-dependson.md"
+%}
 
 <!--end-fields-->
