@@ -16,10 +16,10 @@ As with all other entities, a system consists of the envelope types, `apiVersion
     include-markdown "../references/entity-envelope.md"
     start="<!--start-api-version-->"
     end="<!--end-api-version-->"
-    heading-offset=2
+    heading-offset=1
 %}
 
-#### `kind` [Required]
+### `kind` [Required]
 
 The `kind` is the high level entity type being described. For a software system this must be `System`, e.g. `kind: System`.
 
@@ -29,14 +29,8 @@ Other available `kind`s are enumerated in the [entity types reference](../refere
     include-markdown "../references/entity-envelope.md"
     start="<!--start-metadata-->"
     end="<!--end-metadata-->"
-    heading-offset=2
+    heading-offset=1
 %}
-
-#### `spec` [Required]
-
-The actual specification data that describes the entity. See [spec definition below](#spec)
-
-### Metadata Contents
 
 {%
     include-markdown "../references/entity-metadata.md"
@@ -45,7 +39,9 @@ The actual specification data that describes the entity. See [spec definition be
     heading-offset=2
 %}
 
-### Spec Contents
+### `spec` [Required]
+
+The actual specification data that describes the entity.
 
 {%
     include-markdown "../references/system-spec.md"
