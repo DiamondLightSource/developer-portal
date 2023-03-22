@@ -1,15 +1,28 @@
 # Discovery Locations
 
-The developer portal is configured to search a number of locations for entity descriptors (commonly a `catalog-info.yaml` file). These locations include, but are not limited to:
+The developer portal is configured to search a number of locations for entity descriptors (commonly a `catalog-info.yaml` file). These locations include, by type:
 
-<!--start--locations-->
+<!--start-locations-->
 
-- `github.com/DiamondLightSource` (GIT)
+Git:
+
+<!--start-git-locations-->
+
+- `github.com/DiamondLightSource`
   - Entity descriptors at `/catalog-info.yaml`
-- `gitlab.diamond.ac.uk` (GIT)
+- `gitlab.diamond.ac.uk`
   - Entity descriptors at `/catalog-info.yaml`
-- `ralfed.cclrc.ac.uk` (LDAP)
-  - Users
+
+<!--end-git-locations-->
+
+LDAP:
+
+<!--start-ldap-locations-->
+
+- `ralfed.cclrc.ac.uk`
+  - [Users](../explanations/user.md)
+
+<!--end-ldap-locations-->
 
 <!--end-locations-->
 
