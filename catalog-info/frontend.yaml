@@ -4,6 +4,8 @@ metadata:
   name: developer-portal-frontend
   title: Developer Portal Frontend
   description: A single page application which displays the developer portal as provided by the backend.
+  annotations:
+    github.com/project-slug: DiamondLightSource/developer-portal
 spec:
   type: website
   lifecycle: experimental
