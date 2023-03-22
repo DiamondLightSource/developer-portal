@@ -2,48 +2,59 @@
 
 ## Preface
 
-This how-to will take you through the steps of registering a `System` with the developer portal.
+This how-to will take you through the steps of registering a [System](../explanations/system.md) with the developer portal using one of the Git [discovery locations](../references/discovery-locations.md).
 
-As detailed in the [entity ingress explanation](../explanations/entity-ingress.md), the developer portal is configured to automatically pick up entity descriptors present in the [discovery locations](../references/discovery-locations.md). At present, the entity descriptor for this must reside within version control in one of the [discovery locations](../references/discovery-locations.md) which may make choosing a location for your `System` entity descriptor difficult for poly-repo systems, please get in touch if this doesn't suit your needs.
+!!! tip
 
-A standalone `System` does not add significant value, therefore it is expected that other entities (e.g. `Component`s or `API`s) will be attached to it via their `spec.system` field.
+    A lone System entity does not add significant value, therefore it is expected that other entities (e.g. [Components](../explanations/component.md) or [APIs](../explanations/api.md)) will be attached to it via their `spec.system` field.
 
-## Create an Entity Descriptor
+{%
+  include-markdown "../common/get-repository.md"
+  heading-offset=1
+%}
 
-!!! info "Entity Descriptor Format"
+{%
+  include-markdown "../common/create-entity-descriptor.md"
+  heading-offset=1
+%}
 
-    For a exhaustive description of the entity descriptor format, see [the backstage docs](https://backstage.io/docs/features/software-catalog/descriptor-format).
+### Entity Definition
 
-Firstly, we must create the entity descriptor file, `catalog-info.yaml`, at the root of the repository.
+To begin, we will specify the `apiVersion` to be `backstage.io/v1alpha1` and the `kind` as `System`. E.g.:
 
-To begin, we will specify the `apiVersion` to be `backstage.io/v1alpha1` and the kind as `System`. E.g.:
+!!! example
 
-```yaml
-apiVersion: backstage.io/v1alpha1
-kind: System
-```
+    ```yaml
+    apiVersion: backstage.io/v1alpha1
+    kind: System
+    ```
 
-### Metadata
+{%
+  include-markdown "../common/create-entity-metadata.md"
+  heading-offset=2
+%}
 
-Next, we will fill out the `metadata`, this is common to all entity types. The metadata must include a `name` and may optionally include several others, we will choose to give it a `title` and a `description`. The `name` must consist of sequences of `[a-z0-9A-Z]` possibly separated by one of `[-_.]`, whilst the `title` should be short human readable name and the `description` a longer human readable description of the `System`. E.g.:
+!!! example
 
-```yaml
-metadata:
-  name: developer-portal
-  title: Developer Portal
-  description: The diamond developer portal.
-```
+    ```yaml
+    metadata:
+      name: developer-portal
+      title: Developer Portal
+      description: The diamond developer portal.
+    ```
 
 ### System Spec
 
-Finally, we will fill out the `System` `spec`. There are no required fields here, however we will choose to give it an `owner`. The `owner` should reference either a `group` or a `user` already available on the catalog the with the syntax of `group:<groupName>` or `user:<fedId>` respectively. E.g.:
+Finally, we will fill out the `spec`. There are no required fields here. However it is recommended that you enter an `owner`. Complete field descriptions are available in the [System spec reference](../references/system-spec.md).
 
-```yaml
-spec:
-  owner: user:enu43627
-```
+!!! example
 
-??? note "Completed Descriptor Example"
+    ```yaml
+    spec:
+      owner: user:enu43627
+    ```
+
+??? example "Example Completed Descriptor"
 
     ```yaml
     apiVersion: backstage.io/v1alpha1
@@ -56,6 +67,7 @@ spec:
         owner: user:enu43627
     ```
 
-## Push & Wait
-
-Now we have created our entity decriptor in the form of a `catalog-info.yaml` we can push it to one of the [discovery locations](../references/discovery-locations.md) and wait for the developer portal to discover it - be aware that this may take a while depending on the schedule of the discovery provider.
+{%
+  include-markdown "../common/push-and-wait.md"
+  heading-offset=1
+%}
