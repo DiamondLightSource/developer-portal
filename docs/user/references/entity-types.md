@@ -10,4 +10,4 @@ The catalogue is configured to ingress the nine entity types described in [Backs
 - `Resource`
 - [`System`](../explanations/system.md)
 - `Domain`
-- `Location`
+- [`Location`](../explanations/location.md)
