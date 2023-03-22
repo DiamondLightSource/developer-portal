@@ -10,6 +10,6 @@
 
 ## `domain` [Optional]
 
-An [entity reference](https://backstage.io/docs/features/software-catalog/references#string-references) to the domain that the system belongs to, e.g. `developer-tooling`
+An [entity reference](https://backstage.io/docs/features/software-catalog/references#string-references) to the [Domain](../explanations/domain.md) that the system belongs to, e.g. `developer-tooling`
 
 <!--end-fields-->
