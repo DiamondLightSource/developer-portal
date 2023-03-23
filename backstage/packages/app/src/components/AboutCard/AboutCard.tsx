@@ -1,3 +1,10 @@
+/**
+ *
+ * Derived from the default AboutCard as of b268dab386518a2bb59c5020fa1a228939e20a57
+ * See: https://github.com/backstage/backstage/blob/b268dab386518a2bb59c5020fa1a228939e20a57/plugins/catalog/src/components/AboutCard/AboutCard.tsx
+ *
+ */
+
 import {
   ANNOTATION_EDIT_URL,
   ANNOTATION_LOCATION,
