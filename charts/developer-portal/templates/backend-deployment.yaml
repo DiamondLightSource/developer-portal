@@ -89,6 +89,10 @@ spec:
                 secretKeyRef:
                   name: {{ include "devportal.backend.auth.secret" . }}
                   key: {{ .Values.backend.auth.secretKeys.gitlabTokenKey }}
+            - name: APP_CONFIG_app_baseUrl
+              value: {{ print "https://" }}{{ .Values.ingress.host }}
+            - name: APP_CONFIG_backend_baseUrl
+              value: {{ print "https://" }}{{ .Values.ingress.host }}
           ports:
             - name: http-api
               containerPort: {{ .Values.backend.port }}
