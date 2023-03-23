@@ -18,7 +18,6 @@ import {
   EntityProvidingComponentsCard,
 } from '@backstage/plugin-api-docs';
 import {
-  EntityAboutCard,
   EntityDependsOnComponentsCard,
   EntityDependsOnResourcesCard,
   EntityHasComponentsCard,
@@ -58,6 +57,7 @@ import {
 } from '@immobiliarelabs/backstage-plugin-gitlab';
 import { Button, Grid } from '@material-ui/core';
 import React from 'react';
+import { EntityAboutCard } from '../AboutCard/AboutCard';
 
 const techdocsContent = (
   <EntityTechdocsContent>
