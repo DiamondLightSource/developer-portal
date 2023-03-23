@@ -1,5 +1,14 @@
 # Developer Portal
 
+The Diamond Light Source developer portal, built with backstage for deployment on kubernetes.
+
+|                |                                                                  |
+| -------------- | ---------------------------------------------------------------- |
+| Source Code    | https://github.com/DiamondLightSource/developer-portal           |
+| User Docs      | https://diamondlightsource.github.io/developer-portal/user/      |
+| Developer Docs | https://diamondlightsource.github.io/developer-portal/developer/ |
+| Releases       | https://github.com/DiamondLightSource/developer-portal/releases  |
+
 ## Developing Locally (VSCode)
 
 - [Install docker-compose](https://docs.docker.com/compose/install/other/)
