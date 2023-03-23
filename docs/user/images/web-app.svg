@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   class="jss956"
+   width="341.4043"
+   height="241"
+   viewBox="0 0 341.4043 241"
+   version="1.1"
+   style="display:block"
+   id="svg207"
+   sodipodi:docname="web-app2.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata211">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1136"
+     id="namedview209"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="1.0911984"
+     inkscape:cx="175.25"
+     inkscape:cy="120.5"
+     inkscape:window-x="1920"
+     inkscape:window-y="459"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="workspace" />
+  <defs
+     id="defs142">
+    <marker
+       id="arrow-marker"
+       viewBox="0 0 24 24"
+       markerWidth="14"
+       markerHeight="14"
+       refX="16"
+       refY="12"
+       orient="auto"
+       markerUnits="strokeWidth">
+      <path
+         d="M 8.59,16.59 13.17,12 8.59,7.41 10,6 l 6,6 -6,6 z"
+         style="fill:#6e6e6e"
+         id="path139"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <g
+     id="workspace"
+     transform="translate(-510.08594,-311.59375)">
+    <svg
+       width="413.5"
+       height="304"
+       y="280.09375"
+       x="478.58594"
+       viewBox="0 0 413.5 304"
+       version="1.1"
+       id="svg204">
+      <path
+         data-testid="edge"
+         class="jss972"
+         d="m 175.5,68 c 0,0 0,33 0,33 0,0 0,33 0,33"
+         style="fill:none;stroke:#6e6e6e"
+         id="path144"
+         inkscape:connector-curvature="0" />
+      <g
+         data-testid="label"
+         class="jss973"
+         transform="translate(282.5,101)"
+         id="g154">
+        <text
+           class="jss974"
+           style="text-anchor:middle;white-space:nowrap;display:block"
+           id="text152">
+          <tspan
+             class=""
+             style="text-anchor:middle;white-space:nowrap"
+             id="tspan146">consumesApi</tspan>
+          <tspan
+             class="jss975"
+             style="text-anchor:middle;white-space:nowrap;fill:#6e6e6e"
+             id="tspan150"><tspan
+   style="text-anchor:middle;white-space:nowrap;fill:#6e6e6e"
+   id="tspan148">/</tspan>
+apiConsumedBy</tspan>
+        </text>
+      </g>
+      <path
+         data-testid="edge"
+         class="jss972"
+         d="m 175.5,170 c 0,0 0,33 0,33 0,0 0,33 0,33"
+         style="fill:none;stroke:#6e6e6e"
+         id="path156"
+         inkscape:connector-curvature="0" />
+      <g
+         data-testid="label"
+         class="jss973"
+         transform="translate(271,203)"
+         id="g166">
+        <text
+           class="jss974"
+           style="text-anchor:middle;white-space:nowrap;display:block"
+           id="text164">
+          <tspan
+             class=""
+             style="text-anchor:middle;white-space:nowrap"
+             id="tspan158">apiProvidedBy</tspan>
+          <tspan
+             class="jss975"
+             style="text-anchor:middle;white-space:nowrap;fill:#6e6e6e"
+             id="tspan162"><tspan
+   style="text-anchor:middle;white-space:nowrap;fill:#6e6e6e"
+   id="tspan160">/</tspan>
+providesApi</tspan>
+        </text>
+      </g>
+      <g
+         data-testid="node"
+         class="jss976"
+         transform="translate(32,134)"
+         id="g178">
+        <g
+           class="jss979"
+           id="g176">
+          <rect
+             class="jss977 secondary"
+             width="287"
+             height="36"
+             rx="10"
+             style="fill:#ff4081;stroke:#ff4081"
+             id="rect168"
+             x="0"
+             y="0" />
+          <svg
+             class="MuiSvgIcon-root-707 jss978 focused secondary"
+             focusable="false"
+             viewBox="0 0 24 24"
+             aria-hidden="true"
+             y="10"
+             x="10"
+             width="16"
+             height="16"
+             style="font-weight:700;font-size:24px;line-height:34.31999969px;fill:#ffffff"
+             version="1.1"
+             id="svg172">
+            <path
+               d="M 20.5,11 H 19 V 7 C 19,5.9 18.1,5 17,5 H 13 V 3.5 C 13,2.12 11.88,1 10.5,1 9.12,1 8,2.12 8,3.5 V 5 H 4 C 2.9,5 2.01,5.9 2.01,7 v 3.8 H 3.5 c 1.49,0 2.7,1.21 2.7,2.7 0,1.49 -1.21,2.7 -2.7,2.7 H 2 V 20 c 0,1.1 0.9,2 2,2 h 3.8 v -1.5 c 0,-1.49 1.21,-2.7 2.7,-2.7 1.49,0 2.7,1.21 2.7,2.7 V 22 H 17 c 1.1,0 2,-0.9 2,-2 v -4 h 1.5 C 21.88,16 23,14.88 23,13.5 23,12.12 21.88,11 20.5,11 Z"
+               style="font-weight:700;font-size:24px;line-height:34.31999969px;fill:#ffffff"
+               id="path170"
+               inkscape:connector-curvature="0" />
+          </svg>
+          <text
+             class="jss978 focused secondary"
+             y="18"
+             x="156.5"
+             alignment-baseline="middle"
+             style="font-weight:700;text-anchor:middle;white-space:nowrap;display:block;fill:#ffffff"
+             id="text174">Developer Portal Backend REST API</text>
+        </g>
+      </g>
+      <g
+         data-testid="node"
+         class="jss976"
+         transform="translate(70.5,32)"
+         id="g190">
+        <g
+           class="jss979"
+           id="g188">
+          <rect
+             class="jss977 primary"
+             width="210"
+             height="36"
+             rx="10"
+             style="fill:#5792d9;stroke:#5792d9"
+             id="rect180"
+             x="0"
+             y="0" />
+          <svg
+             class="MuiSvgIcon-root-707 jss978 primary"
+             focusable="false"
+             viewBox="0 0 24 24"
+             aria-hidden="true"
+             y="10"
+             x="10"
+             width="16"
+             height="16"
+             style="font-size:24px;line-height:34.31999969px;fill:#ffffff"
+             version="1.1"
+             id="svg184">
+            <path
+               d="M 15,9 H 9 v 6 h 6 z m -2,4 h -2 v -2 h 2 z m 8,-2 V 9 H 19 V 7 C 19,5.9 18.1,5 17,5 H 15 V 3 H 13 V 5 H 11 V 3 H 9 V 5 H 7 C 5.9,5 5,5.9 5,7 V 9 H 3 v 2 h 2 v 2 H 3 v 2 h 2 v 2 c 0,1.1 0.9,2 2,2 h 2 v 2 h 2 v -2 h 2 v 2 h 2 v -2 h 2 c 1.1,0 2,-0.9 2,-2 v -2 h 2 v -2 h -2 v -2 z m -4,6 H 7 V 7 h 10 z"
+               style="font-size:24px;line-height:34.31999969px;fill:#ffffff"
+               id="path182"
+               inkscape:connector-curvature="0" />
+          </svg>
+          <text
+             class="jss978 primary"
+             y="18"
+             x="118"
+             alignment-baseline="middle"
+             style="text-anchor:middle;white-space:nowrap;display:block;fill:#ffffff"
+             id="text186">Developer Portal Frontend</text>
+        </g>
+      </g>
+      <g
+         data-testid="node"
+         class="jss976"
+         transform="translate(71,236)"
+         id="g202">
+        <g
+           class="jss979"
+           id="g200">
+          <rect
+             class="jss977 primary"
+             width="209"
+             height="36"
+             rx="10"
+             style="fill:#5792d9;stroke:#5792d9"
+             id="rect192"
+             x="0"
+             y="0" />
+          <svg
+             class="MuiSvgIcon-root-707 jss978 primary"
+             focusable="false"
+             viewBox="0 0 24 24"
+             aria-hidden="true"
+             y="10"
+             x="10"
+             width="16"
+             height="16"
+             style="font-size:24px;line-height:34.31999969px;fill:#ffffff"
+             version="1.1"
+             id="svg196">
+            <path
+               d="M 15,9 H 9 v 6 h 6 z m -2,4 h -2 v -2 h 2 z m 8,-2 V 9 H 19 V 7 C 19,5.9 18.1,5 17,5 H 15 V 3 H 13 V 5 H 11 V 3 H 9 V 5 H 7 C 5.9,5 5,5.9 5,7 V 9 H 3 v 2 h 2 v 2 H 3 v 2 h 2 v 2 c 0,1.1 0.9,2 2,2 h 2 v 2 h 2 v -2 h 2 v 2 h 2 v -2 h 2 c 1.1,0 2,-0.9 2,-2 v -2 h 2 v -2 h -2 v -2 z m -4,6 H 7 V 7 h 10 z"
+               style="font-size:24px;line-height:34.31999969px;fill:#ffffff"
+               id="path194"
+               inkscape:connector-curvature="0" />
+          </svg>
+          <text
+             class="jss978 primary"
+             y="18"
+             x="117.5"
+             alignment-baseline="middle"
+             style="text-anchor:middle;white-space:nowrap;display:block;fill:#ffffff"
+             id="text198">Developer Portal Backend</text>
+        </g>
+      </g>
+    </svg>
+  </g>
+</svg>
