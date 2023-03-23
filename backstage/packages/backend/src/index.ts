@@ -1,11 +1,3 @@
-/*
- * Hi!
- *
- * Note that this is an EXAMPLE Backstage backend. Please check the README.
- *
- * Happy hacking!
- */
-
 import {
   CacheManager,
   createServiceBuilder,
@@ -25,6 +17,7 @@ import { ServerPermissionClient } from '@backstage/plugin-permission-node';
 import Router from 'express-promise-router';
 import auth from './plugins/auth';
 import catalog from './plugins/catalog';
+import gitlab from './plugins/gitlab';
 import proxy from './plugins/proxy';
 import scaffolder from './plugins/scaffolder';
 import search from './plugins/search';
@@ -83,6 +76,7 @@ async function main() {
   const proxyEnv = useHotMemoize(module, () => createEnv('proxy'));
   const techdocsEnv = useHotMemoize(module, () => createEnv('techdocs'));
   const searchEnv = useHotMemoize(module, () => createEnv('search'));
+  const gitlabEnv = useHotMemoize(module, () => createEnv('gitlab'));
 
   const apiRouter = Router();
   apiRouter.use('/catalog', await catalog(catalogEnv));
@@ -91,6 +85,7 @@ async function main() {
   apiRouter.use('/techdocs', await techdocs(techdocsEnv));
   apiRouter.use('/proxy', await proxy(proxyEnv));
   apiRouter.use('/search', await search(searchEnv));
+  apiRouter.use('/gitlab', await gitlab(gitlabEnv));
 
   // Add backends ABOVE this line; this 404 handler is the catch-all fallback
   apiRouter.use(notFoundHandler());

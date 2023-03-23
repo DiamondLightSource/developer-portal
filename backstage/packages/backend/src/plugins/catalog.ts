@@ -3,6 +3,7 @@ import { GithubEntityProvider } from '@backstage/plugin-catalog-backend-module-g
 import { GitlabDiscoveryEntityProvider } from '@backstage/plugin-catalog-backend-module-gitlab';
 import { LdapOrgEntityProvider } from '@backstage/plugin-catalog-backend-module-ldap';
 import { ScaffolderEntitiesProcessor } from '@backstage/plugin-scaffolder-backend';
+import { GitlabFillerProcessor } from '@immobiliarelabs/backstage-plugin-gitlab-backend';
 import { Router } from 'express';
 import { PluginEnvironment } from '../types';
 
@@ -34,6 +35,7 @@ export default async function createPlugin(
     }),
   );
   builder.addProcessor(new ScaffolderEntitiesProcessor());
+  builder.addProcessor(new GitlabFillerProcessor(env.config));
   const { processingEngine, router } = await builder.build();
   await processingEngine.start();
   return router;
