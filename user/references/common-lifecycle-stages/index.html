@@ -300,8 +300,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutorials/placeholder/" class="md-nav__link">
-        Placeholder
+      <a href="../../tutorials/web-app/" class="md-nav__link">
+        Registering a Web App
       </a>
     </li>
   
@@ -464,8 +464,134 @@
   
   
     <li class="md-nav__item">
+      <a href="../../explanations/api/" class="md-nav__link">
+        APIs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explanations/component/" class="md-nav__link">
+        Components
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explanations/domain/" class="md-nav__link">
+        Domains
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../explanations/entity-ingress/" class="md-nav__link">
         Entity Ingress
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explanations/group/" class="md-nav__link">
+        Groups
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explanations/location/" class="md-nav__link">
+        Locations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explanations/resource/" class="md-nav__link">
+        Resources
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explanations/system/" class="md-nav__link">
+        Systems
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explanations/template/" class="md-nav__link">
+        Templates
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explanations/user/" class="md-nav__link">
+        Users
       </a>
     </li>
   
@@ -515,6 +641,20 @@
     <li class="md-nav__item">
       <a href="../" class="md-nav__link">
         Home
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-spec/" class="md-nav__link">
+        API Spec
       </a>
     </li>
   
@@ -579,8 +719,134 @@
   
   
     <li class="md-nav__item">
+      <a href="../component-annotations/" class="md-nav__link">
+        Component Annotations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../component-spec/" class="md-nav__link">
+        Component Spec
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../discovery-locations/" class="md-nav__link">
         Discovery Locations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domain-spec/" class="md-nav__link">
+        Domain Spec
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity-envelope/" class="md-nav__link">
+        Entity Envelope
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity-metadata/" class="md-nav__link">
+        Entity Metadata
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity-types/" class="md-nav__link">
+        Entity Types
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../location-spec/" class="md-nav__link">
+        Location Spec
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resource-spec/" class="md-nav__link">
+        Resource Spec
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../system-spec/" class="md-nav__link">
+        System Spec
       </a>
     </li>
   
@@ -928,13 +1194,17 @@
 
 
 <h1 id="common-lifecycle-stages">Common Lifecycle Stages<a class="headerlink" href="#common-lifecycle-stages" title="Permanent link">&para;</a></h1>
-<p>Whilst the <code>spec.type</code> of a <code>Component</code> or <code>API</code> may be any string, understanding is made easier by sticking to a small set of well-known and common values. Thus we recommend that when specifying a component one of the following is used in this field:</p>
+<!--excerpt-start-->
+
+<p>Whilst the <code>spec.type</code> of a <code>Component</code> or <code>API</code> may be any string, understanding is made easier by sticking to a small set of well-known and common values. Thus we recommend that when specifying an entity one of the following is used in this field:</p>
 <ul>
-<li><code>experimental</code> - an experiment or early, non-production component, signaling that users may not prefer to consume it over other more established components, or that there are low or no reliability guarantees</li>
-<li><code>production</code> - an established, owned, maintained component</li>
-<li><code>deprecated</code> - a component that is at the end of its lifecycle, and may disappear at a later point in time</li>
+<li><code>experimental</code> - an experiment or early, non-production entity, signaling that users may not prefer to consume it over other more established entities, or that there are low or no reliability guarantees</li>
+<li><code>production</code> - an established, owned, maintained entity</li>
+<li><code>deprecated</code> - an entity that is at the end of its lifecycle, and may disappear at a later point in time</li>
 </ul>
-<p>These are selected such that they overlap with the common component types described in the <a href="https://backstage.io/docs/features/software-catalog/descriptor-format/#speclifecycle-required">backstage documentation</a>, but should be added to and ammended to reflect usage.</p>
+<!--excerpt-end-->
+
+<p>These are selected such that they overlap with the common lifecycle stages described in the <a href="https://backstage.io/docs/features/software-catalog/descriptor-format/#speclifecycle-required">backstage documentation</a>, but should be added to and ammended to reflect usage.</p>
 
               
             </article>
@@ -964,13 +1234,13 @@
       
       
         
-        <a href="../discovery-locations/" class="md-footer__link md-footer__link--next" aria-label="Next: Discovery Locations" rel="next">
+        <a href="../component-annotations/" class="md-footer__link md-footer__link--next" aria-label="Next: Component Annotations" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Discovery Locations
+              Component Annotations
             </div>
           </div>
           <div class="md-footer__button md-icon">

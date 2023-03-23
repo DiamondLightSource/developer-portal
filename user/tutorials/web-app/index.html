@@ -1,0 +1,2112 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://0.0.0.0/user/tutorials/web-app/">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.1.11">
+    
+    
+      
+        <title>Registering a Web App - Developer Portal</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.50e68009.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#registering-a-web-app" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Developer Portal" class="md-header__button md-logo" aria-label="Developer Portal" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Developer Portal
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Registering a Web App
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/DiamondLightSource/developer-portal" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Developer Portal" class="md-nav__button md-logo" aria-label="Developer Portal" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Developer Portal
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/DiamondLightSource/developer-portal" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          User Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="User Guide" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          User Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_2">
+          Tutorials
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tutorials" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Tutorials
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Registering a Web App
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Registering a Web App
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#preface" class="md-nav__link">
+    Preface
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-git-repository" class="md-nav__link">
+    Create a Git Repository
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-system" class="md-nav__link">
+    Create a System
+  </a>
+  
+    <nav class="md-nav" aria-label="Create a System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#system-entity-definition" class="md-nav__link">
+    System Entity Definition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system-metadata" class="md-nav__link">
+    System Metadata
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system-spec" class="md-nav__link">
+    System Spec
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-the-backend-component" class="md-nav__link">
+    Create the Backend Component
+  </a>
+  
+    <nav class="md-nav" aria-label="Create the Backend Component">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#backend-component-entity-definition" class="md-nav__link">
+    Backend Component Entity Definition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backend-component-metadata" class="md-nav__link">
+    Backend Component Metadata
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backend-component-spec" class="md-nav__link">
+    Backend Component Spec
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-the-api" class="md-nav__link">
+    Create the API
+  </a>
+  
+    <nav class="md-nav" aria-label="Create the API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#api-entity-definition" class="md-nav__link">
+    API Entity Definition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-metadata" class="md-nav__link">
+    API Metadata
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-spec" class="md-nav__link">
+    API Spec
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-the-frontend-component" class="md-nav__link">
+    Create the Frontend Component
+  </a>
+  
+    <nav class="md-nav" aria-label="Create the Frontend Component">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frontend-component-entity-definition" class="md-nav__link">
+    Frontend Component Entity Definition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frontend-component-metadata" class="md-nav__link">
+    Frontend Component Metadata
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frontend-component-spec" class="md-nav__link">
+    Frontend Component Spec
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference-them-with-a-location" class="md-nav__link">
+    Reference them with a Location
+  </a>
+  
+    <nav class="md-nav" aria-label="Reference them with a Location">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#location-entity-definition" class="md-nav__link">
+    Location Entity Definition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#location-metadata" class="md-nav__link">
+    Location Metadata
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#location-spec" class="md-nav__link">
+    Location Spec
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#push-to-a-discovery-location" class="md-nav__link">
+    Push to a Discovery Location
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_3">
+          How Tos
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="How Tos" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          How Tos
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-tos/" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-tos/register-a-component/" class="md-nav__link">
+        Register a Component
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-tos/register-a-static-api/" class="md-nav__link">
+        Register a Static API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-tos/register-a-system/" class="md-nav__link">
+        Register a System
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-tos/register-multiple-entities/" class="md-nav__link">
+        Register Mutliple Entities
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_4">
+          Explanations
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Explanations" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          Explanations
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explanations/" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explanations/api/" class="md-nav__link">
+        APIs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explanations/component/" class="md-nav__link">
+        Components
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explanations/domain/" class="md-nav__link">
+        Domains
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explanations/entity-ingress/" class="md-nav__link">
+        Entity Ingress
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explanations/group/" class="md-nav__link">
+        Groups
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explanations/location/" class="md-nav__link">
+        Locations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explanations/resource/" class="md-nav__link">
+        Resources
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explanations/system/" class="md-nav__link">
+        Systems
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explanations/template/" class="md-nav__link">
+        Templates
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explanations/user/" class="md-nav__link">
+        Users
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_5">
+          References
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="References" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_5">
+          <span class="md-nav__icon md-icon"></span>
+          References
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/api-spec/" class="md-nav__link">
+        API Spec
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/common-api-types/" class="md-nav__link">
+        Common API Types
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/common-component-types/" class="md-nav__link">
+        Common Component Types
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/common-lifecycle-stages/" class="md-nav__link">
+        Common Lifecycle Stages
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/component-annotations/" class="md-nav__link">
+        Component Annotations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/component-spec/" class="md-nav__link">
+        Component Spec
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/discovery-locations/" class="md-nav__link">
+        Discovery Locations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/domain-spec/" class="md-nav__link">
+        Domain Spec
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/entity-envelope/" class="md-nav__link">
+        Entity Envelope
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/entity-metadata/" class="md-nav__link">
+        Entity Metadata
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/entity-types/" class="md-nav__link">
+        Entity Types
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/location-spec/" class="md-nav__link">
+        Location Spec
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/resource-spec/" class="md-nav__link">
+        Resource Spec
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/system-spec/" class="md-nav__link">
+        System Spec
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Developer Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Developer Guide" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Developer Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer/" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2">
+          Tutorials
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tutorials" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Tutorials
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer/tutorials/" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer/tutorials/placeholder/" class="md-nav__link">
+        Placeholder
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3">
+          How Tos
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="How Tos" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          How Tos
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer/how-tos/" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer/how-tos/placeholder/" class="md-nav__link">
+        Placeholder
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_4">
+          Explanations
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Explanations" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Explanations
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer/explanations/" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer/explanations/placeholder/" class="md-nav__link">
+        Placeholder
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_5">
+          References
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="References" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          References
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer/references/" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer/references/placeholder/" class="md-nav__link">
+        Placeholder
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#preface" class="md-nav__link">
+    Preface
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-git-repository" class="md-nav__link">
+    Create a Git Repository
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-system" class="md-nav__link">
+    Create a System
+  </a>
+  
+    <nav class="md-nav" aria-label="Create a System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#system-entity-definition" class="md-nav__link">
+    System Entity Definition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system-metadata" class="md-nav__link">
+    System Metadata
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system-spec" class="md-nav__link">
+    System Spec
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-the-backend-component" class="md-nav__link">
+    Create the Backend Component
+  </a>
+  
+    <nav class="md-nav" aria-label="Create the Backend Component">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#backend-component-entity-definition" class="md-nav__link">
+    Backend Component Entity Definition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backend-component-metadata" class="md-nav__link">
+    Backend Component Metadata
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backend-component-spec" class="md-nav__link">
+    Backend Component Spec
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-the-api" class="md-nav__link">
+    Create the API
+  </a>
+  
+    <nav class="md-nav" aria-label="Create the API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#api-entity-definition" class="md-nav__link">
+    API Entity Definition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-metadata" class="md-nav__link">
+    API Metadata
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-spec" class="md-nav__link">
+    API Spec
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-the-frontend-component" class="md-nav__link">
+    Create the Frontend Component
+  </a>
+  
+    <nav class="md-nav" aria-label="Create the Frontend Component">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frontend-component-entity-definition" class="md-nav__link">
+    Frontend Component Entity Definition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frontend-component-metadata" class="md-nav__link">
+    Frontend Component Metadata
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frontend-component-spec" class="md-nav__link">
+    Frontend Component Spec
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference-them-with-a-location" class="md-nav__link">
+    Reference them with a Location
+  </a>
+  
+    <nav class="md-nav" aria-label="Reference them with a Location">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#location-entity-definition" class="md-nav__link">
+    Location Entity Definition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#location-metadata" class="md-nav__link">
+    Location Metadata
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#location-spec" class="md-nav__link">
+    Location Spec
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#push-to-a-discovery-location" class="md-nav__link">
+    Push to a Discovery Location
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+<a href="https://github.com/DiamondLightSource/developer-portal/edit/main/docs/user/tutorials/web-app.md" title="Edit this page" class="md-content__button md-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+</a>
+
+
+<h1 id="registering-a-web-app">Registering a Web App<a class="headerlink" href="#registering-a-web-app" title="Permanent link">&para;</a></h1>
+<h2 id="preface">Preface<a class="headerlink" href="#preface" title="Permanent link">&para;</a></h2>
+<div class="admonition example inline end">
+<p class="admonition-title">Example Developer Portal View</p>
+<p><img alt="Web App Example" src="../../images/web-app.svg" /></p>
+</div>
+<p>This tutorial will take you through registration of a basic web application, producing a result like the example on the right. This app will comprise of four entities:</p>
+<ul>
+<li>A <a href="../../explanations/component/">Component</a> for the Backend</li>
+<li>A <a href="../../explanations/component/">Component</a> for the Frontend</li>
+<li>An <a href="../../explanations/api/">API</a> produced by the Backend and consumed by the Frontend</li>
+<li>A <a href="../../explanations/system/">System</a> which encompasses the whole app</li>
+</ul>
+<h2 id="create-a-git-repository">Create a Git Repository<a class="headerlink" href="#create-a-git-repository" title="Permanent link">&para;</a></h2>
+<p>To begin, we will create a new git repository. To do this we will:</p>
+<ol>
+<li>Create a new directory with <code>mkdir</code></li>
+<li>Change into this new directory with <code>cd</code></li>
+<li>Intialize git with <code>git init</code></li>
+</ol>
+<p>Let's call our web app <code>my-web-app</code>, thus in a new bash terminal we will execute the following:</p>
+<table class="language-bash highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="language-bash highlight"><pre><span></span><code>mkdir my-web-app
+<span class="nb">cd</span> my-web-app
+git init
+</code></pre></div>
+</td></tr></table>
+<h2 id="create-a-system">Create a System<a class="headerlink" href="#create-a-system" title="Permanent link">&para;</a></h2>
+<p>The first entity we will create is a <a href="../../explanations/system/">System</a>, this will encompass the whole app. We will define this at the root of our directory, to do so we will create a new <code>yaml</code> file named <code>system-info.yaml</code> which will contain the entity defintion. We can create this file from our bash terminal with:</p>
+<table class="language-bash highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="language-bash highlight"><pre><span></span><code>touch system-info.yaml
+</code></pre></div>
+</td></tr></table>
+<p>With our favourite text editor we will then open this file and begin filling it out. The <code>nano</code> editor is considered rather beginner friendly, thus we will choose to use it. You can open the file we just created by executing:</p>
+<table class="language-bash highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="language-bash highlight"><pre><span></span><code>nano system-info.yaml
+</code></pre></div>
+</td></tr></table>
+<h3 id="system-entity-definition">System Entity Definition<a class="headerlink" href="#system-entity-definition" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>A full description of the top level structure of an entity definition can be found in the <a href="../../references/entity-envelope/">entity envelope reference</a>.</p>
+</div>
+<p>Each entity definition must include an <code>apiVersion</code> and a <code>kind</code>. The <code>apiVersion</code> is used to track the version of the entity definition format that is being used, the current version is <code>backstage.io/v1alpha1</code> thus we will use this. The <code>kind</code> is used to specify the type of entity we are defining, for a software system we use <code>System</code>. Thus we will begin the definition with the following:</p>
+<table class="language-yaml highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="language-yaml highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">backstage.io/v1alpha1</span>
+<span class="nt">kind</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">System</span>
+</code></pre></div>
+</td></tr></table>
+<h3 id="system-metadata">System Metadata<a class="headerlink" href="#system-metadata" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>A full list of entity metadata fields can be found in the <a href="../../references/entity-metadata/">entity metadata reference</a>.</p>
+</div>
+<p>Each entity must be given some metadata, this is the same regardless of the entity <code>kind</code>, and will reside within the <code>metadata</code> object. Only a <code>name</code> is required, however we will choose to give the system a <code>title</code> and <code>description</code> as well. The <code>name</code> should be both human and machine readable, this it is required to be a globally unique string between 1 and 63 characters consisting of sequences of <code>[a-z0-9A-Z]</code> possibly separated by one of <code>[-_.]</code>, we will choose to call our system <code>my-web-app</code>. The <code>title</code> field is less restrictive, it should simply be a short human readable string, we will title our System <code>My Web App</code>. The <code>description</code> is similar, but should be longer, we will use it to briefly describe what our system is. Thus we will add the following lines to the definition:</p>
+<table class="language-yaml highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="language-yaml highlight"><pre><span></span><code><span class="nt">metadata</span><span class="p">:</span>
+  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my-web-app</span>
+  <span class="nt">title</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">My Web App</span>
+  <span class="nt">description</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">A web application created by me, consisting of a backend and frontend connected by a REST API</span>
+</code></pre></div>
+</td></tr></table>
+<h3 id="system-spec">System Spec<a class="headerlink" href="#system-spec" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>A full list of system spec fields can be found in the <a href="../../references/system-spec/">system spec reference</a>.</p>
+</div>
+<p>Each entity must be given a spec, this is unique to each entity <code>kind</code>, and will reside within the <code>spec</code> object. For a System, only an <code>owner</code> is required, in this tutorial I will reference myself, <code>user:enu43627</code>, whilst you should use your own FedID in place of mine (<code>enu43627</code>).</p>
+<table class="language-yaml highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="language-yaml highlight"><pre><span></span><code><span class="nt">spec</span><span class="p">:</span>
+  <span class="nt">owner</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">user:enu43627</span>
+</code></pre></div>
+</td></tr></table>
+<details class="example">
+<summary>Complete System Definition</summary>
+<table class="language-yaml highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div class="language-yaml highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">backstage.io/v1alpha1</span>
+<span class="nt">kind</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">System</span>
+<span class="nt">metadata</span><span class="p">:</span>
+  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my-web-app</span>
+  <span class="nt">title</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">My Web App</span>
+  <span class="nt">description</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">A web application created by me, consisting of a backend and frontend connected by a REST API</span>
+<span class="nt">spec</span><span class="p">:</span>
+  <span class="nt">owner</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">user:enu43627</span>
+</code></pre></div>
+</td></tr></table>
+</details>
+<p>Once complete we can save and exit, to do so in <code>nano</code> press <code>CTRL</code> + <code>X</code> to exit, <code>Y</code> to save and <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.42L5.83 13H21V7h-2z"/></svg></span> <code>Return</code> to overwrite the opened file.</p>
+<h2 id="create-the-backend-component">Create the Backend Component<a class="headerlink" href="#create-the-backend-component" title="Permanent link">&para;</a></h2>
+<p>We will now create a <a href="../../explanations/component/">Component</a> for the Backend. It is recommended that entity definitions reside with the code they represent, thus we will create a backend directory in which we would locate the code which runs our backend service, we will call it <code>backend</code>. We can create this directory from our bash terminal with:</p>
+<table class="language-bash highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="language-bash highlight"><pre><span></span><code>mkdir backend
+</code></pre></div>
+</td></tr></table>
+<p>In this directory we will create a new <code>yaml</code> file named <code>component-info.yaml</code> which will contain the entity definition for our Backend Component. We can create this file from our bash terminal with:</p>
+<table class="language-bash highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="language-bash highlight"><pre><span></span><code>touch backend/component-info.yaml
+</code></pre></div>
+</td></tr></table>
+<p>Like with <a href="#create-a-system">system creation</a>, we will open this file in our favoured text editor and add the definition.</p>
+<h3 id="backend-component-entity-definition">Backend Component Entity Definition<a class="headerlink" href="#backend-component-entity-definition" title="Permanent link">&para;</a></h3>
+<p>For a Component we must define the entity <code>kind</code> to be <code>component</code>. Thus we will begin the definition with the following:</p>
+<table class="language-yaml highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="language-yaml highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">backstage.io/v1alpha1</span>
+<span class="nt">kind</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">component</span>
+</code></pre></div>
+</td></tr></table>
+<h3 id="backend-component-metadata">Backend Component Metadata<a class="headerlink" href="#backend-component-metadata" title="Permanent link">&para;</a></h3>
+<p>We will <code>name</code> our backend component a <code>my-web-app-backend</code>, give it the <code>title</code> <code>My Web App Backend</code> and an <code>description</code> which will briefly describe what our component does. Thus we will add the following lines to the definition:</p>
+<table class="language-yaml highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="language-yaml highlight"><pre><span></span><code><span class="nt">metadata</span><span class="p">:</span>
+  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my-web-app-backend</span>
+  <span class="nt">title</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">My Web App Backend</span>
+  <span class="nt">description</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">The backend service for My Web App, it provides an API with lots of useful data</span>
+</code></pre></div>
+</td></tr></table>
+<h3 id="backend-component-spec">Backend Component Spec<a class="headerlink" href="#backend-component-spec" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>A full list of component spec fields can be found in the <a href="../../references/component-spec/">component spec reference</a>.</p>
+</div>
+<p>Each entity must be given a spec, this is unique to each entity <code>kind</code>, and will reside within the <code>spec</code> object. For a Component, a <code>type</code>, <code>lifecycle</code>, and <code>owner</code> are required, in addition to these we will define <code>system</code> and <code>providesApis</code>. Whilst <code>type</code> may be any string there are a small number of <a href="../../references/common-component-types/">commonly used values</a> which should be used, we will choose <code>service</code> to describe our Backend. The lifecycle may also be any string, but again there are a small number of <a href="../../references/common-lifecycle-stages/">commonly used values</a> which should be used, we will choose <code>experimental</code>. Like with the <a href="#system-spec">system spec</a>, I will reference myself, <code>user:enu43627</code> as the user. The <code>system</code> field allows us to define the System this component belongs to, thus we will give it the same value as the <code>metadata.name</code> of our System. Similarly <code>providesApis</code> allows us to define a list of APIs which are exposed by our Backend Component, we will therefore make an entry with what will be the <code>metadata.name</code> of our API <code>my-web-app-rest</code>. Thus we will add the following lines to the definition:</p>
+<table class="language-yaml highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div class="language-yaml highlight"><pre><span></span><code><span class="nt">spec</span><span class="p">:</span>
+  <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">service</span>
+  <span class="nt">lifecycle</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">experimental</span>
+  <span class="nt">owner</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">user:enu43627</span>
+  <span class="nt">system</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my-web-app</span>
+  <span class="nt">providesApis</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">my-web-app-rest</span>
+</code></pre></div>
+</td></tr></table>
+<details class="example">
+<summary>Complete Backend Component Definition</summary>
+<table class="language-yaml highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div class="language-yaml highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">backstage.io/v1alpha1</span>
+<span class="nt">kind</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">component</span>
+<span class="nt">metadata</span><span class="p">:</span>
+  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my-web-app-backend</span>
+  <span class="nt">title</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">My Web App Backend</span>
+  <span class="nt">description</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">The backend service for My Web App, it magically works without any code</span>
+<span class="nt">spec</span><span class="p">:</span>
+  <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">service</span>
+  <span class="nt">lifecycle</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">experimental</span>
+  <span class="nt">owner</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">user:enu43627</span>
+  <span class="nt">system</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my-web-app</span>
+  <span class="nt">providesApis</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">my-web-app-rest</span>
+</code></pre></div>
+</td></tr></table>
+</details>
+<p>Like with <a href="#create-a-system">system creation</a> we will now save and close this file.</p>
+<h2 id="create-the-api">Create the API<a class="headerlink" href="#create-the-api" title="Permanent link">&para;</a></h2>
+<p>We will now create an <a href="../../explanations/api/">API</a> exposed by the Backend. It is recommended that entity definitions reside with the code they represent, thus we will use the previously created <code>backend</code> directory.</p>
+<p>In this directory we will create a new <code>yaml</code> file named <code>api-info.yaml</code> which will contain the entity definition for our API definition. We can create this file from our bash terminal with:</p>
+<table class="language-bash highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="language-bash highlight"><pre><span></span><code>touch backend/api-info.yaml
+</code></pre></div>
+</td></tr></table>
+<p>Like with <a href="#create-a-system">system creation</a>, we will open this file in our favoured text editor and add the definition.</p>
+<h3 id="api-entity-definition">API Entity Definition<a class="headerlink" href="#api-entity-definition" title="Permanent link">&para;</a></h3>
+<p>For an API we must define the entity <code>kind</code> to be <code>API</code>. Thus we will begin the definition with the following:</p>
+<table class="language-yaml highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="language-yaml highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">backstage.io/v1alpha1</span>
+<span class="nt">kind</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">API</span>
+</code></pre></div>
+</td></tr></table>
+<h3 id="api-metadata">API Metadata<a class="headerlink" href="#api-metadata" title="Permanent link">&para;</a></h3>
+<p>We will <code>name</code> our backend API <code>my-web-app-rest</code>, give it the <code>title</code> <code>My Web App REST API</code> and an <code>description</code> which will briefly describe what our API exposes. Thus we will add the following lines to the definition:</p>
+<table class="language-yaml highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="language-yaml highlight"><pre><span></span><code><span class="nt">metadata</span><span class="p">:</span>
+  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my-web-app-rest</span>
+  <span class="nt">title</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">My Web App Backend</span>
+  <span class="nt">description</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">The REST API for My Web App, it allows you to get lots of useful data</span>
+</code></pre></div>
+</td></tr></table>
+<h3 id="api-spec">API Spec<a class="headerlink" href="#api-spec" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>A full list of API spec fields can be found in the <a href="../../references/api-spec/">API spec reference</a>.</p>
+</div>
+<p>Each entity must be given a spec, this is unique to each entity kind, and will reside within the spec object. For an API, a <code>type</code>, <code>lifecycle</code>, <code>owner</code> and <code>definition</code> are required, in addition to these we will define a <code>system</code>. Whilst <code>type</code> may be any string there are a small number of <a href="../../references/common-api-types/">commonly used values</a> which should be used, we will choose <code>openapi</code> as this is most appropriate for representing REST APIs. Similarly to the <a href="#backend-component-spec">backend component spec</a> we will set the <code>lifecycle</code> to be <code>experimental</code>, the <code>owner</code> to be myself <code>user:enu43627</code>, and the <code>system</code> as the <code>metadata.name</code> of our System. The API <code>definition</code> should be a multi-line string in the format defined by the <code>type</code>, a minimal OpenAPI definition contains only a few fields and shall be used here, whilst a full definition should be used for real applications where available. Thus we will add the following lines to the definition:</p>
+<table class="language-yaml highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div class="language-yaml highlight"><pre><span></span><code><span class="nt">spec</span><span class="p">:</span>
+  <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">openapi</span>
+  <span class="nt">lifecycle</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">experimental</span>
+  <span class="nt">owner</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">user:enu43627</span>
+  <span class="nt">system</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my-web-app</span>
+  <span class="nt">definition</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+    <span class="no">openapi: 3.0.0</span>
+    <span class="no">info:</span>
+      <span class="no">title: My Web App REST API</span>
+      <span class="no">version: 0.0.1</span>
+</code></pre></div>
+</td></tr></table>
+<details class="example">
+<summary>Complete API Definition</summary>
+<table class="language-yaml highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div class="language-yaml highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">backstage.io/v1alpha1</span>
+<span class="nt">kind</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">API</span>
+<span class="nt">metadata</span><span class="p">:</span>
+  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my-web-app-rest</span>
+  <span class="nt">title</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">My Web App Backend</span>
+  <span class="nt">description</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">The REST API for My Web App, it allows you to get lots of useful data</span>
+<span class="nt">spec</span><span class="p">:</span>
+  <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">openapi</span>
+  <span class="nt">lifecycle</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">experimental</span>
+  <span class="nt">owner</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">user:enu43627</span>
+  <span class="nt">system</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my-web-app</span>
+  <span class="nt">definition</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+    <span class="no">openapi: 3.0.0</span>
+    <span class="no">info:</span>
+      <span class="no">title: My Web App REST API</span>
+      <span class="no">version: 0.0.1</span>
+</code></pre></div>
+</td></tr></table>
+</details>
+<p>Like with <a href="#create-a-system">system creation</a> we will now save and close this file.</p>
+<h2 id="create-the-frontend-component">Create the Frontend Component<a class="headerlink" href="#create-the-frontend-component" title="Permanent link">&para;</a></h2>
+<p>We will now create a <a href="../../explanations/component/">Component</a> for the Frontend. It is recommended that entity definitions reside with the code they represent, thus we will create a frontend directory in which we would locate the code which runs our frontend website, we will call it <code>frontend</code>. We can create this directory from our bash terminal with:</p>
+<table class="language-bash highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="language-bash highlight"><pre><span></span><code>mkdir frontend
+</code></pre></div>
+</td></tr></table>
+<p>In this directory we will create a new <code>yaml</code> file named <code>component-info.yaml</code> which will contain the entity definition for our Frontend Component. We can create this file from our bash terminal with:</p>
+<table class="language-bash highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="language-bash highlight"><pre><span></span><code>touch frontend/component-info.yaml
+</code></pre></div>
+</td></tr></table>
+<p>Like with <a href="#create-a-system">system creation</a>, we will open this file in our favoured text editor and add the definition.</p>
+<h3 id="frontend-component-entity-definition">Frontend Component Entity Definition<a class="headerlink" href="#frontend-component-entity-definition" title="Permanent link">&para;</a></h3>
+<p>For a Component we must define the entity <code>kind</code> to be <code>component</code>. Thus we will begin the definition with the following:</p>
+<table class="language-yaml highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="language-yaml highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">backstage.io/v1alpha1</span>
+<span class="nt">kind</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">component</span>
+</code></pre></div>
+</td></tr></table>
+<h3 id="frontend-component-metadata">Frontend Component Metadata<a class="headerlink" href="#frontend-component-metadata" title="Permanent link">&para;</a></h3>
+<p>We will <code>name</code> our frontend component a <code>my-web-app-frontend</code>, give it the <code>title</code> <code>My Web App Frontend</code> and an <code>description</code> which will briefly describe what our component does. Thus we will add the following lines to the definition:</p>
+<table class="language-yaml highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="language-yaml highlight"><pre><span></span><code><span class="nt">metadata</span><span class="p">:</span>
+  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my-web-app-frontend</span>
+  <span class="nt">title</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">My Web App Frontend</span>
+  <span class="nt">description</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">The frontend website for My Web App, it consumes an API and displays data to users</span>
+</code></pre></div>
+</td></tr></table>
+<h3 id="frontend-component-spec">Frontend Component Spec<a class="headerlink" href="#frontend-component-spec" title="Permanent link">&para;</a></h3>
+<p>Each entity must be given a spec, this is unique to each entity <code>kind</code>, and will reside within the <code>spec</code> object. For a Component, a <code>type</code>, <code>lifecycle</code>, and <code>owner</code> are required, in addition to these we will define <code>system</code> and <code>consumesApis</code>. Whilst <code>type</code> may be any string there are a small number of <a href="../../references/common-component-types/">commonly used values</a> which should be used, we will choose <code>website</code> to describe our Frontend. Similarly to the <a href="#backend-component-spec">backend component spec</a> we will set the <code>lifecycle</code> to be <code>experimental</code>, the <code>owner</code> to be myself <code>user:enu43627</code>, and the <code>system</code> as the <code>metadata.name</code> of our System. Akin to the defining the APIs provided by the backend, we will use <code>consumesApis</code> to define a list of APIs which are called on by our Frontend Component, we will therefore make an entry with what will be the <code>metadata.name</code> of our API <code>my-web-app-rest</code>. Thus we will add the following lines to the definition:</p>
+<table class="language-yaml highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div class="language-yaml highlight"><pre><span></span><code><span class="nt">spec</span><span class="p">:</span>
+  <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">website</span>
+  <span class="nt">lifecycle</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">experimental</span>
+  <span class="nt">owner</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">user:enu43627</span>
+  <span class="nt">system</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my-web-app</span>
+  <span class="nt">consumesApis</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">my-web-app-rest</span>
+</code></pre></div>
+</td></tr></table>
+<details class="example">
+<summary>Complete Frontend Component Definition</summary>
+<table class="language-yaml highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div class="language-yaml highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">backstage.io/v1alpha1</span>
+<span class="nt">kind</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">component</span>
+<span class="nt">metadata</span><span class="p">:</span>
+  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my-web-app-backend</span>
+  <span class="nt">title</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">My Web App Backend</span>
+  <span class="nt">description</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">The backend service for My Web App, it magically works without any code</span>
+<span class="nt">spec</span><span class="p">:</span>
+  <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">website</span>
+  <span class="nt">lifecycle</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">experimental</span>
+  <span class="nt">owner</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">user:enu43627</span>
+  <span class="nt">system</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my-web-app</span>
+  <span class="nt">consumesApis</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">my-web-app-rest</span>
+</code></pre></div>
+</td></tr></table>
+</details>
+<p>Like with <a href="#create-a-system">system creation</a> we will now save and close this file.</p>
+<h2 id="reference-them-with-a-location">Reference them with a Location<a class="headerlink" href="#reference-them-with-a-location" title="Permanent link">&para;</a></h2>
+<p>The final entity definiton we will create is a <a href="../../explanations/location/">Location</a>. This is what will be indexed by the developer portal <a href="../../explanations/entity-ingress/">entity ingress process</a>, thus it must be in the exact location defined for the Git <a href="../../references/discovery-locations/">discovery locations</a>.</p>
+<div class="admonition info">
+<p class="admonition-title">Discovery Locations</p>
+<!-- BEGIN INCLUDE ../references/discovery-locations.md '&lt;!--start-git-locations--&gt;' '&lt;!--end-git-locations--&gt;' -->
+<ul>
+<li><code>github.com/DiamondLightSource</code><ul>
+<li>Entity descriptors at <code>/catalog-info.yaml</code></li>
+</ul>
+</li>
+<li><code>gitlab.diamond.ac.uk</code><ul>
+<li>Entity descriptors at <code>/catalog-info.yaml</code></li>
+</ul>
+</li>
+</ul>
+<!-- END INCLUDE -->
+</div>
+<p>Assuming we are using <code>gitlab.diamond.ac.uk</code>, we will create a file named <code>catalog-info.yaml</code> at the root of our directory. We can create this file from our bash terminal with:</p>
+<table class="language-bash highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="language-bash highlight"><pre><span></span><code>touch catalog-info.yaml
+</code></pre></div>
+</td></tr></table>
+<p>Like with <a href="#create-a-system">system creation</a>, we will open this file in our favoured text editor and add the definition.</p>
+<h3 id="location-entity-definition">Location Entity Definition<a class="headerlink" href="#location-entity-definition" title="Permanent link">&para;</a></h3>
+<p>For a Component we must define the entity <code>kind</code> to be <code>location</code>. Thus we will begin the definition with the following:</p>
+<table class="language-yaml highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="language-yaml highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">backstage.io/v1alpha1</span>
+<span class="nt">kind</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">location</span>
+</code></pre></div>
+</td></tr></table>
+<h3 id="location-metadata">Location Metadata<a class="headerlink" href="#location-metadata" title="Permanent link">&para;</a></h3>
+<p>We will <code>name</code> our location a <code>my-web-app</code>. Locations are generally considered internal machinery so we will forgo adding a <code>title</code> or <code>description</code>. Thus we will add the following lines to the definition:</p>
+<table class="language-yaml highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="language-yaml highlight"><pre><span></span><code><span class="nt">metadata</span><span class="p">:</span>
+  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my-web-app</span>
+</code></pre></div>
+</td></tr></table>
+<h3 id="location-spec">Location Spec<a class="headerlink" href="#location-spec" title="Permanent link">&para;</a></h3>
+<p>Each entity must be given a spec, this is unique to each entity <code>kind</code>, and will reside within the <code>spec</code> object. A Location has no required fields, but we will use <code>targets</code> to redirect the discovery process to the entities definitions we wish it to read, thus we will make an entry for each of the files we have created thus far. Thus we will add the following lines to the definition:</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The location <code>type</code> is intentionally left blank such that the discovery process is inherited from whichever discovery process indexed this location.</p>
+</div>
+<table class="language-yaml highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div class="language-yaml highlight"><pre><span></span><code><span class="nt">spec</span><span class="p">:</span>
+  <span class="nt">targets</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./system-info.yaml</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./backend/component-info.yaml</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./backend/api-info.yaml</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./frontend/component-info.yaml</span>
+</code></pre></div>
+</td></tr></table>
+<details class="example">
+<summary>Complete Location Definition</summary>
+<table class="language-yaml highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div class="language-yaml highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">backstage.io/v1alpha1</span>
+<span class="nt">kind</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">location</span>
+<span class="nt">metadata</span><span class="p">:</span>
+  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my-web-app</span>
+<span class="nt">spec</span><span class="p">:</span>
+  <span class="nt">targets</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./system-info.yaml</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./backend/component-info.yaml</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./backend/api-info.yaml</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./frontend/component-info.yaml</span>
+</code></pre></div>
+</td></tr></table>
+</details>
+<p>Like with <a href="#create-a-system">system creation</a> we will now save and close this file.</p>
+<h2 id="push-to-a-discovery-location">Push to a Discovery Location<a class="headerlink" href="#push-to-a-discovery-location" title="Permanent link">&para;</a></h2>
+<p>We can now push our repository to one of the <a href="../../references/discovery-locations/">discovery locations</a>. Thus we will execute the following:</p>
+<table class="language-bash highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="language-bash highlight"><pre><span></span><code>git add catalog-info.yaml system-info.yaml backend/component-info.yaml backend/api-info.yaml frontend/component-info.yaml
+git commit -m <span class="s2">&quot;Added developer portal catalog metadata&quot;</span>
+git push
+</code></pre></div>
+</td></tr></table>
+<p>You should now be see the componets you have registered on the developer portal - be aware that this may take a while depending on the schedule of the discovery provider.</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Home
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../how-tos/" class="md-footer__link md-footer__link--next" aria-label="Next: Home" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Home
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.092fa1f6.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.5a9542cf.min.js"></script>
+      
+    
+  </body>
+</html>

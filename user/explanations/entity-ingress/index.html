@@ -300,8 +300,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutorials/placeholder/" class="md-nav__link">
-        Placeholder
+      <a href="../../tutorials/web-app/" class="md-nav__link">
+        Registering a Web App
       </a>
     </li>
   
@@ -464,6 +464,48 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../api/" class="md-nav__link">
+        APIs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../component/" class="md-nav__link">
+        Components
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domain/" class="md-nav__link">
+        Domains
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -479,6 +521,90 @@
         Entity Ingress
       </a>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../group/" class="md-nav__link">
+        Groups
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../location/" class="md-nav__link">
+        Locations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resource/" class="md-nav__link">
+        Resources
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../system/" class="md-nav__link">
+        Systems
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../template/" class="md-nav__link">
+        Templates
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user/" class="md-nav__link">
+        Users
+      </a>
     </li>
   
 
@@ -537,6 +663,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../references/api-spec/" class="md-nav__link">
+        API Spec
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../references/common-api-types/" class="md-nav__link">
         Common API Types
       </a>
@@ -579,8 +719,134 @@
   
   
     <li class="md-nav__item">
+      <a href="../../references/component-annotations/" class="md-nav__link">
+        Component Annotations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/component-spec/" class="md-nav__link">
+        Component Spec
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../references/discovery-locations/" class="md-nav__link">
         Discovery Locations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/domain-spec/" class="md-nav__link">
+        Domain Spec
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/entity-envelope/" class="md-nav__link">
+        Entity Envelope
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/entity-metadata/" class="md-nav__link">
+        Entity Metadata
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/entity-types/" class="md-nav__link">
+        Entity Types
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/location-spec/" class="md-nav__link">
+        Location Spec
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/resource-spec/" class="md-nav__link">
+        Resource Spec
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/system-spec/" class="md-nav__link">
+        System Spec
       </a>
     </li>
   
@@ -928,8 +1194,41 @@
 
 
 <h1 id="entity-ingress">Entity Ingress<a class="headerlink" href="#entity-ingress" title="Permanent link">&para;</a></h1>
+<!--start--contents-->
+
 <p>The diamond developer portal is configured such that entity ingress must be performed via discovery, allowing it to act as a transparent window onto the software and services currently developed and deployed at Diamond.</p>
-<p>As a consequence of this, for a entity to become available in the catalogue, an entity descriptor (commonly a <code>catalog-info.yaml</code> file) must be be made available in one of the <a href="../../references/discovery-locations/">discovery locations</a>.</p>
+<p>As a consequence of this, for a entity to become available in the catalogue, an entity descriptor (commonly a <code>catalog-info.yaml</code> file) must be be made available in one of the <a href="../../references/discovery-locations/">discovery locations</a>. These locations include, by type:</p>
+<!-- BEGIN INCLUDE ../references/discovery-locations.md '&lt;!--start-locations--&gt;' '&lt;!--end-locations--&gt;' -->
+
+<p>Git:</p>
+<!--start-git-locations-->
+
+<ul>
+<li><code>github.com/DiamondLightSource</code><ul>
+<li>Entity descriptors at <code>/catalog-info.yaml</code></li>
+</ul>
+</li>
+<li><code>gitlab.diamond.ac.uk</code><ul>
+<li>Entity descriptors at <code>/catalog-info.yaml</code></li>
+</ul>
+</li>
+</ul>
+<!--end-git-locations-->
+
+<p>LDAP:</p>
+<!--start-ldap-locations-->
+
+<ul>
+<li><code>ralfed.cclrc.ac.uk</code><ul>
+<li><a href="../user/">Users</a></li>
+</ul>
+</li>
+</ul>
+<!--end-ldap-locations-->
+
+<!-- END INCLUDE -->
+
+<!--end--contents-->
 
               
             </article>
@@ -943,7 +1242,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+        <a href="../domain/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Domains" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -952,20 +1251,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Home
+              Domains
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../references/" class="md-footer__link md-footer__link--next" aria-label="Next: Home" rel="next">
+        <a href="../group/" class="md-footer__link md-footer__link--next" aria-label="Next: Groups" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Home
+              Groups
             </div>
           </div>
           <div class="md-footer__button md-icon">

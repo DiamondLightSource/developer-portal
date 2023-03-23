@@ -300,8 +300,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutorials/placeholder/" class="md-nav__link">
-        Placeholder
+      <a href="../../tutorials/web-app/" class="md-nav__link">
+        Registering a Web App
       </a>
     </li>
   
@@ -464,8 +464,134 @@
   
   
     <li class="md-nav__item">
+      <a href="../../explanations/api/" class="md-nav__link">
+        APIs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explanations/component/" class="md-nav__link">
+        Components
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explanations/domain/" class="md-nav__link">
+        Domains
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../explanations/entity-ingress/" class="md-nav__link">
         Entity Ingress
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explanations/group/" class="md-nav__link">
+        Groups
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explanations/location/" class="md-nav__link">
+        Locations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explanations/resource/" class="md-nav__link">
+        Resources
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explanations/system/" class="md-nav__link">
+        Systems
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explanations/template/" class="md-nav__link">
+        Templates
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explanations/user/" class="md-nav__link">
+        Users
       </a>
     </li>
   
@@ -515,6 +641,20 @@
     <li class="md-nav__item">
       <a href="../" class="md-nav__link">
         Home
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-spec/" class="md-nav__link">
+        API Spec
       </a>
     </li>
   
@@ -579,8 +719,134 @@
   
   
     <li class="md-nav__item">
+      <a href="../component-annotations/" class="md-nav__link">
+        Component Annotations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../component-spec/" class="md-nav__link">
+        Component Spec
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../discovery-locations/" class="md-nav__link">
         Discovery Locations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domain-spec/" class="md-nav__link">
+        Domain Spec
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity-envelope/" class="md-nav__link">
+        Entity Envelope
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity-metadata/" class="md-nav__link">
+        Entity Metadata
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity-types/" class="md-nav__link">
+        Entity Types
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../location-spec/" class="md-nav__link">
+        Location Spec
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resource-spec/" class="md-nav__link">
+        Resource Spec
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../system-spec/" class="md-nav__link">
+        System Spec
       </a>
     </li>
   
@@ -928,12 +1194,16 @@
 
 
 <h1 id="common-component-types">Common Component Types<a class="headerlink" href="#common-component-types" title="Permanent link">&para;</a></h1>
-<p>Whilst the <code>spec.type</code> of a <code>Component</code> may be any string, understanding is made easier by sticking to a small set of well-known and common values. Thus we recommend that when specifying a component one of the following is used in this field:</p>
+<!--excerpt-start-->
+
+<p>Whilst the <code>type</code> of a <a href="../../explanations/component/">Component</a> may be any string, it is strongly recommended that you use one of the common values. Futher to this, tools including Backstage itself may read this field and behave differently depending on its value. For example, a website type component may present tooling in the Backstage interface that is specific to just websites. Thus we recommend that when specifying a component one of the following is used in this field:</p>
 <ul>
 <li><code>service</code> - a backend service, typically exposing an API</li>
 <li><code>website</code> - a website</li>
 <li><code>library</code> - a software library</li>
 </ul>
+<!--excerpt-end-->
+
 <p>These are selected such that they overlap with the common component types described in the <a href="https://backstage.io/docs/features/software-catalog/descriptor-format/#spectype-required">backstage documentation</a>, but should be added to and ammended to reflect usage.</p>
 
               
