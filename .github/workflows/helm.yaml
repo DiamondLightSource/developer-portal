@@ -22,7 +22,7 @@ jobs:
         uses: actions/setup-python@v4
 
       - name: Setup chart-testing
-        uses: helm/chart-testing-action@v2.3.1
+        uses: helm/chart-testing-action@v2.4.0
 
       - name: Install chart dependencies
         run: helm repo add bitnami https://charts.bitnami.com/bitnami
