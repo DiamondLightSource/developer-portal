@@ -1,9 +1,7 @@
 # A set of mkdocs plugins required for building
 # https://gitlab.diamond.ac.uk/sscc-docs/developer-guide
 mkdocs
-mkdocs-material
-pymdown-extensions
-mdx_truly_sane_lists
+mkdocs-techdocs-core
 mkdocs-git-revision-date-localized-plugin
 mkdocs-include-dir-to-nav
 mkdocs-awesome-pages-plugin
