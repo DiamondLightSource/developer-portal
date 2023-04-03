@@ -1,4 +1,4 @@
-import { UNSAFE_invariant, warning } from '@remix-run/router';
+import { UNSAFE_invariant, UNSAFE_warning } from '@remix-run/router';
 import { useContext, useEffect } from 'react';
 import {
   RelativeRoutingType,
@@ -30,7 +30,8 @@ export function PrefixNavigate({
     `<NavigateRelative> may be used only in the context of a <Router> component.`,
   );
 
-  warning(
+  // eslint-disable-next-line new-cap
+  UNSAFE_warning(
     !useContext(UNSAFE_NavigationContext).static,
     `<NavigateRelative> must not be used on the initial render in a <StaticRouter>. ` +
       `This is a no-op, but you should modify your code so the <NavigateRelative> is ` +
