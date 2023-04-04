@@ -21,8 +21,8 @@ import { SearchPage } from '@backstage/plugin-search';
 import {
   DefaultTechDocsHome,
   TechDocsIndexPage,
-  techdocsPlugin,
   TechDocsReaderPage,
+  techdocsPlugin,
 } from '@backstage/plugin-techdocs';
 import { ReportIssue } from '@backstage/plugin-techdocs-module-addons-contrib';
 import { TechDocsAddons } from '@backstage/plugin-techdocs-react';
@@ -30,11 +30,11 @@ import { UserSettingsPage } from '@backstage/plugin-user-settings';
 import React from 'react';
 import { Route } from 'react-router-dom';
 import { apis } from './apis';
-import { entityPage } from './components/catalog/EntityPage';
-import { HomePage } from './components/home/HomePage';
 import { Root } from './components/Root';
+import { entityPage } from './components/catalog/EntityPage';
+import { DeveloperGuidePage } from './components/dev-guide/GuideDocsPage';
+import { HomePage } from './components/home/HomePage';
 import { searchPage } from './components/search/SearchPage';
-import { DeveloperGuidePage } from './components/techdocs/GuideDocsPage';
 import { PrefixNavigate } from './components/utils/PrefixNavigate';
 
 const app = createApp({
