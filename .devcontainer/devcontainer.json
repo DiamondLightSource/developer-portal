@@ -1,31 +1,32 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node-postgres
 {
-	"name": "Backstage Deployment",
-	"dockerComposeFile": "docker-compose.yml",
-	"service": "backstage",
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				"ms-vscode.vscode-typescript-next",
-				"dbaeumer.vscode-eslint",
-				"ckolkman.vscode-postgres",
-				"esbenp.prettier-vscode",
-				"ms-kubernetes-tools.vscode-kubernetes-tools"
-			]
-		}
-	},
-	"features": {
-		"ghcr.io/devcontainers/features/common-utils:2": {
-			"username": "none",
-			"upgradePackages": false
-		}
-	},
-	// Make sure the files we are mapping into the container exist on the host
-	"initializeCommand": "bash -c 'for i in $HOME/.inputrc; do [ -f $i ] || touch $i; done'",
-	"mounts": [
-		"source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind",
-		"source=${localEnv:HOME}/.inputrc,target=/root/.inputrc,type=bind"
-	],
-	"workspaceFolder": "/workspace"
+  "name": "Backstage Deployment",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "backstage",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.vscode-typescript-next",
+        "dbaeumer.vscode-eslint",
+        "ckolkman.vscode-postgres",
+        "esbenp.prettier-vscode",
+        "ms-kubernetes-tools.vscode-kubernetes-tools"
+      ]
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "username": "none",
+      "upgradePackages": false,
+      "configureZshAsDefaultShell": true
+    }
+  },
+  // Make sure the files we are mapping into the container exist on the host
+  "initializeCommand": "bash -c 'for i in $HOME/.inputrc; do [ -f $i ] || touch $i; done'",
+  "mounts": [
+    "source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind",
+    "source=${localEnv:HOME}/.inputrc,target=/root/.inputrc,type=bind"
+  ],
+  "workspaceFolder": "/workspace"
 }
