@@ -201,11 +201,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/references/component-annotations/</loc>
-         <lastmod>2023-04-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://0.0.0.0/user/references/component-spec/</loc>
          <lastmod>2023-04-05</lastmod>
          <changefreq>daily</changefreq>
@@ -242,6 +237,11 @@
     </url>
     <url>
          <loc>https://0.0.0.0/user/references/resource-spec/</loc>
+         <lastmod>2023-04-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://0.0.0.0/user/references/supported-annotations/</loc>
          <lastmod>2023-04-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
