@@ -48,4 +48,15 @@ definition: |
     version: 0.0.1
 ```
 
+!!! tip
+
+    The API schema can be located in another file and imported by using substitutions, e.g.:
+
+    ```yaml
+    definition:
+        $text: ./schema-file.json
+    ```
+
+    `$text`, `$json` & `$yaml` are available, for more details see [the backstage docs](https://backstage.io/docs/features/software-catalog/descriptor-format/#substitutions-in-the-descriptor-format)
+
 <!--end-fields-->
