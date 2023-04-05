@@ -32,6 +32,6 @@ Some common values for this field may include:
 
 ## `dependencyOf` [Optional]
 
-An array of [entity references](https://backstage.io/docs/features/software-catalog/references#string-references) to the Components and Resources that this resource is a dependency of, e.g. `dependencyOf: [artist-lookup]`. Use of this field is discouraged in favour defining `dependsOn` on the dependant Component or Resource.
+An array of [entity references](https://backstage.io/docs/features/software-catalog/references#string-references) to the Components and Resources that this resource is a dependency of, e.g. `dependencyOf: [artist-lookup]`. There is no requirement for these entities to be created within the same location; Existing entities can be listed in the catalog. Use of this field is discouraged in favour defining `dependsOn` on the dependant Component or Resource.
 
 <!--end-fields-->
