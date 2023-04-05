@@ -370,3 +370,7 @@ git push
 ```
 
 You should now be see the componets you have registered on the developer portal - be aware that this may take a while depending on the schedule of the discovery provider.
+
+!!! tip
+
+    If your entities do not become available after the expected duration, please see [how to debug entity descriptors](../how-tos/debug-entity-descriptors.md) for information on debugging of entity descriptors.
