@@ -156,6 +156,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://0.0.0.0/user/how-tos/debug-entity-descriptors/</loc>
+         <lastmod>2023-04-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://0.0.0.0/user/how-tos/link-to-remote-entities/</loc>
+         <lastmod>2023-04-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://0.0.0.0/user/how-tos/register-a-component/</loc>
          <lastmod>2023-04-05</lastmod>
          <changefreq>daily</changefreq>

@@ -328,11 +328,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-a-system" class="md-nav__link">
-    Create a System
+  <a href="#create-the-entity-descriptor-file" class="md-nav__link">
+    Create the Entity Descriptor File
   </a>
   
-    <nav class="md-nav" aria-label="Create a System">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-the-system" class="md-nav__link">
+    Create the System
+  </a>
+  
+    <nav class="md-nav" aria-label="Create the System">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -464,36 +471,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#reference-them-with-a-location" class="md-nav__link">
-    Reference them with a Location
+  <a href="#save-and-exit" class="md-nav__link">
+    Save and exit
   </a>
-  
-    <nav class="md-nav" aria-label="Reference them with a Location">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#location-entity-definition" class="md-nav__link">
-    Location Entity Definition
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#location-metadata" class="md-nav__link">
-    Location Metadata
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#location-spec" class="md-nav__link">
-    Location Spec
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -567,6 +547,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../how-tos/debug-entity-descriptors/" class="md-nav__link">
+        Debug Entity Descriptors
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-tos/link-to-remote-entities/" class="md-nav__link">
+        Link to Remote Entities
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../how-tos/register-a-component/" class="md-nav__link">
         Register a Component
       </a>
@@ -610,7 +618,7 @@
   
     <li class="md-nav__item">
       <a href="../../how-tos/register-multiple-entities/" class="md-nav__link">
-        Register Mutliple Entities
+        Register Multiple Entities
       </a>
     </li>
   
@@ -1400,11 +1408,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-a-system" class="md-nav__link">
-    Create a System
+  <a href="#create-the-entity-descriptor-file" class="md-nav__link">
+    Create the Entity Descriptor File
   </a>
   
-    <nav class="md-nav" aria-label="Create a System">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-the-system" class="md-nav__link">
+    Create the System
+  </a>
+  
+    <nav class="md-nav" aria-label="Create the System">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1536,36 +1551,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#reference-them-with-a-location" class="md-nav__link">
-    Reference them with a Location
+  <a href="#save-and-exit" class="md-nav__link">
+    Save and exit
   </a>
-  
-    <nav class="md-nav" aria-label="Reference them with a Location">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#location-entity-definition" class="md-nav__link">
-    Location Entity Definition
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#location-metadata" class="md-nav__link">
-    Location Metadata
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#location-spec" class="md-nav__link">
-    Location Spec
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1626,13 +1614,30 @@
 <span class="nb">cd</span><span class="w"> </span>my-web-app
 git<span class="w"> </span>init
 </code></pre></div></td></tr></table></div>
-<h2 id="create-a-system">Create a System<a class="headerlink" href="#create-a-system" title="Permanent link">&para;</a></h2>
-<p>The first entity we will create is a <a href="../../explanations/system/">System</a>, this will encompass the whole app. We will define this at the root of our directory, to do so we will create a new <code>yaml</code> file named <code>system-info.yaml</code> which will contain the entity defintion. We can create this file from our bash terminal with:</p>
-<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>touch<span class="w"> </span>system-info.yaml
+<h2 id="create-the-entity-descriptor-file">Create the Entity Descriptor File<a class="headerlink" href="#create-the-entity-descriptor-file" title="Permanent link">&para;</a></h2>
+<p>We will begin by creating the entity descriptor file, in which all of the entity definitions will be placed. This file will be indexed by the developer portal <a href="../../explanations/entity-ingress/">entity ingress process</a>, thus it must be in the exact location defined for the Git <a href="../../references/discovery-locations/">discovery locations</a>.</p>
+<div class="admonition info">
+<p class="admonition-title">Discovery Locations</p>
+<!-- BEGIN INCLUDE ../references/discovery-locations.md '&lt;!--start-git-locations--&gt;' '&lt;!--end-git-locations--&gt;' -->
+<ul>
+<li><code>github.com/DiamondLightSource</code><ul>
+<li>Entity descriptors at <code>/catalog-info.yaml</code></li>
+</ul>
+</li>
+<li><code>gitlab.diamond.ac.uk</code><ul>
+<li>Entity descriptors at <code>/catalog-info.yaml</code></li>
+</ul>
+</li>
+</ul>
+<!-- END INCLUDE -->
+</div>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>touch<span class="w"> </span>catalog-info.yaml
 </code></pre></div></td></tr></table></div>
 <p>With our favourite text editor we will then open this file and begin filling it out. The <code>nano</code> editor is considered rather beginner friendly, thus we will choose to use it. You can open the file we just created by executing:</p>
 <div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>nano<span class="w"> </span>system-info.yaml
 </code></pre></div></td></tr></table></div>
+<h2 id="create-the-system">Create the System<a class="headerlink" href="#create-the-system" title="Permanent link">&para;</a></h2>
+<p>The first entity we will create is a <a href="../../explanations/system/">System</a>, this will encompass the whole app. The following contents should be entered into the <code>catalog-info,yaml</code> file.</p>
 <h3 id="system-entity-definition">System Entity Definition<a class="headerlink" href="#system-entity-definition" title="Permanent link">&para;</a></h3>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
@@ -1686,15 +1691,8 @@ git<span class="w"> </span>init
 <span class="w">  </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">user:enu43627</span>
 </code></pre></div></td></tr></table></div>
 </details>
-<p>Once complete we can save and exit, to do so in <code>nano</code> press <code>CTRL</code> + <code>X</code> to exit, <code>Y</code> to save and <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.42L5.83 13H21V7h-2Z"/></svg></span> <code>Return</code> to overwrite the opened file.</p>
 <h2 id="create-the-backend-component">Create the Backend Component<a class="headerlink" href="#create-the-backend-component" title="Permanent link">&para;</a></h2>
-<p>We will now create a <a href="../../explanations/component/">Component</a> for the Backend. It is recommended that entity definitions reside with the code they represent, thus we will create a backend directory in which we would locate the code which runs our backend service, we will call it <code>backend</code>. We can create this directory from our bash terminal with:</p>
-<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>mkdir<span class="w"> </span>backend
-</code></pre></div></td></tr></table></div>
-<p>In this directory we will create a new <code>yaml</code> file named <code>component-info.yaml</code> which will contain the entity definition for our Backend Component. We can create this file from our bash terminal with:</p>
-<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>touch<span class="w"> </span>backend/component-info.yaml
-</code></pre></div></td></tr></table></div>
-<p>Like with <a href="#create-a-system">system creation</a>, we will open this file in our favoured text editor and add the definition.</p>
+<p>We will now create a <a href="../../explanations/component/">Component</a> for the Backend. We will append the following Component definition to the previous definition, with three dashes (<code>---</code>) seperating them.</p>
 <h3 id="backend-component-entity-definition">Backend Component Entity Definition<a class="headerlink" href="#backend-component-entity-definition" title="Permanent link">&para;</a></h3>
 <p>For a Component we must define the entity <code>kind</code> to be <code>component</code>. Thus we will begin the definition with the following:</p>
 <div class="language-yaml highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -1760,13 +1758,8 @@ git<span class="w"> </span>init
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">my-web-app-rest</span>
 </code></pre></div></td></tr></table></div>
 </details>
-<p>Like with <a href="#create-a-system">system creation</a> we will now save and close this file.</p>
 <h2 id="create-the-api">Create the API<a class="headerlink" href="#create-the-api" title="Permanent link">&para;</a></h2>
-<p>We will now create an <a href="../../explanations/api/">API</a> exposed by the Backend. It is recommended that entity definitions reside with the code they represent, thus we will use the previously created <code>backend</code> directory.</p>
-<p>In this directory we will create a new <code>yaml</code> file named <code>api-info.yaml</code> which will contain the entity definition for our API definition. We can create this file from our bash terminal with:</p>
-<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>touch<span class="w"> </span>backend/api-info.yaml
-</code></pre></div></td></tr></table></div>
-<p>Like with <a href="#create-a-system">system creation</a>, we will open this file in our favoured text editor and add the definition.</p>
+<p>We will now create an <a href="../../explanations/api/">API</a> exposed by the Backend. We will append the following API definition to the previous definition, with three dashes (<code>---</code>) seperating them.</p>
 <h3 id="api-entity-definition">API Entity Definition<a class="headerlink" href="#api-entity-definition" title="Permanent link">&para;</a></h3>
 <p>For an API we must define the entity <code>kind</code> to be <code>API</code>. Thus we will begin the definition with the following:</p>
 <div class="language-yaml highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -1844,15 +1837,8 @@ git<span class="w"> </span>init
 <span class="w">      </span><span class="no">version: 0.0.1</span>
 </code></pre></div></td></tr></table></div>
 </details>
-<p>Like with <a href="#create-a-system">system creation</a> we will now save and close this file.</p>
 <h2 id="create-the-frontend-component">Create the Frontend Component<a class="headerlink" href="#create-the-frontend-component" title="Permanent link">&para;</a></h2>
-<p>We will now create a <a href="../../explanations/component/">Component</a> for the Frontend. It is recommended that entity definitions reside with the code they represent, thus we will create a frontend directory in which we would locate the code which runs our frontend website, we will call it <code>frontend</code>. We can create this directory from our bash terminal with:</p>
-<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>mkdir<span class="w"> </span>frontend
-</code></pre></div></td></tr></table></div>
-<p>In this directory we will create a new <code>yaml</code> file named <code>component-info.yaml</code> which will contain the entity definition for our Frontend Component. We can create this file from our bash terminal with:</p>
-<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>touch<span class="w"> </span>frontend/component-info.yaml
-</code></pre></div></td></tr></table></div>
-<p>Like with <a href="#create-a-system">system creation</a>, we will open this file in our favoured text editor and add the definition.</p>
+<p>We will now create a <a href="../../explanations/component/">Component</a> for the Frontend. We will append the following Component definition to the previous definition, with three dashes (<code>---</code>) seperating them.</p>
 <h3 id="frontend-component-entity-definition">Frontend Component Entity Definition<a class="headerlink" href="#frontend-component-entity-definition" title="Permanent link">&para;</a></h3>
 <p>For a Component we must define the entity <code>kind</code> to be <code>component</code>. Thus we will begin the definition with the following:</p>
 <div class="language-yaml highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -1914,60 +1900,10 @@ git<span class="w"> </span>init
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">my-web-app-rest</span>
 </code></pre></div></td></tr></table></div>
 </details>
-<p>Like with <a href="#create-a-system">system creation</a> we will now save and close this file.</p>
-<h2 id="reference-them-with-a-location">Reference them with a Location<a class="headerlink" href="#reference-them-with-a-location" title="Permanent link">&para;</a></h2>
-<p>The final entity definiton we will create is a <a href="../../explanations/location/">Location</a>. This is what will be indexed by the developer portal <a href="../../explanations/entity-ingress/">entity ingress process</a>, thus it must be in the exact location defined for the Git <a href="../../references/discovery-locations/">discovery locations</a>.</p>
-<div class="admonition info">
-<p class="admonition-title">Discovery Locations</p>
-<!-- BEGIN INCLUDE ../references/discovery-locations.md '&lt;!--start-git-locations--&gt;' '&lt;!--end-git-locations--&gt;' -->
-<ul>
-<li><code>github.com/DiamondLightSource</code><ul>
-<li>Entity descriptors at <code>/catalog-info.yaml</code></li>
-</ul>
-</li>
-<li><code>gitlab.diamond.ac.uk</code><ul>
-<li>Entity descriptors at <code>/catalog-info.yaml</code></li>
-</ul>
-</li>
-</ul>
-<!-- END INCLUDE -->
-</div>
-<p>Assuming we are using <code>gitlab.diamond.ac.uk</code>, we will create a file named <code>catalog-info.yaml</code> at the root of our directory. We can create this file from our bash terminal with:</p>
-<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>touch<span class="w"> </span>catalog-info.yaml
-</code></pre></div></td></tr></table></div>
-<p>Like with <a href="#create-a-system">system creation</a>, we will open this file in our favoured text editor and add the definition.</p>
-<h3 id="location-entity-definition">Location Entity Definition<a class="headerlink" href="#location-entity-definition" title="Permanent link">&para;</a></h3>
-<p>For a Component we must define the entity <code>kind</code> to be <code>location</code>. Thus we will begin the definition with the following:</p>
-<div class="language-yaml highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">backstage.io/v1alpha1</span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">location</span>
-</code></pre></div></td></tr></table></div>
-<h3 id="location-metadata">Location Metadata<a class="headerlink" href="#location-metadata" title="Permanent link">&para;</a></h3>
-<p>We will <code>name</code> our location a <code>my-web-app</code>. Locations are generally considered internal machinery so we will forgo adding a <code>title</code> or <code>description</code>. Thus we will add the following lines to the definition:</p>
-<div class="language-yaml highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">metadata</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">my-web-app</span>
-</code></pre></div></td></tr></table></div>
-<h3 id="location-spec">Location Spec<a class="headerlink" href="#location-spec" title="Permanent link">&para;</a></h3>
-<p>Each entity must be given a spec, this is unique to each entity <code>kind</code>, and will reside within the <code>spec</code> object. A Location has no required fields, but we will use <code>targets</code> to redirect the discovery process to the entities definitions we wish it to read, thus we will make an entry for each of the files we have created thus far. Thus we will add the following lines to the definition:</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>The location <code>type</code> is intentionally left blank such that the discovery process is inherited from whichever discovery process indexed this location.</p>
-</div>
-<div class="language-yaml highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">spec</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">targets</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./system-info.yaml</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./backend/component-info.yaml</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./backend/api-info.yaml</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./frontend/component-info.yaml</span>
-</code></pre></div></td></tr></table></div>
+<h2 id="save-and-exit">Save and exit<a class="headerlink" href="#save-and-exit" title="Permanent link">&para;</a></h2>
+<p>Once complete we can save and exit, to do so in <code>nano</code> press <code>CTRL</code> + <code>X</code> to exit, <code>Y</code> to save and <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.42L5.83 13H21V7h-2Z"/></svg></span> <code>Return</code> to overwrite the opened file.</p>
 <details class="example">
-<summary>Complete Location Definition</summary>
+<summary>Complete Entity Descriptor File</summary>
 <div class="language-yaml highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -1977,28 +1913,129 @@ git<span class="w"> </span>init
 <span class="normal"> 7</span>
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
-<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">backstage.io/v1alpha1</span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">location</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">backstage.io/v1alpha1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">System</span>
 <span class="nt">metadata</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">my-web-app</span>
+<span class="w">  </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">My Web App</span>
+<span class="w">  </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">A web application created by me, consisting of a backend and frontend connected by a REST API</span>
 <span class="nt">spec</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">targets</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./system-info.yaml</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./backend/component-info.yaml</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./backend/api-info.yaml</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./frontend/component-info.yaml</span>
+<span class="w">  </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">user:enu43627</span>
+
+<span class="nn">---</span>
+
+<span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">backstage.io/v1alpha1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">component</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">my-web-app-backend</span>
+<span class="w">  </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">My Web App Backend</span>
+<span class="w">  </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">The backend service for My Web App, it magically works without any code</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">service</span>
+<span class="w">  </span><span class="nt">lifecycle</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">experimental</span>
+<span class="w">  </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">user:enu43627</span>
+<span class="w">  </span><span class="nt">system</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">my-web-app</span>
+<span class="w">  </span><span class="nt">providesApis</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">my-web-app-rests</span>
+
+<span class="nn">---</span>
+
+<span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">backstage.io/v1alpha1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">API</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">my-web-app-rest</span>
+<span class="w">  </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">My Web App Backend</span>
+<span class="w">  </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">The REST API for My Web App, it allows you to get lots of useful data</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">openapi</span>
+<span class="w">  </span><span class="nt">lifecycle</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">experimental</span>
+<span class="w">  </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">user:enu43627</span>
+<span class="w">  </span><span class="nt">system</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">my-web-app</span>
+<span class="w">  </span><span class="nt">definition</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<span class="w">    </span><span class="no">openapi: 3.0.0</span>
+<span class="w">    </span><span class="no">info:</span>
+<span class="w">      </span><span class="no">title: My Web App REST API</span>
+<span class="w">      </span><span class="no">version: 0.0.1</span>
+
+<span class="nn">---</span>
+
+<span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">backstage.io/v1alpha1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">component</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">my-web-app-backend</span>
+<span class="w">  </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">My Web App Backend</span>
+<span class="w">  </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">The backend service for My Web App, it magically works without any code</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">website</span>
+<span class="w">  </span><span class="nt">lifecycle</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">experimental</span>
+<span class="w">  </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">user:enu43627</span>
+<span class="w">  </span><span class="nt">system</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">my-web-app</span>
+<span class="w">  </span><span class="nt">consumesApis</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">my-web-app-rest</span>
 </code></pre></div></td></tr></table></div>
 </details>
-<p>Like with <a href="#create-a-system">system creation</a> we will now save and close this file.</p>
 <h2 id="push-to-a-discovery-location">Push to a Discovery Location<a class="headerlink" href="#push-to-a-discovery-location" title="Permanent link">&para;</a></h2>
 <p>We can now push our repository to one of the <a href="../../references/discovery-locations/">discovery locations</a>. Thus we will execute the following:</p>
 <div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>catalog-info.yaml<span class="w"> </span>system-info.yaml<span class="w"> </span>backend/component-info.yaml<span class="w"> </span>backend/api-info.yaml<span class="w"> </span>frontend/component-info.yaml
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>catalog-info.yaml
 git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Added developer portal catalog metadata&quot;</span>
 git<span class="w"> </span>push
 </code></pre></div></td></tr></table></div>
 <p>You should now be see the componets you have registered on the developer portal - be aware that this may take a while depending on the schedule of the discovery provider.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If your entities do not become available after the expected duration, please see <a href="../../how-tos/debug-entity-descriptors/">how to debug entity descriptors</a> for information on debugging of entity descriptors.</p>
+</div>
 
 
 

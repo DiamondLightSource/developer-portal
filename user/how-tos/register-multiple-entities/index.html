@@ -21,7 +21,7 @@
     
     
       
-        <title>Register Mutliple Entities - Developer Portal</title>
+        <title>Register Multiple Entities - Developer Portal</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#register-mutliple-entities" class="md-skip">
+        <a href="#register-multiple-entities" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Register Mutliple Entities
+              Register Multiple Entities
             
           </span>
         </div>
@@ -342,6 +342,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../debug-entity-descriptors/" class="md-nav__link">
+        Debug Entity Descriptors
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../link-to-remote-entities/" class="md-nav__link">
+        Link to Remote Entities
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../register-a-component/" class="md-nav__link">
         Register a Component
       </a>
@@ -394,12 +422,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Register Mutliple Entities
+          Register Multiple Entities
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Register Mutliple Entities
+        Register Multiple Entities
       </a>
       
         
@@ -432,13 +460,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-referenced-descriptors" class="md-nav__link">
-    Create Referenced Descriptors
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#create-an-entity-descriptor" class="md-nav__link">
     Create an Entity Descriptor
   </a>
@@ -447,35 +468,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#entity-definition" class="md-nav__link">
-    Entity Definition
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#metadata" class="md-nav__link">
-    Metadata
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#location-spec" class="md-nav__link">
-    Location Spec
+  <a href="#entity-definitions" class="md-nav__link">
+    Entity Definitions
   </a>
   
 </li>
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#push-wait" class="md-nav__link">
-    Push &amp; Wait
-  </a>
   
 </li>
       
@@ -1271,13 +1271,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-referenced-descriptors" class="md-nav__link">
-    Create Referenced Descriptors
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#create-an-entity-descriptor" class="md-nav__link">
     Create an Entity Descriptor
   </a>
@@ -1286,35 +1279,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#entity-definition" class="md-nav__link">
-    Entity Definition
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#metadata" class="md-nav__link">
-    Metadata
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#location-spec" class="md-nav__link">
-    Location Spec
+  <a href="#entity-definitions" class="md-nav__link">
+    Entity Definitions
   </a>
   
 </li>
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#push-wait" class="md-nav__link">
-    Push &amp; Wait
-  </a>
   
 </li>
       
@@ -1341,7 +1313,7 @@
   
 
 
-<h1 id="register-mutliple-entities">Register Mutliple Entities<a class="headerlink" href="#register-mutliple-entities" title="Permanent link">&para;</a></h1>
+<h1 id="register-multiple-entities">Register Multiple Entities<a class="headerlink" href="#register-multiple-entities" title="Permanent link">&para;</a></h1>
 <h2 id="preface">Preface<a class="headerlink" href="#preface" title="Permanent link">&para;</a></h2>
 <p>This how-to will take you through the steps of registering multiple entities in the catalogue from a single repository.</p>
 <!-- BEGIN INCLUDE ../common/get-repository.md -->
@@ -1364,61 +1336,15 @@
 </div>
 <!-- END INCLUDE -->
 
-<h2 id="create-referenced-descriptors">Create Referenced Descriptors<a class="headerlink" href="#create-referenced-descriptors" title="Permanent link">&para;</a></h2>
-<p>It is nessacary to create a number of regular entities (e.g. <a href="../../explanations/component/">Components</a> or <a href="../../explanations/api/">APIs</a>) before we can register them together. This may be performed as explained in <a href="../register-a-component/">Register a Component</a> or <a href="../register-a-static-api/">Register a Static API</a>. Instead of their usual locations, these files should be given names and located in directories appropriate to the entity they register. For example, the entity descriptor for <code>my-component</code> may be located at <code>my-component/catalog-info.yaml</code>or<code>catalog-info/my-component.yaml</code>.</p>
 <!-- BEGIN INCLUDE ../common/create-entity-descriptor.md -->
 <h2 id="create-an-entity-descriptor">Create an Entity Descriptor<a class="headerlink" href="#create-an-entity-descriptor" title="Permanent link">&para;</a></h2>
 <p>Firstly, we must create the entity descriptor file, please reference the Discovery Locations above for the appropriate location - this is typically <code>catalog-info.yaml</code> at the root of the repository.</p>
 <!-- END INCLUDE -->
 
-<p>To begin, we will specify the <code>apiVersion</code> to be <code>backstage.io/v1alpha1</code> and the <code>kind</code> as <code>Location</code>. E.g.:</p>
-<h3 id="entity-definition">Entity Definition<a class="headerlink" href="#entity-definition" title="Permanent link">&para;</a></h3>
+<h3 id="entity-definitions">Entity Definitions<a class="headerlink" href="#entity-definitions" title="Permanent link">&para;</a></h3>
+<p>We can now create numerous entity descriptors seperated by <code>---</code>. These will be read independantly, as if they were their own entity-descriptor files.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="language-yaml highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">backstage.io/v1alpha1</span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Location</span>
-</code></pre></div></td></tr></table></div>
-</div>
-<!-- BEGIN INCLUDE ../common/create-entity-metadata.md -->
-<h3 id="metadata">Metadata<a class="headerlink" href="#metadata" title="Permanent link">&para;</a></h3>
-<p>Next, we will fill out the <code>metadata</code>, this is common to all entity types. Only the <code>name</code> field is required with numerous other optional fields available. It is recommended that you enter a <code>title</code> and a <code>description</code>. Complete field descriptions are available in the <a href="../../references/entity-metadata/">metadata reference</a>.</p>
-<!-- END INCLUDE -->
-
-<div class="admonition example">
-<p class="admonition-title">Example</p>
-<div class="language-yaml highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">metadata</span><span class="p">:</span>
-<span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">developer-portal</span>
-<span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Developer Portal</span>
-<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">The diamond developer portal.</span>
-</code></pre></div></td></tr></table></div>
-</div>
-<h3 id="location-spec">Location Spec<a class="headerlink" href="#location-spec" title="Permanent link">&para;</a></h3>
-<p>Finally, we will fill out the <code>spec</code>. Only the <code>targets</code> field is required with numerous other optional fields available. Complete field descriptions are available in the <a href="../../references/location-spec/">Location spec reference</a>.</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>The location <code>type</code> is intentionally left blank such that the discovery process is inherited from whichever discovery process indexed this location.</p>
-</div>
-<div class="admonition example">
-<p class="admonition-title">Example</p>
-<div class="language-yaml highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">spec</span><span class="p">:</span>
-<span class="nt">targets</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./catalog-info/system.yaml</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./catalog-info/frontend.yaml</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./catalog-info/backend.yaml</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./catalog-info/backend-rest.yaml</span>
-</code></pre></div></td></tr></table></div>
-</div>
-<details class="example">
-<summary>Example Completed Descriptor</summary>
 <div class="language-yaml highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -1429,23 +1355,27 @@
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
 <span class="normal">10</span>
-<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">backstage.io/v1alpha1</span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Location</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">backstage.io/v1alpha1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Component</span>
 <span class="nt">metadata</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">developer-portal</span>
-<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">A RESTful API exposed by the developer portal backend.</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">developer-portal-backend</span>
 <span class="nt">spec</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">targets</span><span class="p">:</span>
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./catalog-info/system.yaml</span>
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./catalog-info/frontend.yaml</span>
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./catalog-info/backend.yaml</span>
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./catalog-info/backend-rest.yaml</span>
+<span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">service</span>
+
+<span class="nn">---</span>
+
+<span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">backstage.io/v1alpha1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Component</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">developer-portal-frontend</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">website</span>
 </code></pre></div></td></tr></table></div>
-</details>
-<!-- BEGIN INCLUDE ../common/push-and-wait.md -->
-<h2 id="push-wait">Push &amp; Wait<a class="headerlink" href="#push-wait" title="Permanent link">&para;</a></h2>
-<p>Now we have created our entity decriptor in the form of a <code>catalog-info.yaml</code> we can push it to one of the <a href="../../references/discovery-locations/">discovery locations</a> and wait for the developer portal to discover it - be aware that this may take a while depending on the schedule of the discovery provider.</p>
-<!-- END INCLUDE -->
+</div>
 
 
 

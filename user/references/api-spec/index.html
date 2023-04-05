@@ -340,6 +340,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../how-tos/debug-entity-descriptors/" class="md-nav__link">
+        Debug Entity Descriptors
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-tos/link-to-remote-entities/" class="md-nav__link">
+        Link to Remote Entities
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../how-tos/register-a-component/" class="md-nav__link">
         Register a Component
       </a>
@@ -383,7 +411,7 @@
   
     <li class="md-nav__item">
       <a href="../../how-tos/register-multiple-entities/" class="md-nav__link">
-        Register Mutliple Entities
+        Register Multiple Entities
       </a>
     </li>
   
@@ -1317,13 +1345,13 @@
 
 <h2 id="owner-required"><code>owner</code> [Required]<a class="headerlink" href="#owner-required" title="Permanent link">&para;</a></h2>
 <!-- BEGIN INCLUDE ../common/entity-owner.md -->
-<p>An <a href="https://backstage.io/docs/features/software-catalog/references#string-references">entity reference</a> to the owner of the entity, e.g. <code>owner: user:enu43627</code>.</p>
+<p>An <a href="https://backstage.io/docs/features/software-catalog/references#string-references">entity reference</a> to the owner of the entity, e.g. <code>owner: user:enu43627</code>. Users and Groups are automatically populated, and can listed in the catalog by filtering by <code>Kind</code> of <code>User</code> or <code>Group</code> respectively.</p>
 <p>The owner of an entity is the <code>group</code> or <code>user</code> that bears ultimate responsibility for the entity, and has the authority and capability to develop and maintain it. They will be the point of contact if something goes wrong, or if features are to be requested. The main purpose of this field is for display purposes in Backstage, so that people looking at catalog items can get an understanding of to whom this entity belongs. It is not to be used by automated processes to for example assign authorization in runtime systems. There may be others that also develop or otherwise touch the entity, but there will always be one ultimate owner.</p>
 <!-- END INCLUDE -->
 
 <h2 id="system-optional"><code>system</code> [Optional]<a class="headerlink" href="#system-optional" title="Permanent link">&para;</a></h2>
 <!-- BEGIN INCLUDE ../common/entity-system.md -->
-<p>An <a href="https://backstage.io/docs/features/software-catalog/references#string-references">entity reference</a> to the <a href="../../explanations/system/">System</a> that the entity belongs to, e.g. <code>developer-portal</code></p>
+<p>An <a href="https://backstage.io/docs/features/software-catalog/references#string-references">entity reference</a> to the <a href="../../explanations/system/">System</a> that the entity belongs to, e.g. <code>developer-portal</code>. There is no requirement for this System to be created within the same location; Existing Systems can be listed in the catalog by filtering by <code>Kind</code> of <code>System</code>.</p>
 <!-- END INCLUDE -->
 
 <h2 id="definition-required"><code>definition</code> [Required]<a class="headerlink" href="#definition-required" title="Permanent link">&para;</a></h2>
@@ -1339,6 +1367,15 @@
 <span class="w">    </span><span class="no">title: Backstage API</span>
 <span class="w">    </span><span class="no">version: 0.0.1</span>
 </code></pre></div></td></tr></table></div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The API schema can be located in another file and imported by using substitutions, e.g.:</p>
+<div class="language-yaml highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">definition</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">$text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./schema-file.json</span>
+</code></pre></div></td></tr></table></div>
+<p><code>$text</code>, <code>$json</code> &amp; <code>$yaml</code> are available, for more details see <a href="https://backstage.io/docs/features/software-catalog/descriptor-format/#substitutions-in-the-descriptor-format">the backstage docs</a></p>
+</div>
 <!--end-fields-->
 
 
