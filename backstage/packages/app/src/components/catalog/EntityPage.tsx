@@ -8,7 +8,10 @@ import {
   RELATION_PART_OF,
   RELATION_PROVIDES_API,
 } from '@backstage/catalog-model';
-import { EmptyState } from '@backstage/core-components';
+import {
+  EmptyState,
+  MissingAnnotationEmptyState,
+} from '@backstage/core-components';
 import {
   EntityApiDefinitionCard,
   EntityConsumedApisCard,
@@ -48,23 +51,48 @@ import {
   EntityOwnershipCard,
   EntityUserProfileCard,
 } from '@backstage/plugin-org';
-import { EntityTechdocsContent } from '@backstage/plugin-techdocs';
+import {
+  EntityTechdocsContent,
+  isTechDocsAvailable,
+} from '@backstage/plugin-techdocs';
 import { ReportIssue } from '@backstage/plugin-techdocs-module-addons-contrib';
 import { TechDocsAddons } from '@backstage/plugin-techdocs-react';
 import {
   EntityGitlabPipelinesTable,
   isGitlabAvailable,
 } from '@immobiliarelabs/backstage-plugin-gitlab';
+import {
+  EntityViewdocsContent,
+  VIEWDOCS_ANNOTATION,
+  isViewDocsAvailable,
+} from '@internal/plugin-viewdocs-react';
 import { Button, Grid } from '@material-ui/core';
 import React from 'react';
 import { EntityAboutCard } from '../AboutCard/AboutCard';
 
-const techdocsContent = (
-  <EntityTechdocsContent>
-    <TechDocsAddons>
-      <ReportIssue />
-    </TechDocsAddons>
-  </EntityTechdocsContent>
+const TECHDOCS_ANNOTATION = 'backstage.io/techdocs-ref';
+const ANNOTATIONS_DOCS_URL =
+  'https://diamondlightsource.github.io/developer-portal/user/references/supported-annotations/';
+
+const docsContent = (
+  <EntitySwitch>
+    <EntitySwitch.Case if={isTechDocsAvailable}>
+      <EntityTechdocsContent>
+        <TechDocsAddons>
+          <ReportIssue />
+        </TechDocsAddons>
+      </EntityTechdocsContent>
+    </EntitySwitch.Case>
+    <EntitySwitch.Case if={isViewDocsAvailable}>
+      <EntityViewdocsContent />
+    </EntitySwitch.Case>
+    <EntitySwitch.Case>
+      <MissingAnnotationEmptyState
+        annotation={[TECHDOCS_ANNOTATION, VIEWDOCS_ANNOTATION]}
+        readMoreUrl={ANNOTATIONS_DOCS_URL}
+      />
+    </EntitySwitch.Case>
+  </EntitySwitch>
 );
 
 const cicdContent = (
@@ -153,7 +181,7 @@ const serviceEntityPage = (
     </EntityLayout.Route>
 
     <EntityLayout.Route path="/docs" title="Docs">
-      {techdocsContent}
+      {docsContent}
     </EntityLayout.Route>
 
     <EntityLayout.Route path="/dependencies" title="Dependencies">
@@ -180,7 +208,7 @@ const websiteEntityPage = (
     </EntityLayout.Route>
 
     <EntityLayout.Route path="/docs" title="Docs">
-      {techdocsContent}
+      {docsContent}
     </EntityLayout.Route>
 
     <EntityLayout.Route path="/dependencies" title="Dependencies">
@@ -214,7 +242,7 @@ const defaultEntityPage = (
     </EntityLayout.Route>
 
     <EntityLayout.Route path="/docs" title="Docs">
-      {techdocsContent}
+      {docsContent}
     </EntityLayout.Route>
   </EntityLayout>
 );

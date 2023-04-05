@@ -1,0 +1,1 @@
+export { useViewdocsUrl } from './useViewdocsUrl';
