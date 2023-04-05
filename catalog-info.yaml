@@ -4,6 +4,8 @@ metadata:
   name: developer-portal
   title: Developer Portal
   description: The diamond developer portal.
+  annotations:
+    diamond.ac.uk/linkdocs-url: https://diamondlightsource.github.io/developer-portal/
 spec:
   owner: user:enu43627
 
@@ -17,6 +19,7 @@ metadata:
   description: A node application performing discovery and providing the developer portal REST API.
   annotations:
     github.com/project-slug: DiamondLightSource/developer-portal
+    diamond.ac.uk/linkdocs-url: https://diamondlightsource.github.io/developer-portal/
 spec:
   type: service
   lifecycle: experimental
@@ -35,6 +38,8 @@ metadata:
   name: developer-portal-backend-rest
   title: Developer Portal Backend REST API
   description: A RESTful API exposed by the developer portal backend.
+  annotations:
+    diamond.ac.uk/linkdocs-url: https://diamondlightsource.github.io/developer-portal/
 spec:
   type: openapi
   lifecycle: experimental
@@ -56,6 +61,7 @@ metadata:
   description: A single page application which displays the developer portal as provided by the backend.
   annotations:
     github.com/project-slug: DiamondLightSource/developer-portal
+    diamond.ac.uk/linkdocs-url: https://diamondlightsource.github.io/developer-portal/
 spec:
   type: website
   lifecycle: experimental
