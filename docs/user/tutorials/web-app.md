@@ -29,12 +29,20 @@ cd my-web-app
 git init
 ```
 
-## Create a System
+## Create the Entity Descriptor File
 
-The first entity we will create is a [System](../explanations/system.md), this will encompass the whole app. We will define this at the root of our directory, to do so we will create a new `yaml` file named `system-info.yaml` which will contain the entity defintion. We can create this file from our bash terminal with:
+We will begin by creating the entity descriptor file, in which all of the entity definitions will be placed. This file will be indexed by the developer portal [entity ingress process](../explanations/entity-ingress.md), thus it must be in the exact location defined for the Git [discovery locations](../references/discovery-locations.md).
+
+!!! info "Discovery Locations"
+
+    {%
+      include-markdown "../references/discovery-locations.md"
+      start="<!--start-git-locations-->"
+      end="<!--end-git-locations-->"
+    %}
 
 ```bash
-touch system-info.yaml
+touch catalog-info.yaml
 ```
 
 With our favourite text editor we will then open this file and begin filling it out. The `nano` editor is considered rather beginner friendly, thus we will choose to use it. You can open the file we just created by executing:
@@ -42,6 +50,10 @@ With our favourite text editor we will then open this file and begin filling it 
 ```bash
 nano system-info.yaml
 ```
+
+## Create the System
+
+The first entity we will create is a [System](../explanations/system.md), this will encompass the whole app. The following contents should be entered into the `catalog-info,yaml` file.
 
 ### System Entity Definition
 
@@ -97,23 +109,9 @@ spec:
       owner: user:enu43627
     ```
 
-Once complete we can save and exit, to do so in `nano` press `CTRL` + `X` to exit, `Y` to save and :material-keyboard-return: `Return` to overwrite the opened file.
-
 ## Create the Backend Component
 
-We will now create a [Component](../explanations/component.md) for the Backend. It is recommended that entity definitions reside with the code they represent, thus we will create a backend directory in which we would locate the code which runs our backend service, we will call it `backend`. We can create this directory from our bash terminal with:
-
-```bash
-mkdir backend
-```
-
-In this directory we will create a new `yaml` file named `component-info.yaml` which will contain the entity definition for our Backend Component. We can create this file from our bash terminal with:
-
-```bash
-touch backend/component-info.yaml
-```
-
-Like with [system creation](#create-a-system), we will open this file in our favoured text editor and add the definition.
+We will now create a [Component](../explanations/component.md) for the Backend. We will append the following Component definition to the previous definition, with three dashes (`---`) seperating them.
 
 ### Backend Component Entity Definition
 
@@ -171,19 +169,9 @@ spec:
         - my-web-app-rest
     ```
 
-Like with [system creation](#create-a-system) we will now save and close this file.
-
 ## Create the API
 
-We will now create an [API](../explanations/api.md) exposed by the Backend. It is recommended that entity definitions reside with the code they represent, thus we will use the previously created `backend` directory.
-
-In this directory we will create a new `yaml` file named `api-info.yaml` which will contain the entity definition for our API definition. We can create this file from our bash terminal with:
-
-```bash
-touch backend/api-info.yaml
-```
-
-Like with [system creation](#create-a-system), we will open this file in our favoured text editor and add the definition.
+We will now create an [API](../explanations/api.md) exposed by the Backend. We will append the following API definition to the previous definition, with three dashes (`---`) seperating them.
 
 ### API Entity Definition
 
@@ -247,23 +235,9 @@ spec:
           version: 0.0.1
     ```
 
-Like with [system creation](#create-a-system) we will now save and close this file.
-
 ## Create the Frontend Component
 
-We will now create a [Component](../explanations/component.md) for the Frontend. It is recommended that entity definitions reside with the code they represent, thus we will create a frontend directory in which we would locate the code which runs our frontend website, we will call it `frontend`. We can create this directory from our bash terminal with:
-
-```bash
-mkdir frontend
-```
-
-In this directory we will create a new `yaml` file named `component-info.yaml` which will contain the entity definition for our Frontend Component. We can create this file from our bash terminal with:
-
-```bash
-touch frontend/component-info.yaml
-```
-
-Like with [system creation](#create-a-system), we will open this file in our favoured text editor and add the definition.
+We will now create a [Component](../explanations/component.md) for the Frontend. We will append the following Component definition to the previous definition, with three dashes (`---`) seperating them.
 
 ### Frontend Component Entity Definition
 
@@ -317,86 +291,80 @@ spec:
         - my-web-app-rest
     ```
 
-Like with [system creation](#create-a-system) we will now save and close this file.
+## Save and exit
 
-## Reference them with a Location
+Once complete we can save and exit, to do so in `nano` press `CTRL` + `X` to exit, `Y` to save and :material-keyboard-return: `Return` to overwrite the opened file.
 
-The final entity definiton we will create is a [Location](../explanations/location.md). This is what will be indexed by the developer portal [entity ingress process](../explanations/entity-ingress.md), thus it must be in the exact location defined for the Git [discovery locations](../references/discovery-locations.md).
-
-!!! info "Discovery Locations"
-
-    {%
-      include-markdown "../references/discovery-locations.md"
-      start="<!--start-git-locations-->"
-      end="<!--end-git-locations-->"
-    %}
-
-Assuming we are using `gitlab.diamond.ac.uk`, we will create a file named `catalog-info.yaml` at the root of our directory. We can create this file from our bash terminal with:
-
-```bash
-touch catalog-info.yaml
-```
-
-Like with [system creation](#create-a-system), we will open this file in our favoured text editor and add the definition.
-
-### Location Entity Definition
-
-For a Component we must define the entity `kind` to be `location`. Thus we will begin the definition with the following:
-
-```yaml
-apiVersion: backstage.io/v1alpha1
-kind: location
-```
-
-### Location Metadata
-
-We will `name` our location a `my-web-app`. Locations are generally considered internal machinery so we will forgo adding a `title` or `description`. Thus we will add the following lines to the definition:
-
-```yaml
-metadata:
-  name: my-web-app
-```
-
-### Location Spec
-
-Each entity must be given a spec, this is unique to each entity `kind`, and will reside within the `spec` object. A Location has no required fields, but we will use `targets` to redirect the discovery process to the entities definitions we wish it to read, thus we will make an entry for each of the files we have created thus far. Thus we will add the following lines to the definition:
-
-!!! important
-
-    The location `type` is intentionally left blank such that the discovery process is inherited from whichever discovery process indexed this location.
-
-```yaml
-spec:
-  targets:
-    - ./system-info.yaml
-    - ./backend/component-info.yaml
-    - ./backend/api-info.yaml
-    - ./frontend/component-info.yaml
-```
-
-??? example "Complete Location Definition"
+??? example "Complete Entity Descriptor File"
 
     ```yaml
     apiVersion: backstage.io/v1alpha1
-    kind: location
+    kind: System
     metadata:
       name: my-web-app
+      title: My Web App
+      description: A web application created by me, consisting of a backend and frontend connected by a REST API
     spec:
-      targets:
-        - ./system-info.yaml
-        - ./backend/component-info.yaml
-        - ./backend/api-info.yaml
-        - ./frontend/component-info.yaml
-    ```
+      owner: user:enu43627
 
-Like with [system creation](#create-a-system) we will now save and close this file.
+    ---
+
+    apiVersion: backstage.io/v1alpha1
+    kind: component
+    metadata:
+      name: my-web-app-backend
+      title: My Web App Backend
+      description: The backend service for My Web App, it magically works without any code
+    spec:
+      type: service
+      lifecycle: experimental
+      owner: user:enu43627
+      system: my-web-app
+      providesApis:
+        - my-web-app-rests
+
+    ---
+
+    apiVersion: backstage.io/v1alpha1
+    kind: API
+    metadata:
+      name: my-web-app-rest
+      title: My Web App Backend
+      description: The REST API for My Web App, it allows you to get lots of useful data
+    spec:
+      type: openapi
+      lifecycle: experimental
+      owner: user:enu43627
+      system: my-web-app
+      definition: |
+        openapi: 3.0.0
+        info:
+          title: My Web App REST API
+          version: 0.0.1
+
+    ---
+
+    apiVersion: backstage.io/v1alpha1
+    kind: component
+    metadata:
+      name: my-web-app-backend
+      title: My Web App Backend
+      description: The backend service for My Web App, it magically works without any code
+    spec:
+      type: website
+      lifecycle: experimental
+      owner: user:enu43627
+      system: my-web-app
+      consumesApis:
+        - my-web-app-rest
+    ```
 
 ## Push to a Discovery Location
 
 We can now push our repository to one of the [discovery locations](../references/discovery-locations.md). Thus we will execute the following:
 
 ```bash
-git add catalog-info.yaml system-info.yaml backend/component-info.yaml backend/api-info.yaml frontend/component-info.yaml
+git add catalog-info.yaml
 git commit -m "Added developer portal catalog metadata"
 git push
 ```
