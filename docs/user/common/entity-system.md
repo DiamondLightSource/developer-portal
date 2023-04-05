@@ -1,1 +1,1 @@
-An [entity reference](https://backstage.io/docs/features/software-catalog/references#string-references) to the [System](../explanations/system.md) that the entity belongs to, e.g. `developer-portal`
+An [entity reference](https://backstage.io/docs/features/software-catalog/references#string-references) to the [System](../explanations/system.md) that the entity belongs to, e.g. `developer-portal`. There is no requirement for this System to be created within the same location; Existing Systems can be listed in the catalog by filtering by `Kind` of `System`.
