@@ -4,8 +4,8 @@ WORKDIR /app
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-        git \
-        python3-pip
+    git \
+    python3-pip
 
 COPY docs-requirements.txt /tmp/docs-requirements.txt
 
@@ -14,6 +14,7 @@ RUN pip install -r /tmp/docs-requirements.txt
 COPY package.json yarn.lock  ./
 COPY packages/app/package.json packages/app/package.json
 COPY packages/backend/package.json packages/backend/package.json
+COPY plugins/viewdocs-react/package.json plugins/viewdocs-react/package.json
 
 RUN --mount=type=cache,target=/home/node/.cache/yarn,sharing=locked \
     yarn install --frozen-lockfile
@@ -33,7 +34,7 @@ FROM docker.io/library/nginx:1.23.3-alpine-slim as frontend
 WORKDIR /app
 
 RUN apk add --no-cache \
-        jq
+    jq
 
 COPY --from=build /app/packages/app/dist /usr/share/nginx/html
 COPY --chmod=700 container_utils/inject-config.sh /docker-entrypoint.d/40-inject-config.sh
@@ -49,8 +50,8 @@ COPY docs-requirements.txt /tmp/docs-requirements.txt
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-        git \
-        python3-pip \
+    git \
+    python3-pip \
     && pip install -r /tmp/docs-requirements.txt \
     && rm -rf /var/lib/apt/lists/* \
     && rm /tmp/docs-requirements.txt
