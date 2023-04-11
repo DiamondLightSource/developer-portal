@@ -24,10 +24,32 @@ jobs:
       - name: Install docs dependencies
         run: pip install -r docs/requirements.txt
 
-      - name: Build docs
-        run: mkdocs build --strict
+      - name: Set node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
 
-      - name: Publish Docs to gh-pages
+      - name: Generate docs
+        run: npx @techdocs/cli generate --no-docker
+
+      - name: Create docs artifact 
+        uses: actions/upload-artifact@v2
+        with:
+          name: techdocs-common
+          path: site
+
+  publish_gh_pages:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.repository
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get docs artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: techdocs-common
+          path: site
+
+      - name: Publish docs to gh-pages
         if: github.ref == 'refs/heads/main'
         # We pin to the SHA, not the tag, for security reasons.
         # https://docs.github.com/en/actions/learn-github-actions/security-hardening-for-github-actions#using-third-party-actions
@@ -36,3 +58,33 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: site
           keep_files: true
+
+  publish_s3:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.repository
+    needs: build
+    strategy:
+      matrix:
+        entity:
+          - default/system/developer-portal
+          - default/component/developer-portal-backend
+          - default/component/developer-portal-frontend
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get docs artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: techdocs-common
+          path: site
+
+      - name: Publish docs to s3 bucket
+        run: >
+          npx @techdocs/cli publish
+          --entity ${{ matrix.entity }}
+          --publisher-type awsS3
+          --storage-name dls-techdocs-test
+          --awsEndpoint https://s3.echo.stfc.ac.uk
+          --awsS3ForcePathStyle
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.TECHDOCS_S3_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.TECHDOCS_S3_SECRET_ACCESS_KEY }}
+          AWS_REGION: ""
