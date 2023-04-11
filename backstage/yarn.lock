@@ -2937,19 +2937,18 @@
     winston "^3.2.1"
 
 "@backstage/plugin-catalog-backend-module-gitlab@^0.1.12":
-  version "0.1.12"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-backend-module-gitlab/-/plugin-catalog-backend-module-gitlab-0.1.12.tgz#650f24f143747dfd3b192e3978c2fb6d0b0e4154"
-  integrity sha512-cgMdLMi/Ss4F/ehke1DzKoLy1gzisKtdr6VrDBPj0kRkaCr77ebsYEyowAqj7/giQx24VD6ngWQw9NYXVt4oBQ==
+  version "0.1.14"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-backend-module-gitlab/-/plugin-catalog-backend-module-gitlab-0.1.14.tgz#142028689cf37c6547897e79d211955f43994aad"
+  integrity sha512-RfOgjIPwV1+QfcLfuBzN0m2TydVuigAcos1t0UzbvxQzWYRNUKBZhPqMzI8qOQIwhCzynfOpl5a9HTk2O7w8Bw==
   dependencies:
-    "@backstage/backend-common" "^0.18.1"
-    "@backstage/backend-plugin-api" "^0.3.1"
-    "@backstage/backend-tasks" "^0.4.2"
-    "@backstage/catalog-model" "^1.1.5"
-    "@backstage/config" "^1.0.6"
-    "@backstage/errors" "^1.1.4"
-    "@backstage/integration" "^1.4.2"
-    "@backstage/plugin-catalog-backend" "^1.7.1"
-    "@backstage/plugin-catalog-node" "^1.3.2"
+    "@backstage/backend-common" "^0.18.3"
+    "@backstage/backend-plugin-api" "^0.5.0"
+    "@backstage/backend-tasks" "^0.5.0"
+    "@backstage/catalog-model" "^1.2.1"
+    "@backstage/config" "^1.0.7"
+    "@backstage/errors" "^1.1.5"
+    "@backstage/integration" "^1.4.3"
+    "@backstage/plugin-catalog-node" "^1.3.4"
     "@backstage/types" "^1.0.2"
     lodash "^4.17.21"
     node-fetch "^2.6.7"
@@ -3070,16 +3069,16 @@
     react-use "^17.2.4"
     yaml "^2.0.0"
 
-"@backstage/plugin-catalog-node@^1.3.2", "@backstage/plugin-catalog-node@^1.3.3":
-  version "1.3.3"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-node/-/plugin-catalog-node-1.3.3.tgz#f3adfcf1a7fe975747733ff5de01193f7bbc8065"
-  integrity sha512-1yKdI8p6Y6bs6Z5PWtv/JyebQsOmKYRV99FBkX4BvmUZjHU41kj3tcUmNtYNFw/TahRi+2K6Q7I50iCaQnh0yg==
+"@backstage/plugin-catalog-node@^1.3.2", "@backstage/plugin-catalog-node@^1.3.3", "@backstage/plugin-catalog-node@^1.3.4":
+  version "1.3.4"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-node/-/plugin-catalog-node-1.3.4.tgz#549e608fe46e461ebe982b8281b8304bfc239184"
+  integrity sha512-yrSAV17DZiHbnHPA6Ea7ZJiX4n9NwmjLlziMp2PK13fPifmIW5t4MmpPQ9IT+bUWGGYD2KRyW/LpItcVX5s2+g==
   dependencies:
-    "@backstage/backend-plugin-api" "^0.4.0"
-    "@backstage/catalog-client" "^1.3.1"
-    "@backstage/catalog-model" "^1.2.0"
-    "@backstage/errors" "^1.1.4"
-    "@backstage/plugin-catalog-common" "^1.0.11"
+    "@backstage/backend-plugin-api" "^0.5.0"
+    "@backstage/catalog-client" "^1.4.0"
+    "@backstage/catalog-model" "^1.2.1"
+    "@backstage/errors" "^1.1.5"
+    "@backstage/plugin-catalog-common" "^1.0.12"
     "@backstage/types" "^1.0.2"
 
 "@backstage/plugin-catalog-react@^1.2.3", "@backstage/plugin-catalog-react@^1.2.4", "@backstage/plugin-catalog-react@^1.4.0":
