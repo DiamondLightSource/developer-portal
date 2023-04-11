@@ -13,10 +13,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Set Node.js 18.x
+      - name: Set node
         uses: actions/setup-node@v3
         with:
-          node-version: 18.x
+          node-version: 18
 
       - name: Install yarn dependencies
         uses: borales/actions-yarn@v4
@@ -43,10 +43,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Set Node.js 18.x
+      - name: Set node
         uses: actions/setup-node@v3
         with:
-          node-version: 18.x
+          node-version: 18
 
       - name: Install yarn dependencies
         uses: borales/actions-yarn@v4
