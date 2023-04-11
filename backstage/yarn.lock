@@ -3061,16 +3061,16 @@
     "@backstage/plugin-search-common" "^1.2.2"
 
 "@backstage/plugin-catalog-graph@^0.2.26":
-  version "0.2.26"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-graph/-/plugin-catalog-graph-0.2.26.tgz#9f4e79b88dfee1ab178a6207721653f1447c77d6"
-  integrity sha512-6HUlVU/08shwWWhqETDj+t/zmLTdCh5WT/U44AdXvb2c+mW4/GBdyw32C3tJI0GqwojYiiOhle4T14/Jx8QcDQ==
+  version "0.2.28"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-graph/-/plugin-catalog-graph-0.2.28.tgz#8c52d6380910187c57180f33b770d57fd2987436"
+  integrity sha512-rW//bhbxwqjtCxcCNXsZMvNd/iwfRatviP1t6ZIfiAacg2mMlb8+X/ChQ13MZ4bp1PjHgjKrzNTpQdEa+AO4sw==
   dependencies:
-    "@backstage/catalog-client" "^1.3.0"
-    "@backstage/catalog-model" "^1.1.5"
-    "@backstage/core-components" "^0.12.3"
-    "@backstage/core-plugin-api" "^1.3.0"
-    "@backstage/plugin-catalog-react" "^1.2.4"
-    "@backstage/theme" "^0.2.16"
+    "@backstage/catalog-client" "^1.4.0"
+    "@backstage/catalog-model" "^1.2.1"
+    "@backstage/core-components" "^0.12.5"
+    "@backstage/core-plugin-api" "^1.5.0"
+    "@backstage/plugin-catalog-react" "^1.4.0"
+    "@backstage/theme" "^0.2.18"
     "@material-ui/core" "^4.12.2"
     "@material-ui/icons" "^4.9.1"
     "@material-ui/lab" "4.0.0-alpha.57"
