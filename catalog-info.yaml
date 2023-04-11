@@ -27,6 +27,7 @@ spec:
   owner: user:enu43627
   dependsOn:
     - component:developer-guide
+    - resource:developer-portal-techdocs-bucket
   providesApis:
     - developer-portal-backend-rest
 
@@ -69,3 +70,16 @@ spec:
   owner: user:enu43627
   consumesApis:
     - developer-portal-backend-rest
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: developer-portal-techdocs-bucket
+  title: Developer Portal Techdocs Bucket
+  description: An AWS S3 compatible object store containing built techdocs documentation
+spec:
+  type: s3-bucket
+  system: developer-portal
+  owner: enu43627
