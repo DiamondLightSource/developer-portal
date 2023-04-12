@@ -35,13 +35,14 @@ integrations:
       token: ${GITLAB_TOKEN}
 
 techdocs:
-  builder: local # Alternatives - 'external'
-  generator:
-    runIn: local # Alternatives - 'local'
-    mkdocs:
-      omitTechdocsCorePlugin: true
+  builder: external
   publisher:
-    type: local # Alternatives - 'googleGcs' or 'awsS3'. Read documentation for using alternatives.
+    type: awsS3
+    awsS3:
+      endpoint: https://s3.echo.stfc.ac.uk
+      bucketName: dls-techdocs-test
+      s3ForcePathStyle: true
+      region: not-applicable # Ceph backed S3 object stores do not use regions
 
 auth:
   environment: development
