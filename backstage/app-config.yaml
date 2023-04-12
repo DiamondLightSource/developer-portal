@@ -40,7 +40,7 @@ techdocs:
     type: awsS3
     awsS3:
       endpoint: https://s3.echo.stfc.ac.uk
-      bucketName: dls-techdocs-test
+      bucketName: techdocs
       s3ForcePathStyle: true
       region: not-applicable # Ceph backed S3 object stores do not use regions
 
