@@ -81,7 +81,7 @@ jobs:
           npx @techdocs/cli publish
           --entity ${{ matrix.entity }}
           --publisher-type awsS3
-          --storage-name dls-techdocs-test
+          --storage-name techdocs
           --awsEndpoint https://s3.echo.stfc.ac.uk
           --awsS3ForcePathStyle
         env:

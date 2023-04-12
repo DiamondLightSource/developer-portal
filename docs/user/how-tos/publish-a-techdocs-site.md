@@ -42,7 +42,7 @@ In order to do this we will require the nessacary credentials for the bucket. Th
 We will now run:
 
 ```bash
-npx @techdocs/cli publish --entity <NAMESPACE/KIND/NAME> --publisher-type awsS3 --storage-name dls-techdocs-test --awsEndpoint https://s3.echo.stfc.ac.uk --awsS3ForcePathStyle
+npx @techdocs/cli publish --entity <NAMESPACE/KIND/NAME> --publisher-type awsS3 --storage-name techdocs --awsEndpoint https://s3.echo.stfc.ac.uk --awsS3ForcePathStyle
 ```
 
 ??? example "Example GitHub Workflow"
@@ -78,7 +78,7 @@ npx @techdocs/cli publish --entity <NAMESPACE/KIND/NAME> --publisher-type awsS3 
             npx @techdocs/cli publish
             --entity default/component/developer-portal-backend
             --publisher-type awsS3
-            --storage-name dls-techdocs-test
+            --storage-name techdocs
             --awsEndpoint https://s3.echo.stfc.ac.uk
             --awsS3ForcePathStyle
           env:
