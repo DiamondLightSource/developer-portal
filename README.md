@@ -53,3 +53,7 @@ In order to deploy this application, the following secrets are required
   - `write_repository`
 - `GITHUB_APP_CLIENT_ID` - a GitHub OAuth App client ID used to provide user authentication
 - `GITHUB_APP_SECRET` - the corresponding GitHub OAuth App secret
+- `AWS_ACCESS_KEY_ID` - a AWS S3 bucket access key ID used to retrieve techdocs from the object store, with:
+  - `s3:ListBucket`
+  - `s3:GetObject`
+- `AWS_SECRET_ACCESS_KEY` - the corresponding AWS S3 bucket access key secret
