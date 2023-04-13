@@ -182,6 +182,12 @@ backend:
       # -- The key of a gitlab token with api, read_repository & write_repository permissions
       gitlabTokenKey: gitlab-token
 
+      # -- The key of a s3 bucket key id, with s3:ListBucket & s3:GetObject
+      s3AccessKeyIdKey: s3-access-key-id
+
+      # -- The key of a s3 bucket key secret, with s3:ListBucket & s3:GetObject
+      s3AccessKeySecretKey: s3-access-key-secret
+
 ## Backend service parameters
 ##
 # -- Backend service parameters

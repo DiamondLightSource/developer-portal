@@ -89,6 +89,16 @@ spec:
                 secretKeyRef:
                   name: {{ include "devportal.backend.auth.secret" . }}
                   key: {{ .Values.backend.auth.secretKeys.gitlabTokenKey }}
+            - name: AWS_ACCESS_KEY_ID
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "devportal.backend.auth.secret" . }}
+                  key: {{ .Values.backend.auth.secretKeys.s3AccessKeyIdKey }}
+            - name: AWS_SECRET_ACCESS_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "devportal.backend.auth.secret" . }}
+                  key: {{ .Values.backend.auth.secretKeys.s3AccessKeySecretKey }}
             - name: APP_CONFIG_app_baseUrl
               value: {{ print "https://" }}{{ .Values.ingress.host }}
             - name: APP_CONFIG_backend_baseUrl
