@@ -48,6 +48,12 @@ npx @techdocs/cli publish --entity <NAMESPACE/KIND/NAME> --publisher-type awsS3 
 ??? example "Example GitHub Workflow"
 
     ```yaml
+    name: Docs CI
+
+    on:
+      push:
+        - main
+
     jobs:
       publish_techdocs:
         runs-on: ubuntu-latest
@@ -85,4 +91,39 @@ npx @techdocs/cli publish --entity <NAMESPACE/KIND/NAME> --publisher-type awsS3 
             AWS_ACCESS_KEY_ID: ${{ secrets.TECHDOCS_S3_ACCESS_KEY_ID }}
             AWS_SECRET_ACCESS_KEY: ${{ secrets.TECHDOCS_S3_SECRET_ACCESS_KEY }}
             AWS_REGION: ""
+    ```
+
+??? example "Example GitLab Workflow"
+
+    ```yaml
+    image: node:18-bullseye
+
+    variables:
+      GIT_SUBMODULE_STRATEGY: recursive
+
+    stages:
+      - publish_techdocs
+
+    before_script:
+      - apt-get update
+      - apt-get install -y --no-install-recommends python3-pip
+      - pip install -r requirements.txt
+
+    publish_techdocs:
+      stage: publish_techdocs
+      rules:
+        - if: $CI_COMMIT_REF_NAME == "main"
+      tags:
+        - argus
+      script:
+        - npx @techdocs/cli generate --no-docker
+        - >
+          npx @techdocs/cli publish
+          --entity default/component/developer-guide
+          --publisher-type awsS3
+          --storage-name techdocs
+          --awsEndpoint https://s3.echo.stfc.ac.uk
+          --awsS3ForcePathStyle
+      variables:
+        AWS_REGION: ""
     ```
