@@ -2,15 +2,6 @@ FROM docker.io/library/node:18-bullseye-slim AS build
 
 WORKDIR /app
 
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends \
-    git \
-    python3-pip
-
-COPY docs-requirements.txt /tmp/docs-requirements.txt
-
-RUN pip install -r /tmp/docs-requirements.txt
-
 COPY package.json yarn.lock  ./
 COPY packages/app/package.json packages/app/package.json
 COPY packages/backend/package.json packages/backend/package.json
@@ -45,16 +36,6 @@ EXPOSE 80
 FROM docker.io/library/node:18-bullseye-slim as backend
 
 WORKDIR /app
-
-COPY docs-requirements.txt /tmp/docs-requirements.txt
-
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends \
-    git \
-    python3-pip \
-    && pip install -r /tmp/docs-requirements.txt \
-    && rm -rf /var/lib/apt/lists/* \
-    && rm /tmp/docs-requirements.txt
 
 COPY --from=build /app/package.json /app/yarn.lock /app/packages/backend/dist/skeleton ./
 
