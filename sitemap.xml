@@ -151,6 +151,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://0.0.0.0/user/explanations/which-docs/</loc>
+         <lastmod>2023-04-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://0.0.0.0/user/how-tos/</loc>
          <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
@@ -161,7 +166,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://0.0.0.0/user/how-tos/embed-a-linkdocs-site/</loc>
+         <lastmod>2023-04-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://0.0.0.0/user/how-tos/link-to-remote-entities/</loc>
+         <lastmod>2023-04-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://0.0.0.0/user/how-tos/publish-a-techdocs-site/</loc>
          <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
