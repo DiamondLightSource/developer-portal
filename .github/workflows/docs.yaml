@@ -33,7 +33,7 @@ jobs:
         run: npx @techdocs/cli generate --no-docker
 
       - name: Create docs artifact 
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: techdocs-common
           path: site
