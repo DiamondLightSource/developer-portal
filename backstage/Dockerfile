@@ -2,7 +2,7 @@ FROM docker.io/library/node:18-bullseye-slim AS build
 
 WORKDIR /app
 
-COPY package.json yarn.lock  ./
+COPY package.json yarn.lock ./
 COPY packages/app/package.json packages/app/package.json
 COPY packages/backend/package.json packages/backend/package.json
 COPY plugins/viewdocs-react/package.json plugins/viewdocs-react/package.json
