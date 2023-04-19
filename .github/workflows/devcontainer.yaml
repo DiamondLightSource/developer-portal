@@ -1,0 +1,23 @@
+name: Dev Container CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    # pull requests are a duplicate of a branch push if within the same repo.
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+
+      - name: Create ENV file
+        run: touch .devcontainer/.env
+
+      - name: Build dev container
+        uses: devcontainers/ci@v0.3.1900000329
