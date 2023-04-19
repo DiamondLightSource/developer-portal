@@ -1,4 +1,22 @@
+# Development Environment
 .devcontainer/
 .git/
 .github/
 .vscode/
+.gitignore
+
+# Backstage
+backstage/.yarn/cache
+backstage/.yarn/install-state.gz
+
+backstage/**/dist
+backstage/**/dist-types
+
+backstage/**/node_modules
+
+backstage/*.local.yaml
+
+backstage/Dockerfile
+
+# Docs Build
+site/
