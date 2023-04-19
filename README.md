@@ -20,12 +20,7 @@ The Diamond Light Source developer portal, built with backstage for deployment o
 - Disable buildkit by adding `export DOCKER_BUILDKIT=0` to your `~/.bashrc`
 - Open Development Container
 - Create a `.env` file in the `.devcontainer` directory containing the [nessacary secrets](#nessacary-secrets)
-- Start the app, with:
-  ```sh
-  cd backstage
-  yarn install
-  yarn dev
-  ```
+- Start the app, with `yarn --cwd backstage dev`
 
 ## Deploying on Kubernetes (Diamond Light Source)
 
