@@ -58,7 +58,7 @@ ldap:
       users:
         dn: ou=dls,dc=fed,dc=cclrc,dc=ac,dc=uk
         options:
-          filter: (&(objectClass=organizationalPerson)(employeeType=DIAMOND STAFF))
+          filter: (memberOf=cn=DLSLTD_Staff,OU=Automatic Groups,DC=fed,DC=cclrc,DC=ac,DC=uk)
           paged: true
         map:
           name: cn
