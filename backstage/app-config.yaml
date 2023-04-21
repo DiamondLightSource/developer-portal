@@ -24,6 +24,11 @@ backend:
       password: ${POSTGRES_PASSWORD}
   cache:
     store: memory
+  reading:
+    allow:
+      - host: raw.githubusercontent.com
+        paths:
+          - /DiamondLightSource
 
 integrations:
   github:
