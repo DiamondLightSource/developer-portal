@@ -59,9 +59,7 @@ Finally, we will fill out the `API` `spec`. A `type`, a `lifecycle`, an `owner` 
 
 !!! tip "Schema Generation"
 
-    It is often possible to generate `API` schemas with tools provided by server libraries or frameworks. Here's how to do so for some common `API` server libraries:
-
-    - [FastAPI](https://docs.pydantic.dev/usage/schema/)
+    It may often be more convenient to link to a generated schema, this can be achieved with use of the `$text` substituion which points to the URL of a schema definiton. For example, a url of the form `https://github.com/DiamondLightSource/<your_repo>/releases/latest/download/<your_schema_file>` can be used to load the contents of the `<your_schema>` artifact from the latest GitHub release.
 
 ??? example "Example Completed Descriptor"
 
