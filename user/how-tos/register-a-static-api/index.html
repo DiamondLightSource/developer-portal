@@ -1475,10 +1475,7 @@
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Schema Generation</p>
-<p>It is often possible to generate <code>API</code> schemas with tools provided by server libraries or frameworks. Here's how to do so for some common <code>API</code> server libraries:</p>
-<ul>
-<li><a href="https://docs.pydantic.dev/usage/schema/">FastAPI</a></li>
-</ul>
+<p>It may often be more convenient to link to a generated schema, this can be achieved with use of the <code>$text</code> substituion which points to the URL of a schema definiton. For example, a url of the form <code>https://github.com/DiamondLightSource/&lt;your_repo&gt;/releases/latest/download/&lt;your_schema_file&gt;</code> can be used to load the contents of the <code>&lt;your_schema&gt;</code> artifact from the latest GitHub release.</p>
 </div>
 <details class="example">
 <summary>Example Completed Descriptor</summary>
