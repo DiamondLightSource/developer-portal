@@ -26,6 +26,7 @@ backend:
     store: memory
   reading:
     allow:
+      - host: '*.diamond.ac.uk'
       - host: raw.githubusercontent.com
         paths:
           - /DiamondLightSource
