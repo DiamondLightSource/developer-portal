@@ -81,6 +81,11 @@ catalog:
     pullRequestBranchName: backstage-integration
   rules:
     - allow: [Component, System, API, Resource, Location]
+  locations:
+    - type: url
+      target: https://gitlab.diamond.ac.uk/sscc-docs/groups/-/jobs/artifacts/main/raw/all-groups.yaml?job=collate
+      rules:
+        - allow: [Group]
   providers:
     github:
       GitHub-DiamondLightSource:

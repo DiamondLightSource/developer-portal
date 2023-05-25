@@ -24,6 +24,15 @@ LDAP:
 
 <!--end-ldap-locations-->
 
+<!--start-miscellaneous-locations-->
+
+Miscellaneous:
+
+- `gitlab.diamond.ac.uk/sscc-docs/groups`
+  - [Groups](../explanations/group.md)
+
+<!--end-miscellaneous-locations-->
+
 <!--end-locations-->
 
 These locations are defined in the `catalog.providers` section of the backstage configuration file `backstage/app-config.yaml` ([on main :link:](https://github.com/DiamondLightSource/developer-portal/blob/main/backstage/app-config.yaml)).
