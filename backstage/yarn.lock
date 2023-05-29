@@ -2892,21 +2892,7 @@
     winston "^3.2.1"
     yn "^4.0.0"
 
-"@backstage/plugin-auth-node@^0.2.12", "@backstage/plugin-auth-node@^0.2.13", "@backstage/plugin-auth-node@^0.2.9":
-  version "0.2.13"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-auth-node/-/plugin-auth-node-0.2.13.tgz#b46c266222bb51d62c37a323ce615a1f496a98df"
-  integrity sha512-vMLm14UB9f5yddas6bHtt9yoQxiOiHBctk9RMyqFMIgf8U47t/ZBc2MsN1s3x453tN7rNQmHLlLY/nnSZudFTg==
-  dependencies:
-    "@backstage/backend-common" "^0.18.4"
-    "@backstage/config" "^1.0.7"
-    "@backstage/errors" "^1.1.5"
-    "@types/express" "*"
-    express "^4.17.1"
-    jose "^4.6.0"
-    node-fetch "^2.6.7"
-    winston "^3.2.1"
-
-"@backstage/plugin-auth-node@^0.2.14":
+"@backstage/plugin-auth-node@^0.2.12", "@backstage/plugin-auth-node@^0.2.14", "@backstage/plugin-auth-node@^0.2.9":
   version "0.2.14"
   resolved "https://registry.yarnpkg.com/@backstage/plugin-auth-node/-/plugin-auth-node-0.2.14.tgz#7b973b72f41325de2181f04f8ac956f41c645bf8"
   integrity sha512-s6uoXcBCVNYzL5LOWlt7W1Q8k3Y2MH42BCE9d804J6Ef00OV5oKAe60O4zOI+zgaiBCaiY1hMko9/XM/hdAjGg==
@@ -3226,24 +3212,7 @@
     uuid "^8.0.0"
     zod "^3.21.4"
 
-"@backstage/plugin-permission-node@^0.7.3", "@backstage/plugin-permission-node@^0.7.6", "@backstage/plugin-permission-node@^0.7.7":
-  version "0.7.7"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-permission-node/-/plugin-permission-node-0.7.7.tgz#ee8ba93a57b2db2e9dedc5bb43cb3f05a4ebfcd6"
-  integrity sha512-RiquvqB8rA6EOWVBqv6Kc1NgHz6TWmkADfthSLlYglGWklg037rt6HAiv4wbmdRFtKeB1ZjcGDAw8dw8D5jOVg==
-  dependencies:
-    "@backstage/backend-common" "^0.18.4"
-    "@backstage/backend-plugin-api" "^0.5.1"
-    "@backstage/config" "^1.0.7"
-    "@backstage/errors" "^1.1.5"
-    "@backstage/plugin-auth-node" "^0.2.13"
-    "@backstage/plugin-permission-common" "^0.7.5"
-    "@types/express" "^4.17.6"
-    express "^4.17.1"
-    express-promise-router "^4.1.0"
-    zod "^3.21.4"
-    zod-to-json-schema "^3.20.4"
-
-"@backstage/plugin-permission-node@^0.7.8":
+"@backstage/plugin-permission-node@^0.7.3", "@backstage/plugin-permission-node@^0.7.6", "@backstage/plugin-permission-node@^0.7.7", "@backstage/plugin-permission-node@^0.7.8":
   version "0.7.8"
   resolved "https://registry.yarnpkg.com/@backstage/plugin-permission-node/-/plugin-permission-node-0.7.8.tgz#6ae9be89b21f4f84429fc1eab1684202b9ad62fc"
   integrity sha512-Ugw0F3kYaLvxCIyqSNxywQ9dKghZ5fZZJudXKgM3o1pB07jOj4/QVnAKBm8A9DCv2rN3E/07Ij2nNhF+xkC+Pg==
