@@ -3,6 +3,7 @@ import { configApiRef, useApi } from '@backstage/core-plugin-api';
 import {
   Button,
   Card,
+  CardActionArea,
   CardActions,
   CardContent,
   Grid,
@@ -15,52 +16,62 @@ import { useNavigate } from 'react-router-dom';
 
 const SoftwareCatalogCard = () => {
   const navigate = useNavigate();
-  const handleOnClick = () => navigate('/catalog');
   const orgName =
     useApi(configApiRef).getOptionalString('organization.name') ?? 'Backstage';
 
   return (
-    <Card style={{ height: '100%' }}>
-      <CardContent>
-        <Typography variant="h5">
-          <CategoryIcon /> Software Catalog
-        </Typography>
-        <Typography variant="body2">
-          A central location to discover software components developed at{' '}
-          {orgName}.
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="medium" color="primary" onClick={handleOnClick}>
-          Visit
-        </Button>
-      </CardActions>
+    <Card>
+      <CardActionArea onClick={() => navigate('/catalog')}>
+        <CardContent>
+          <Typography variant="h5">
+            <CategoryIcon /> Software Catalog
+          </Typography>
+          <Typography variant="body2">
+            A central location to discover software components developed at{' '}
+            {orgName}.
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <Button
+            size="medium"
+            color="primary"
+            onClick={() => navigate('/catalog')}
+          >
+            Visit
+          </Button>
+        </CardActions>
+      </CardActionArea>
     </Card>
   );
 };
 
 const DeveloperGuideCard = () => {
   const navigate = useNavigate();
-  const handleOnClick = () => navigate('/guide');
   const orgName =
     useApi(configApiRef).getOptionalString('organization.name') ?? 'Backstage';
 
   return (
     <Card style={{ height: '100%' }}>
-      <CardContent>
-        <Typography variant="h5">
-          <LibraryBooksIcon /> Developer Guide
-        </Typography>
-        <Typography variant="body2">
-          Extensive documentation on developing software at {orgName}. Including
-          Tutorials, How-Tos, Explanations & References.
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="medium" color="primary" onClick={handleOnClick}>
-          Visit
-        </Button>
-      </CardActions>
+      <CardActionArea onClick={() => navigate('/guide')}>
+        <CardContent>
+          <Typography variant="h5">
+            <LibraryBooksIcon /> Developer Guide
+          </Typography>
+          <Typography variant="body2">
+            Extensive documentation on developing software at {orgName}.
+            Including Tutorials, How-Tos, Explanations & References.
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <Button
+            size="medium"
+            color="primary"
+            onClick={() => navigate('/guide')}
+          >
+            Visit
+          </Button>
+        </CardActions>
+      </CardActionArea>
     </Card>
   );
 };
