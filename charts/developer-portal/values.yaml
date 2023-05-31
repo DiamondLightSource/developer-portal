@@ -35,7 +35,7 @@ frontend:
     repository: diamondlightsource/developer-portal-frontend
 
     # -- Backstage frontend image tag (immutable tags are recommended)
-    tag: 0.0.13
+    tag: 0.0.14
 
     # -- Specify a imagePullPolicy.
     # Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
@@ -104,7 +104,7 @@ backend:
     repository: diamondlightsource/developer-portal-backend
 
     # -- Backstage frontend image tag (immutable tags are recommended)
-    tag: 0.0.13
+    tag: 0.0.14
 
     # -- Specify a imagePullPolicy.
     # Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
