@@ -27,6 +27,7 @@
     "@backstage/plugin-catalog-backend-module-github": "^0.2.4",
     "@backstage/plugin-catalog-backend-module-gitlab": "^0.2.0",
     "@backstage/plugin-catalog-backend-module-ldap": "^0.5.9",
+    "@backstage/plugin-catalog-backend-module-openapi": "^0.1.11",
     "@backstage/plugin-permission-common": "^0.7.3",
     "@backstage/plugin-permission-node": "^0.7.3",
     "@backstage/plugin-proxy-backend": "^0.2.34",
