@@ -127,3 +127,22 @@ npx @techdocs/cli publish --entity <NAMESPACE/KIND/NAME> --publisher-type awsS3 
       variables:
         AWS_REGION: ""
     ```
+
+## Annotate Entity
+
+Finally, we will add the `backstage.io/techdocs-ref` annotation to the `metadata.annotations` field of the entity descriptor. This should point to the root directory of the documentation (i.e. the directory containing the `mkdocs.yaml` file).
+
+??? example "Example Entity Descriptor"
+
+    ```yaml
+    apiVersion: backstage.io/v1alpha1
+    kind: Component
+    metadata:
+      name: developer-guide
+      annotations:
+        backstage.io/techdocs-ref: dir:.
+    spec:
+      type: website
+      lifecycle: experimental
+      owner: user:enu43627
+    ```
