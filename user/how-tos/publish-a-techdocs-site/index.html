@@ -445,6 +445,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#annotate-entity" class="md-nav__link">
+    Annotate Entity
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1348,6 +1355,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#annotate-entity" class="md-nav__link">
+    Annotate Entity
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1556,6 +1570,31 @@
 <span class="w">      </span><span class="no">--awsS3ForcePathStyle</span>
 <span class="w">  </span><span class="nt">variables</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">AWS_REGION</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span>
+</code></pre></div></td></tr></table></div>
+</details>
+<h2 id="annotate-entity">Annotate Entity<a class="headerlink" href="#annotate-entity" title="Permanent link">&para;</a></h2>
+<p>Finally, we will add the <code>backstage.io/techdocs-ref</code> annotation to the <code>metadata.annotations</code> field of the entity descriptor. This should point to the root directory of the documentation (i.e. the directory containing the <code>mkdocs.yaml</code> file).</p>
+<details class="example">
+<summary>Example Entity Descriptor</summary>
+<div class="language-yaml highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">backstage.io/v1alpha1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Component</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">developer-guide</span>
+<span class="w">  </span><span class="nt">annotations</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">backstage.io/techdocs-ref</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dir:.</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">website</span>
+<span class="w">  </span><span class="nt">lifecycle</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">experimental</span>
+<span class="w">  </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">user:enu43627</span>
 </code></pre></div></td></tr></table></div>
 </details>
 
