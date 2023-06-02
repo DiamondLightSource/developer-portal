@@ -48,7 +48,7 @@ touch catalog-info.yaml
 With our favourite text editor we will then open this file and begin filling it out. The `nano` editor is considered rather beginner friendly, thus we will choose to use it. You can open the file we just created by executing:
 
 ```bash
-nano system-info.yaml
+nano catalog-info.yaml
 ```
 
 ## Create the System
