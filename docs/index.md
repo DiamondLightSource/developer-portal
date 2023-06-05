@@ -1,3 +1,16 @@
+# Home
+
+## Popular
+
+You may wish to start with one of these:
+
+- [**Web App Registration Tutorial** :link:](user/tutorials/web-app.md)
+- [**How To Register A Component** :link:](user/how-tos/register-a-component.md)
+- [**How To Register An API** :link:](user/how-tos/register-a-static-api.md)
+- [**How To Register A System** :link:](user/how-tos/register-a-system.md)
+
+## Structure
+
 The documentation is split into two sections:
 
 - [**The User Guide** :link:](user/index.md) contains documentation on how to use the developer portal. This is split into four sub-sections:
