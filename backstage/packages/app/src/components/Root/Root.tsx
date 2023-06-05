@@ -17,6 +17,7 @@ import {
 } from '@backstage/plugin-user-settings';
 import { makeStyles } from '@material-ui/core';
 import CategoryIcon from '@material-ui/icons/Category';
+import HelpIcon from '@material-ui/icons/Help';
 import HomeIcon from '@material-ui/icons/Home';
 import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -78,11 +79,8 @@ export const Root = ({ children }: PropsWithChildren<{}>) => (
       </SidebarGroup>
       <SidebarSpace />
       <SidebarDivider />
-      <SidebarGroup
-        label="Settings"
-        icon={<UserSettingsSignInAvatar />}
-        to="/settings"
-      >
+      <SidebarGroup label="Help & Settings" icon={<UserSettingsSignInAvatar />}>
+        <SidebarItem icon={HelpIcon} to="/portal-docs" text="Portal Docs" />
         <SidebarSettings />
       </SidebarGroup>
     </Sidebar>

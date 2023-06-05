@@ -34,6 +34,7 @@ import { Root } from './components/Root';
 import { entityPage } from './components/catalog/EntityPage';
 import { DeveloperGuidePage } from './components/dev-guide/GuideDocsPage';
 import { HomePage } from './components/home/HomePage';
+import { PortalDocsPage } from './components/portal-docs/PortalDocsPage';
 import { searchPage } from './components/search/SearchPage';
 import { PrefixNavigate } from './components/utils/PrefixNavigate';
 
@@ -63,6 +64,7 @@ const routes = (
     </Route>
     <Route path="/catalog" element={<CatalogIndexPage />} />
     <Route path="/guide" element={<DeveloperGuidePage />} />
+    <Route path="/portal-docs" element={<PortalDocsPage />} />
     <Route
       path="/catalog/:namespace/:kind/:name"
       element={<CatalogEntityPage />}
