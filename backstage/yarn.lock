@@ -3543,26 +3543,7 @@
     "@backstage/plugin-permission-common" "^0.7.5"
     "@backstage/types" "^1.0.2"
 
-"@backstage/plugin-search-react@^1.4.0", "@backstage/plugin-search-react@^1.6.0", "@backstage/plugin-search-react@^1.6.1":
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-search-react/-/plugin-search-react-1.6.1.tgz#abf09f3466a5fd7d9fa5e8c562f18ad67a940c95"
-  integrity sha512-KbvGYtquzNUOkWL2m12DrMVBlr7dIN5ASiMu5VXZamyTwkrn3XvBmH20OJpIopEy5YYeg2q/qi2dpKaZHuYrMQ==
-  dependencies:
-    "@backstage/core-components" "^0.13.1"
-    "@backstage/core-plugin-api" "^1.5.1"
-    "@backstage/plugin-search-common" "^1.2.3"
-    "@backstage/theme" "^0.3.0"
-    "@backstage/types" "^1.0.2"
-    "@backstage/version-bridge" "^1.0.4"
-    "@material-ui/core" "^4.12.2"
-    "@material-ui/icons" "^4.9.1"
-    "@material-ui/lab" "4.0.0-alpha.61"
-    "@types/react" "^16.13.1 || ^17.0.0"
-    lodash "^4.17.21"
-    qs "^6.9.4"
-    react-use "^17.3.2"
-
-"@backstage/plugin-search-react@^1.6.1":
+"@backstage/plugin-search-react@^1.4.0", "@backstage/plugin-search-react@^1.6.1":
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/@backstage/plugin-search-react/-/plugin-search-react-1.6.1.tgz#abf09f3466a5fd7d9fa5e8c562f18ad67a940c95"
   integrity sha512-KbvGYtquzNUOkWL2m12DrMVBlr7dIN5ASiMu5VXZamyTwkrn3XvBmH20OJpIopEy5YYeg2q/qi2dpKaZHuYrMQ==
@@ -6479,9 +6460,9 @@
     "@types/ssh2" "*"
 
 "@types/dockerode@^3.3.0":
-  version "3.3.18"
-  resolved "https://registry.yarnpkg.com/@types/dockerode/-/dockerode-3.3.18.tgz#3fcc5a30e2a1ab3398b3e4cc4bc2a924194746e4"
-  integrity sha512-4EcP136jNMBZQ4zTHlI1VP2RpIQ2uJvRpjta3W2Cc7Ti7rk2r3TgVKjxR0Tb3NrT9ObXvl7Tv5nxra6BHEpkWg==
+  version "3.3.19"
+  resolved "https://registry.yarnpkg.com/@types/dockerode/-/dockerode-3.3.19.tgz#59eb07550a102b397a9504083a6c50d811eed04c"
+  integrity sha512-7CC5yIpQi+bHXwDK43b/deYXteP3Lem9gdocVVHJPSRJJLMfbiOchQV3rDmAPkMw+n3GIVj7m1six3JW+VcwwA==
   dependencies:
     "@types/docker-modem" "*"
     "@types/node" "*"
