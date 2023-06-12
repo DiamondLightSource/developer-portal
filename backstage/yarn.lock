@@ -2641,7 +2641,7 @@
     zen-observable "^0.10.0"
     zod "^3.21.4"
 
-"@backstage/core-components@^0.12.2", "@backstage/core-components@^0.12.3", "@backstage/core-components@^0.12.5":
+"@backstage/core-components@^0.12.3", "@backstage/core-components@^0.12.5":
   version "0.12.5"
   resolved "https://registry.yarnpkg.com/@backstage/core-components/-/core-components-0.12.5.tgz#ea9e5d04845fb031e0f4fb4b764497ee722ad128"
   integrity sha512-77BBOmJPeyKqKFDZeX5/NUENiklG0+DJMyoyM9fFlzB4wv6Lsx2V6hFbgE6PIsQ2T5EWorzq+BvkTyMXRrU/Pg==
@@ -4425,11 +4425,11 @@
     yn "^4.0.0"
 
 "@immobiliarelabs/backstage-plugin-gitlab@^5.0.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@immobiliarelabs/backstage-plugin-gitlab/-/backstage-plugin-gitlab-5.1.0.tgz#a52150d1a4dcc7e302ed057f2af0dead72a7b4fb"
-  integrity sha512-1ffsiTJ+Q6fh1j+v2+r5VmJ2CMRmdn2U0fhxDTRGH7rdRqAgrfHaDFDxIiotZYOMDADyjcZw4gzdUgIuL78L0w==
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/@immobiliarelabs/backstage-plugin-gitlab/-/backstage-plugin-gitlab-5.2.0.tgz#6aa94b9fc2badb1e6f556aded20976617373e6ee"
+  integrity sha512-D98uVhy6u90KjBMFxk16ooRiM3UYsywN3QcphutoF+qz0hBg/kCyPw5F/CbwI308rKHe+jXUhjpAgZyLz+l9Wg==
   dependencies:
-    "@backstage/core-components" "^0.12.2"
+    "@backstage/core-components" "^0.13.0"
     "@backstage/core-plugin-api" "^1.0.0"
     "@backstage/plugin-catalog-react" "^1.2.3"
     "@backstage/theme" "^0.2.14"
