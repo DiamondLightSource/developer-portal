@@ -4410,9 +4410,9 @@
   integrity sha512-H9XAx3hc0BQHY6l+IFSWHDySypcXsvsuLhgYLUGywmJ5pswRVQJUHpOsobnLYp2ZUaUlKiKDrgWWhosOwAEM8Q==
 
 "@immobiliarelabs/backstage-plugin-gitlab-backend@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@immobiliarelabs/backstage-plugin-gitlab-backend/-/backstage-plugin-gitlab-backend-5.0.0.tgz#dcb4e33e354143d1fee302047024f1497396df58"
-  integrity sha512-Cx4PlhgqXr5i8S4k7gkM894sYbnqXQZDtlPRmb1Ubo4fh8mF4voIoaqCH4AvWsqA/yw9+FT5Kz+KzMPQHiXl9Q==
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/@immobiliarelabs/backstage-plugin-gitlab-backend/-/backstage-plugin-gitlab-backend-5.2.0.tgz#9f6d5b4c4a9e0cb58e8398d91fc0f4e0af7359b9"
+  integrity sha512-wTbdT5+htbN4S7tyJ2NhaeGD4ZIHvHl8ewADX4u/cJVQnmLbmBN8WMXnE62Rfhc+69xnocKKJyVE7VUFP6O/Bw==
   dependencies:
     "@backstage/backend-common" "^0.18.0"
     "@backstage/config" "^1.0.6"
