@@ -3024,19 +3024,20 @@
     "@backstage/plugin-search-common" "^1.2.3"
 
 "@backstage/plugin-catalog-graph@^0.2.26":
-  version "0.2.28"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-graph/-/plugin-catalog-graph-0.2.28.tgz#8c52d6380910187c57180f33b770d57fd2987436"
-  integrity sha512-rW//bhbxwqjtCxcCNXsZMvNd/iwfRatviP1t6ZIfiAacg2mMlb8+X/ChQ13MZ4bp1PjHgjKrzNTpQdEa+AO4sw==
+  version "0.2.30"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-graph/-/plugin-catalog-graph-0.2.30.tgz#16f6f6037d6e9bbc6a60c9a32669a1793a154bbd"
+  integrity sha512-GE8yebjAgaEn5CzljKOoup1rV/MpU7Vt2kpsoNAUj0SFRIyEhhveRaB5aNTmuhNmVFezkl2M+iGbyPEGR8jWkg==
   dependencies:
-    "@backstage/catalog-client" "^1.4.0"
-    "@backstage/catalog-model" "^1.2.1"
-    "@backstage/core-components" "^0.12.5"
-    "@backstage/core-plugin-api" "^1.5.0"
-    "@backstage/plugin-catalog-react" "^1.4.0"
-    "@backstage/theme" "^0.2.18"
+    "@backstage/catalog-client" "^1.4.1"
+    "@backstage/catalog-model" "^1.3.0"
+    "@backstage/core-components" "^0.13.1"
+    "@backstage/core-plugin-api" "^1.5.1"
+    "@backstage/plugin-catalog-react" "^1.6.0"
+    "@backstage/theme" "^0.3.0"
     "@material-ui/core" "^4.12.2"
     "@material-ui/icons" "^4.9.1"
-    "@material-ui/lab" "4.0.0-alpha.57"
+    "@material-ui/lab" "4.0.0-alpha.61"
+    "@types/react" "^16.13.1 || ^17.0.0"
     classnames "^2.3.1"
     lodash "^4.17.15"
     p-limit "^3.1.0"
@@ -3543,26 +3544,7 @@
     "@backstage/plugin-permission-common" "^0.7.5"
     "@backstage/types" "^1.0.2"
 
-"@backstage/plugin-search-react@^1.4.0", "@backstage/plugin-search-react@^1.6.0", "@backstage/plugin-search-react@^1.6.1":
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-search-react/-/plugin-search-react-1.6.1.tgz#abf09f3466a5fd7d9fa5e8c562f18ad67a940c95"
-  integrity sha512-KbvGYtquzNUOkWL2m12DrMVBlr7dIN5ASiMu5VXZamyTwkrn3XvBmH20OJpIopEy5YYeg2q/qi2dpKaZHuYrMQ==
-  dependencies:
-    "@backstage/core-components" "^0.13.1"
-    "@backstage/core-plugin-api" "^1.5.1"
-    "@backstage/plugin-search-common" "^1.2.3"
-    "@backstage/theme" "^0.3.0"
-    "@backstage/types" "^1.0.2"
-    "@backstage/version-bridge" "^1.0.4"
-    "@material-ui/core" "^4.12.2"
-    "@material-ui/icons" "^4.9.1"
-    "@material-ui/lab" "4.0.0-alpha.61"
-    "@types/react" "^16.13.1 || ^17.0.0"
-    lodash "^4.17.21"
-    qs "^6.9.4"
-    react-use "^17.3.2"
-
-"@backstage/plugin-search-react@^1.6.1":
+"@backstage/plugin-search-react@^1.4.0", "@backstage/plugin-search-react@^1.6.1":
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/@backstage/plugin-search-react/-/plugin-search-react-1.6.1.tgz#abf09f3466a5fd7d9fa5e8c562f18ad67a940c95"
   integrity sha512-KbvGYtquzNUOkWL2m12DrMVBlr7dIN5ASiMu5VXZamyTwkrn3XvBmH20OJpIopEy5YYeg2q/qi2dpKaZHuYrMQ==
