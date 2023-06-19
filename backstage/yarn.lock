@@ -4348,10 +4348,10 @@
   resolved "https://registry.yarnpkg.com/@hutson/parse-repository-url/-/parse-repository-url-3.0.2.tgz#98c23c950a3d9b6c8f0daed06da6c3af06981340"
   integrity sha512-H9XAx3hc0BQHY6l+IFSWHDySypcXsvsuLhgYLUGywmJ5pswRVQJUHpOsobnLYp2ZUaUlKiKDrgWWhosOwAEM8Q==
 
-"@immobiliarelabs/backstage-plugin-gitlab-backend@^5.0.0":
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/@immobiliarelabs/backstage-plugin-gitlab-backend/-/backstage-plugin-gitlab-backend-5.2.0.tgz#9f6d5b4c4a9e0cb58e8398d91fc0f4e0af7359b9"
-  integrity sha512-wTbdT5+htbN4S7tyJ2NhaeGD4ZIHvHl8ewADX4u/cJVQnmLbmBN8WMXnE62Rfhc+69xnocKKJyVE7VUFP6O/Bw==
+"@immobiliarelabs/backstage-plugin-gitlab-backend@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@immobiliarelabs/backstage-plugin-gitlab-backend/-/backstage-plugin-gitlab-backend-6.0.0.tgz#cf64374b67d7704430257c0c643af2fe15285203"
+  integrity sha512-iZkp1M4/+wLau6xTctrMq+xrIYHKuvkgOsStMPpo1BiccPJGkoFmTYCdeTs3mdhROp7Ebm1sVg7km+4dXKnvWA==
   dependencies:
     "@backstage/backend-common" "^0.18.0"
     "@backstage/config" "^1.0.6"
