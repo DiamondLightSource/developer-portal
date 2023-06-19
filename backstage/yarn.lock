@@ -4368,10 +4368,10 @@
     winston "^3.2.1"
     yn "^4.0.0"
 
-"@immobiliarelabs/backstage-plugin-gitlab@^5.0.0":
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/@immobiliarelabs/backstage-plugin-gitlab/-/backstage-plugin-gitlab-5.2.0.tgz#6aa94b9fc2badb1e6f556aded20976617373e6ee"
-  integrity sha512-D98uVhy6u90KjBMFxk16ooRiM3UYsywN3QcphutoF+qz0hBg/kCyPw5F/CbwI308rKHe+jXUhjpAgZyLz+l9Wg==
+"@immobiliarelabs/backstage-plugin-gitlab@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@immobiliarelabs/backstage-plugin-gitlab/-/backstage-plugin-gitlab-6.0.0.tgz#e92f68ace33a7a3f9b0d275be0c7d63834b92801"
+  integrity sha512-4YjYA1R6MNnnqfmwUCGDiKiSyxuc8p8hT9/0CQzimGD39xPksxnhc6p2oqioTRO0Y5VdpcjvBa6XCZlC+Ozr2w==
   dependencies:
     "@backstage/core-components" "^0.13.0"
     "@backstage/core-plugin-api" "^1.0.0"
