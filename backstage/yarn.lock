@@ -2984,17 +2984,17 @@
     winston "^3.2.1"
 
 "@backstage/plugin-catalog-backend-module-ldap@^0.5.9":
-  version "0.5.12"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-backend-module-ldap/-/plugin-catalog-backend-module-ldap-0.5.12.tgz#7f92846cc9aad7b1b57cfd38fbcccdde87f08dc2"
-  integrity sha512-g10OBQ04q+9wDuoHzSEk4YLqQjR2X07J4vTPxRobHEwyH3Dl+ZTF9ZOJreqG5E+ip6lBX+XU4kX4+yDJzh9kjA==
+  version "0.5.13"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-backend-module-ldap/-/plugin-catalog-backend-module-ldap-0.5.13.tgz#ec76e394c15a7947059421ab49a967c9dc324e9a"
+  integrity sha512-A+X/zCY761PH9Tv2G+P/0ecMgLE0J0gLzGcUDoUI+hwlY66bvXsCblQw9HG6TBenkdUv+MXvrBX3j1N6KJprAQ==
   dependencies:
-    "@backstage/backend-tasks" "^0.5.2"
-    "@backstage/catalog-model" "^1.3.0"
-    "@backstage/config" "^1.0.7"
-    "@backstage/errors" "^1.1.5"
-    "@backstage/plugin-catalog-common" "^1.0.13"
-    "@backstage/plugin-catalog-node" "^1.3.6"
-    "@backstage/types" "^1.0.2"
+    "@backstage/backend-tasks" "^0.5.3"
+    "@backstage/catalog-model" "^1.4.0"
+    "@backstage/config" "^1.0.8"
+    "@backstage/errors" "^1.2.0"
+    "@backstage/plugin-catalog-common" "^1.0.14"
+    "@backstage/plugin-catalog-node" "^1.3.7"
+    "@backstage/types" "^1.1.0"
     "@types/ldapjs" "^2.2.0"
     ldapjs "^2.2.0"
     lodash "^4.17.21"
