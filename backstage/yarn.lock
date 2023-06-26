@@ -4479,17 +4479,17 @@
     winston "^3.2.1"
 
 "@backstage/plugin-search-backend-node@^1.1.1", "@backstage/plugin-search-backend-node@^1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-search-backend-node/-/plugin-search-backend-node-1.2.1.tgz#fd2d327dfea9296331f2c2523dc8eee2b2e6a2bc"
-  integrity sha512-nZvpMFCOMIdMEB35IKg97uKkRj/WHpaC0SZmzBvMnt/04uXRFaTo5hLN5oFHh1m4i6LYlQRM680hGMnQD5OBXA==
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-search-backend-node/-/plugin-search-backend-node-1.2.2.tgz#2cd261cfba2efeeca83e7e8b08a81956c125d095"
+  integrity sha512-wLUV0kGngzrQQtkukL7cS8oVGVMNzBUwN+rzSxEfOKoYfUkCiO0/rn8K5w5esZI69SHO6xrkgNiFpZXj/6KvKQ==
   dependencies:
-    "@backstage/backend-common" "^0.18.5"
-    "@backstage/backend-plugin-api" "^0.5.2"
-    "@backstage/backend-tasks" "^0.5.2"
-    "@backstage/config" "^1.0.7"
-    "@backstage/errors" "^1.1.5"
-    "@backstage/plugin-permission-common" "^0.7.5"
-    "@backstage/plugin-search-common" "^1.2.3"
+    "@backstage/backend-common" "^0.19.0"
+    "@backstage/backend-plugin-api" "^0.5.3"
+    "@backstage/backend-tasks" "^0.5.3"
+    "@backstage/config" "^1.0.8"
+    "@backstage/errors" "^1.2.0"
+    "@backstage/plugin-permission-common" "^0.7.6"
+    "@backstage/plugin-search-common" "^1.2.4"
     "@types/lunr" "^2.3.3"
     lodash "^4.17.21"
     lunr "^2.3.9"
