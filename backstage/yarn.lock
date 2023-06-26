@@ -3002,19 +3002,19 @@
     winston "^3.2.1"
 
 "@backstage/plugin-catalog-backend-module-openapi@^0.1.11":
-  version "0.1.11"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-backend-module-openapi/-/plugin-catalog-backend-module-openapi-0.1.11.tgz#a69cd3f492240e2f0b0291cc9db7f2734afa1e77"
-  integrity sha512-5hu6Aq9sw05P+mZsVx0R1zF1WnSSTSEGIxKqUOCF+Z0cOf/8jebyQ7cq3d5AVym/qGRJ5w+wE+hrJeijLMjaEg==
+  version "0.1.12"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-backend-module-openapi/-/plugin-catalog-backend-module-openapi-0.1.12.tgz#7bfaa46f924dcd37926e0a640a79a7470ffdc294"
+  integrity sha512-/2ZIttzne5Gi69vLPXI2BT3nr0HO9chgVQDK7SLQKkkj0Hj0g7ziiNiV4RMZbVbDAbXOdGHBgh5Vmr3ybJWu7g==
   dependencies:
     "@apidevtools/json-schema-ref-parser" "^9.0.6"
-    "@backstage/backend-common" "^0.18.5"
-    "@backstage/catalog-model" "^1.3.0"
-    "@backstage/config" "^1.0.7"
-    "@backstage/integration" "^1.4.5"
-    "@backstage/plugin-catalog-backend" "^1.9.1"
-    "@backstage/plugin-catalog-common" "^1.0.13"
-    "@backstage/plugin-catalog-node" "^1.3.6"
-    "@backstage/types" "^1.0.2"
+    "@backstage/backend-common" "^0.19.0"
+    "@backstage/catalog-model" "^1.4.0"
+    "@backstage/config" "^1.0.8"
+    "@backstage/integration" "^1.5.0"
+    "@backstage/plugin-catalog-backend" "^1.10.0"
+    "@backstage/plugin-catalog-common" "^1.0.14"
+    "@backstage/plugin-catalog-node" "^1.3.7"
+    "@backstage/types" "^1.1.0"
     winston "^3.2.1"
     yaml "^2.1.1"
 
