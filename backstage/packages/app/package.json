@@ -31,7 +31,7 @@
     "@backstage/plugin-catalog-graph": "^0.2.26",
     "@backstage/plugin-catalog-import": "^0.9.4",
     "@backstage/plugin-catalog-react": "^1.2.4",
-    "@backstage/plugin-github-actions": "^0.5.14",
+    "@backstage/plugin-github-actions": "^0.6.0",
     "@backstage/plugin-home": "^0.5.2",
     "@backstage/plugin-org": "^0.6.4",
     "@backstage/plugin-permission-react": "^0.4.9",
