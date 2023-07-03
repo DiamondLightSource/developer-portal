@@ -2731,7 +2731,7 @@
     zen-observable "^0.10.0"
     zod "^3.21.4"
 
-"@backstage/core-components@^0.13.0", "@backstage/core-components@^0.13.1", "@backstage/core-components@^0.13.2":
+"@backstage/core-components@^0.13.0", "@backstage/core-components@^0.13.2":
   version "0.13.2"
   resolved "https://registry.yarnpkg.com/@backstage/core-components/-/core-components-0.13.2.tgz#659d18bc15ac9ded0b5433218ba66d8851c87b7d"
   integrity sha512-Y8LOT+YK1bxEv1oRWeaU0vgcbFmjlVWpchvo8BZ3ddtdLQWUGUfNVNP2gBhanvZn262C94B1uRWH6ZoCsxOiig==
@@ -2778,7 +2778,7 @@
     zen-observable "^0.10.0"
     zod "^3.21.4"
 
-"@backstage/core-plugin-api@^1.0.0", "@backstage/core-plugin-api@^1.3.0", "@backstage/core-plugin-api@^1.5.0", "@backstage/core-plugin-api@^1.5.1", "@backstage/core-plugin-api@^1.5.2":
+"@backstage/core-plugin-api@^1.0.0", "@backstage/core-plugin-api@^1.3.0", "@backstage/core-plugin-api@^1.5.0", "@backstage/core-plugin-api@^1.5.2":
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/@backstage/core-plugin-api/-/core-plugin-api-1.5.2.tgz#98e31acd1938de4bdcc090b0bd5ee185e5bfe705"
   integrity sha512-NiX/0a/Bbiy5GprEEfhe06fU1NEQ3DLpOhHqey47FwGFPzXo3C6OSFCygLsHMqGQNt9eRStBDsZlaINAo0wSlQ==
@@ -3133,7 +3133,7 @@
     "@backstage/plugin-catalog-common" "^1.0.14"
     "@backstage/types" "^1.1.0"
 
-"@backstage/plugin-catalog-react@^1.2.3", "@backstage/plugin-catalog-react@^1.2.4", "@backstage/plugin-catalog-react@^1.6.0", "@backstage/plugin-catalog-react@^1.7.0":
+"@backstage/plugin-catalog-react@^1.2.3", "@backstage/plugin-catalog-react@^1.2.4", "@backstage/plugin-catalog-react@^1.7.0":
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-react/-/plugin-catalog-react-1.7.0.tgz#4aea594282ba4d6010e2ae5f9a04cbb0eaf57777"
   integrity sha512-vEOZjh22gnETDj9b1Nat9DA6R0q27QyRpts5db04oadkAB4khZ9V97/aao1qDaXXzlPHkavJDn/VqYjeMi2Kog==
@@ -20783,9 +20783,9 @@ typescript-json-schema@^0.55.0:
     yargs "^17.1.1"
 
 "typescript@>=3 < 6", typescript@~5.1.3:
-  version "5.1.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.1.3.tgz#8d84219244a6b40b6fb2b33cc1c062f715b9e826"
-  integrity sha512-XH627E9vkeqhlZFQuL+UsyAXEnibT0kWR2FWONlr4sTjvxyJYnyefgrkyECLzM5NenmKzRAy2rR/OlYLA1HkZw==
+  version "5.1.6"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.1.6.tgz#02f8ac202b6dad2c0dd5e0913745b47a37998274"
+  integrity sha512-zaWCozRZ6DLEWAWFrVDz1H6FVXzUSfTy5FUMWsQlU8Ym5JP9eO4xkTIROFCQvhQf61z6O/G6ugw3SgAnvvm+HA==
 
 typescript@~4.8.2:
   version "4.8.4"
