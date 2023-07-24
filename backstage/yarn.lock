@@ -2635,16 +2635,7 @@
     winston "^3.2.1"
     zod "^3.21.4"
 
-"@backstage/catalog-client@^1.3.0", "@backstage/catalog-client@^1.4.1", "@backstage/catalog-client@^1.4.2":
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/@backstage/catalog-client/-/catalog-client-1.4.2.tgz#9a43d77e1635a16f41104551d51ea31d4c69e0d9"
-  integrity sha512-gk6POY00uQOwOXT9uN//ajGCkAA3V90rr4OhW1jpvwp6V7liKRce93jeNDnCzvqawmNl6BbMEEcz/lE77SOwRw==
-  dependencies:
-    "@backstage/catalog-model" "^1.4.0"
-    "@backstage/errors" "^1.2.0"
-    cross-fetch "^3.1.5"
-
-"@backstage/catalog-client@^1.4.3":
+"@backstage/catalog-client@^1.3.0", "@backstage/catalog-client@^1.4.1", "@backstage/catalog-client@^1.4.2", "@backstage/catalog-client@^1.4.3":
   version "1.4.3"
   resolved "https://registry.yarnpkg.com/@backstage/catalog-client/-/catalog-client-1.4.3.tgz#e7631dcae97a7620b1532666a12e92be092a9f34"
   integrity sha512-a9l8kiPyH7RV2h7i4xYemNZbHj5tQfaaSueO2ln5Ew52CoVzdKB/c66y4B1/K8S/kGneyfc1cI8A33IiYp4VfA==
@@ -3298,21 +3289,21 @@
     "@backstage/plugin-catalog-common" "^1.0.15"
     "@backstage/types" "^1.1.0"
 
-"@backstage/plugin-catalog-react@^1.2.3", "@backstage/plugin-catalog-react@^1.2.4", "@backstage/plugin-catalog-react@^1.7.0":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-react/-/plugin-catalog-react-1.7.0.tgz#4aea594282ba4d6010e2ae5f9a04cbb0eaf57777"
-  integrity sha512-vEOZjh22gnETDj9b1Nat9DA6R0q27QyRpts5db04oadkAB4khZ9V97/aao1qDaXXzlPHkavJDn/VqYjeMi2Kog==
+"@backstage/plugin-catalog-react@^1.2.3", "@backstage/plugin-catalog-react@^1.2.4", "@backstage/plugin-catalog-react@^1.7.0", "@backstage/plugin-catalog-react@^1.8.0":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-react/-/plugin-catalog-react-1.8.0.tgz#bbd98c7ad04252ee1638295c60684cf6467e3bfe"
+  integrity sha512-OOsm8ocvpy6kHgn2a/6zbz/CtMn3XCvAIy8sY6rTFYkwlauNsL9oktppkxzU5Vp1IWGu4Ot1kmjBP0tx6Z7POw==
   dependencies:
-    "@backstage/catalog-client" "^1.4.2"
-    "@backstage/catalog-model" "^1.4.0"
-    "@backstage/core-components" "^0.13.2"
-    "@backstage/core-plugin-api" "^1.5.2"
-    "@backstage/errors" "^1.2.0"
-    "@backstage/integration" "^1.5.0"
-    "@backstage/plugin-catalog-common" "^1.0.14"
-    "@backstage/plugin-permission-common" "^0.7.6"
-    "@backstage/plugin-permission-react" "^0.4.13"
-    "@backstage/theme" "^0.4.0"
+    "@backstage/catalog-client" "^1.4.3"
+    "@backstage/catalog-model" "^1.4.1"
+    "@backstage/core-components" "^0.13.3"
+    "@backstage/core-plugin-api" "^1.5.3"
+    "@backstage/errors" "^1.2.1"
+    "@backstage/integration" "^1.5.1"
+    "@backstage/plugin-catalog-common" "^1.0.15"
+    "@backstage/plugin-permission-common" "^0.7.7"
+    "@backstage/plugin-permission-react" "^0.4.14"
+    "@backstage/theme" "^0.4.1"
     "@backstage/types" "^1.1.0"
     "@backstage/version-bridge" "^1.0.4"
     "@material-ui/core" "^4.12.2"
@@ -3330,22 +3321,22 @@
     zen-observable "^0.10.0"
 
 "@backstage/plugin-catalog@^1.11.2", "@backstage/plugin-catalog@^1.7.2":
-  version "1.11.2"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog/-/plugin-catalog-1.11.2.tgz#c4f65ba1ba6a6d70016ff4a53f218e9f625b1cb5"
-  integrity sha512-Wsn74culvpqAU0vHaXkL0oaUX+c7xtSBTbHd5oXYoi0E+Vf76ye5Z0pEz1n2k/p+O/Gx95VGI7KdYagctlFgyg==
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog/-/plugin-catalog-1.12.0.tgz#07f14ac0218d39ee0f6dbc65c2cd49c1d0cb34a1"
+  integrity sha512-mF61DZPHnVWwFZiK9mh3R5gISnAjQAjqR65ZOHg1EU6BkLP4nAyHVdDTeZJkiHbO1y9QYyhkFKw6nJOamFeNGw==
   dependencies:
-    "@backstage/catalog-client" "^1.4.2"
-    "@backstage/catalog-model" "^1.4.0"
-    "@backstage/core-components" "^0.13.2"
-    "@backstage/core-plugin-api" "^1.5.2"
-    "@backstage/errors" "^1.2.0"
-    "@backstage/integration-react" "^1.1.14"
-    "@backstage/plugin-catalog-common" "^1.0.14"
-    "@backstage/plugin-catalog-react" "^1.7.0"
-    "@backstage/plugin-scaffolder-common" "^1.3.1"
-    "@backstage/plugin-search-common" "^1.2.4"
-    "@backstage/plugin-search-react" "^1.6.2"
-    "@backstage/theme" "^0.4.0"
+    "@backstage/catalog-client" "^1.4.3"
+    "@backstage/catalog-model" "^1.4.1"
+    "@backstage/core-components" "^0.13.3"
+    "@backstage/core-plugin-api" "^1.5.3"
+    "@backstage/errors" "^1.2.1"
+    "@backstage/integration-react" "^1.1.15"
+    "@backstage/plugin-catalog-common" "^1.0.15"
+    "@backstage/plugin-catalog-react" "^1.8.0"
+    "@backstage/plugin-scaffolder-common" "^1.3.2"
+    "@backstage/plugin-search-common" "^1.2.5"
+    "@backstage/plugin-search-react" "^1.6.3"
+    "@backstage/theme" "^0.4.1"
     "@backstage/types" "^1.1.0"
     "@material-ui/core" "^4.12.2"
     "@material-ui/icons" "^4.9.1"
@@ -3575,13 +3566,13 @@
     zen-observable "^0.10.0"
     zod "^3.21.4"
 
-"@backstage/plugin-scaffolder-common@^1.3.0", "@backstage/plugin-scaffolder-common@^1.3.1":
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-scaffolder-common/-/plugin-scaffolder-common-1.3.1.tgz#777ad5287de28bfb50ab6dc68945394db22d8648"
-  integrity sha512-LLtrh3urwldRbqcV8zBHEFoDT+D08AK+6RRjSv+Pfx1ELnTD5C03TDV6vvx3AXJneXbJF+Tj/LKcUiUJokO7TA==
+"@backstage/plugin-scaffolder-common@^1.3.0", "@backstage/plugin-scaffolder-common@^1.3.1", "@backstage/plugin-scaffolder-common@^1.3.2":
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-scaffolder-common/-/plugin-scaffolder-common-1.3.2.tgz#fda9ecf1774b4327c0a49ecde3d44681ab9e0f6f"
+  integrity sha512-u9fr9AvLGvTnbEgNtJOVJtqF5mpDbRVijRA+ySL7gWZH6d4Qyizg4kzfvwGvXQcc7kLWzM1JQt3x5eIYtd7pWg==
   dependencies:
-    "@backstage/catalog-model" "^1.4.0"
-    "@backstage/plugin-permission-common" "^0.7.6"
+    "@backstage/catalog-model" "^1.4.1"
+    "@backstage/plugin-permission-common" "^0.7.7"
     "@backstage/types" "^1.1.0"
 
 "@backstage/plugin-scaffolder-node@^0.1.3":
@@ -3792,7 +3783,7 @@
     "@backstage/plugin-permission-common" "^0.7.7"
     "@backstage/types" "^1.1.0"
 
-"@backstage/plugin-search-react@^1.4.0", "@backstage/plugin-search-react@^1.6.2":
+"@backstage/plugin-search-react@^1.4.0", "@backstage/plugin-search-react@^1.6.2", "@backstage/plugin-search-react@^1.6.3":
   version "1.6.3"
   resolved "https://registry.yarnpkg.com/@backstage/plugin-search-react/-/plugin-search-react-1.6.3.tgz#0b745ec13758a97bccf527b3ebb15d17f304d9a1"
   integrity sha512-6u7PT0TjJ2WZHwqMl2to+7Ii1hCpTsotmo/oER0chx3Ut/9XkzFKWxcU51mBSWd+TwYkRGMKCoHCAg8sCsLK/g==
