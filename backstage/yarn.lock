@@ -2868,16 +2868,16 @@
     swagger-ui-react "^5.0.0"
 
 "@backstage/plugin-auth-backend@^0.18.1":
-  version "0.18.4"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-auth-backend/-/plugin-auth-backend-0.18.4.tgz#7cd7a0b68aa542c47f8c9904249029673352c01f"
-  integrity sha512-x8TMXfCppd2cXk5qYlaucL0Iaf9i8MR66muiiyoGRil/I/Oh6lnWm23r46p7Xvs9dn/+EoU/11tKhQsS/9xKVw==
+  version "0.18.5"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-auth-backend/-/plugin-auth-backend-0.18.5.tgz#89105134f90103aec3361a107e70ba482f842422"
+  integrity sha512-AADP0N8BmY8kz/uVZUzlXqZsTzBjre8DQygvm6m6ojA3xsWXgv4DZV1nebXHlulamhs0refKHybPXTMhwyvtyA==
   dependencies:
-    "@backstage/backend-common" "^0.19.0"
-    "@backstage/catalog-client" "^1.4.2"
-    "@backstage/catalog-model" "^1.4.0"
+    "@backstage/backend-common" "^0.19.1"
+    "@backstage/catalog-client" "^1.4.3"
+    "@backstage/catalog-model" "^1.4.1"
     "@backstage/config" "^1.0.8"
-    "@backstage/errors" "^1.2.0"
-    "@backstage/plugin-auth-node" "^0.2.15"
+    "@backstage/errors" "^1.2.1"
+    "@backstage/plugin-auth-node" "^0.2.16"
     "@backstage/types" "^1.1.0"
     "@davidzemon/passport-okta-oauth" "^0.0.5"
     "@google-cloud/firestore" "^6.0.0"
@@ -2916,21 +2916,7 @@
     winston "^3.2.1"
     yn "^4.0.0"
 
-"@backstage/plugin-auth-node@^0.2.14", "@backstage/plugin-auth-node@^0.2.15", "@backstage/plugin-auth-node@^0.2.9":
-  version "0.2.15"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-auth-node/-/plugin-auth-node-0.2.15.tgz#8e6b7d692be9baefff25276a6e3a262dcd4137f9"
-  integrity sha512-imWRM7iNNJjBreCEaS8Qe1AgCSMa/Mhq4E4YlmtKddn4sUbk6v/2ivNtpNOsqcRYMRvWQE9wt837KnvRk6UjNw==
-  dependencies:
-    "@backstage/backend-common" "^0.19.0"
-    "@backstage/config" "^1.0.8"
-    "@backstage/errors" "^1.2.0"
-    "@types/express" "*"
-    express "^4.17.1"
-    jose "^4.6.0"
-    node-fetch "^2.6.7"
-    winston "^3.2.1"
-
-"@backstage/plugin-auth-node@^0.2.16":
+"@backstage/plugin-auth-node@^0.2.14", "@backstage/plugin-auth-node@^0.2.15", "@backstage/plugin-auth-node@^0.2.16", "@backstage/plugin-auth-node@^0.2.9":
   version "0.2.16"
   resolved "https://registry.yarnpkg.com/@backstage/plugin-auth-node/-/plugin-auth-node-0.2.16.tgz#39b50d0a62fc50f4e17bf411a4819345b5e68923"
   integrity sha512-wJG1eERzsbZJ2u2ovhyXWmWTpMDgdB9BV1YX9BLUdPPYjgzjXDEtgz6TaSZuEC33DVekLzfRc5isnb6tTlT+rg==
