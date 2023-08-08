@@ -2,6 +2,10 @@ FROM docker.io/library/node:18-bullseye-slim AS build
 
 WORKDIR /app
 
+RUN apt-get update \
+    && apt-get install -y \
+        python3 g++ build-essential
+
 COPY package.json yarn.lock ./
 COPY packages/app/package.json packages/app/package.json
 COPY packages/backend/package.json packages/backend/package.json
@@ -35,6 +39,12 @@ EXPOSE 80
 FROM docker.io/library/node:18-bullseye-slim as backend
 
 WORKDIR /app
+
+RUN apt-get update \
+    && apt-get install -y \
+        python3 g++ build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
 
 COPY --from=build /app/package.json /app/yarn.lock /app/packages/backend/dist/skeleton ./
 
