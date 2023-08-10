@@ -11,7 +11,7 @@ import { PluginEnvironment } from '../types';
 export default async function createPlugin(
   env: PluginEnvironment,
 ): Promise<Router> {
-  const builder = CatalogBuilder.create(env);
+  const builder = CatalogBuilder.create(env).setProcessingIntervalSeconds(200);
   builder.addEntityProvider(
     LdapOrgEntityProvider.fromConfig(env.config, {
       id: 'ral-ldap',
