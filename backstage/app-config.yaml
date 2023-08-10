@@ -104,4 +104,4 @@ catalog:
           frequency:
             minutes: 60
           timeout:
-            minutes: 10
+            minutes: 30
