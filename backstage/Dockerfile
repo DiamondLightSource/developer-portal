@@ -45,7 +45,6 @@ RUN apt-get update \
         python3 g++ build-essential \
     && rm -rf /var/lib/apt/lists/*
 
-
 COPY --from=build /app/package.json /app/yarn.lock /app/packages/backend/dist/skeleton ./
 
 RUN --mount=type=cache,target=/root/.cache/yarn,sharing=locked \
