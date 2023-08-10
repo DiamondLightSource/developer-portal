@@ -99,6 +99,7 @@ catalog:
     gitlab:
       GitLab:
         host: gitlab.diamond.ac.uk
+        skipForkedRepos: true
         schedule:
           frequency:
             minutes: 60
