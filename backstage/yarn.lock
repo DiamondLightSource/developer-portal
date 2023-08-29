@@ -3325,14 +3325,14 @@
     zod "~3.21.4"
 
 "@backstage/plugin-org@^0.6.4":
-  version "0.6.10"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-org/-/plugin-org-0.6.10.tgz#c7feb391ebfa584a8de9c6a2a05a230c87f9a32e"
-  integrity sha512-oMBVC5D5x14FOyWRKj/R6nD+qMXx9O1A68emEY6HFWdEfkLt/cuyoiConHfAxTAS2Q/jXGxp0j4n6es+EqILgg==
+  version "0.6.13"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-org/-/plugin-org-0.6.13.tgz#a25779bcd2e72d52d33d8b6449e19398c5edf43f"
+  integrity sha512-36Ux26OK1yF+tJLKG5SQULjuBKlANg4oPTj3DBSdK6RVSc3V8WZypJ9KAbBWuLQwzqBZ7x4c6uC6rdlZwSEtdw==
   dependencies:
     "@backstage/catalog-model" "^1.4.1"
-    "@backstage/core-components" "^0.13.3"
+    "@backstage/core-components" "^0.13.4"
     "@backstage/core-plugin-api" "^1.5.3"
-    "@backstage/plugin-catalog-react" "^1.8.0"
+    "@backstage/plugin-catalog-react" "^1.8.3"
     "@backstage/theme" "^0.4.1"
     "@material-ui/core" "^4.12.2"
     "@material-ui/icons" "^4.9.1"
