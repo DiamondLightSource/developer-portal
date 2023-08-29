@@ -3011,22 +3011,22 @@
     winston "^3.2.1"
 
 "@backstage/plugin-catalog-backend-module-github@^0.3.0":
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-backend-module-github/-/plugin-catalog-backend-module-github-0.3.2.tgz#eb8f5855c0dbcce28cf62cc4ffb58c5c7765b0d0"
-  integrity sha512-MdrvoxiI15NNNKCaPpdQJqi5ES8Px/i2Ak4Wkf+YjTAKzl2gA0EwFA+WvL8RqCzKI25cr5Hc4W+rnQ0ebipqSg==
+  version "0.3.7"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-backend-module-github/-/plugin-catalog-backend-module-github-0.3.7.tgz#9aeae39aefecf6693c98a3cb97b33527f83b5e3c"
+  integrity sha512-bJu46HpXoycqpKPjuBurt/Yc1JKTB8K/3CSRhVX1w/FyeuJCOWphfbzjFGgWve/1g0rKaKPI8Y5NoDZ7Hc2/hQ==
   dependencies:
-    "@backstage/backend-common" "^0.19.1"
-    "@backstage/backend-plugin-api" "^0.5.4"
-    "@backstage/backend-tasks" "^0.5.4"
+    "@backstage/backend-common" "^0.19.4"
+    "@backstage/backend-plugin-api" "^0.6.2"
+    "@backstage/backend-tasks" "^0.5.7"
     "@backstage/catalog-client" "^1.4.3"
     "@backstage/catalog-model" "^1.4.1"
     "@backstage/config" "^1.0.8"
     "@backstage/errors" "^1.2.1"
-    "@backstage/integration" "^1.5.1"
-    "@backstage/plugin-catalog-backend" "^1.11.0"
+    "@backstage/integration" "^1.6.2"
+    "@backstage/plugin-catalog-backend" "^1.12.4"
     "@backstage/plugin-catalog-common" "^1.0.15"
-    "@backstage/plugin-catalog-node" "^1.4.0"
-    "@backstage/plugin-events-node" "^0.2.8"
+    "@backstage/plugin-catalog-node" "^1.4.3"
+    "@backstage/plugin-events-node" "^0.2.11"
     "@backstage/types" "^1.1.0"
     "@octokit/graphql" "^5.0.0"
     "@octokit/rest" "^19.0.3"
@@ -3274,13 +3274,6 @@
   integrity sha512-FPNRILqByuq9a5Tr9yhrvc8HYA4vot9StTxgntUga5tzYw2dbaknm4HYkqeRcryFcklZheTVcfP8pfXtFR/FcA==
   dependencies:
     "@backstage/backend-plugin-api" "^0.6.2"
-
-"@backstage/plugin-events-node@^0.2.8":
-  version "0.2.8"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-events-node/-/plugin-events-node-0.2.8.tgz#beb889b5fcc3ef78a157ea96e9b95560dc151870"
-  integrity sha512-S1fNPXe2hC/gFvRREFKg/3IYUtZC0Lu3GXZciP8XBJgjHr1HVoh+zfkzsTXPr5HFfgAJ3GNUsSW8Nj7VGHjh6A==
-  dependencies:
-    "@backstage/backend-plugin-api" "^0.5.4"
 
 "@backstage/plugin-github-actions@^0.6.0":
   version "0.6.4"
