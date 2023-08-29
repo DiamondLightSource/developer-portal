@@ -2933,16 +2933,16 @@
     swagger-ui-react "^5.0.0"
 
 "@backstage/plugin-auth-backend@^0.18.1":
-  version "0.18.5"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-auth-backend/-/plugin-auth-backend-0.18.5.tgz#89105134f90103aec3361a107e70ba482f842422"
-  integrity sha512-AADP0N8BmY8kz/uVZUzlXqZsTzBjre8DQygvm6m6ojA3xsWXgv4DZV1nebXHlulamhs0refKHybPXTMhwyvtyA==
+  version "0.18.8"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-auth-backend/-/plugin-auth-backend-0.18.8.tgz#894d1152c4739eab697745f8ffea820492ceac93"
+  integrity sha512-MN3JThDIsrlELjOzkz3/8ea7+proQT0/hPUey2KmBp2LJpYz8C1+SeF7g9bUc6jKmr2mSsFuiNx+UzaJpgXRgw==
   dependencies:
-    "@backstage/backend-common" "^0.19.1"
+    "@backstage/backend-common" "^0.19.4"
     "@backstage/catalog-client" "^1.4.3"
     "@backstage/catalog-model" "^1.4.1"
     "@backstage/config" "^1.0.8"
     "@backstage/errors" "^1.2.1"
-    "@backstage/plugin-auth-node" "^0.2.16"
+    "@backstage/plugin-auth-node" "^0.2.19"
     "@backstage/types" "^1.1.0"
     "@davidzemon/passport-okta-oauth" "^0.0.5"
     "@google-cloud/firestore" "^6.0.0"
