@@ -2,297 +2,297 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://0.0.0.0/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/developer/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/developer/explanations/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/developer/explanations/placeholder/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/developer/how-tos/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/developer/how-tos/placeholder/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/developer/references/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/developer/references/placeholder/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/developer/tutorials/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/developer/tutorials/placeholder/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/common/create-entity-descriptor/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/common/create-entity-metadata/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/common/entity-dependson/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/common/entity-envelope/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/common/entity-owner/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/common/entity-system/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/common/get-repository/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/common/push-and-wait/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/explanations/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/explanations/api/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/explanations/component/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/explanations/domain/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/explanations/entity-ingress/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/explanations/group/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/explanations/location/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/explanations/resource/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/explanations/system/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/explanations/template/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/explanations/user/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/explanations/which-docs/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/how-tos/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/how-tos/debug-entity-descriptors/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/how-tos/embed-a-linkdocs-site/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/how-tos/link-to-remote-entities/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/how-tos/publish-a-techdocs-site/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/how-tos/register-a-component/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/how-tos/register-a-group/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/how-tos/register-a-resource/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/how-tos/register-a-static-api/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/how-tos/register-a-system/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/how-tos/register-multiple-entities/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/references/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/references/api-spec/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/references/common-api-types/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/references/common-component-types/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/references/common-lifecycle-stages/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/references/component-spec/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/references/discovery-locations/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/references/domain-spec/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/references/entity-envelope/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/references/entity-metadata/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/references/entity-types/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/references/location-spec/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/references/resource-spec/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/references/supported-annotations/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/references/system-spec/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/tutorials/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0.0.0.0/user/tutorials/web-app/</loc>
-         <lastmod>2023-09-18</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
