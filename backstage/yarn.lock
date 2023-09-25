@@ -2983,24 +2983,24 @@
     zod "^3.21.4"
     zod-to-json-schema "^3.21.4"
 
-"@backstage/plugin-catalog-backend-module-github@^0.3.0":
-  version "0.3.7"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-backend-module-github/-/plugin-catalog-backend-module-github-0.3.7.tgz#9aeae39aefecf6693c98a3cb97b33527f83b5e3c"
-  integrity sha512-bJu46HpXoycqpKPjuBurt/Yc1JKTB8K/3CSRhVX1w/FyeuJCOWphfbzjFGgWve/1g0rKaKPI8Y5NoDZ7Hc2/hQ==
+"@backstage/plugin-catalog-backend-module-github@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-backend-module-github/-/plugin-catalog-backend-module-github-0.4.0.tgz#2e417fd78c7e536a36d91fb5fcd268225d369470"
+  integrity sha512-jPzvrHAjIguDLFkqu3gp6fmqhOqvPWZj4Bu2LupBTo45gqK/RfhzVgW6VFlEYB3xFyuT3j5IYm0FWrkFofWTSQ==
   dependencies:
-    "@backstage/backend-common" "^0.19.4"
-    "@backstage/backend-plugin-api" "^0.6.2"
-    "@backstage/backend-tasks" "^0.5.7"
-    "@backstage/catalog-client" "^1.4.3"
-    "@backstage/catalog-model" "^1.4.1"
-    "@backstage/config" "^1.0.8"
-    "@backstage/errors" "^1.2.1"
-    "@backstage/integration" "^1.6.2"
-    "@backstage/plugin-catalog-backend" "^1.12.4"
-    "@backstage/plugin-catalog-common" "^1.0.15"
-    "@backstage/plugin-catalog-node" "^1.4.3"
-    "@backstage/plugin-events-node" "^0.2.11"
-    "@backstage/types" "^1.1.0"
+    "@backstage/backend-common" "^0.19.5"
+    "@backstage/backend-plugin-api" "^0.6.3"
+    "@backstage/backend-tasks" "^0.5.8"
+    "@backstage/catalog-client" "^1.4.4"
+    "@backstage/catalog-model" "^1.4.2"
+    "@backstage/config" "^1.1.0"
+    "@backstage/errors" "^1.2.2"
+    "@backstage/integration" "^1.7.0"
+    "@backstage/plugin-catalog-backend" "^1.13.0"
+    "@backstage/plugin-catalog-common" "^1.0.16"
+    "@backstage/plugin-catalog-node" "^1.4.4"
+    "@backstage/plugin-events-node" "^0.2.12"
+    "@backstage/types" "^1.1.1"
     "@octokit/graphql" "^5.0.0"
     "@octokit/rest" "^19.0.3"
     git-url-parse "^13.0.0"
@@ -3064,7 +3064,7 @@
     winston "^3.2.1"
     yaml "^2.1.1"
 
-"@backstage/plugin-catalog-backend@^1.12.4", "@backstage/plugin-catalog-backend@^1.7.0":
+"@backstage/plugin-catalog-backend@^1.12.4", "@backstage/plugin-catalog-backend@^1.13.0", "@backstage/plugin-catalog-backend@^1.7.0":
   version "1.13.0"
   resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-backend/-/plugin-catalog-backend-1.13.0.tgz#ad6aaeac84a2064060b75b3bd22a1062c6dd1e52"
   integrity sha512-hklsGiV08r6RJovgG4uH20nkR8MKYHq+scu3ayxrwXZvnGuo9yCsbfrgQK9F3DUXFey5Yq/Xswf5tDuj58bQdg==
@@ -3241,7 +3241,7 @@
     react-use "^17.2.4"
     zen-observable "^0.10.0"
 
-"@backstage/plugin-events-node@^0.2.11", "@backstage/plugin-events-node@^0.2.12":
+"@backstage/plugin-events-node@^0.2.12":
   version "0.2.12"
   resolved "https://registry.yarnpkg.com/@backstage/plugin-events-node/-/plugin-events-node-0.2.12.tgz#40c1b09c01c01a7ce767a5af772ec96803feeea9"
   integrity sha512-B9pU9dFHvUE2rHA/RqktWIv1DubMS77opZksvplPTvKdytxAMoQp1A37/GmJuvr4PshvT+QsilW4VRUtl0rslw==
