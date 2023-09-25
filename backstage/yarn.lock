@@ -3014,17 +3014,17 @@
     winston "^3.2.1"
 
 "@backstage/plugin-catalog-backend-module-ldap@^0.5.9":
-  version "0.5.17"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-backend-module-ldap/-/plugin-catalog-backend-module-ldap-0.5.17.tgz#6b7d47fa8945403bf3ed95a898706e96178f5440"
-  integrity sha512-uouyJ+YEU+EOim0oVtqwkxHpnprAj4sNun/S0q5lggO6zOaBQc6h2KXWxNfRZXleiPg2cwephlOurD+J4trveg==
+  version "0.5.18"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-backend-module-ldap/-/plugin-catalog-backend-module-ldap-0.5.18.tgz#a4499e7b4b8fa673933095e8973c438beffdcc86"
+  integrity sha512-hrnFD/l3p65+rdcSAYx/9JLgcaVdbg+dIXNm79GuuQRKgRvtLZQiAWpwHGrzJXLIdWj8ZNSQg5IU1t/eUqvjBw==
   dependencies:
-    "@backstage/backend-tasks" "^0.5.7"
-    "@backstage/catalog-model" "^1.4.1"
-    "@backstage/config" "^1.0.8"
-    "@backstage/errors" "^1.2.1"
-    "@backstage/plugin-catalog-common" "^1.0.15"
-    "@backstage/plugin-catalog-node" "^1.4.3"
-    "@backstage/types" "^1.1.0"
+    "@backstage/backend-tasks" "^0.5.8"
+    "@backstage/catalog-model" "^1.4.2"
+    "@backstage/config" "^1.1.0"
+    "@backstage/errors" "^1.2.2"
+    "@backstage/plugin-catalog-common" "^1.0.16"
+    "@backstage/plugin-catalog-node" "^1.4.4"
+    "@backstage/types" "^1.1.1"
     "@types/ldapjs" "^2.2.0"
     ldapjs "^2.2.0"
     lodash "^4.17.21"
@@ -3095,16 +3095,7 @@
     yn "^4.0.0"
     zod "^3.21.4"
 
-"@backstage/plugin-catalog-common@^1.0.10", "@backstage/plugin-catalog-common@^1.0.15":
-  version "1.0.15"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-common/-/plugin-catalog-common-1.0.15.tgz#9aa2723f0fb3d6bd1cc5bb2fbd03fbc5b8a59046"
-  integrity sha512-x1BurUKE+aKvHPAen7OrqmBhi5+Cb0gsoBbyXr5aL4qb4yOVbFI56SMfZ/k4AcqdmJmqonSQuyZJLIryAYAF5Q==
-  dependencies:
-    "@backstage/catalog-model" "^1.4.1"
-    "@backstage/plugin-permission-common" "^0.7.7"
-    "@backstage/plugin-search-common" "^1.2.5"
-
-"@backstage/plugin-catalog-common@^1.0.16":
+"@backstage/plugin-catalog-common@^1.0.10", "@backstage/plugin-catalog-common@^1.0.15", "@backstage/plugin-catalog-common@^1.0.16":
   version "1.0.16"
   resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-common/-/plugin-catalog-common-1.0.16.tgz#cf37fc30117fcdac07a98b6ed236816651689cd5"
   integrity sha512-k8HMWI8+YCxYPrtcCQ8XfkzRgAw0/tHq4H2BZBnuWZZqRifb4PUuc8pL25aLtP83ZP2KPY54mWSJkQ2+S23JFA==
