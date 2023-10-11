@@ -13,6 +13,7 @@ COPY packages/app/package.json packages/app/package.json
 COPY packages/backend/package.json packages/backend/package.json
 COPY plugins/viewdocs-react/package.json plugins/viewdocs-react/package.json
 
+ENV CYPRESS_INSTALL_BINARY=0
 RUN --mount=type=cache,target=/root/.cache/yarn,sharing=locked \
     yarn install --frozen-lockfile
 
