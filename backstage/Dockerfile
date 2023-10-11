@@ -2,8 +2,10 @@ FROM docker.io/library/node:18-bullseye-slim AS build
 
 WORKDIR /app
 
-RUN apt-get update \
-    && apt-get install -y \
+RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
+    --mount=type=cache,target=/var/lib/apt,sharing=locked \
+    apt-get update \
+    && apt-get install -y --no-install-recommends \
         python3 g++ build-essential
 
 COPY package.json yarn.lock ./
@@ -40,10 +42,11 @@ FROM docker.io/library/node:18-bullseye-slim as backend
 
 WORKDIR /app
 
-RUN apt-get update \
-    && apt-get install -y \
-        python3 g++ build-essential \
-    && rm -rf /var/lib/apt/lists/*
+RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
+    --mount=type=cache,target=/var/lib/apt,sharing=locked \
+    apt-get update \
+    && apt-get install -y --no-install-recommends \
+        python3 g++ build-essential
 
 COPY --from=build /app/package.json /app/yarn.lock /app/packages/backend/dist/skeleton ./
 
