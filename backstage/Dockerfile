@@ -6,7 +6,8 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
     --mount=type=cache,target=/var/lib/apt,sharing=locked \
     apt-get update \
     && apt-get install -y --no-install-recommends \
-        python3 g++ build-essential
+        python3 g++ build-essential \
+    && yarn config set python /usr/bin/python3
 
 COPY package.json yarn.lock ./
 COPY packages/app/package.json packages/app/package.json
@@ -47,7 +48,8 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
     --mount=type=cache,target=/var/lib/apt,sharing=locked \
     apt-get update \
     && apt-get install -y --no-install-recommends \
-        python3 g++ build-essential
+        python3 g++ build-essential \
+    && yarn config set python /usr/bin/python3
 
 COPY --from=build /app/package.json /app/yarn.lock /app/packages/backend/dist/skeleton ./
 
