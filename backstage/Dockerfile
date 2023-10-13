@@ -22,7 +22,8 @@ COPY ./ ./
 
 RUN yarn run tsc
 
-RUN yarn run build:all
+RUN yarn --cwd packages/app build 
+RUN yarn --cwd packages/backend build 
 
 RUN mkdir packages/backend/dist/skeleton packages/backend/dist/bundle \
     && tar xzf packages/backend/dist/skeleton.tar.gz -C packages/backend/dist/skeleton \
