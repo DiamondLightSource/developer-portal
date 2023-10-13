@@ -3046,23 +3046,23 @@
     winston "^3.2.1"
 
 "@backstage/plugin-catalog-backend-module-openapi@^0.1.11":
-  version "0.1.21"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-backend-module-openapi/-/plugin-catalog-backend-module-openapi-0.1.21.tgz#c4cb7d9048f93db41b096ffc161b6d2424350521"
-  integrity sha512-V8JOGLeME2kPQa0Wyu0VE6s1a6ZLCwPoex077z/QE8JpDuEW4K2EI1H2kbl5s33cHgV4nTrkWYTmrgZuMfU4NQ==
+  version "0.1.22"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-backend-module-openapi/-/plugin-catalog-backend-module-openapi-0.1.22.tgz#fd6c944b2833f0d899a4dd20934be8457fd281c4"
+  integrity sha512-XYIHRPFYyIDxKx0KI6of5iqFt6745odeSacNbN8cOmYoCCljDgTqq1k9KsVGqR0c03sKE537fOVz7toVBZpNRA==
   dependencies:
     "@apidevtools/json-schema-ref-parser" "^9.0.6"
-    "@backstage/backend-common" "^0.19.6"
+    "@backstage/backend-common" "^0.19.7"
     "@backstage/catalog-model" "^1.4.2"
     "@backstage/config" "^1.1.0"
     "@backstage/integration" "^1.7.0"
-    "@backstage/plugin-catalog-backend" "^1.13.2"
+    "@backstage/plugin-catalog-backend" "^1.13.3"
     "@backstage/plugin-catalog-common" "^1.0.16"
-    "@backstage/plugin-catalog-node" "^1.4.5"
+    "@backstage/plugin-catalog-node" "^1.4.6"
     "@backstage/types" "^1.1.1"
     winston "^3.2.1"
     yaml "^2.1.1"
 
-"@backstage/plugin-catalog-backend@^1.12.4", "@backstage/plugin-catalog-backend@^1.13.2", "@backstage/plugin-catalog-backend@^1.7.0":
+"@backstage/plugin-catalog-backend@^1.12.4", "@backstage/plugin-catalog-backend@^1.13.2", "@backstage/plugin-catalog-backend@^1.13.3", "@backstage/plugin-catalog-backend@^1.7.0":
   version "1.13.3"
   resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-backend/-/plugin-catalog-backend-1.13.3.tgz#80ad09dd6d5a0feb4bcfd4e61edc3b0f6b83aa5d"
   integrity sha512-PAVfR7EJJssM+5ORTM4UYnulm48LUQvWVnlA8jgNoyzb9KRe0JLv49LJmrLvVl+Kf5nlXUfpMRTUQvfgDV2/hA==
@@ -3659,7 +3659,7 @@
     yn "^4.0.0"
     zod "^3.21.4"
 
-"@backstage/plugin-search-common@^1.2.5", "@backstage/plugin-search-common@^1.2.6":
+"@backstage/plugin-search-common@^1.2.6":
   version "1.2.6"
   resolved "https://registry.yarnpkg.com/@backstage/plugin-search-common/-/plugin-search-common-1.2.6.tgz#226d29ac24678466b4407dbacb6f94ef33c9f18d"
   integrity sha512-Cxm8ETdHkEXcULb/bcDFJQSLMj2SfFHHRmKXjEN8wrEhMGKxNtGwSYvSDACkLFukd5qkf9t2lilnM4kHkagz2w==
