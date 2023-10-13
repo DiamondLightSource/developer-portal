@@ -55,6 +55,7 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
 COPY --from=build /app/package.json /app/yarn.lock /app/packages/backend/dist/skeleton ./
 
 RUN --mount=type=cache,target=/root/.cache/yarn,sharing=locked \
+    yarn global add node-gyp \
     yarn install --frozen-lockfile --production
 
 COPY --from=build /app/packages/backend/dist/bundle ./
