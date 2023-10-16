@@ -16,7 +16,8 @@ COPY plugins/viewdocs-react/package.json plugins/viewdocs-react/package.json
 
 ENV CYPRESS_INSTALL_BINARY=0
 RUN --mount=type=cache,target=/root/.cache/yarn,sharing=locked \
-    yarn install --frozen-lockfile
+    yarn global add node-gyp \
+    && yarn install --frozen-lockfile 
 
 COPY ./ ./
 
@@ -56,7 +57,7 @@ COPY --from=build /app/package.json /app/yarn.lock /app/packages/backend/dist/sk
 
 RUN --mount=type=cache,target=/root/.cache/yarn,sharing=locked \
     yarn global add node-gyp \
-    yarn install --frozen-lockfile --production
+    && yarn install --frozen-lockfile --production
 
 COPY --from=build /app/packages/backend/dist/bundle ./
 
