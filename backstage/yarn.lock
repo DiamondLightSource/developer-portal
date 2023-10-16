@@ -2365,7 +2365,7 @@
     winston "^3.2.1"
     winston-transport "^4.5.0"
 
-"@backstage/backend-common@^0.19.0", "@backstage/backend-common@^0.19.5", "@backstage/backend-common@^0.19.7":
+"@backstage/backend-common@^0.19.0", "@backstage/backend-common@^0.19.7":
   version "0.19.7"
   resolved "https://registry.yarnpkg.com/@backstage/backend-common/-/backend-common-0.19.7.tgz#69ec9e4ea8b75745e4a320711501b50604d8e049"
   integrity sha512-0n52fRmakaeOH2nsTB13i2pbmxdcnzpGOxupYMlmwsaAiOnzKJ0Tu9FJCixwaCrg2EjL/AWh9BWthcNDFpduag==
@@ -2450,7 +2450,7 @@
     lodash "^4.17.21"
     openapi3-ts "^3.1.2"
 
-"@backstage/backend-plugin-api@^0.6.3", "@backstage/backend-plugin-api@^0.6.5":
+"@backstage/backend-plugin-api@^0.6.5":
   version "0.6.5"
   resolved "https://registry.yarnpkg.com/@backstage/backend-plugin-api/-/backend-plugin-api-0.6.5.tgz#ec156b30518a0fd16be866bd5efe812afc10a9b3"
   integrity sha512-axwWnQ7jGGNDytEAhmhqAHsDGnoS1g8nkPPbVbVoiHOSck8VVJIxORwmjoOI70TpW9SiRooN/NzpXeLREkV8PA==
@@ -2464,7 +2464,7 @@
     express "^4.17.1"
     knex "^2.0.0"
 
-"@backstage/backend-tasks@^0.5.0", "@backstage/backend-tasks@^0.5.10", "@backstage/backend-tasks@^0.5.8", "@backstage/backend-tasks@^0.5.9":
+"@backstage/backend-tasks@^0.5.0", "@backstage/backend-tasks@^0.5.10", "@backstage/backend-tasks@^0.5.9":
   version "0.5.10"
   resolved "https://registry.yarnpkg.com/@backstage/backend-tasks/-/backend-tasks-0.5.10.tgz#2832655080d2f4ed7d81d095f84ed23bdb743502"
   integrity sha512-Ky3PbTIZNPOLRtVeP4FOC7lqTUAG9v/b0B9eOy34FKhjpOyR/Vf2TXIMtBohKX9MubwyFCZggUXf1hFEwQpl/w==
@@ -2995,18 +2995,18 @@
     winston "^3.2.1"
 
 "@backstage/plugin-catalog-backend-module-gitlab@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-backend-module-gitlab/-/plugin-catalog-backend-module-gitlab-0.3.0.tgz#57f15b7f0349a819bbc1519a3e9604dca19a40ff"
-  integrity sha512-NTrkAShmyWGQjQgUTsb5zmXkGb+D7DiJjeBZJ5NYxhKAB6Fcldj9pcoxeyiuLBt/xpHth7NT7gAXTG3lUTFyeg==
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-backend-module-gitlab/-/plugin-catalog-backend-module-gitlab-0.3.2.tgz#3a836b0a9bf7765032bcbdbed2c905bbaf10d585"
+  integrity sha512-qczEm+wKQhim4oNboRlvea8KwzZmO+wrqYkREmgMLEV+T+CD7i8aPok1HtRyo5HTal286NmQqri1M0POKVGmOQ==
   dependencies:
-    "@backstage/backend-common" "^0.19.5"
-    "@backstage/backend-plugin-api" "^0.6.3"
-    "@backstage/backend-tasks" "^0.5.8"
+    "@backstage/backend-common" "^0.19.7"
+    "@backstage/backend-plugin-api" "^0.6.5"
+    "@backstage/backend-tasks" "^0.5.10"
     "@backstage/catalog-model" "^1.4.2"
     "@backstage/config" "^1.1.0"
     "@backstage/errors" "^1.2.2"
     "@backstage/integration" "^1.7.0"
-    "@backstage/plugin-catalog-node" "^1.4.4"
+    "@backstage/plugin-catalog-node" "^1.4.6"
     "@backstage/types" "^1.1.1"
     lodash "^4.17.21"
     node-fetch "^2.6.7"
@@ -3165,7 +3165,7 @@
     react-use "^17.2.4"
     yaml "^2.0.0"
 
-"@backstage/plugin-catalog-node@^1.4.4", "@backstage/plugin-catalog-node@^1.4.5", "@backstage/plugin-catalog-node@^1.4.6":
+"@backstage/plugin-catalog-node@^1.4.5", "@backstage/plugin-catalog-node@^1.4.6":
   version "1.4.6"
   resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-node/-/plugin-catalog-node-1.4.6.tgz#ec5da49ed9537f697e034724be15e8c778b25125"
   integrity sha512-ymZ4ibpHcTCltln+C7V0LpIf/kPbe7zuaOkVQqMMH0+wi6WJoO8IrydfDK2sddWbbJSMAXkDCowIfcvocdBeUg==
