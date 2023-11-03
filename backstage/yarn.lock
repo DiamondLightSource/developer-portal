@@ -2902,17 +2902,17 @@
     luxon "^3.0.0"
 
 "@backstage/plugin-api-docs@^0.9.1":
-  version "0.9.11"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-api-docs/-/plugin-api-docs-0.9.11.tgz#66c10f38f5b40d45c6c26fe13e674ee380256eda"
-  integrity sha512-QtT5kBO43LAoDKiv2sp+9IOvbxJ3U2P8HQQM4Af85KowFlwwg1+nn1eepgoNp6n5k+granaX4GKk0ba1uEH4sQ==
+  version "0.9.12"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-api-docs/-/plugin-api-docs-0.9.12.tgz#76166304bfd96c1ad54fb552bbdb62cfc6fd0b88"
+  integrity sha512-WokEH1GQAkrM9yjkkINzujnWIEo/xVgB+ITreCoxJlYajJRN10p4gj99WejBSUgT49+N1F55CVJASIAlfGWDVw==
   dependencies:
     "@asyncapi/react-component" "1.0.0-next.48"
-    "@backstage/catalog-model" "^1.4.2"
-    "@backstage/core-components" "^0.13.5"
-    "@backstage/core-plugin-api" "^1.6.0"
-    "@backstage/plugin-catalog" "^1.13.0"
-    "@backstage/plugin-catalog-react" "^1.8.4"
-    "@backstage/theme" "^0.4.2"
+    "@backstage/catalog-model" "^1.4.3"
+    "@backstage/core-components" "^0.13.6"
+    "@backstage/core-plugin-api" "^1.7.0"
+    "@backstage/plugin-catalog" "^1.14.0"
+    "@backstage/plugin-catalog-react" "^1.8.5"
+    "@backstage/theme" "^0.4.3"
     "@material-ui/core" "^4.12.2"
     "@material-ui/icons" "^4.9.1"
     "@material-ui/lab" "4.0.0-alpha.61"
@@ -3314,7 +3314,7 @@
     yaml "^2.0.0"
     zen-observable "^0.10.0"
 
-"@backstage/plugin-catalog@^1.13.0", "@backstage/plugin-catalog@^1.7.2":
+"@backstage/plugin-catalog@^1.14.0", "@backstage/plugin-catalog@^1.7.2":
   version "1.14.0"
   resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog/-/plugin-catalog-1.14.0.tgz#cd2c764a506107d40205a1e0b4da51e4ec517738"
   integrity sha512-7gIYpEVrF07RHPdsf9vxfkR66Go9RI81m2ktImSxicC1l9L+Cs7Yv13S9PdsN/RmSZ1wW7BrgQnleHjjVXtlAA==
