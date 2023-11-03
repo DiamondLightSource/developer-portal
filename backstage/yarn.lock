@@ -3082,23 +3082,21 @@
     zod-to-json-schema "^3.21.4"
 
 "@backstage/plugin-catalog-backend-module-github@^0.4.2":
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-backend-module-github/-/plugin-catalog-backend-module-github-0.4.3.tgz#54ea1b869b6a739d0aa6557f8784b55d188bad88"
-  integrity sha512-kbpbQctEs8QPG/+p3vYO5zsFguvoit7JY+zM4rmrAMV81/iwJaMMAbQ/beTbrpSKPlbRz2PvVTAoLFNK1z3uYA==
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-backend-module-github/-/plugin-catalog-backend-module-github-0.4.4.tgz#694c606a2c9cd9d6472c18e45c43de41e3cf065b"
+  integrity sha512-t4pCU3LSXBxYSViXx/33aIz7nUZAy6C+QY2nosA2+WkNRMrerMhMjHT1zceo/DhxEjGONbqKOG10fhY9Jyhknw==
   dependencies:
-    "@backstage/backend-common" "^0.19.7"
-    "@backstage/backend-plugin-api" "^0.6.5"
-    "@backstage/backend-tasks" "^0.5.10"
-    "@backstage/catalog-client" "^1.4.4"
-    "@backstage/catalog-model" "^1.4.2"
-    "@backstage/config" "^1.1.0"
-    "@backstage/errors" "^1.2.2"
-    "@backstage/integration" "^1.7.0"
-    "@backstage/plugin-catalog-backend" "^1.13.3"
-    "@backstage/plugin-catalog-common" "^1.0.16"
-    "@backstage/plugin-catalog-node" "^1.4.6"
-    "@backstage/plugin-events-node" "^0.2.14"
-    "@backstage/types" "^1.1.1"
+    "@backstage/backend-common" "^0.19.8"
+    "@backstage/backend-plugin-api" "^0.6.6"
+    "@backstage/backend-tasks" "^0.5.11"
+    "@backstage/catalog-client" "^1.4.5"
+    "@backstage/catalog-model" "^1.4.3"
+    "@backstage/config" "^1.1.1"
+    "@backstage/integration" "^1.7.1"
+    "@backstage/plugin-catalog-backend" "^1.14.0"
+    "@backstage/plugin-catalog-common" "^1.0.17"
+    "@backstage/plugin-catalog-node" "^1.4.7"
+    "@backstage/plugin-events-node" "^0.2.15"
     "@octokit/graphql" "^5.0.0"
     "@octokit/rest" "^19.0.3"
     git-url-parse "^13.0.0"
@@ -3345,7 +3343,7 @@
     react-use "^17.2.4"
     zen-observable "^0.10.0"
 
-"@backstage/plugin-events-node@^0.2.14", "@backstage/plugin-events-node@^0.2.15":
+"@backstage/plugin-events-node@^0.2.15":
   version "0.2.15"
   resolved "https://registry.yarnpkg.com/@backstage/plugin-events-node/-/plugin-events-node-0.2.15.tgz#8be5876e60a2db87157a523d9a84f3ddba5659ac"
   integrity sha512-RXVCp7VE/99qa67KHp96F9PIWYaxCe3ZruuczJqe1bvWqpBWTi1m1WIHNGlIYTs3QQqGbVf8v90sjwxryZzC5Q==
