@@ -2759,7 +2759,7 @@
     "@backstage/types" "^1.1.1"
     lodash "^4.17.21"
 
-"@backstage/core-app-api@^1.10.0", "@backstage/core-app-api@^1.11.0", "@backstage/core-app-api@^1.4.0":
+"@backstage/core-app-api@^1.11.0", "@backstage/core-app-api@^1.4.0":
   version "1.11.0"
   resolved "https://registry.yarnpkg.com/@backstage/core-app-api/-/core-app-api-1.11.0.tgz#ed0a9d3c0b390a2a895a2aebe38f579cb5bad372"
   integrity sha512-YOW88AfLNZ0edfPSwaCCZmxH6O0hKMjdNNJsJLoY808WAjyX/VXPM6/5C8dezt+uQFkYXzHHcFzOO6HyUfPzSQ==
@@ -3503,7 +3503,7 @@
     zod "^3.21.4"
     zod-to-json-schema "^3.20.4"
 
-"@backstage/plugin-permission-react@^0.4.15", "@backstage/plugin-permission-react@^0.4.16", "@backstage/plugin-permission-react@^0.4.9":
+"@backstage/plugin-permission-react@^0.4.16", "@backstage/plugin-permission-react@^0.4.9":
   version "0.4.16"
   resolved "https://registry.yarnpkg.com/@backstage/plugin-permission-react/-/plugin-permission-react-0.4.16.tgz#016ff8fbb9411faf411e76690ca23a3553879442"
   integrity sha512-+T3Gjs+qQti8p1XXdU9Kbrr+Rj09XpQcvNlth21/ut72BlTU4DpeXoU8Vr1Yh2Y1SuglFeDgSfLBCXJxqKhMhA==
@@ -3731,15 +3731,15 @@
     "@backstage/plugin-search-common" "^1.2.7"
 
 "@backstage/plugin-search-backend-module-pg@^0.5.1":
-  version "0.5.14"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-search-backend-module-pg/-/plugin-search-backend-module-pg-0.5.14.tgz#2caa093e4b17912f9b038d135a588f95da42eb51"
-  integrity sha512-LQ7MIahhjePNDHvkipdfcj0grNpb0sbbptncY6kkrUO2dPDmG71+ZQI7Rh8BGFH0TpuOMVblStNNvSPdpVE1wQ==
+  version "0.5.15"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-search-backend-module-pg/-/plugin-search-backend-module-pg-0.5.15.tgz#c689f0db2b65e9f704e315640d678ce38b2396bc"
+  integrity sha512-qyIPPRNdBmbVJIsZdOFW/PRsApsRjZnSrzkJ3UrzaWIIO//LfmYwHKvFwH8RmMBAtOS2ixA4G+sBIMKKUsSyaQ==
   dependencies:
-    "@backstage/backend-common" "^0.19.7"
-    "@backstage/backend-plugin-api" "^0.6.5"
-    "@backstage/config" "^1.1.0"
-    "@backstage/plugin-search-backend-node" "^1.2.9"
-    "@backstage/plugin-search-common" "^1.2.6"
+    "@backstage/backend-common" "^0.19.8"
+    "@backstage/backend-plugin-api" "^0.6.6"
+    "@backstage/config" "^1.1.1"
+    "@backstage/plugin-search-backend-node" "^1.2.10"
+    "@backstage/plugin-search-common" "^1.2.7"
     knex "^2.0.0"
     lodash "^4.17.21"
     uuid "^8.3.2"
