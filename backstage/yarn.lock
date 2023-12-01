@@ -3515,12 +3515,12 @@
     swr "^2.0.0"
 
 "@backstage/plugin-proxy-backend@^0.4.2":
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-proxy-backend/-/plugin-proxy-backend-0.4.4.tgz#2f998eaafdd58844a95c16463db8c6e9367ea7d1"
-  integrity sha512-W8wWKL5cKUbpWpqhdAFfC5f4BrSyc2GtPeXtAz3uGFP5YyAmr5hPaETHZyqh6Uy4VER92nrOKNygPQPtN/pwdQ==
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-proxy-backend/-/plugin-proxy-backend-0.4.5.tgz#12f6ccbfed9e54f00f15149cc1ed68fccc5cc769"
+  integrity sha512-eI9n/Au2EEmQd1sFesrufcEACC3DRWIIVpr6Vk/QELPNh3NeYTn3jrPgY/DCSx4oY5ukhMBdc1YzNPp27OK5Sg==
   dependencies:
-    "@backstage/backend-common" "^0.19.8"
-    "@backstage/backend-plugin-api" "^0.6.6"
+    "@backstage/backend-common" "^0.19.9"
+    "@backstage/backend-plugin-api" "^0.6.7"
     "@backstage/config" "^1.1.1"
     "@types/express" "^4.17.6"
     express "^4.17.1"
