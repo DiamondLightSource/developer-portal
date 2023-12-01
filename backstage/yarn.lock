@@ -2784,7 +2784,7 @@
     typescript-json-schema "^0.62.0"
     yaml "^2.0.0"
 
-"@backstage/config@^1.0.6", "@backstage/config@^1.0.8", "@backstage/config@^1.1.1":
+"@backstage/config@^1.0.6", "@backstage/config@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@backstage/config/-/config-1.1.1.tgz#824ef3d74b391579060d5646fa1f45fcd553ce02"
   integrity sha512-H+xZbIVvstrkVnfxZFH6JB3Gb5qUIb8DjHOakHUlDX7xEIXjQnaM3Kf85RtnHu0uYpFIpB29i8FI68Y/uLeqyw==
@@ -2952,21 +2952,7 @@
     "@material-ui/icons" "^4.9.1"
     "@types/react" "^16.13.1 || ^17.0.0"
 
-"@backstage/integration@^1.5.0", "@backstage/integration@^1.7.1":
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/@backstage/integration/-/integration-1.7.1.tgz#dc951c5d1154ac9761224936d58dda95f9ffa1f0"
-  integrity sha512-pUKfiNHaBFCSZnNWJ+E8kDAHwDtTs/zXvEij+thARluXt+AIptFs9QfV9d8hidcgKlKV3+oUbu39M9798CgRFg==
-  dependencies:
-    "@azure/identity" "^3.2.1"
-    "@backstage/config" "^1.1.1"
-    "@octokit/auth-app" "^4.0.0"
-    "@octokit/rest" "^19.0.3"
-    cross-fetch "^3.1.5"
-    git-url-parse "^13.0.0"
-    lodash "^4.17.21"
-    luxon "^3.0.0"
-
-"@backstage/integration@^1.7.2":
+"@backstage/integration@^1.7.0", "@backstage/integration@^1.7.1", "@backstage/integration@^1.7.2":
   version "1.7.2"
   resolved "https://registry.yarnpkg.com/@backstage/integration/-/integration-1.7.2.tgz#209b49e3ff6cce0531b8a1ef3b6387a7a740c701"
   integrity sha512-4BW0h7Hwr27TvVoZ1RArMGB1RghmAKbUzVRdDMEAO9buYNuAkpMWvpzV6srpU9DfE7gH+9fnH3BbrGNrL5OjRA==
@@ -3872,14 +3858,6 @@
     "@backstage/plugin-permission-common" "^0.7.10"
     "@backstage/types" "^1.1.1"
 
-"@backstage/plugin-search-common@^1.2.8":
-  version "1.2.8"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-search-common/-/plugin-search-common-1.2.8.tgz#8a7db72d0fb8ec51f8b794f7b32c5ff75f6bdff4"
-  integrity sha512-bUg8NFFkEC6sRMkqzj4y1MkDRAgHnCTBFsqby2bjPv5WLDmSd5z9dtxCL4NGn2QOlYaHAKH7sYyLvWSq5yUstg==
-  dependencies:
-    "@backstage/plugin-permission-common" "^0.7.10"
-    "@backstage/types" "^1.1.1"
-
 "@backstage/plugin-search-react@^1.4.0", "@backstage/plugin-search-react@^1.7.1":
   version "1.7.3"
   resolved "https://registry.yarnpkg.com/@backstage/plugin-search-react/-/plugin-search-react-1.7.3.tgz#2c3f9086c741939a5edbb3a4071308ea2acacc60"
@@ -4108,15 +4086,6 @@
     "@material-ui/core" "^4.12.2"
 
 "@backstage/theme@^0.4.0", "@backstage/theme@^0.4.3", "@backstage/theme@^0.4.4":
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/@backstage/theme/-/theme-0.4.4.tgz#807735b58a5e1b2a0cdb50fc05ad83656f2f66cb"
-  integrity sha512-Mvs0FrEnQtyO2dVNPyo1wjkNHbN3vefIdj4V27SFiX9W9sj+R1b4rzFACF6xjVzfdV9oo9HdsL59CMnFlDxz4Q==
-  dependencies:
-    "@emotion/react" "^11.10.5"
-    "@emotion/styled" "^11.10.5"
-    "@mui/material" "^5.12.2"
-
-"@backstage/theme@^0.4.4":
   version "0.4.4"
   resolved "https://registry.yarnpkg.com/@backstage/theme/-/theme-0.4.4.tgz#807735b58a5e1b2a0cdb50fc05ad83656f2f66cb"
   integrity sha512-Mvs0FrEnQtyO2dVNPyo1wjkNHbN3vefIdj4V27SFiX9W9sj+R1b4rzFACF6xjVzfdV9oo9HdsL59CMnFlDxz4Q==
@@ -5097,13 +5066,13 @@
   integrity sha512-H9XAx3hc0BQHY6l+IFSWHDySypcXsvsuLhgYLUGywmJ5pswRVQJUHpOsobnLYp2ZUaUlKiKDrgWWhosOwAEM8Q==
 
 "@immobiliarelabs/backstage-plugin-gitlab-backend@^6.0.0":
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/@immobiliarelabs/backstage-plugin-gitlab-backend/-/backstage-plugin-gitlab-backend-6.2.0.tgz#96e444cff6eae981f61c5abb78d43bdf6b9690b4"
-  integrity sha512-e/u1SSSMuC41CsTOrm/L3x4ufG18nBlnyH2XOxiJsdYvRqoHD/7lv8hedAJxCWc8TIyUBya5LySBLlweUCqwyg==
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/@immobiliarelabs/backstage-plugin-gitlab-backend/-/backstage-plugin-gitlab-backend-6.3.0.tgz#0d7f1b0d79c0b0e9ebf983296d9603490172625d"
+  integrity sha512-xE9d60r5T1vU8mu13aU53TfVr+PX6KQTEGoOnABTAyNXMVulZrKTHBQdEbVB8PWrr/tlMrAODNud0Pf68ZZS3Q==
   dependencies:
-    "@backstage/backend-common" "^0.19.0"
-    "@backstage/config" "^1.0.8"
-    "@backstage/integration" "^1.5.0"
+    "@backstage/backend-common" "^0.19.9"
+    "@backstage/config" "^1.1.1"
+    "@backstage/integration" "^1.7.0"
     "@types/express" "*"
     body-parser "^1.20.2"
     express "^4.17.3"
@@ -17243,13 +17212,6 @@ node-fetch@2.6.7:
     whatwg-url "^5.0.0"
 
 node-fetch@^2.6.0, node-fetch@^2.6.1, node-fetch@^2.6.12, node-fetch@^2.6.7:
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.7.0.tgz#d0f0fa6e3e2dc1d27efcd8ad99d550bda94d187d"
-  integrity sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==
-  dependencies:
-    whatwg-url "^5.0.0"
-
-node-fetch@^2.6.12:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.7.0.tgz#d0f0fa6e3e2dc1d27efcd8ad99d550bda94d187d"
   integrity sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==
