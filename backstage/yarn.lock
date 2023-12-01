@@ -2399,15 +2399,15 @@
     to-fast-properties "^2.0.0"
 
 "@backstage/app-defaults@^1.1.0":
-  version "1.4.4"
-  resolved "https://registry.yarnpkg.com/@backstage/app-defaults/-/app-defaults-1.4.4.tgz#6ffaadc75627dc73aa6128388728eeb453408355"
-  integrity sha512-OMPPCY8t2g/SbEqVL+OKQr5Ag6VLcHiCrn3hLzC1+i+tdf+U8G47jwpj6vi6Gi3LY2XOhpryqIrx/irj8Kqqkw==
+  version "1.4.5"
+  resolved "https://registry.yarnpkg.com/@backstage/app-defaults/-/app-defaults-1.4.5.tgz#ef0f7da6273fc22f9f4d663b09058114efc8764b"
+  integrity sha512-v0am3EzM7KoTrvuTTAQOhQMO9ogkaYMmttwxZmAqCsdYiNs00i3/Fzj4yQiHi9by62pQ3dPeRPM0Dpdy6VU9zQ==
   dependencies:
-    "@backstage/core-app-api" "^1.11.0"
-    "@backstage/core-components" "^0.13.6"
-    "@backstage/core-plugin-api" "^1.7.0"
-    "@backstage/plugin-permission-react" "^0.4.16"
-    "@backstage/theme" "^0.4.3"
+    "@backstage/core-app-api" "^1.11.1"
+    "@backstage/core-components" "^0.13.8"
+    "@backstage/core-plugin-api" "^1.8.0"
+    "@backstage/plugin-permission-react" "^0.4.17"
+    "@backstage/theme" "^0.4.4"
     "@material-ui/core" "^4.12.2"
     "@material-ui/icons" "^4.9.1"
 
