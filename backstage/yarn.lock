@@ -2794,14 +2794,14 @@
     lodash "^4.17.21"
 
 "@backstage/core-app-api@^1.11.0", "@backstage/core-app-api@^1.4.0":
-  version "1.11.0"
-  resolved "https://registry.yarnpkg.com/@backstage/core-app-api/-/core-app-api-1.11.0.tgz#ed0a9d3c0b390a2a895a2aebe38f579cb5bad372"
-  integrity sha512-YOW88AfLNZ0edfPSwaCCZmxH6O0hKMjdNNJsJLoY808WAjyX/VXPM6/5C8dezt+uQFkYXzHHcFzOO6HyUfPzSQ==
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/@backstage/core-app-api/-/core-app-api-1.11.1.tgz#21584a43cf7bc80171b8f03a3c0db80b1adef424"
+  integrity sha512-BtYilKoiAnyPjTBZ/LuBIU+nopuleAG/KqfDB36cQ5zAC5cNd2xpXw9NlCQcxJnMV1MjsiqHrfK2lb1S1owXpQ==
   dependencies:
     "@backstage/config" "^1.1.1"
-    "@backstage/core-plugin-api" "^1.7.0"
+    "@backstage/core-plugin-api" "^1.8.0"
     "@backstage/types" "^1.1.1"
-    "@backstage/version-bridge" "^1.0.6"
+    "@backstage/version-bridge" "^1.0.7"
     "@types/prop-types" "^15.7.3"
     "@types/react" "^16.13.1 || ^17.0.0"
     history "^5.0.0"
@@ -3872,14 +3872,6 @@
     "@backstage/plugin-permission-common" "^0.7.10"
     "@backstage/types" "^1.1.1"
 
-"@backstage/plugin-search-common@^1.2.8":
-  version "1.2.8"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-search-common/-/plugin-search-common-1.2.8.tgz#8a7db72d0fb8ec51f8b794f7b32c5ff75f6bdff4"
-  integrity sha512-bUg8NFFkEC6sRMkqzj4y1MkDRAgHnCTBFsqby2bjPv5WLDmSd5z9dtxCL4NGn2QOlYaHAKH7sYyLvWSq5yUstg==
-  dependencies:
-    "@backstage/plugin-permission-common" "^0.7.10"
-    "@backstage/types" "^1.1.1"
-
 "@backstage/plugin-search-react@^1.4.0", "@backstage/plugin-search-react@^1.7.1":
   version "1.7.3"
   resolved "https://registry.yarnpkg.com/@backstage/plugin-search-react/-/plugin-search-react-1.7.3.tgz#2c3f9086c741939a5edbb3a4071308ea2acacc60"
@@ -4108,15 +4100,6 @@
     "@material-ui/core" "^4.12.2"
 
 "@backstage/theme@^0.4.0", "@backstage/theme@^0.4.3", "@backstage/theme@^0.4.4":
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/@backstage/theme/-/theme-0.4.4.tgz#807735b58a5e1b2a0cdb50fc05ad83656f2f66cb"
-  integrity sha512-Mvs0FrEnQtyO2dVNPyo1wjkNHbN3vefIdj4V27SFiX9W9sj+R1b4rzFACF6xjVzfdV9oo9HdsL59CMnFlDxz4Q==
-  dependencies:
-    "@emotion/react" "^11.10.5"
-    "@emotion/styled" "^11.10.5"
-    "@mui/material" "^5.12.2"
-
-"@backstage/theme@^0.4.4":
   version "0.4.4"
   resolved "https://registry.yarnpkg.com/@backstage/theme/-/theme-0.4.4.tgz#807735b58a5e1b2a0cdb50fc05ad83656f2f66cb"
   integrity sha512-Mvs0FrEnQtyO2dVNPyo1wjkNHbN3vefIdj4V27SFiX9W9sj+R1b4rzFACF6xjVzfdV9oo9HdsL59CMnFlDxz4Q==
@@ -17243,13 +17226,6 @@ node-fetch@2.6.7:
     whatwg-url "^5.0.0"
 
 node-fetch@^2.6.0, node-fetch@^2.6.1, node-fetch@^2.6.12, node-fetch@^2.6.7:
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.7.0.tgz#d0f0fa6e3e2dc1d27efcd8ad99d550bda94d187d"
-  integrity sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==
-  dependencies:
-    whatwg-url "^5.0.0"
-
-node-fetch@^2.6.12:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.7.0.tgz#d0f0fa6e3e2dc1d27efcd8ad99d550bda94d187d"
   integrity sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==
