@@ -3483,7 +3483,7 @@
     qs "^6.10.1"
     react-use "^17.2.4"
 
-"@backstage/plugin-permission-common@^0.7.10":
+"@backstage/plugin-permission-common@^0.7.10", "@backstage/plugin-permission-common@^0.7.3", "@backstage/plugin-permission-common@^0.7.9":
   version "0.7.10"
   resolved "https://registry.yarnpkg.com/@backstage/plugin-permission-common/-/plugin-permission-common-0.7.10.tgz#0169967f9f5ebf042e49c558aff6bfee6583524b"
   integrity sha512-E9vWuPbn/Qskg1x4o6dFMMgOVo5ZFEEiMpmAEz4+kuo/XwaKTQFLj5bbA9QwL4iUObeG3Y8GATlTICp3L0Ekbw==
@@ -3492,18 +3492,6 @@
     "@backstage/errors" "^1.2.3"
     "@backstage/types" "^1.1.1"
     cross-fetch "^4.0.0"
-    uuid "^8.0.0"
-    zod "^3.21.4"
-
-"@backstage/plugin-permission-common@^0.7.3", "@backstage/plugin-permission-common@^0.7.9":
-  version "0.7.9"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-permission-common/-/plugin-permission-common-0.7.9.tgz#ea4401b7160f3f3f2cc075b691d1594d9560183c"
-  integrity sha512-8/yrybvyEYkSkSnk/7NMNjqBkgvl0yj1VI8jJydYgIBoZj93V7qsaYfGEfpf1Af0NYDoTgPS2vI4lz0jB1RMKg==
-  dependencies:
-    "@backstage/config" "^1.1.1"
-    "@backstage/errors" "^1.2.3"
-    "@backstage/types" "^1.1.1"
-    cross-fetch "^3.1.5"
     uuid "^8.0.0"
     zod "^3.21.4"
 
