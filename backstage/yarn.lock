@@ -2775,14 +2775,14 @@
     lodash "^4.17.21"
 
 "@backstage/core-app-api@^1.11.0", "@backstage/core-app-api@^1.4.0":
-  version "1.11.0"
-  resolved "https://registry.yarnpkg.com/@backstage/core-app-api/-/core-app-api-1.11.0.tgz#ed0a9d3c0b390a2a895a2aebe38f579cb5bad372"
-  integrity sha512-YOW88AfLNZ0edfPSwaCCZmxH6O0hKMjdNNJsJLoY808WAjyX/VXPM6/5C8dezt+uQFkYXzHHcFzOO6HyUfPzSQ==
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/@backstage/core-app-api/-/core-app-api-1.11.1.tgz#21584a43cf7bc80171b8f03a3c0db80b1adef424"
+  integrity sha512-BtYilKoiAnyPjTBZ/LuBIU+nopuleAG/KqfDB36cQ5zAC5cNd2xpXw9NlCQcxJnMV1MjsiqHrfK2lb1S1owXpQ==
   dependencies:
     "@backstage/config" "^1.1.1"
-    "@backstage/core-plugin-api" "^1.7.0"
+    "@backstage/core-plugin-api" "^1.8.0"
     "@backstage/types" "^1.1.1"
-    "@backstage/version-bridge" "^1.0.6"
+    "@backstage/version-bridge" "^1.0.7"
     "@types/prop-types" "^15.7.3"
     "@types/react" "^16.13.1 || ^17.0.0"
     history "^5.0.0"
