@@ -1,4 +1,4 @@
-FROM node:18-bullseye
+FROM docker.io/library/node:20-bookworm
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends python3-pip \
@@ -6,7 +6,7 @@ RUN apt-get update \
 
 COPY docs/requirements.txt docs/requirements.txt
 
-RUN pip install -r docs/requirements.txt
+RUN pip install --break-system-packages -r docs/requirements.txt
 
 COPY backstage/package.json backstage/yarn.lock backstage/
 COPY backstage/packages/app/package.json backstage/packages/app/package.json
