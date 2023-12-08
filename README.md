@@ -11,30 +11,32 @@ The Diamond Light Source developer portal, built with backstage for deployment o
 
 ## Developing Locally (VSCode)
 
-- [Install docker-compose](https://docs.docker.com/compose/install/other/)
-- Start the podman socket with `systemctl --user start podman.socket`
-- Use the podman socket as the compose host by adding `export DOCKER_HOST=unix:///run/user/$UID/podman/podman.sock` to your `~/.bashrc`
+- Load the `docker-compose` `module`, or:
+  - [Install docker-compose](https://docs.docker.com/compose/install/other/),
+  - Start the podman socket with `systemctl --user start podman.socket`
+  - Use the podman socket as the compose host by adding `export DOCKER_HOST=unix:///run/user/$UID/podman/podman.sock` to your `~/.bashrc`
 - Install `ms-vscode-remote.remote-containers`
 - Set `remote.containers.dockerPath` to `podman`
 - Set `remote.containers.dockerComposePath` to your `docker-compose`
 - Disable buildkit by adding `export DOCKER_BUILDKIT=0` to your `~/.bashrc`
 - Open Development Container
-- Create a `.env` file in the `.devcontainer` directory containing the [nessacary secrets](#nessacary-secrets)
+- Create a `.env` file in the `.devcontainer` directory containing the [necessary secrets](#necessary-secrets)
+- Install package dependencies with `yarn --cwd backstage install`
 - Start the app, with `yarn --cwd backstage dev`
 
 ## Deploying on Kubernetes (Diamond Light Source)
 
 - Access the cluster with `module load argus`
 - Adjust configuration in `charts/developer-portal/values.yaml` as appropriate, you will need to ingress secrets by either:
-  - Populating the [nessacary secrets](#nessacary-secrets) in their respective fields in `backend.auth`
-  - Pointing to an existing secret containing the [nessacary secrets](#nessacary-secrets) with `backend.auth.existingSecret` (recommended)
+  - Populating the [necessary secrets](#necessary-secrets) in their respective fields in `backend.auth`
+  - Pointing to an existing secret containing the [necessary secrets](#necessary-secrets) with `backend.auth.existingSecret` (recommended)
 - Deploy the portal, with:
   ```sh
   cd charts/developer-portal
   helm install <deployment-name> .
   ```
 
-## Nessacary secrets
+## Necessary secrets
 
 In order to deploy this application, the following secrets are required
 
