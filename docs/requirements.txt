@@ -1,2 +1,8 @@
 mkdocs
 mkdocs-techdocs-diamond
+mkdocs-techdocs-core
+mkdocs-include-markdown-plugin
+mkdocs-include-dir-to-nav
+mkdocs-awesome-pages-plugin
+git+https://github.com/Andre601/mkdocs-pagenav-generator
+copier

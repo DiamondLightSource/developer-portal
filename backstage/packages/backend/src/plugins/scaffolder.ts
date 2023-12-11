@@ -1,5 +1,10 @@
 import { CatalogClient } from '@backstage/catalog-client';
-import { createRouter } from '@backstage/plugin-scaffolder-backend';
+import { ScmIntegrations } from '@backstage/integration';
+import {
+  createBuiltinActions,
+  createRouter,
+} from '@backstage/plugin-scaffolder-backend';
+import { createFetchCopierAction } from '@diamondlightsource/plugin-scaffolder-backend-module-copier';
 import { Router } from 'express';
 import type { PluginEnvironment } from '../types';
 
@@ -9,13 +14,29 @@ export default async function createPlugin(
   const catalogClient = new CatalogClient({
     discoveryApi: env.discovery,
   });
+  const integrations = ScmIntegrations.fromConfig(env.config);
+  const dockerClient = new Docker();
+  const containerRunner = new DockerContainerRunner({ dockerClient });
+
+  const actions = [
+    ...createBuiltinActions({
+      integrations,
+      catalogClient,
+      config: env.config,
+      reader: env.reader,
+    }),
+    createFetchCopierAction({ integrations, reader: env.reader }),
+  ];
 
   return await createRouter({
+    containerRunner,
+    catalogClient,
+    actions,
     logger: env.logger,
     config: env.config,
     database: env.database,
     reader: env.reader,
-    catalogClient,
     identity: env.identity,
+    scheduler: env.scheduler,
   });
 }
