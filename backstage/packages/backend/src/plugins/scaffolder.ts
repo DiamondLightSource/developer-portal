@@ -3,10 +3,12 @@
 import { DockerContainerRunner } from '@backstage/backend-common';
 import { CatalogClient } from '@backstage/catalog-client';
 import { ScmIntegrations } from '@backstage/integration';
-import { createBuiltinActions, createRouter } from '@backstage/plugin-scaffolder-backend';
+import {
+  createBuiltinActions,
+  createRouter,
+} from '@backstage/plugin-scaffolder-backend';
 import { createFetchCopierAction } from '@backstage/plugin-scaffolder-backend-module-copier';
 import Docker from 'dockerode';
-
 
 import { Router } from 'express';
 import type { PluginEnvironment } from '../types';
@@ -27,7 +29,14 @@ export default async function createPlugin(
     config: env.config,
     reader: env.reader,
   });
-  const actions = [...builtInActions, createFetchCopierAction({integrations, reader: env.reader, containerRunner})];
+  const actions = [
+    ...builtInActions,
+    createFetchCopierAction({
+      integrations,
+      reader: env.reader,
+      containerRunner,
+    }),
+  ];
   return await createRouter({
     containerRunner,
     catalogClient,
@@ -40,4 +49,3 @@ export default async function createPlugin(
     scheduler: env.scheduler,
   });
 }
-
