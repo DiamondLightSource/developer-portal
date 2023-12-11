@@ -17,3 +17,4 @@ COPY backstage/packages/backend/package.json backstage/packages/backend/package.
 COPY backstage/plugins/viewdocs-react/package.json backstage/plugins/viewdocs-react/package.json 
 
 RUN yarn install --frozen-lockfile --cwd backstage
+RUN pip install --break-system-packages copier
