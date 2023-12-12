@@ -5,9 +5,11 @@ WORKDIR /app
 RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
     --mount=type=cache,target=/var/lib/apt,sharing=locked \
     apt-get update \
-    && apt-get install -y --no-install-recommends \
-        python3 g++ build-essential \
+    && apt-get install -y --no-install-recommends python3-pip \
+        python3 g++ build-essential git \
     && yarn config set python /usr/bin/python3
+
+RUN pip install --break-system-packages copier
 
 COPY package.json yarn.lock ./
 COPY packages/app/package.json packages/app/package.json
