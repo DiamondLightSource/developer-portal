@@ -1,3 +1,0 @@
-# Developer How Tos
-
-{nav}
