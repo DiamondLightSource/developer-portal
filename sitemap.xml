@@ -6,292 +6,242 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/developer/</loc>
+         <loc>https://0.0.0.0/common/create-entity-descriptor/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/developer/explanations/</loc>
+         <loc>https://0.0.0.0/common/create-entity-metadata/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/developer/explanations/placeholder/</loc>
+         <loc>https://0.0.0.0/common/entity-dependson/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/developer/how-tos/</loc>
+         <loc>https://0.0.0.0/common/entity-envelope/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/developer/how-tos/placeholder/</loc>
+         <loc>https://0.0.0.0/common/entity-owner/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/developer/references/</loc>
+         <loc>https://0.0.0.0/common/entity-system/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/developer/references/placeholder/</loc>
+         <loc>https://0.0.0.0/common/get-repository/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/developer/tutorials/</loc>
+         <loc>https://0.0.0.0/common/push-and-wait/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/developer/tutorials/placeholder/</loc>
+         <loc>https://0.0.0.0/explanations/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/</loc>
+         <loc>https://0.0.0.0/explanations/api/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/common/create-entity-descriptor/</loc>
+         <loc>https://0.0.0.0/explanations/component/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/common/create-entity-metadata/</loc>
+         <loc>https://0.0.0.0/explanations/domain/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/common/entity-dependson/</loc>
+         <loc>https://0.0.0.0/explanations/entity-ingress/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/common/entity-envelope/</loc>
+         <loc>https://0.0.0.0/explanations/group/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/common/entity-owner/</loc>
+         <loc>https://0.0.0.0/explanations/location/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/common/entity-system/</loc>
+         <loc>https://0.0.0.0/explanations/resource/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/common/get-repository/</loc>
+         <loc>https://0.0.0.0/explanations/system/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/common/push-and-wait/</loc>
+         <loc>https://0.0.0.0/explanations/template/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/explanations/</loc>
+         <loc>https://0.0.0.0/explanations/user/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/explanations/api/</loc>
+         <loc>https://0.0.0.0/explanations/which-docs/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/explanations/component/</loc>
+         <loc>https://0.0.0.0/how-tos/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/explanations/domain/</loc>
+         <loc>https://0.0.0.0/how-tos/debug-entity-descriptors/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/explanations/entity-ingress/</loc>
+         <loc>https://0.0.0.0/how-tos/embed-a-linkdocs-site/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/explanations/group/</loc>
+         <loc>https://0.0.0.0/how-tos/link-to-remote-entities/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/explanations/location/</loc>
+         <loc>https://0.0.0.0/how-tos/publish-a-techdocs-site/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/explanations/resource/</loc>
+         <loc>https://0.0.0.0/how-tos/register-a-component/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/explanations/system/</loc>
+         <loc>https://0.0.0.0/how-tos/register-a-group/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/explanations/template/</loc>
+         <loc>https://0.0.0.0/how-tos/register-a-resource/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/explanations/user/</loc>
+         <loc>https://0.0.0.0/how-tos/register-a-static-api/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/explanations/which-docs/</loc>
+         <loc>https://0.0.0.0/how-tos/register-a-system/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/how-tos/</loc>
+         <loc>https://0.0.0.0/how-tos/register-multiple-entities/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/how-tos/debug-entity-descriptors/</loc>
+         <loc>https://0.0.0.0/references/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/how-tos/embed-a-linkdocs-site/</loc>
+         <loc>https://0.0.0.0/references/api-spec/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/how-tos/link-to-remote-entities/</loc>
+         <loc>https://0.0.0.0/references/common-api-types/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/how-tos/publish-a-techdocs-site/</loc>
+         <loc>https://0.0.0.0/references/common-component-types/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/how-tos/register-a-component/</loc>
+         <loc>https://0.0.0.0/references/common-lifecycle-stages/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/how-tos/register-a-group/</loc>
+         <loc>https://0.0.0.0/references/component-spec/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/how-tos/register-a-resource/</loc>
+         <loc>https://0.0.0.0/references/discovery-locations/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/how-tos/register-a-static-api/</loc>
+         <loc>https://0.0.0.0/references/domain-spec/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/how-tos/register-a-system/</loc>
+         <loc>https://0.0.0.0/references/entity-envelope/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/how-tos/register-multiple-entities/</loc>
+         <loc>https://0.0.0.0/references/entity-metadata/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/references/</loc>
+         <loc>https://0.0.0.0/references/entity-types/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/references/api-spec/</loc>
+         <loc>https://0.0.0.0/references/location-spec/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/references/common-api-types/</loc>
+         <loc>https://0.0.0.0/references/resource-spec/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/references/common-component-types/</loc>
+         <loc>https://0.0.0.0/references/supported-annotations/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/references/common-lifecycle-stages/</loc>
+         <loc>https://0.0.0.0/references/system-spec/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/references/component-spec/</loc>
+         <loc>https://0.0.0.0/tutorials/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0.0.0.0/user/references/discovery-locations/</loc>
-         <lastmod>2023-12-15</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0.0.0.0/user/references/domain-spec/</loc>
-         <lastmod>2023-12-15</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0.0.0.0/user/references/entity-envelope/</loc>
-         <lastmod>2023-12-15</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0.0.0.0/user/references/entity-metadata/</loc>
-         <lastmod>2023-12-15</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0.0.0.0/user/references/entity-types/</loc>
-         <lastmod>2023-12-15</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0.0.0.0/user/references/location-spec/</loc>
-         <lastmod>2023-12-15</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0.0.0.0/user/references/resource-spec/</loc>
-         <lastmod>2023-12-15</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0.0.0.0/user/references/supported-annotations/</loc>
-         <lastmod>2023-12-15</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0.0.0.0/user/references/system-spec/</loc>
-         <lastmod>2023-12-15</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0.0.0.0/user/tutorials/</loc>
-         <lastmod>2023-12-15</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0.0.0.0/user/tutorials/web-app/</loc>
+         <loc>https://0.0.0.0/tutorials/web-app/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
