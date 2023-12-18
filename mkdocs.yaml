@@ -16,31 +16,15 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
 nav:
   - Home: index.md
-  - 'User Guide':
-    - Home: user/index.md
-    - Tutorials: 
-      - Home: user/tutorials/index.md
-      - user/tutorials
-    - 'How Tos':
-      - Home: user/how-tos/index.md
-      - user/how-tos
-    - Explanations:
-      - Home: user/explanations/index.md
-      - user/explanations
-    - References:
-      - Home: user/references/index.md
-      - user/references
-  - 'Developer Guide':
-    - Home: developer/index.md
-    - Tutorials: 
-      - Home: developer/tutorials/index.md
-      - developer/tutorials
-    - 'How Tos':
-      - Home: developer/how-tos/index.md
-      - developer/how-tos
-    - Explanations:
-      - Home: developer/explanations/index.md
-      - developer/explanations
-    - References:
-      - Home: developer/references/index.md
-      - developer/references
+  - Tutorials: 
+    - Home: tutorials/index.md
+    - tutorials
+  - 'How Tos':
+    - Home: how-tos/index.md
+    - how-tos
+  - Explanations:
+    - Home: explanations/index.md
+    - explanations
+  - References:
+    - Home: references/index.md
+    - references
