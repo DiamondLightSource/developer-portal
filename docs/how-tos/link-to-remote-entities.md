@@ -62,7 +62,7 @@ Finally, we will fill out the `spec`. Only the `targets` field is required with 
         - ./catalog-info/backend-rest.yaml
     ```
 
-??? example "Example Completed Descriptor"
+!!! example "Example Completed Descriptor"
 
     ```yaml
     apiVersion: backstage.io/v1alpha1

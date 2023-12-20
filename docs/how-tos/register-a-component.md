@@ -52,7 +52,7 @@ Finally, we will fill out the `spec`. Only the `type` field is required with num
       owner: user:enu43627
     ```
 
-??? example "Example Complete Descriptor"
+!!! example "Example Complete Descriptor"
 
     ```yaml
     apiVersion: backstage.io/v1alpha1
