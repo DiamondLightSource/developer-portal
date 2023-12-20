@@ -4,6 +4,9 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends python3-pip \
     && rm -rf /var/lib/apt/lists/*
 
+RUN yarn global add \
+    markdownlint-cli2 markdown-it-admon
+
 COPY docs/requirements.txt docs/requirements.txt
 
 RUN pip install --break-system-packages -r docs/requirements.txt
