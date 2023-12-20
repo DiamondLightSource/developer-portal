@@ -20,4 +20,3 @@ The User Guide contains documentation on how to use the developer portal. This i
 - [**Explanations** :link:](explanations/index.md) provide insight into how the service works and why it works that way.
 
 - [**References** :link:](references/index.md) provide technical reference material including APIs and release notes.
-
