@@ -2,10 +2,6 @@
 
 ## Preface
 
-!!! example inline end "Example Developer Portal View"
-
-    ![Web App Example](../images/web-app.svg)
-
 This tutorial will take you through registration of a basic web application, producing a result like the example on the right. This app will comprise of four entities:
 
 - A [Component](../explanations/component.md) for the Backend
