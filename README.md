@@ -2,12 +2,12 @@
 
 The Diamond Light Source developer portal, built with backstage for deployment on kubernetes.
 
-|                |                                                                  |
-| -------------- | ---------------------------------------------------------------- |
-| Source Code    | https://github.com/DiamondLightSource/developer-portal           |
-| User Docs      | https://diamondlightsource.github.io/developer-portal/user/      |
-| Developer Docs | https://diamondlightsource.github.io/developer-portal/developer/ |
-| Releases       | https://github.com/DiamondLightSource/developer-portal/releases  |
+|                |                                                                    |
+| -------------- | ------------------------------------------------------------------ |
+| Source Code    | <https://github.com/DiamondLightSource/developer-portal>           |
+| User Docs      | <https://diamondlightsource.github.io/developer-portal/user/>      |
+| Developer Docs | <https://diamondlightsource.github.io/developer-portal/developer/> |
+| Releases       | <https://github.com/DiamondLightSource/developer-portal/releases>  |
 
 ## Developing Locally (VSCode)
 
@@ -31,6 +31,7 @@ The Diamond Light Source developer portal, built with backstage for deployment o
   - Populating the [necessary secrets](#necessary-secrets) in their respective fields in `backend.auth`
   - Pointing to an existing secret containing the [necessary secrets](#necessary-secrets) with `backend.auth.existingSecret` (recommended)
 - Deploy the portal, with:
+
   ```sh
   cd charts/developer-portal
   helm install <deployment-name> .
