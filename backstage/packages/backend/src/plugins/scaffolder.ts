@@ -15,8 +15,6 @@ export default async function createPlugin(
     discoveryApi: env.discovery,
   });
   const integrations = ScmIntegrations.fromConfig(env.config);
-  const dockerClient = new Docker();
-  const containerRunner = new DockerContainerRunner({ dockerClient });
 
   const actions = [
     ...createBuiltinActions({
@@ -29,7 +27,6 @@ export default async function createPlugin(
   ];
 
   return await createRouter({
-    containerRunner,
     catalogClient,
     actions,
     logger: env.logger,
