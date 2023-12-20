@@ -45,7 +45,7 @@ We will now run:
 npx @techdocs/cli publish --entity <NAMESPACE/KIND/NAME> --publisher-type awsS3 --storage-name techdocs --awsEndpoint https://s3.echo.stfc.ac.uk --awsS3ForcePathStyle
 ```
 
-??? example "Example GitHub Workflow"
+!!! example "Example GitHub Workflow"
 
     ```yaml
     name: Docs CI
@@ -93,7 +93,7 @@ npx @techdocs/cli publish --entity <NAMESPACE/KIND/NAME> --publisher-type awsS3 
             AWS_REGION: ""
     ```
 
-??? example "Example GitLab Workflow"
+!!! example "Example GitLab Workflow"
 
     ```yaml
     image: node:18-bullseye
@@ -132,7 +132,7 @@ npx @techdocs/cli publish --entity <NAMESPACE/KIND/NAME> --publisher-type awsS3 
 
 Finally, we will add the `backstage.io/techdocs-ref` annotation to the `metadata.annotations` field of the entity descriptor. This should point to the root directory of the documentation (i.e. the directory containing the `mkdocs.yaml` file).
 
-??? example "Example Entity Descriptor"
+!!! example "Example Entity Descriptor"
 
     ```yaml
     apiVersion: backstage.io/v1alpha1

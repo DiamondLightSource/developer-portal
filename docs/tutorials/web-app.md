@@ -92,7 +92,7 @@ spec:
   owner: user:enu43627
 ```
 
-??? example "Complete System Definition"
+!!! example "Complete System Definition"
 
     ```yaml
     apiVersion: backstage.io/v1alpha1
@@ -147,7 +147,7 @@ spec:
     - my-web-app-rest
 ```
 
-??? example "Complete Backend Component Definition"
+!!! example "Complete Backend Component Definition"
 
     ```yaml
     apiVersion: backstage.io/v1alpha1
@@ -210,7 +210,7 @@ spec:
       version: 0.0.1
 ```
 
-??? example "Complete API Definition"
+!!! example "Complete API Definition"
 
     ```yaml
     apiVersion: backstage.io/v1alpha1
@@ -269,7 +269,7 @@ spec:
     - my-web-app-rest
 ```
 
-??? example "Complete Frontend Component Definition"
+!!! example "Complete Frontend Component Definition"
 
     ```yaml
     apiVersion: backstage.io/v1alpha1
@@ -291,7 +291,7 @@ spec:
 
 Once complete we can save and exit, to do so in `nano` press `CTRL` + `X` to exit, `Y` to save and :material-keyboard-return: `Return` to overwrite the opened file.
 
-??? example "Complete Entity Descriptor File"
+!!! example "Complete Entity Descriptor File"
 
     ```yaml
     apiVersion: backstage.io/v1alpha1
