@@ -19,7 +19,7 @@ jobs:
         uses: azure/setup-helm@v3.5
 
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
 
       - name: Setup chart-testing
         uses: helm/chart-testing-action@v2.6.1
