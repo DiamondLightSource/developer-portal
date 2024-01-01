@@ -20,4 +20,4 @@ jobs:
         run: touch .devcontainer/.env
 
       - name: Build dev container
-        uses: devcontainers/ci@v0.3.1900000338
+        uses: devcontainers/ci@v0.3.1900000339
