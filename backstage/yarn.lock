@@ -2338,12 +2338,12 @@
     lodash "^4.17.21"
 
 "@backstage/core-app-api@^1.11.1":
-  version "1.11.1"
-  resolved "https://registry.yarnpkg.com/@backstage/core-app-api/-/core-app-api-1.11.1.tgz#21584a43cf7bc80171b8f03a3c0db80b1adef424"
-  integrity sha512-BtYilKoiAnyPjTBZ/LuBIU+nopuleAG/KqfDB36cQ5zAC5cNd2xpXw9NlCQcxJnMV1MjsiqHrfK2lb1S1owXpQ==
+  version "1.11.2"
+  resolved "https://registry.yarnpkg.com/@backstage/core-app-api/-/core-app-api-1.11.2.tgz#02e0f697b7594854a5c0c32e8f2d973971107590"
+  integrity sha512-ullzDYxavKYs4Xywp7Jsh2sppeUWZY5UGibEVJfcfDuJaaBL7I4KaZMlEPykkCXYfusK8PNPlz1IJJQDzDvbzw==
   dependencies:
     "@backstage/config" "^1.1.1"
-    "@backstage/core-plugin-api" "^1.8.0"
+    "@backstage/core-plugin-api" "^1.8.1"
     "@backstage/types" "^1.1.1"
     "@backstage/version-bridge" "^1.0.7"
     "@types/prop-types" "^15.7.3"
@@ -2354,7 +2354,7 @@
     prop-types "^15.7.2"
     react-use "^17.2.4"
     zen-observable "^0.10.0"
-    zod "^3.21.4"
+    zod "^3.22.4"
 
 "@backstage/core-components@^0.13.8":
   version "0.13.8"
@@ -2403,10 +2403,10 @@
     zen-observable "^0.10.0"
     zod "^3.21.4"
 
-"@backstage/core-plugin-api@^1.8.0":
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/@backstage/core-plugin-api/-/core-plugin-api-1.8.0.tgz#97e87e13dcc5a65cb65e883d67d4387c7a42db32"
-  integrity sha512-yZ52w8Msf6cwLAf97bQKDqEWHA0N3ikRejYHFSn6hb3IVTgxV738m4ybFdgULVEAZFLrATs7nzu+UI3rqoVeZg==
+"@backstage/core-plugin-api@^1.8.0", "@backstage/core-plugin-api@^1.8.1":
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/@backstage/core-plugin-api/-/core-plugin-api-1.8.1.tgz#8059389029d81b858a3774ff84707c71a5294157"
+  integrity sha512-koAOCkjP9mKHs3bsk2LQPDDjvFRKlW6PMlcc1APN1mD7eIo3RaszL7fi/a/MJBtuEpIjs2rhuE+rF/rcffXSyA==
   dependencies:
     "@backstage/config" "^1.1.1"
     "@backstage/types" "^1.1.1"
@@ -23689,7 +23689,7 @@ zod-to-json-schema@^3.20.4, zod-to-json-schema@^3.21.4:
   resolved "https://registry.yarnpkg.com/zod-to-json-schema/-/zod-to-json-schema-3.22.1.tgz#30bec8fb92eabbc1f8caf978a0eabfa447b261b7"
   integrity sha512-bVSWQ2JF3ZglQefafkM+Kk9KQ2fqqSi4VhxWaup1NJX9FS5jDg0EkEioVCWui0PiIQvcXJUjmN71bg672+a+tA==
 
-zod@^3.21.4:
+zod@^3.21.4, zod@^3.22.4:
   version "3.22.4"
   resolved "https://registry.yarnpkg.com/zod/-/zod-3.22.4.tgz#f31c3a9386f61b1f228af56faa9255e845cf3fff"
   integrity sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==
