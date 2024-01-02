@@ -5,6 +5,33 @@ on:
   pull_request:
 
 jobs:
+  lint:
+    # pull requests are a duplicate of a branch push if within the same repo.
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.1
+        with:
+          # Need this to get version number from last tag
+          fetch-depth: 0
+
+      - name: Set node
+        uses: actions/setup-node@v4.0.0
+        with:
+          node-version: 18
+
+      - name: Install yarn dependencies
+        uses: borales/actions-yarn@v4.2.0
+        with:
+          cmd: global add markdownlint-cli2 markdown-it-admon
+
+      - name: Lint with markdownlint-cli2
+        run: >
+          markdownlint-cli2
+          *.{md,markdown}
+          docs/**/*.{md,markdown}
+
   build:
     # pull requests are a duplicate of a branch push if within the same repo.
     if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.repository
