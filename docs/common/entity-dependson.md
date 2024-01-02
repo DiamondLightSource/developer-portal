@@ -1,1 +1,3 @@
+<!-- markdownlint-disable MD041 -->
+
 An array of [entity references](https://backstage.io/docs/features/software-catalog/references#string-references) to the Components and Resources that this entity depends on, e.g. `dependsOn: [component:developer-portal-backend]`. There is no requirement for these entities to be created within the same location; Existing entities can be listed in the catalog.
