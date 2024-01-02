@@ -77,6 +77,7 @@ jobs:
       - name: Publish docs to s3 bucket
         if: github.ref == 'refs/heads/main'
         run: >
+          timeout -v 10m
           npx @techdocs/cli publish
           --entity ${{ matrix.entity }}
           --publisher-type awsS3
