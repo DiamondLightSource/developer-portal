@@ -1350,8 +1350,8 @@
 <p>We will now run:</p>
 <div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>npx<span class="w"> </span>@techdocs/cli<span class="w"> </span>publish<span class="w"> </span>--entity<span class="w"> </span>&lt;NAMESPACE/KIND/NAME&gt;<span class="w"> </span>--publisher-type<span class="w"> </span>awsS3<span class="w"> </span>--storage-name<span class="w"> </span>techdocs<span class="w"> </span>--awsEndpoint<span class="w"> </span>https://s3.echo.stfc.ac.uk<span class="w"> </span>--awsS3ForcePathStyle
 </code></pre></div></td></tr></table></div>
-<details class="example">
-<summary>Example GitHub Workflow</summary>
+<div class="admonition example">
+<p class="admonition-title">Example GitHub Workflow</p>
 <div class="language-yaml highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -1438,9 +1438,9 @@
 <span class="w">        </span><span class="nt">AWS_SECRET_ACCESS_KEY</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.TECHDOCS_S3_SECRET_ACCESS_KEY }}</span>
 <span class="w">        </span><span class="nt">AWS_REGION</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span>
 </code></pre></div></td></tr></table></div>
-</details>
-<details class="example">
-<summary>Example GitLab Workflow</summary>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example GitLab Workflow</p>
 <div class="language-yaml highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -1501,11 +1501,11 @@
 <span class="w">  </span><span class="nt">variables</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">AWS_REGION</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span>
 </code></pre></div></td></tr></table></div>
-</details>
+</div>
 <h2 id="annotate-entity">Annotate Entity<a class="headerlink" href="#annotate-entity" title="Permanent link">&para;</a></h2>
 <p>Finally, we will add the <code>backstage.io/techdocs-ref</code> annotation to the <code>metadata.annotations</code> field of the entity descriptor. This should point to the root directory of the documentation (i.e. the directory containing the <code>mkdocs.yaml</code> file).</p>
-<details class="example">
-<summary>Example Entity Descriptor</summary>
+<div class="admonition example">
+<p class="admonition-title">Example Entity Descriptor</p>
 <div class="language-yaml highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -1526,7 +1526,7 @@
 <span class="w">  </span><span class="nt">lifecycle</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">experimental</span>
 <span class="w">  </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">user:enu43627</span>
 </code></pre></div></td></tr></table></div>
-</details>
+</div>
 
 
 
