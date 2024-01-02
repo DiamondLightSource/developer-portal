@@ -29,8 +29,7 @@ jobs:
       - name: Lint with markdownlint-cli2
         run: >
           markdownlint-cli2
-          *.{md,markdown}
-          docs/**/*.{md,markdown}
+          **/*.{md,markdown}
 
   build:
     # pull requests are a duplicate of a branch push if within the same repo.
