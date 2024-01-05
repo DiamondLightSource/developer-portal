@@ -33,7 +33,7 @@
     "@backstage/plugin-permission-node": "^0.7.18",
     "@backstage/plugin-proxy-backend": "^0.4.5",
     "@backstage/plugin-scaffolder-backend": "^1.19.1",
-    "@backstage/plugin-scaffolder-backend-module-copier": "https://github.com/telia-oss/scaffolder-backend-module-copier.git",
+    "@backstage/plugin-scaffolder-backend-module-copier": "https://github.com/M-Chan/scaffolder-backend-module-copier.git",
     "@backstage/plugin-search-backend": "^1.4.7",
     "@backstage/plugin-search-backend-module-pg": "^0.5.16",
     "@backstage/plugin-search-backend-node": "^1.2.11",

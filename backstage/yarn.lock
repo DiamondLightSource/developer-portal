@@ -3393,9 +3393,9 @@
     yn "^4.0.0"
     yup "^0.32.9"
 
-"@backstage/plugin-scaffolder-backend-module-copier@https://github.com/telia-oss/scaffolder-backend-module-copier.git":
+"@backstage/plugin-scaffolder-backend-module-copier@https://github.com/M-Chan/scaffolder-backend-module-copier.git":
   version "0.2.13"
-  resolved "https://github.com/telia-oss/scaffolder-backend-module-copier.git#091e1e734d54cab8929ab939d7cb990b73ac99e6"
+  resolved "https://github.com/M-Chan/scaffolder-backend-module-copier.git#92be72fff50a94540be507cda9fb5f5315773ba6"
   dependencies:
     "@backstage/backend-common" "workspace:^"
     "@backstage/config" "workspace:^"
@@ -8521,7 +8521,7 @@
   resolved "https://registry.yarnpkg.com/@types/range-parser/-/range-parser-1.2.7.tgz#50ae4353eaaddc04044279812f52c8c65857dbcb"
   integrity sha512-hKormJbkJqzQGhziax5PItDUTMAM9uE2XXQmM37dyd4hVM+5aVl7oVxMVUiVQn2oCQFN/LKCZdvSM0pFRqbSmQ==
 
-"@types/react-dom@*", "@types/react-dom@<18.0.0", "@types/react-dom@^17":
+"@types/react-dom@*", "@types/react-dom@<18.0.0":
   version "17.0.25"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.25.tgz#e0e5b3571e1069625b3a3da2b279379aa33a0cb5"
   integrity sha512-urx7A7UxkZQmThYA4So0NelOVjx3V4rNFVJwp0WZlbIK5eM4rNJDiN3R/E9ix0MBh6kAEojk/9YL+Te6D9zHNA==
