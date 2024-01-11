@@ -11,7 +11,7 @@ plugins:
   - pagenav-generator
 nav:
   - Home: index.md
-  - Tutorials: 
+  - Tutorials:
     - Home: tutorials/index.md
     - tutorials
   - 'How Tos':
