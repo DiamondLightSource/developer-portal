@@ -5,21 +5,9 @@ edit_uri: edit/main/docs/
 plugins:
   - techdocs-core
   - include-markdown
-  - include_dir_to_nav:
-      file_pattern: '.*(?<!index)\.md$'
   - awesome-pages
   - pagenav-generator
-nav:
-  - Home: index.md
-  - Tutorials:
-    - Home: tutorials/index.md
-    - tutorials
-  - 'How Tos':
-    - Home: how-tos/index.md
-    - how-tos
-  - Explanations:
-    - Home: explanations/index.md
-    - explanations
-  - References:
-    - Home: references/index.md
-    - references
+theme:
+  name: material
+  features:
+    - navigation.indexes
