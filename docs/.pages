@@ -1,0 +1,6 @@
+nav:
+    - Home: index.md
+    - tutorials
+    - How-Tos: how-tos
+    - explanations
+    - references

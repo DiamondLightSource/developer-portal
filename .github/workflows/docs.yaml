@@ -56,7 +56,7 @@ jobs:
           node-version: 18.x
 
       - name: Generate docs
-        run: npx @techdocs/cli generate --no-docker
+        run: npx @techdocs/cli generate --no-docker --omitTechdocsCoreMkdocsPlugin
 
       - name: Create docs artifact 
         uses: actions/upload-artifact@v4.0.0
