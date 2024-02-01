@@ -59,7 +59,7 @@ jobs:
         run: npx @techdocs/cli generate --no-docker --omitTechdocsCoreMkdocsPlugin
 
       - name: Create docs artifact 
-        uses: actions/upload-artifact@v4.0.0
+        uses: actions/upload-artifact@v4.3.0
         with:
           name: techdocs-common
           path: site
@@ -70,7 +70,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get docs artifact
-        uses: actions/download-artifact@v4.1.0
+        uses: actions/download-artifact@v4.1.1
         with:
           name: techdocs-common
           path: site
@@ -95,7 +95,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get docs artifact
-        uses: actions/download-artifact@v4.1.0
+        uses: actions/download-artifact@v4.1.1
         with:
           name: techdocs-common
           path: site
