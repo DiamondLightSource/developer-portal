@@ -4,7 +4,7 @@ import {
   createBuiltinActions,
   createRouter,
 } from '@backstage/plugin-scaffolder-backend';
-import { createFetchCopierAction } from '@backstage/plugin-scaffolder-backend-module-copier';
+import { createFetchCopierAction } from '@diamondlightsource/plugin-scaffolder-backend-module-copier';
 import { Router } from 'express';
 import type { PluginEnvironment } from '../types';
 

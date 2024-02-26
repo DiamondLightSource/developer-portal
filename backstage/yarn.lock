@@ -3265,25 +3265,6 @@
     node-fetch "^2.6.7"
     yaml "^2.0.0"
 
-"@backstage/plugin-scaffolder-backend-module-copier@https://github.com/M-Chan/scaffolder-backend-module-copier.git":
-  version "0.2.13"
-  resolved "https://github.com/M-Chan/scaffolder-backend-module-copier.git#cd296cb6a6567d3623c91acd23489e21b2682396"
-  dependencies:
-    "@backstage/backend-common" "0.20.1"
-    "@backstage/config" "1.1.1"
-    "@backstage/errors" "1.2.3"
-    "@backstage/integration" "1.8.0"
-    "@backstage/plugin-scaffolder-backend" "1.20.0"
-    "@backstage/types" "1.1.1"
-    "@types/command-exists" "1.2.3"
-    "@types/fs-extra" "11.0.4"
-    "@types/mock-fs" "4.13.4"
-    command-exists "1.2.9"
-    fs-extra "11.2.0"
-    typescript "~5.3.2"
-    winston "3.11.0"
-    yn "5.0.0"
-
 "@backstage/plugin-scaffolder-backend-module-gerrit@^0.1.1":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@backstage/plugin-scaffolder-backend-module-gerrit/-/plugin-scaffolder-backend-module-gerrit-0.1.1.tgz#a52161f1b8e1980ef485f835ae1875ff35438a83"
@@ -4024,6 +4005,26 @@
     passport-oauth2 "^1.6.1"
     pkginfo "^0.4.1"
     uid2 "^1.0.0"
+
+"@diamondlightsource/plugin-scaffolder-backend-module-copier@^0.3.2":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@diamondlightsource/plugin-scaffolder-backend-module-copier/-/plugin-scaffolder-backend-module-copier-0.3.2.tgz#77e5a46bb4433ddcbf1b0589e84bc37f80c593f5"
+  integrity sha512-+4oW1TEiRKj1x3sV0xiJZiIYgyR+xlT1TyjoeRHTuuub13ANpn2sdzVVYRknqhg1ErSQKeOVOKJHly/6nrGNfw==
+  dependencies:
+    "@backstage/backend-common" "0.20.1"
+    "@backstage/config" "1.1.1"
+    "@backstage/errors" "1.2.3"
+    "@backstage/integration" "1.8.0"
+    "@backstage/plugin-scaffolder-backend" "1.20.0"
+    "@backstage/types" "1.1.1"
+    "@types/command-exists" "1.2.3"
+    "@types/fs-extra" "11.0.4"
+    "@types/mock-fs" "4.13.4"
+    command-exists "1.2.9"
+    fs-extra "11.2.0"
+    typescript "~5.3.2"
+    winston "3.11.0"
+    yn "5.0.0"
 
 "@emotion/babel-plugin@^11.11.0":
   version "11.11.0"
@@ -9066,7 +9067,7 @@
   resolved "https://registry.yarnpkg.com/@types/range-parser/-/range-parser-1.2.7.tgz#50ae4353eaaddc04044279812f52c8c65857dbcb"
   integrity sha512-hKormJbkJqzQGhziax5PItDUTMAM9uE2XXQmM37dyd4hVM+5aVl7oVxMVUiVQn2oCQFN/LKCZdvSM0pFRqbSmQ==
 
-"@types/react-dom@*", "@types/react-dom@<18.0.0", "@types/react-dom@^17":
+"@types/react-dom@*", "@types/react-dom@<18.0.0":
   version "17.0.25"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.25.tgz#e0e5b3571e1069625b3a3da2b279379aa33a0cb5"
   integrity sha512-urx7A7UxkZQmThYA4So0NelOVjx3V4rNFVJwp0WZlbIK5eM4rNJDiN3R/E9ix0MBh6kAEojk/9YL+Te6D9zHNA==
@@ -23013,7 +23014,7 @@ swagger-client@^3.24.6:
     traverse "~0.6.6"
     undici "^5.24.0"
 
-swagger-ui-react@5.10.5, swagger-ui-react@^5.0.0:
+swagger-ui-react@^5.0.0:
   version "5.10.5"
   resolved "https://registry.yarnpkg.com/swagger-ui-react/-/swagger-ui-react-5.10.5.tgz#a9da3c452599530b1df4e1c7860c2888f683c617"
   integrity sha512-uBQLku4j3L1NC4/xE3HTgz1EcFisBphh8AnGqbj9LMxeGGcpKOlx/ZDigRAeVXWr9jOnZZbeGBzMe4NVHxPZrQ==
