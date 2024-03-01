@@ -19,19 +19,19 @@ jobs:
           node-version: 18
 
       - name: Install yarn dependencies
-        uses: borales/actions-yarn@v4.2.0
+        uses: borales/actions-yarn@v5.0.0
         with:
           cmd: install --frozen-lockfile
           dir: backstage
 
       - name: Lint all
-        uses: borales/actions-yarn@v4.2.0
+        uses: borales/actions-yarn@v5.0.0
         with:
           cmd: lint:all
           dir: backstage
 
       - name: Check format
-        uses: borales/actions-yarn@v4.2.0
+        uses: borales/actions-yarn@v5.0.0
         with:
           cmd: prettier:check
           dir: backstage
@@ -49,13 +49,13 @@ jobs:
           node-version: 18
 
       - name: Install yarn dependencies
-        uses: borales/actions-yarn@v4.2.0
+        uses: borales/actions-yarn@v5.0.0
         with:
           cmd: install --frozen-lockfile
           dir: backstage
 
       - name: Run all tests
-        uses: borales/actions-yarn@v4.2.0
+        uses: borales/actions-yarn@v5.0.0
         with:
           cmd: test:all
           dir: backstage
