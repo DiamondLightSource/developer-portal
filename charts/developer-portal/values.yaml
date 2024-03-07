@@ -166,7 +166,7 @@ backend:
     gitlabToken: ""
 
     # -- A secret containing the nessacary tokens
-    existingSecret: developer-portal-secrets
+    existingSecret: backstage-secrets
 
     # -- The secret keys baclstage will look for to retrieve the relevant tokens & ids
     secretKeys:
