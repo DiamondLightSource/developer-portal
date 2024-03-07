@@ -1,295 +1,91 @@
-# Default values for the developer portal chart.
-# This is a YAML-formatted file.
-# Declare variables to be passed into your templates.
-
-# -- Global parameters
-# Global Docker image parameters
-# Please, note that this will override the image parameters, including dependencies, configured to use the global value
-# Current available global Docker image parameters: imageRegistry, imagePullSecrets and storageClass
-# @default -- See below
 global:
-  # -- Global Docker image registry
   imageRegistry: ""
-
-  # -- Global Docker registry secret names as an array
-  # </br> E.g. `imagePullSecrets: [myRegistryKeySecretName]`
   imagePullSecrets: []
 
-# -- Common parameters
 common:
-  # -- The component label prefix to use on all deployed objects
   componentLabel: developer-portal
-
-  # -- Labels to add to all deployed objects
   labels: {}
-
-  # -- Annotations to add to all deployed objects
   annotations: {}
 
 frontend:
   image:
-    # -- Backstage frontend image registry
     registry: ghcr.io
-
-    # -- Backstage frontend image repository
     repository: diamondlightsource/developer-portal-frontend
-
-    # -- Backstage frontend image tag (immutable tags are recommended)
     tag: 0.0.22
-
-    # -- Specify a imagePullPolicy.
-    # Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
-    # <br /> Ref: https://kubernetes.io/docs/user-guide/images/#pre-pulling-images
     pullPolicy: 'IfNotPresent'
-
-    # -- Optionally specify an array of imagePullSecrets.
-    #  Secrets must be manually created in the namespace.
-    # <br /> Ref: https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/
-    # <br /> E.g: `pullSecrets: [myRegistryKeySecretName]`
     pullSecrets: []
-
-  # -- Backstage frontend container command
   command: []
-
-  # -- Backstage frontend container command arguments
   args: []
-
-  # -- Container port on the Deployment
   port: 80
-
-  # -- Resource requests/limits
-  # <br /> Ref: https://kubernetes.io/docs/user-guide/compute-resources/
-  # <!-- E.g.
-  # resources:
-  #   limits:
-  #     memory: 1Gi
-  #     cpu: 1000m
-  #   requests:
-  #     memory: 250Mi
-  #     cpu: 100m -->
   resources: {}
-
-  # -- Security settings for a Pod.
-  #  The security settings that you specify for a Pod apply to all Containers in the Pod.
-  # <br /> Ref: https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-the-security-context-for-a-pod
   podSecurityContext: {}
-
-  # -- Security settings for a Container.
-  # <br /> Ref: https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-the-security-context-for-a-container
   containerSecurityContext: {}
-
-  # -- Node tolerations for server scheduling to nodes with taints
-  # <br /> Ref: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/
   tolerations: []
 
-## Frontend service parameters
-##
-# -- Frontend service parameters
-# @default -- See below
 frontendService:
-  # -- Backstage frontend service Cluster IP
-  #
-  # <br /> E.g `clusterIP: None`
   clusterIP: ""
-
-  # -- Backstage frontend svc port for client connections
   port: 80
 
 backend:
   image:
-    # -- Backstage backend image registry
     registry: ghcr.io
-
-    # -- Backstage backend image repository
     repository: diamondlightsource/developer-portal-backend
-
-    # -- Backstage frontend image tag (immutable tags are recommended)
     tag: 0.0.22
-
-    # -- Specify a imagePullPolicy.
-    # Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
-    # <br /> Ref: https://kubernetes.io/docs/user-guide/images/#pre-pulling-images
     pullPolicy: 'IfNotPresent'
-
-    # -- Optionally specify an array of imagePullSecrets.
-    #  Secrets must be manually created in the namespace.
-    # <br /> Ref: https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/
-    # <br /> E.g: `pullSecrets: [myRegistryKeySecretName]`
     pullSecrets: []
-
-  # -- Backstage backend container command
   command: []
-
-  # -- Backstage backend container command arguments
   args: []
-
-  # -- Container port on the Deployment
   port: 7007
-
-  # -- Resource requests/limits
-  # <br /> Ref: https://kubernetes.io/docs/user-guide/compute-resources/
-  # <!-- E.g.
-  # resources:
-  #   limits:
-  #     memory: 1Gi
-  #     cpu: 1000m
-  #   requests:
-  #     memory: 250Mi
-  #     cpu: 100m -->
   resources: {}
-
-  # -- Security settings for a Pod.
-  #  The security settings that you specify for a Pod apply to all Containers in the Pod.
-  # <br /> Ref: https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-the-security-context-for-a-pod
   podSecurityContext: {}
-
-  # -- Security settings for a Container.
-  # <br /> Ref: https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-the-security-context-for-a-container
   containerSecurityContext: {}
-
-  # -- Node tolerations for server scheduling to nodes with taints
-  # <br /> Ref: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/
   tolerations: []
-
-  # -- The authentication details to allow the backstage backend to ingeset catalog contents
   auth:
-    # -- A github token with read:org, read:user & user:email permissions
     githubToken: ""
-
-    # -- A github OAuth App client ID
     githubAppClientId: ""
-
-    # -- A github OAuth App client secret
     githubAppSecret: ""
-
-    # -- A gitlab token with api, read_repository & write_repository permissions
     gitlabToken: ""
-
-    # -- A secret containing the nessacary tokens
     existingSecret: backstage-secrets
-
-    # -- The secret keys baclstage will look for to retrieve the relevant tokens & ids
     secretKeys:
-      # -- The key of a github token with read:org, read:user & user:email permissions
       githubTokenKey: github-token
-
-      # -- The key of a github OAuth App client ID
       githubAppClientIdKey: github-app-client-id
-
-      # -- The key of a github OAuth App client secret
       githubAppSecretKey: github-app-secret
-
-      # -- The key of a gitlab token with api, read_repository & write_repository permissions
       gitlabTokenKey: gitlab-token
-
-      # -- The key of a s3 bucket key id, with s3:ListBucket & s3:GetObject
       s3AccessKeyIdKey: s3-access-key-id
-
-      # -- The key of a s3 bucket key secret, with s3:ListBucket & s3:GetObject
       s3AccessKeySecretKey: s3-access-key-secret
-
-## Backend service parameters
-##
-# -- Backend service parameters
-# @default -- See below
 backendService:
-  # -- Backstage backend service Cluster IP
-  #
-  # <br /> E.g `clusterIP: None`
   clusterIP: ""
-
-  # -- Backstage backend svc port for client connections
   port: 80
 
-# -- PostgreSQL [chart configuration](https://github.com/bitnami/charts/blob/master/bitnami/postgresql/values.yaml)
-# @default -- See below
 postgresql:
-  # -- Switch to enable or disable the PostgreSQL helm chart
   create: true
-
-  # -- Location of an existing postgreSQL server to use if create is false
   existing:
-    # -- The hostname of the existing postgreSQL server
     host: ""
-
-    # -- The port number of the existing postgreSQL server
     port: 5432
-
-  # -- The authentication details of the Postgres database
   auth:
-    # -- Name for a custom user to create
-    username: backstage
-
-    # -- Password for the custom user to create
-    password: ""
-
-    # -- Name of existing secret to use for PostgreSQL credentials
     existingSecret: ""
-
-    # -- The secret keys Postgres will look for to retrieve the relevant password
     secretKeys:
-      # -- The key in which Postgres will look for, for the admin password, in the existing Secret
       adminPasswordKey: admin-password
-
-      # -- The key in which Postgres will look for, for the user password, in the existing Secret
       userPasswordKey: user-password
-
-      # -- The key in which Postgres will look for, for the replication password, in the existing Secret
       replicationPasswordKey: replication-password
-
-  ## @section PostgreSQL Primary parameters
-  ##
   primary:
-    # -- Resource requests/limits
-    # <br /> Ref: https://kubernetes.io/docs/user-guide/compute-resources/
-    # <!-- E.g.
-    # resources:
-    #   limits:
-    #     memory: 1Gi
-    #     cpu: 1000m
-    #   requests:
-    #     memory: 250Mi
-    #     cpu: 100m -->
     resources:
       limits:
         memory: 1Gi
       requests:
         memory: 256Mi
 
-# -- Ingress parameters
 ingress:
-  # -- Enable the creation of the ingress resource
   enabled: true
-
-  # -- Name of the IngressClass cluster resource which defines which controller will implement the resource (e.g nginx)
   className: ""
-
-  # -- Hostname to be used to expose the route to access the backstage application (e.g: backstage.IP.nip.io)
   host: dev-portal.diamond.ac.uk
-
-  # -- Ingress TLS parameters
   tls:
-    # -- Enable TLS configuration for the host defined at `ingress.host` parameter
     enabled: true
-
-    # -- The name to which the TLS Secret will be called
     secretName: ""
 
-# -- Service Account Configuration
-# @default -- See below
 serviceAccount:
-  # -- Enable the creation of a ServiceAccount for Backstage pods
   create: false
-
-  # -- Name of the ServiceAccount to use
-  # If not set and `serviceAccount.create` is true, a name is generated
   name: ""
-
-  # -- Additional custom labels to the service ServiceAccount.
   labels: {}
-
-  # -- Additional custom annotations for the ServiceAccount.
   annotations: {}
-
-  # -- Auto-mount the service account token in the pod
   automountServiceAccountToken: true
