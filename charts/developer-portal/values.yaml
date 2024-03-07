@@ -59,15 +59,8 @@ backendService:
 
 postgresql:
   create: true
-  existing:
-    host: ""
-    port: 5432
   auth:
-    existingSecret: ""
-    secretKeys:
-      adminPasswordKey: admin-password
-      userPasswordKey: user-password
-      replicationPasswordKey: replication-password
+    username: backstage
   primary:
     resources:
       limits:
