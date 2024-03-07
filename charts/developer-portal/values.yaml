@@ -27,6 +27,7 @@ frontendService:
   port: 80
 
 backend:
+  log_level: ""
   image:
     registry: ghcr.io
     repository: diamondlightsource/developer-portal-backend

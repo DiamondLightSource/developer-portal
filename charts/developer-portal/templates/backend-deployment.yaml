@@ -58,6 +58,8 @@ spec:
           {{ end }}
           resources: {{ include "common.tplvalues.render" ( dict "value" .Values.backend.resources "context" $ ) | nindent 12 }}
           env:
+            - name: LOG_LEVEL
+              value: {{ .Values.backend.log_level | default "info" }}
             - name: POSTGRES_HOST
               value: {{ include "devportal.postgres.host" . }}
             - name: POSTGRES_PORT
