@@ -62,6 +62,8 @@ postgresql:
   auth:
     username: backstage
   primary:
+    networkPolicy:
+      enabled: false
     resources:
       limits:
         memory: 1Gi
