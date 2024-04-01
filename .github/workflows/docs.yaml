@@ -70,7 +70,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get docs artifact
-        uses: actions/download-artifact@v4.1.3
+        uses: actions/download-artifact@v4.1.4
         with:
           name: techdocs-common
           path: site
@@ -95,7 +95,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get docs artifact
-        uses: actions/download-artifact@v4.1.3
+        uses: actions/download-artifact@v4.1.4
         with:
           name: techdocs-common
           path: site
