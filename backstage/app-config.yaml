@@ -96,6 +96,14 @@ catalog:
             minutes: 60
           timeout:
             minutes: 10
+      GitHub-epics-containers:
+        organization: 'epics-containers'
+        validateLocationsExist: true
+        schedule:
+          frequency:
+            minutes: 60
+          timeout:
+            minutes: 10
     gitlab:
       GitLab:
         host: gitlab.diamond.ac.uk
