@@ -25,7 +25,7 @@
     "@backstage/plugin-auth-backend": "^0.22.3",
     "@backstage/plugin-auth-node": "^0.4.1",
     "@backstage/plugin-catalog-backend": "^1.15.0",
-    "@backstage/plugin-catalog-backend-module-github": "^0.5.2",
+    "@backstage/plugin-catalog-backend-module-github": "^0.6.0",
     "@backstage/plugin-catalog-backend-module-gitlab": "^0.3.4",
     "@backstage/plugin-catalog-backend-module-ldap": "^0.5.22",
     "@backstage/plugin-catalog-backend-module-openapi": "^0.1.24",
