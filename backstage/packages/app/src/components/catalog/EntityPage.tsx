@@ -69,7 +69,7 @@ import {
 import { Button, Grid } from '@material-ui/core';
 import React from 'react';
 import { EntityAboutCard } from '../AboutCard/AboutCard';
-
+import { ReadmeCard } from '@axis-backstage/plugin-readme'
 const TECHDOCS_ANNOTATION = 'backstage.io/techdocs-ref';
 const ANNOTATIONS_DOCS_URL =
   'https://diamondlightsource.github.io/developer-portal/user/references/supported-annotations/';
@@ -147,17 +147,25 @@ const entityWarningContent = (
 const overviewContent = (
   <Grid container spacing={3} alignItems="stretch">
     {entityWarningContent}
-    <Grid item md={6}>
+
+    {/* Top Row - Main Information Cards */}
+    <Grid item xs={12} md={8}>
       <EntityAboutCard variant="gridItem" />
     </Grid>
-    <Grid item md={6} xs={12}>
-      <EntityCatalogGraphCard variant="gridItem" height={400} />
+    <Grid item xs={12} md={4}>
+      <ReadmeCard />
     </Grid>
 
-    <Grid item md={4} xs={12}>
+    {/* Middle Row - Graph and Links */}
+    <Grid item xs={12} md={6}>
+      <EntityCatalogGraphCard variant="gridItem" height={400} />
+    </Grid>
+    <Grid item xs={12} md={6}>
       <EntityLinksCard />
     </Grid>
-    <Grid item md={8} xs={12}>
+
+    {/* Bottom Row - Subcomponents and any additional details */}
+    <Grid item xs={12} md={12}>
       <EntityHasSubcomponentsCard variant="gridItem" />
     </Grid>
   </Grid>
