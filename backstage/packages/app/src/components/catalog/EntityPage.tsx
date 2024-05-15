@@ -69,7 +69,8 @@ import {
 import { Button, Grid } from '@material-ui/core';
 import React from 'react';
 import { EntityAboutCard } from '../AboutCard/AboutCard';
-import { ReadmeCard } from '@axis-backstage/plugin-readme'
+import { ReadmeCard } from '@axis-backstage/plugin-readme';
+
 const TECHDOCS_ANNOTATION = 'backstage.io/techdocs-ref';
 const ANNOTATIONS_DOCS_URL =
   'https://diamondlightsource.github.io/developer-portal/user/references/supported-annotations/';
