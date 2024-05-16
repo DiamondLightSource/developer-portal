@@ -37,6 +37,11 @@ import { HomePage } from './components/home/HomePage';
 import { PortalDocsPage } from './components/portal-docs/PortalDocsPage';
 import { searchPage } from './components/search/SearchPage';
 import { PrefixNavigate } from './components/utils/PrefixNavigate';
+import { ThemeProvider } from '@material-ui/core/styles';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import LightIcon from '@material-ui/icons/WbSunny';
+import { diamondTheme } from './themes/diamondTheme.ts'
+import { testTheme } from './themes/testTheme.ts'
 
 const app = createApp({
   apis,
@@ -55,6 +60,27 @@ const app = createApp({
       catalogIndex: catalogPlugin.routes.catalogIndex,
     });
   },
+
+  themes:[
+    {
+    id:'diamond-theme',
+    title: 'Diamond Theme',
+    variant: 'light',
+    icon: <LightIcon/>,
+    Provider: ({children})=>(
+      <UnifiedThemeProvider theme={diamondTheme} children={children}/>
+    )
+  },
+    {
+    id:'test-theme',
+    title: 'Test Theme',
+    variant: 'light',
+    icon: <p> test</p>,
+    Provider: ({children})=>(
+      <UnifiedThemeProvider theme={testTheme} children={children}/>
+    )
+  },
+  ]
 });
 
 const routes = (
