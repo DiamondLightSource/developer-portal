@@ -10,6 +10,8 @@ Git:
 
 - `github.com/DiamondLightSource`
   - Entity descriptors at `/catalog-info.yaml`
+- `github.com/dls-controls`
+  - Entity descriptors at `/catalog-info.yaml`
 - `gitlab.diamond.ac.uk`
   - Entity descriptors at `/catalog-info.yaml`
 
