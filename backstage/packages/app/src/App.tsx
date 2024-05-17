@@ -39,8 +39,8 @@ import { searchPage } from './components/search/SearchPage';
 import { PrefixNavigate } from './components/utils/PrefixNavigate';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import LightIcon from '@material-ui/icons/WbSunny';
-import { diamondTheme } from './themes/diamondTheme'
-import { testTheme } from './themes/testTheme'
+import { diamondTheme } from './themes/diamondTheme';
+import { testTheme } from './themes/testTheme';
 import { UnifiedThemeProvider } from '@backstage/theme';
 
 const app = createApp({
@@ -69,7 +69,7 @@ const app = createApp({
       icon: <LightIcon />,
       Provider: ({ children }) => (
         <UnifiedThemeProvider theme={diamondTheme} children={children} />
-      )
+      ),
     },
     {
       id: 'test-theme',
@@ -78,9 +78,9 @@ const app = createApp({
       icon: <p> test</p>,
       Provider: ({ children }) => (
         <UnifiedThemeProvider theme={testTheme} children={children} />
-      )
+      ),
     },
-  ]
+  ],
 });
 
 const routes = (
