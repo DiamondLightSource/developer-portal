@@ -27,6 +27,9 @@ import {
 import { ReportIssue } from '@backstage/plugin-techdocs-module-addons-contrib';
 import { TechDocsAddons } from '@backstage/plugin-techdocs-react';
 import { UserSettingsPage } from '@backstage/plugin-user-settings';
+import { UnifiedThemeProvider } from '@backstage/theme';
+import NightsStay from '@material-ui/icons/NightsStay';
+import LightIcon from '@material-ui/icons/WbSunny';
 import React from 'react';
 import { Route } from 'react-router-dom';
 import { apis } from './apis';
@@ -37,10 +40,8 @@ import { HomePage } from './components/home/HomePage';
 import { PortalDocsPage } from './components/portal-docs/PortalDocsPage';
 import { searchPage } from './components/search/SearchPage';
 import { PrefixNavigate } from './components/utils/PrefixNavigate';
-import LightIcon from '@material-ui/icons/WbSunny';
-import { diamondTheme } from './themes/diamondTheme';
-import { testTheme } from './themes/testTheme';
-import { UnifiedThemeProvider } from '@backstage/theme';
+import { diamondDarkTheme } from './themes/diamondDarkTheme';
+import { diamondLightTheme } from './themes/diamondLightTheme';
 
 const app = createApp({
   apis,
@@ -62,21 +63,21 @@ const app = createApp({
 
   themes: [
     {
-      id: 'diamond-theme',
-      title: 'Diamond Theme',
+      id: 'diamond-light-theme',
+      title: 'Diamond Light Theme',
       variant: 'light',
       icon: <LightIcon />,
       Provider: ({ children }) => (
-        <UnifiedThemeProvider theme={diamondTheme} children={children} />
+        <UnifiedThemeProvider theme={diamondLightTheme} children={children} />
       ),
     },
     {
-      id: 'test-theme',
-      title: 'Test Theme',
-      variant: 'light',
-      icon: <p> test</p>,
+      id: 'diamond-dark-theme',
+      title: 'Diamond Dark Theme',
+      variant: 'dark',
+      icon: <NightsStay />,
       Provider: ({ children }) => (
-        <UnifiedThemeProvider theme={testTheme} children={children} />
+        <UnifiedThemeProvider theme={diamondDarkTheme} children={children} />
       ),
     },
   ],

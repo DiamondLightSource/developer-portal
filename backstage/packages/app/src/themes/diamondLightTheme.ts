@@ -21,7 +21,7 @@ const defaultPageColor2: string = '#343b58';
 // 700#1040A1
 // 800#001d55
 
-const diamondPalette = {
+const diamondLightPalette = {
   primary: {
     main: '#385BBD', // Based on 600#385BBD
   },
@@ -61,9 +61,9 @@ const diamondPalette = {
   },
 };
 
-export const diamondTheme = createUnifiedTheme({
+export const diamondLightTheme = createUnifiedTheme({
   ...createBaseThemeOptions({
-    palette: { ...palettes.light, ...diamondPalette },
+    palette: { ...palettes.light, ...diamondLightPalette },
   }),
   defaultPageTheme: 'home',
   fontFamily: 'monospace',
