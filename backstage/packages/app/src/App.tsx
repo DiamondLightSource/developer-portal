@@ -27,7 +27,7 @@ import {
 import { ReportIssue } from '@backstage/plugin-techdocs-module-addons-contrib';
 import { TechDocsAddons } from '@backstage/plugin-techdocs-react';
 import { UserSettingsPage } from '@backstage/plugin-user-settings';
-import { UnifiedThemeProvider } from '@backstage/theme';
+import { themes, UnifiedThemeProvider } from '@backstage/theme';
 import NightsStay from '@material-ui/icons/NightsStay';
 import LightIcon from '@material-ui/icons/WbSunny';
 import React from 'react';
@@ -78,6 +78,24 @@ const app = createApp({
       icon: <NightsStay />,
       Provider: ({ children }) => (
         <UnifiedThemeProvider theme={diamondDarkTheme} children={children} />
+      ),
+    },
+    {
+      id: 'default-dark-theme',
+      title: 'Backstage Default Dark Theme',
+      variant: 'dark',
+      icon: <NightsStay />,
+      Provider: ({ children }) => (
+        <UnifiedThemeProvider theme={themes.dark} children={children} />
+      ),
+    },
+    {
+      id: 'default-light-theme',
+      title: 'Backstage Default Light Theme',
+      variant: 'light',
+      icon: <LightIcon />,
+      Provider: ({ children }) => (
+        <UnifiedThemeProvider theme={themes.light} children={children} />
       ),
     },
   ],
