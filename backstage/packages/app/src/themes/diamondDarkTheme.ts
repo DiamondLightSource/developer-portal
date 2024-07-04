@@ -54,7 +54,7 @@ export const diamondDarkTheme = createUnifiedTheme({
     palette: { ...palettes.dark, ...diamondDarkPalette },
   }),
   defaultPageTheme: 'home',
-  fontFamily: 'monospace',
+  fontFamily: '"Helvetica Neue", Helvetica, Roboto, Arial, sans-serif',
   /* below drives the header colors */
   pageTheme: {
     home: genPageTheme({

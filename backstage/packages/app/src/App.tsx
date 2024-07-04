@@ -80,24 +80,6 @@ const app = createApp({
         <UnifiedThemeProvider theme={diamondDarkTheme} children={children} />
       ),
     },
-    {
-      id: 'default-dark-theme',
-      title: 'Backstage Default Dark Theme',
-      variant: 'dark',
-      icon: <NightsStay />,
-      Provider: ({ children }) => (
-        <UnifiedThemeProvider theme={themes.dark} children={children} />
-      ),
-    },
-    {
-      id: 'default-light-theme',
-      title: 'Backstage Default Light Theme',
-      variant: 'light',
-      icon: <LightIcon />,
-      Provider: ({ children }) => (
-        <UnifiedThemeProvider theme={themes.light} children={children} />
-      ),
-    },
   ],
 });
 

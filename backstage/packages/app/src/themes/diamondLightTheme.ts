@@ -66,7 +66,7 @@ export const diamondLightTheme = createUnifiedTheme({
     palette: { ...palettes.light, ...diamondLightPalette },
   }),
   defaultPageTheme: 'home',
-  fontFamily: 'monospace',
+  fontFamily: '"Helvetica Neue", Helvetica, Roboto, Arial, sans-serif',
   /* below drives the header colors */
   pageTheme: {
     home: genPageTheme({
