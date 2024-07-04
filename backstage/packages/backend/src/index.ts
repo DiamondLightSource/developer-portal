@@ -86,7 +86,7 @@ async function main() {
   apiRouter.use('/auth', await auth(authEnv));
   apiRouter.use('/techdocs', await techdocs(techdocsEnv));
   apiRouter.use('/proxy', await proxy(proxyEnv));
-  apiRouter.use('/readme', await proxy(readmeEnv));
+  apiRouter.use('/readme', await readme(readmeEnv));
   apiRouter.use('/search', await search(searchEnv));
   apiRouter.use('/gitlab', await gitlab(gitlabEnv));
 
