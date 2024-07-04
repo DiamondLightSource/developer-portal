@@ -1,18 +1,17 @@
 import { PageWithHeader } from '@backstage/core-components';
+import { useRouteRefParams } from '@backstage/core-plugin-api';
 import { TechDocsReaderPageContent } from '@backstage/plugin-techdocs';
 import { TechDocsReaderPageProvider } from '@backstage/plugin-techdocs-react';
 import React from 'react';
+import { rootDocsRouteRef } from '../../routes';
 
-export const PortalDocsPage = () => (
-  <PageWithHeader title="Developer Portal Docs" themeId="documentation">
-    <TechDocsReaderPageProvider
-      entityRef={{
-        kind: 'system',
-        namespace: 'default',
-        name: 'developer-portal',
-      }}
-    >
+export function PortalDocsPage() {
+  let { kind, name, namespace } = useRouteRefParams(rootDocsRouteRef);
+  kind = kind || 'unknown';
+  const entityRef = { kind, name, namespace };
+  return <PageWithHeader title="Developer Portal Docs" themeId="documentation">
+    <TechDocsReaderPageProvider entityRef={entityRef} >
       <TechDocsReaderPageContent />
     </TechDocsReaderPageProvider>
   </PageWithHeader>
-);
+}
