@@ -7,8 +7,7 @@ import { rootDocsRouteRef } from '../../routes';
 
 // based on this https://github.com/backstage/backstage/blob/master/plugins/techdocs/src/reader/components/TechDocsReaderPage/TechDocsReaderPage.tsx
 export const DeveloperGuidePage = () => {
-  let { kind, name, namespace } = useRouteRefParams(rootDocsRouteRef);
-  kind = kind || 'unknown';
+  const { kind, name, namespace } = useRouteRefParams(rootDocsRouteRef);
 
   const entityRef = { kind, name, namespace };
 
