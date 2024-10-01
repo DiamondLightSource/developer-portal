@@ -19,6 +19,7 @@ import auth from './plugins/auth';
 import catalog from './plugins/catalog';
 import gitlab from './plugins/gitlab';
 import proxy from './plugins/proxy';
+import readme from './plugins/readme';
 import scaffolder from './plugins/scaffolder';
 import search from './plugins/search';
 import techdocs from './plugins/techdocs';
@@ -74,6 +75,7 @@ async function main() {
   const scaffolderEnv = useHotMemoize(module, () => createEnv('scaffolder'));
   const authEnv = useHotMemoize(module, () => createEnv('auth'));
   const proxyEnv = useHotMemoize(module, () => createEnv('proxy'));
+  const readmeEnv = useHotMemoize(module, () => createEnv('readme'));
   const techdocsEnv = useHotMemoize(module, () => createEnv('techdocs'));
   const searchEnv = useHotMemoize(module, () => createEnv('search'));
   const gitlabEnv = useHotMemoize(module, () => createEnv('gitlab'));
@@ -84,6 +86,7 @@ async function main() {
   apiRouter.use('/auth', await auth(authEnv));
   apiRouter.use('/techdocs', await techdocs(techdocsEnv));
   apiRouter.use('/proxy', await proxy(proxyEnv));
+  apiRouter.use('/readme', await readme(readmeEnv));
   apiRouter.use('/search', await search(searchEnv));
   apiRouter.use('/gitlab', await gitlab(gitlabEnv));
 
