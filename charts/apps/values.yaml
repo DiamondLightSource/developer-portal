@@ -10,8 +10,8 @@ postgresql:
 
 backend:
   enabled: true
-  targetRevision: HEAD
+  targetRevision: deploy-with-argocd-tmp
 
 frontend:
   enabled: true
-  targetRevision: HEAD
+  targetRevision: deploy-with-argocd-tmp
