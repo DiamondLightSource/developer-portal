@@ -27,14 +27,12 @@ The Diamond Light Source developer portal, built with backstage for deployment o
 ## Deploying on Kubernetes (Diamond Light Source)
 
 - Access the cluster with `module load argus`
-- Adjust configuration in `charts/developer-portal/values.yaml` as appropriate, you will need to ingress secrets by either:
-  - Populating the [necessary secrets](#necessary-secrets) in their respective fields in `backend.auth`
-  - Pointing to an existing secret containing the [necessary secrets](#necessary-secrets) with `backend.auth.existingSecret` (recommended)
+- Adjust configuration in `app.yaml` and `charts/apps/values.yaml` as appropriate
+- If deploying to non `dev-portal` namespace, create a secret containing the [necessary secrets](#necessary-secrets) with `backend.auth.existingSecret` (recommended)
 - Deploy the portal, with:
 
   ```sh
-  cd charts/developer-portal
-  helm install <deployment-name> .
+  kubectl apply -f app.yaml
   ```
 
 ## Necessary secrets
