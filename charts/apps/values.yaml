@@ -7,3 +7,7 @@ destination:
 postgresql:
   enabled: true
   targetRevision: 15.5.32
+
+backend:
+  enabled: true
+  targetRevision: HEAD
