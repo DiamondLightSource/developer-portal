@@ -1,0 +1,31 @@
+image:
+  registry: ghcr.io
+  repository: diamondlightsource/developer-portal-frontend
+  tag: null
+  pullPolicy: null
+  pullSecrets: []
+  debug: false
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 1Gi
+  limits:
+    cpu: 200m
+    memory: 2Gi
+
+service:
+  port: 80
+
+ingress:
+  create: true
+  className: nginx
+  tls: []
+  host: dev-portal.diamond.ac.uk
+  paths:
+    - path: /
+      pathType: Prefix
+
+serviceAccount:
+  create: true
+  name: ""
