@@ -1,0 +1,37 @@
+{{ if .Values.postgresql.enabled }}
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: {{ include "common.names.fullname" $ }}-postgresql
+  namespace: {{ .Release.Namespace }}
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: {{ default .Release.Namespace .Values.project }}
+  source:
+    repoURL: https://charts.bitnami.com/bitnami
+    targetRevision: {{ .Values.postgresql.targetRevision }}
+    chart: postgresql
+    helm:
+      valuesObject:
+        auth:
+          username: backstage
+        primary:
+          persistence:
+            storageClass: db-nvme-storage
+          networkPolicy:
+            enabled: false
+          resources:
+            limits:
+              memory: 1Gi
+            requests:
+              memory: 256Mi
+  destination:
+    name: {{ .Values.destination.name }}
+    server: {{ .Values.destination.server }}
+    namespace: {{ default .Release.Namespace .Values.destination.namespace }}
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+{{ end }}

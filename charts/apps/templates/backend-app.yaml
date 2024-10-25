@@ -1,0 +1,23 @@
+{{ if .Values.backend.enabled }}
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: {{ include "common.names.fullname" $ }}-backend
+  namespace: {{ .Release.Namespace }}
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: {{ default .Release.Namespace .Values.project }}
+  source:
+    repoURL: https://github.com/diamondlightsource/developer-portal
+    targetRevision: {{ .Values.backend.targetRevision }}
+    path: charts/backend
+  destination:
+    name: {{ .Values.destination.name }}
+    server: {{ .Values.destination.server }}
+    namespace: {{ default .Release.Namespace .Values.destination.namespace }}
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+{{ end }}
