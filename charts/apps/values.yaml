@@ -11,3 +11,7 @@ postgresql:
 backend:
   enabled: true
   targetRevision: HEAD
+
+frontend:
+  enabled: true
+  targetRevision: HEAD
