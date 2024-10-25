@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: developer-portal
+  namespace: dev-portal
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: dev-portal
+  source:
+    repoURL: https://github.com/diamondlightsource/developer-portal
+    targetRevision: HEAD
+    path: charts/apps
+  destination:
+    name: argus
+    namespace: dev-portal
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
