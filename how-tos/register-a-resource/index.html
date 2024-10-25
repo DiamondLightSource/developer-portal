@@ -1429,12 +1429,10 @@
 <h1 id="register-a-resource">Register a Resource<a class="headerlink" href="#register-a-resource" title="Permanent link">&para;</a></h1>
 <h2 id="preface">Preface<a class="headerlink" href="#preface" title="Permanent link">&para;</a></h2>
 <p>This how-to will take you through the steps of registering a <a href="../../explanations/resource/">Resource</a> with the developer portal using one of the Git <a href="../../references/discovery-locations/">discovery locations</a>.</p>
-<!-- BEGIN INCLUDE ../common/get-repository.md -->
 <h2 id="get-a-repository">Get a Repository<a class="headerlink" href="#get-a-repository" title="Permanent link">&para;</a></h2>
 <p>To begin, you will need to create or clone a repository in or from one of the Git discovery locations, such that they are available to <a href="../../explanations/entity-ingress/">entity ingress</a>.</p>
 <div class="admonition info">
 <p class="admonition-title">Discovery Locations</p>
-<!-- BEGIN INCLUDE ../references/discovery-locations.md '&lt;!--start-git-locations--&gt;' '&lt;!--end-git-locations--&gt;' -->
 <ul>
 <li><code>github.com/DiamondLightSource</code><ul>
 <li>Entity descriptors at <code>/catalog-info.yaml</code></li>
@@ -1445,15 +1443,9 @@
 </ul>
 </li>
 </ul>
-<!-- END INCLUDE -->
 </div>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../common/create-entity-descriptor.md -->
 <h2 id="create-an-entity-descriptor">Create an Entity Descriptor<a class="headerlink" href="#create-an-entity-descriptor" title="Permanent link">&para;</a></h2>
 <p>Firstly, we must create the entity descriptor file, please reference the Discovery Locations above for the appropriate location - this is typically <code>catalog-info.yaml</code> at the root of the repository.</p>
-<!-- END INCLUDE -->
-
 <h3 id="entity-definition">Entity Definition<a class="headerlink" href="#entity-definition" title="Permanent link">&para;</a></h3>
 <p>To begin, we will specify the <code>apiVersion</code> to be <code>backstage.io/v1alpha1</code> and the <code>kind</code> as <code>Resource</code>.</p>
 <div class="admonition example">
@@ -1462,11 +1454,8 @@
 <span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Resource</span>
 </code></pre></div>
 </div>
-<!-- BEGIN INCLUDE ../common/create-entity-metadata.md -->
 <h3 id="metadata">Metadata<a class="headerlink" href="#metadata" title="Permanent link">&para;</a></h3>
 <p>Next, we will fill out the <code>metadata</code>, this is common to all entity types. Only the <code>name</code> field is required with numerous other optional fields available. It is recommended that you enter a <code>title</code> and a <code>description</code>. Complete field descriptions are available in the <a href="../../references/entity-metadata/">metadata reference</a>.</p>
-<!-- END INCLUDE -->
-
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="nt">metadata</span><span class="p">:</span>
@@ -1498,10 +1487,8 @@
 <span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">user:enu43627</span>
 </code></pre></div>
 </div>
-<!-- BEGIN INCLUDE ../common/push-and-wait.md -->
 <h2 id="push-wait">Push &amp; Wait<a class="headerlink" href="#push-wait" title="Permanent link">&para;</a></h2>
 <p>Now we have created our entity decriptor in the form of a <code>catalog-info.yaml</code> we can push it to one of the <a href="../../references/discovery-locations/">discovery locations</a> and wait for the developer portal to discover it - be aware that this may take a while depending on the schedule of the discovery provider.</p>
-<!-- END INCLUDE -->
 
 
 

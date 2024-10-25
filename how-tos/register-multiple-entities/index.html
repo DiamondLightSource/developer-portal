@@ -1375,12 +1375,10 @@
 <h1 id="register-multiple-entities">Register Multiple Entities<a class="headerlink" href="#register-multiple-entities" title="Permanent link">&para;</a></h1>
 <h2 id="preface">Preface<a class="headerlink" href="#preface" title="Permanent link">&para;</a></h2>
 <p>This how-to will take you through the steps of registering multiple entities in the catalogue from a single repository.</p>
-<!-- BEGIN INCLUDE ../common/get-repository.md -->
 <h2 id="get-a-repository">Get a Repository<a class="headerlink" href="#get-a-repository" title="Permanent link">&para;</a></h2>
 <p>To begin, you will need to create or clone a repository in or from one of the Git discovery locations, such that they are available to <a href="../../explanations/entity-ingress/">entity ingress</a>.</p>
 <div class="admonition info">
 <p class="admonition-title">Discovery Locations</p>
-<!-- BEGIN INCLUDE ../references/discovery-locations.md '&lt;!--start-git-locations--&gt;' '&lt;!--end-git-locations--&gt;' -->
 <ul>
 <li><code>github.com/DiamondLightSource</code><ul>
 <li>Entity descriptors at <code>/catalog-info.yaml</code></li>
@@ -1391,15 +1389,9 @@
 </ul>
 </li>
 </ul>
-<!-- END INCLUDE -->
 </div>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../common/create-entity-descriptor.md -->
 <h2 id="create-an-entity-descriptor">Create an Entity Descriptor<a class="headerlink" href="#create-an-entity-descriptor" title="Permanent link">&para;</a></h2>
 <p>Firstly, we must create the entity descriptor file, please reference the Discovery Locations above for the appropriate location - this is typically <code>catalog-info.yaml</code> at the root of the repository.</p>
-<!-- END INCLUDE -->
-
 <h3 id="entity-definitions">Entity Definitions<a class="headerlink" href="#entity-definitions" title="Permanent link">&para;</a></h3>
 <p>We can now create numerous entity descriptors seperated by <code>---</code>. These will be read independantly, as if they were their own entity-descriptor files.</p>
 <div class="admonition example">

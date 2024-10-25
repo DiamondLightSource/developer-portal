@@ -1651,24 +1651,14 @@
 <p>See <a href="https://backstage.io/docs/features/software-catalog/descriptor-format/#kind-domain">the backstage docs</a> for a full description of the <code>Domain</code> entity definition.</p>
 </div>
 <p>As with all other entities, a system consists of the envelope types, <code>apiVersion</code> and <code>kind</code>, as well as generic <code>metadata</code> and a specific <code>spec</code>.</p>
-<!-- BEGIN INCLUDE ../references/entity-envelope.md '&lt;!--start-api-version--&gt;' '&lt;!--end-api-version--&gt;' -->
-
 <h3 id="apiversion-required"><code>apiVersion</code> [Required]<a class="headerlink" href="#apiversion-required" title="Permanent link">&para;</a></h3>
 <p>The <code>apiVersion</code> is the version of specification format for that particular entity that the specification is made against. The version is used for being able to evolve the format and to distinguish them from other types of object that share the same type of structure - e.g. Kubernetes object manifests.</p>
 <p>At present all entity descriptors should be given an <code>apiVersion</code> of <code>backstage.io/v1alpha1</code>. This will change as backstage develops or if we choose to add custom entity <code>kind</code>s to the portal.</p>
-<!-- END INCLUDE -->
-
 <h3 id="kind-required"><code>kind</code> [Required]<a class="headerlink" href="#kind-required" title="Permanent link">&para;</a></h3>
 <p>The <code>kind</code> is the high level entity type being described. For a software domain this must be <code>Domain</code>, e.g. <code>kind: Domain</code>.</p>
 <p>Other available <code>kind</code>s are enumerated in the <a href="../../references/entity-types/">entity types reference</a>.</p>
-<!-- BEGIN INCLUDE ../references/entity-envelope.md '&lt;!--start-metadata--&gt;' '&lt;!--end-metadata--&gt;' -->
-
 <h3 id="metadata-required"><code>metadata</code> [Required]<a class="headerlink" href="#metadata-required" title="Permanent link">&para;</a></h3>
 <p>A structure that contains metadata about the entity, i.e. things that aren't directly part of the entity specification itself. See <a href="../../references/entity-metadata/">the entity metadata reference</a> for more details about this structure.</p>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../references/entity-metadata.md '&lt;!--start-fields--&gt;' '&lt;!--end-fields--&gt;' -->
-
 <h4 id="name-required"><code>name</code> [Required]<a class="headerlink" href="#name-required" title="Permanent link">&para;</a></h4>
 <p>The name of the entity. This name is both meant for human eyes to recognize the entity, and for machines and other components to reference the entity, e.g. <code>visits-tracking-service</code></p>
 <p>Names must be unique per kind, at any point in time. This uniqueness constraint is case insensitive. Names may be reused at a later time, after an entity is deleted from the registry.</p>
@@ -1713,21 +1703,13 @@
 <h5 id="icon-optional"><code>icon</code> [Optional]<a class="headerlink" href="#icon-optional" title="Permanent link">&para;</a></h5>
 <p>A key representing a visual icon to be displayed in the UI, e.g. <code>icon: docs</code></p>
 <p>The icon field value is meant to be a semantic key that will map to a specific icon that may be provided by an icon library (e.g. <code>material-ui</code> icons). These keys should be a sequence of <code>[a-z0-9A-Z]</code>, possibly separated by one of <code>[-_.]</code>. The default backstage icon-component mappings are used, see the <a href="https://github.com/backstage/backstage/blob/master/packages/app-defaults/src/defaults/icons.tsx">app-defaults</a> for details. A generic fallback icon would be provided if a mapping cannot be resolved.</p>
-<!-- END INCLUDE -->
-
 <h3 id="spec-required"><code>spec</code> [Required]<a class="headerlink" href="#spec-required" title="Permanent link">&para;</a></h3>
 <p>The actual specification data that describes the entity.</p>
-<!-- BEGIN INCLUDE ../references/domain-spec.md '&lt;!--start-fields--&gt;' '&lt;!--end-fields--&gt;' -->
-
 <h4 id="owner-required"><code>owner</code> [Required]<a class="headerlink" href="#owner-required" title="Permanent link">&para;</a></h4>
-<!-- BEGIN INCLUDE ../common/entity-owner.md -->
 <!-- markdownlint-disable MD041 -->
 
 <p>An <a href="https://backstage.io/docs/features/software-catalog/references#string-references">entity reference</a> to the owner of the entity, e.g. <code>owner: user:enu43627</code>. Users and Groups are automatically populated, and can listed in the catalog by filtering by <code>Kind</code> of <code>User</code> or <code>Group</code> respectively.</p>
 <p>The owner of an entity is the <code>group</code> or <code>user</code> that bears ultimate responsibility for the entity, and has the authority and capability to develop and maintain it. They will be the point of contact if something goes wrong, or if features are to be requested. The main purpose of this field is for display purposes in Backstage, so that people looking at catalog items can get an understanding of to whom this entity belongs. It is not to be used by automated processes to for example assign authorization in runtime systems. There may be others that also develop or otherwise touch the entity, but there will always be one ultimate owner.</p>
-<!-- END INCLUDE -->
-
-<!-- END INCLUDE -->
 
 
 

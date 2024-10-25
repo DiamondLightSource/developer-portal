@@ -1687,24 +1687,14 @@
 <p>See <a href="https://backstage.io/docs/features/software-catalog/descriptor-format/#kind-location">the backstage docs</a> for a full description of the <code>Location</code> entity definition.</p>
 </div>
 <p>As with all other entities, a location consists of the envelope types, <code>apiVersion</code> and <code>kind</code>, as well as generic <code>metadata</code> and a specific <code>spec</code>.</p>
-<!-- BEGIN INCLUDE ../references/entity-envelope.md '&lt;!--start-api-version--&gt;' '&lt;!--end-api-version--&gt;' -->
-
 <h3 id="apiversion-required"><code>apiVersion</code> [Required]<a class="headerlink" href="#apiversion-required" title="Permanent link">&para;</a></h3>
 <p>The <code>apiVersion</code> is the version of specification format for that particular entity that the specification is made against. The version is used for being able to evolve the format and to distinguish them from other types of object that share the same type of structure - e.g. Kubernetes object manifests.</p>
 <p>At present all entity descriptors should be given an <code>apiVersion</code> of <code>backstage.io/v1alpha1</code>. This will change as backstage develops or if we choose to add custom entity <code>kind</code>s to the portal.</p>
-<!-- END INCLUDE -->
-
 <h3 id="kind-required"><code>kind</code> [Required]<a class="headerlink" href="#kind-required" title="Permanent link">&para;</a></h3>
 <p>The <code>kind</code> is the high level entity type being described. For an entity location this must be <code>Location</code>, e.g. <code>kind: Location</code>.</p>
 <p>Other available <code>kind</code>s are enumerated in the <a href="../../references/entity-types/">entity types reference</a>.</p>
-<!-- BEGIN INCLUDE ../references/entity-envelope.md '&lt;!--start-metadata--&gt;' '&lt;!--end-metadata--&gt;' -->
-
 <h3 id="metadata-required"><code>metadata</code> [Required]<a class="headerlink" href="#metadata-required" title="Permanent link">&para;</a></h3>
 <p>A structure that contains metadata about the entity, i.e. things that aren't directly part of the entity specification itself. See <a href="../../references/entity-metadata/">the entity metadata reference</a> for more details about this structure.</p>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../references/entity-metadata.md '&lt;!--start-fields--&gt;' '&lt;!--end-fields--&gt;' -->
-
 <h4 id="name-required"><code>name</code> [Required]<a class="headerlink" href="#name-required" title="Permanent link">&para;</a></h4>
 <p>The name of the entity. This name is both meant for human eyes to recognize the entity, and for machines and other components to reference the entity, e.g. <code>visits-tracking-service</code></p>
 <p>Names must be unique per kind, at any point in time. This uniqueness constraint is case insensitive. Names may be reused at a later time, after an entity is deleted from the registry.</p>
@@ -1749,12 +1739,8 @@
 <h5 id="icon-optional"><code>icon</code> [Optional]<a class="headerlink" href="#icon-optional" title="Permanent link">&para;</a></h5>
 <p>A key representing a visual icon to be displayed in the UI, e.g. <code>icon: docs</code></p>
 <p>The icon field value is meant to be a semantic key that will map to a specific icon that may be provided by an icon library (e.g. <code>material-ui</code> icons). These keys should be a sequence of <code>[a-z0-9A-Z]</code>, possibly separated by one of <code>[-_.]</code>. The default backstage icon-component mappings are used, see the <a href="https://github.com/backstage/backstage/blob/master/packages/app-defaults/src/defaults/icons.tsx">app-defaults</a> for details. A generic fallback icon would be provided if a mapping cannot be resolved.</p>
-<!-- END INCLUDE -->
-
 <h3 id="spec-required"><code>spec</code> [Required]<a class="headerlink" href="#spec-required" title="Permanent link">&para;</a></h3>
 <p>The actual specification data that describes the entity.</p>
-<!-- BEGIN INCLUDE ../references/location-spec.md '&lt;!--start-fields--&gt;' '&lt;!--end-fields--&gt;' -->
-
 <h4 id="type-optional"><code>type</code> [Optional]<a class="headerlink" href="#type-optional" title="Permanent link">&para;</a></h4>
 <p>The single location type, that's common to the targets specified in the spec. Typically, this should be left empty such that the location type of the target is inherited from the location type of the location entity which defines it (i.e. your defined location). Other options include <code>url</code> - which instructs the catalog to retrieve the descriptor from the URL; or <code>file</code> - which instructs the catalog to retrieve the descriptor from a local file.</p>
 <h4 id="targets-optional"><code>targets</code> [Optional]<a class="headerlink" href="#targets-optional" title="Permanent link">&para;</a></h4>
@@ -1766,7 +1752,6 @@
 </code></pre></div>
 <h4 id="presence-optional"><code>presence</code> [Optional]<a class="headerlink" href="#presence-optional" title="Permanent link">&para;</a></h4>
 <p>Describes whether the target of a location is required to exist or not. It defaults to <code>required</code> if not specified, can also be <code>optional</code>.</p>
-<!-- END INCLUDE -->
 
 
 
