@@ -1,0 +1,83 @@
+apiVersion: {{ include "common.capabilities.deployment.apiVersion" $ }}
+kind: Deployment
+metadata:
+  name: {{ include "common.names.fullname" $ }}
+  namespace: {{ .Release.Namespace }}
+  labels:
+    {{- include "common.labels.standard" $ | nindent 4 }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      {{- include "common.labels.matchLabels" $ | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        {{- include "common.labels.standard" $ | nindent 8 }}
+    spec:
+      {{- if .Values.serviceAccount.create }}
+      serviceAccountName: {{ include "common.names.fullname" $ }}
+      {{- else }}
+      serviceAccountName: {{ default "default" .Values.serviceAccount.name }}
+      {{- end }}
+      securityContext: {{ include "common.tplvalues.render" ( dict "value" .Values.securityContext "context" $ )}}
+      imagePullSecrets: {{ include "common.images.renderPullSecrets" ( dict "images" ( list .Values.image ) "context" $ ) }}
+      containers:
+        - name: {{ include "common.names.name" $ }}
+          image: {{ include "common.images.image" ( dict "imageRoot" .Values.image "global" $ "chart" .Chart )}}
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          {{- with .Values.securityContext }}
+          securityContext: {{ include "common.tplvalues.render" (dict "value" . "context" $ )}}
+          {{- end }}
+          resources: {{ include "common.tplvalues.render" ( dict "value" .Values.resources "context" $ ) | nindent 12 }}
+          env:
+            - name: LOG_LEVEL
+              value: {{ .Values.logLevel }}
+            - name: POSTGRES_HOST
+              value: {{ .Values.postgres.host }}
+            - name: POSTGRES_PORT
+              value: {{ .Values.postgres.port | quote }}
+            - name: POSTGRES_USER
+              value: {{ .Values.postgres.username }}
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "common.secrets.name" ( dict "existingSecret" .Values.postgres.password.existingSecret "context" $ ) }}
+                  key: {{ include "common.secrets.key" ( dict "existingSecret" .Values.postgres.password.existingSecret "key" .Values.postgres.password.key ) }}
+            - name: GITHUB_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "common.names.fullname" $ }}
+                  key: github-token
+            - name: GITHUB_APP_CLIENT_ID
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "common.names.fullname" $ }}
+                  key: github-app-client-id
+            - name: GITHUB_APP_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "common.names.fullname" $ }}
+                  key: github-app-secret
+            - name: GITLAB_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "common.names.fullname" $ }}
+                  key: gitlab-token
+            - name: AWS_ACCESS_KEY_ID
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "common.names.fullname" $ }}
+                  key: s3-access-key-id
+            - name: AWS_SECRET_ACCESS_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "common.names.fullname" $ }}
+                  key: s3-access-key-secret
+            - name: APP_CONFIG_app_baseUrl
+              value: {{ print "https://" }}{{ .Values.ingress.host }}
+            - name: APP_CONFIG_backend_baseUrl
+              value: {{ print "https://" }}{{ .Values.ingress.host }}
+          ports:
+            - name: http-api
+              containerPort: 7007
