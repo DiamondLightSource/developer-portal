@@ -1,0 +1,9 @@
+project: ""
+destination:
+  name: argus
+  server: ""
+  namespace: dev-portal
+
+postgresql:
+  enabled: true
+  targetRevision: 15.5.32
