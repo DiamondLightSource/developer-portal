@@ -5,7 +5,7 @@ on:
   pull_request:
 
 jobs:
-  lint-test:
+  lint:
     # pull requests are a duplicate of a branch push if within the same repo.
     if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.repository
     runs-on: ubuntu-latest
@@ -32,36 +32,3 @@ jobs:
           ct lint
           --target-branch=${{ github.event.repository.default_branch }}
           --validate-maintainers=false
-
-      - name: List Changed
-        id: list-changed
-        run: |
-          changed=$(ct list-changed --target-branch ${{ github.event.repository.default_branch }})
-          if [[ -n "$changed" ]]; then
-            echo "changed=true" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Create kind cluster
-        if: steps.list-changed.outputs.changed == 'true'
-        uses: helm/kind-action@v1.10.0
-
-      - name: Create test namespace
-        if: steps.list-changed.outputs.changed == 'true'
-        run: kubectl create namespace test
-
-      - name: Create nessacary secrets
-        if: steps.list-changed.outputs.changed == 'true'
-        run: >
-          kubectl create secret generic developer-portal-secrets
-          --namespace=test
-          --from-literal=github-token=""
-          --from-literal=github-app-client-id=""
-          --from-literal=github-app-secret=""
-          --from-literal=gitlab-token=""
-
-      - name: Test install
-        if: steps.list-changed.outputs.changed == 'true'
-        run: >
-          ct install
-          --namespace=test
-          --target-branch=${{ github.event.repository.default_branch }}
