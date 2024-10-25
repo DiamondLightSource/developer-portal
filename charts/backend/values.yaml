@@ -1,0 +1,41 @@
+image:
+  registry: ghcr.io
+  repository: diamondlightsource/developer-portal-backend
+  tag: null
+  pullPolicy: null
+  pullSecrets: []
+  debug: false
+
+logLevel: info
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 1Gi
+  limits:
+    cpu: 200m
+    memory: 2Gi
+
+postgres:
+  host: developer-portal-postgresql
+  port: 5432
+  username: backstage
+  password:
+    existingSecret: developer-portal-postgresql
+    key: password
+
+service:
+  port: 7007
+
+ingress:
+  create: true
+  className: nginx
+  tls: []
+  host: dev-portal.diamond.ac.uk
+  paths:
+    - path: /api
+      pathType: Prefix
+
+serviceAccount:
+  create: true
+  name: ""
