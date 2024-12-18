@@ -11,7 +11,7 @@ This how-to will take you through the steps of registering multiple entities in 
 
 ## Create Referenced Descriptors
 
-It is nessacary to create a number of regular entities (e.g. [Components](../explanations/component.md) or [APIs](../explanations/api.md)) before we can register them together. This may be performed as explained in [Register a Component](register-a-component.md) or [Register a Static API](register-a-static-api.md). Instead of their usual locations, these files should be given names and located in directories appropriate to the entity they register. For example, the entity descriptor for `my-component` may be located at `my-component/catalog-info.yaml`or`catalog-info/my-component.yaml`.
+It is necessary to create a number of regular entities (e.g. [Components](../explanations/component.md) or [APIs](../explanations/api.md)) before we can register them together. This may be performed as explained in [Register a Component](register-a-component.md) or [Register a Static API](register-a-static-api.md). Instead of their usual locations, these files should be given names and located in directories appropriate to the entity they register. For example, the entity descriptor for `my-component` may be located at `my-component/catalog-info.yaml`or`catalog-info/my-component.yaml`.
 
 {%
   include-markdown "../common/create-entity-descriptor.md"
