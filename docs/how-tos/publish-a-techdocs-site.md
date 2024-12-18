@@ -37,7 +37,7 @@ At this point you should see a `site` directory, the contents of which can be vi
 
 We will use the Techdocs command line interface node package to publish our docs site to the S3 bucket.
 
-In order to do this we will require the nessacary credentials for the bucket. The nessacary credentials should be made available as the environment variables `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`. These credentials are made available in GitHub Workflows in the DiamondLightSource organisation as `TECHDOCS_S3_ACCESS_KEY_ID` and `TECHDOCS_S3_SECRET_ACCESS_KEY` respectively or can be attained by contacting the owner of `developer-portal-techdocs-bucket`. Further to this, the `AWS_REGION` environment variable should be set to an empty string.
+In order to do this we will require the necessary credentials for the bucket. The necessary credentials should be made available as the environment variables `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`. These credentials are made available in GitHub Workflows in the DiamondLightSource organisation as `TECHDOCS_S3_ACCESS_KEY_ID` and `TECHDOCS_S3_SECRET_ACCESS_KEY` respectively or can be attained by contacting the owner of `developer-portal-techdocs-bucket`. Further to this, the `AWS_REGION` environment variable should be set to a valid region code, e.g. `eu-west-2`.
 
 We will now run:
 
@@ -90,7 +90,7 @@ npx @techdocs/cli publish --entity <NAMESPACE/KIND/NAME> --publisher-type awsS3 
           env:
             AWS_ACCESS_KEY_ID: ${{ secrets.TECHDOCS_S3_ACCESS_KEY_ID }}
             AWS_SECRET_ACCESS_KEY: ${{ secrets.TECHDOCS_S3_SECRET_ACCESS_KEY }}
-            AWS_REGION: ""
+            AWS_REGION: "eu-west-2"
     ```
 
 !!! example "Example GitLab Workflow"
@@ -125,7 +125,7 @@ npx @techdocs/cli publish --entity <NAMESPACE/KIND/NAME> --publisher-type awsS3 
           --awsEndpoint https://s3.echo.stfc.ac.uk
           --awsS3ForcePathStyle
       variables:
-        AWS_REGION: ""
+        AWS_REGION: "eu-west-2"
     ```
 
 ## Annotate Entity
