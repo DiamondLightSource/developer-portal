@@ -9,6 +9,11 @@ updates:
     directory: /
     schedule:
       interval: monthly
+    groups:
+      minor:
+        update-types:
+          - minor
+          - patch
     open-pull-requests-limit: 100
     groups:
       github-artifacts:
