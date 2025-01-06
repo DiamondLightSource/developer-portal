@@ -1404,7 +1404,7 @@
 <p>At this point you should see a <code>site</code> directory, the contents of which can be viewed in your browser.</p>
 <h2 id="publish-docs">Publish Docs<a class="headerlink" href="#publish-docs" title="Permanent link">&para;</a></h2>
 <p>We will use the Techdocs command line interface node package to publish our docs site to the S3 bucket.</p>
-<p>In order to do this we will require the nessacary credentials for the bucket. The nessacary credentials should be made available as the environment variables <code>AWS_ACCESS_KEY_ID</code> and <code>AWS_SECRET_ACCESS_KEY</code>. These credentials are made available in GitHub Workflows in the DiamondLightSource organisation as <code>TECHDOCS_S3_ACCESS_KEY_ID</code> and <code>TECHDOCS_S3_SECRET_ACCESS_KEY</code> respectively or can be attained by contacting the owner of <code>developer-portal-techdocs-bucket</code>. Further to this, the <code>AWS_REGION</code> environment variable should be set to an empty string.</p>
+<p>In order to do this we will require the necessary credentials for the bucket. The necessary credentials should be made available as the environment variables <code>AWS_ACCESS_KEY_ID</code> and <code>AWS_SECRET_ACCESS_KEY</code>. These credentials are made available in GitHub Workflows in the DiamondLightSource organisation as <code>TECHDOCS_S3_ACCESS_KEY_ID</code> and <code>TECHDOCS_S3_SECRET_ACCESS_KEY</code> respectively or can be attained by contacting the owner of <code>developer-portal-techdocs-bucket</code>. Further to this, the <code>AWS_REGION</code> environment variable should be set to a valid region code, e.g. <code>eu-west-2</code>.</p>
 <p>We will now run:</p>
 <div class="highlight"><pre><span></span><code>npx<span class="w"> </span>@techdocs/cli<span class="w"> </span>publish<span class="w"> </span>--entity<span class="w"> </span>&lt;NAMESPACE/KIND/NAME&gt;<span class="w"> </span>--publisher-type<span class="w"> </span>awsS3<span class="w"> </span>--storage-name<span class="w"> </span>techdocs<span class="w"> </span>--awsEndpoint<span class="w"> </span>https://s3.echo.stfc.ac.uk<span class="w"> </span>--awsS3ForcePathStyle
 </code></pre></div>
@@ -1452,7 +1452,7 @@
 <span class="w">      </span><span class="nt">env</span><span class="p">:</span>
 <span class="w">        </span><span class="nt">AWS_ACCESS_KEY_ID</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.TECHDOCS_S3_ACCESS_KEY_ID }}</span>
 <span class="w">        </span><span class="nt">AWS_SECRET_ACCESS_KEY</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.TECHDOCS_S3_SECRET_ACCESS_KEY }}</span>
-<span class="w">        </span><span class="nt">AWS_REGION</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span>
+<span class="w">        </span><span class="nt">AWS_REGION</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;eu-west-2&quot;</span>
 </code></pre></div>
 </div>
 <div class="admonition example">
@@ -1486,7 +1486,7 @@
 <span class="w">      </span><span class="no">--awsEndpoint https://s3.echo.stfc.ac.uk</span>
 <span class="w">      </span><span class="no">--awsS3ForcePathStyle</span>
 <span class="w">  </span><span class="nt">variables</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">AWS_REGION</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span>
+<span class="w">    </span><span class="nt">AWS_REGION</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;eu-west-2&quot;</span>
 </code></pre></div>
 </div>
 <h2 id="annotate-entity">Annotate Entity<a class="headerlink" href="#annotate-entity" title="Permanent link">&para;</a></h2>
