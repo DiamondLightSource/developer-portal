@@ -12,9 +12,10 @@ spec:
       {{- include "common.labels.matchLabels" $ | nindent 6 }}
   template:
     metadata:
+      annotations:
+        checksum/secrets: {{ include (print $.Template.BasePath "/secrets.yaml") . | sha256sum }}
       labels:
         {{- include "common.labels.standard" $ | nindent 8 }}
-        checksum/secrets: {{ include (print $.Template.BasePath "/secrets.yaml") . | sha256sum }}
     spec:
       {{- if .Values.serviceAccount.create }}
       serviceAccountName: {{ include "common.names.fullname" $ }}
