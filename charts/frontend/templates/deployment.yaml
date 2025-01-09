@@ -36,3 +36,15 @@ spec:
           ports:
             - name: http-serve
               containerPort: 80
+          livenessProbe:
+            httpGet:
+              port: 80
+              path: /healthcheck
+            initialDelaySeconds: 10
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              port: 80
+              path: /healthcheck
+            initialDelaySeconds: 10
+            periodSeconds: 10
