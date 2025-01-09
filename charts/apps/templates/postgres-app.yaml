@@ -30,6 +30,13 @@ spec:
     name: {{ .Values.destination.name }}
     server: {{ .Values.destination.server }}
     namespace: {{ default .Release.Namespace .Values.destination.namespace }}
+  ignoreDifferences:
+    - kind: Secret
+      name: {{ include "common.names.fullname" $ }}-postgresq
+      namespace: {{ default .Release.Namespace .Values.destination.namespace }}
+      jqPathExpressions:
+        - .data.password
+        - .data."postgres-password"
   syncPolicy:
     automated:
       prune: true
