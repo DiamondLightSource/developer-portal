@@ -83,15 +83,3 @@ spec:
           ports:
             - name: http-api
               containerPort: 7007
-          livenessProbe:
-            httpGet:
-              port: 7007
-              path: /healthcheck
-            initialDelaySeconds: 30
-            periodSeconds: 10
-          readinessProbe:
-            httpGet:
-              port: 7007
-              path: /healthcheck
-            initialDelaySeconds: 30
-            periodSeconds: 10
