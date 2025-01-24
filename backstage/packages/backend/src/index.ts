@@ -7,9 +7,9 @@ import {
   notFoundHandler,
   ServerTokenManager,
   SingleHostDiscovery,
-  UrlReaders,
   useHotMemoize,
 } from '@backstage/backend-common';
+import { UrlReaders } from '@backstage/backend-defaults/urlReader';
 import { TaskScheduler } from '@backstage/backend-tasks';
 import { Config } from '@backstage/config';
 import { DefaultIdentityClient } from '@backstage/plugin-auth-node';
