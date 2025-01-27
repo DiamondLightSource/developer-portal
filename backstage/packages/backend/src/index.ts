@@ -6,7 +6,9 @@ import {
 } from '@immobiliarelabs/backstage-plugin-gitlab-backend';
 
 const backend = createBackend();
-backend.add(legacyPlugin('auth', import('./plugins/auth')));
+backend.add(import('@backstage/plugin-auth-backend'));
+backend.add(import('@backstage/plugin-auth-backend-module-github-provider'));
+backend.add(import('@backstage/plugin-auth-backend-module-guest-provider'));
 
 // Catalog with Scaffolder module
 backend.add(import('@backstage/plugin-catalog-backend'));

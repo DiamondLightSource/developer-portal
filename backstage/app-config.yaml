@@ -30,9 +30,6 @@ backend:
       - host: raw.githubusercontent.com
         paths:
           - /DiamondLightSource
-  # Disable new default auth to work with legacy plugins
-  auth:
-    dangerouslyDisableDefaultAuthPolicy: true
 
 integrations:
   github:
@@ -56,6 +53,7 @@ techdocs:
 auth:
   environment: development
   providers:
+    guest: {}
     github:
       development:
         clientId: ${GITHUB_APP_CLIENT_ID}
