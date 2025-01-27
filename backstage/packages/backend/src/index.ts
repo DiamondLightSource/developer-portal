@@ -7,7 +7,20 @@ import {
 
 const backend = createBackend();
 backend.add(legacyPlugin('auth', import('./plugins/auth')));
-backend.add(legacyPlugin('catalog', import('./plugins/catalog')));
+
+// Catalog with Scaffolder module
+backend.add(import('@backstage/plugin-catalog-backend'));
+backend.add(
+  import('@backstage/plugin-catalog-backend-module-scaffolder-entity-model'),
+);
+// LDAP identity provider
+backend.add(import('@backstage/plugin-catalog-backend-module-ldap'));
+// GitHub entity provider
+backend.add(import('@backstage/plugin-catalog-backend-module-github'));
+// GitLab entity provider
+backend.add(import('@backstage/plugin-catalog-backend-module-gitlab'));
+// Placeholder resolver for openapi and asyncapi
+backend.add(import('@backstage/plugin-catalog-backend-module-openapi'));
 
 // GitLab
 backend.add(gitlabPlugin);
