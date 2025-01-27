@@ -10,7 +10,7 @@ backend:
   listen:
     port: 7007
   csp:
-    connect-src: ["'self'", 'http:', 'https:']
+    connect-src: ["'self'", "http:", "https:"]
   cors:
     origin: http://0.0.0.0:3000
     methods: [GET, HEAD, PATCH, POST, PUT, DELETE]
@@ -26,7 +26,7 @@ backend:
     store: memory
   reading:
     allow:
-      - host: '*.diamond.ac.uk'
+      - host: "*.diamond.ac.uk"
       - host: raw.githubusercontent.com
         paths:
           - /DiamondLightSource
@@ -92,7 +92,7 @@ catalog:
   providers:
     github:
       GitHub-DiamondLightSource:
-        organization: 'DiamondLightSource'
+        organization: "DiamondLightSource"
         validateLocationsExist: true
         schedule:
           frequency:
@@ -100,7 +100,7 @@ catalog:
           timeout:
             minutes: 10
       GitHub-epics-containers:
-        organization: 'epics-containers'
+        organization: "epics-containers"
         validateLocationsExist: true
         schedule:
           frequency:
@@ -116,3 +116,12 @@ catalog:
             minutes: 60
           timeout:
             minutes: 30
+
+search:
+  collators:
+    catalog:
+      schedule:
+        # Give the backend server a chance to initiaize before collators are executed
+        initialDelay: { seconds: 3 }
+        frequency: { minutes: 10 }
+        timeout: { minutes: 15 }

@@ -15,8 +15,14 @@ backend.add(catalogPluginGitlabFillerProcessorModule);
 
 // Proxy
 backend.add(import('@backstage/plugin-proxy-backend'));
+
+// Search - Lunr as search engine
+backend.add(import('@backstage/plugin-search-backend'));
+// Catalog and Techdocs collators
+backend.add(import('@backstage/plugin-search-backend-module-catalog'));
+backend.add(import('@backstage/plugin-search-backend-module-techdocs'));
+
 backend.add(legacyPlugin('scaffolder', import('./plugins/scaffolder')));
-backend.add(legacyPlugin('search', import('./plugins/search')));
 backend.add(legacyPlugin('techdocs', import('./plugins/techdocs')));
 
 backend.start();
