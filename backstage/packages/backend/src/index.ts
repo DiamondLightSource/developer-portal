@@ -22,7 +22,9 @@ backend.add(import('@backstage/plugin-search-backend'));
 backend.add(import('@backstage/plugin-search-backend-module-catalog'));
 backend.add(import('@backstage/plugin-search-backend-module-techdocs'));
 
+// Techdocs
+backend.add(import('@backstage/plugin-techdocs-backend'));
+
 backend.add(legacyPlugin('scaffolder', import('./plugins/scaffolder')));
-backend.add(legacyPlugin('techdocs', import('./plugins/techdocs')));
 
 backend.start();
