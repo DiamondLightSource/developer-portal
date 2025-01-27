@@ -12,7 +12,9 @@ backend.add(legacyPlugin('catalog', import('./plugins/catalog')));
 // GitLab
 backend.add(gitlabPlugin);
 backend.add(catalogPluginGitlabFillerProcessorModule);
-backend.add(legacyPlugin('proxy', import('./plugins/proxy')));
+
+// Proxy
+backend.add(import('@backstage/plugin-proxy-backend'));
 backend.add(legacyPlugin('scaffolder', import('./plugins/scaffolder')));
 backend.add(legacyPlugin('search', import('./plugins/search')));
 backend.add(legacyPlugin('techdocs', import('./plugins/techdocs')));
