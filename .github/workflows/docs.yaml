@@ -59,7 +59,7 @@ jobs:
         run: npx @techdocs/cli generate --no-docker --omitTechdocsCoreMkdocsPlugin
 
       - name: Create docs artifact 
-        uses: actions/upload-artifact@v4.5.0
+        uses: actions/upload-artifact@v4.6.0
         with:
           name: techdocs-common
           path: site
