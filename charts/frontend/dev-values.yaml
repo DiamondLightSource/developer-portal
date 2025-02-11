@@ -1,0 +1,4 @@
+fullnameOverride: developer-portal-dev-frontend
+
+ingress:
+  host: dev-portal-dev.diamond.ac.uk
