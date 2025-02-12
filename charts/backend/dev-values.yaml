@@ -1,5 +1,8 @@
 fullnameOverride: developer-portal-dev-backend
 
+image:
+  tag: latest
+
 ingress:
   host: dev-portal-dev.diamond.ac.uk
 
