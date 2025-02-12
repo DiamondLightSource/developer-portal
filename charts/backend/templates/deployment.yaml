@@ -86,12 +86,12 @@ spec:
           livenessProbe:
             httpGet:
               port: 7007
-              path: /healthcheck
+              path: /.backstage/health/v1/liveness
             initialDelaySeconds: 30
             periodSeconds: 10
           readinessProbe:
             httpGet:
               port: 7007
-              path: /healthcheck
+              path: /.backstage/health/v1/readiness
             initialDelaySeconds: 30
             periodSeconds: 10
