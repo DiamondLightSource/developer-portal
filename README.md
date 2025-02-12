@@ -19,10 +19,28 @@ The Diamond Light Source developer portal, built with backstage for deployment o
 - Set `remote.containers.dockerPath` to `podman`
 - Set `remote.containers.dockerComposePath` to your `docker-compose`
 - Disable buildkit by adding `export DOCKER_BUILDKIT=0` to your `~/.bashrc`
-- Open Development Container
 - Create a `.env` file in the `.devcontainer` directory containing the [necessary secrets](#necessary-secrets)
+- Open Development Container
 - Install package dependencies with `yarn --cwd backstage install`
 - Start the app, with `yarn --cwd backstage dev`
+
+## Contributing changes
+
+The following can be run locally to see if changes will pass CI
+
+- `yarn --cwd backstage run test`
+  - `a` when prompted to run all tests
+- `yarn --cwd backstage run prettier . --check`
+- `yarn --cwd backstage run tsc`
+- `yarn --cwd backstage backstage-cli repo lint`
+
+## Updating Backstage version
+
+After package install, backstage package dependencies can be updated with
+
+`yarn --cwd backstage backstage-cli versions:bump`
+
+https://backstage.io/docs/getting-started/keeping-backstage-updated
 
 ## Deploying on Kubernetes (Diamond Light Source)
 

@@ -53,26 +53,11 @@ techdocs:
 auth:
   environment: development
   providers:
+    guest: {}
     github:
       development:
         clientId: ${GITHUB_APP_CLIENT_ID}
         clientSecret: ${GITHUB_APP_SECRET}
-
-ldap:
-  providers:
-    - target: ldap://ralfed.cclrc.ac.uk
-      users:
-        dn: ou=dls,dc=fed,dc=cclrc,dc=ac,dc=uk
-        options:
-          filter: (memberOf=cn=DLSLTD_Staff,OU=Automatic Groups,DC=fed,DC=cclrc,DC=ac,DC=uk)
-          paged: true
-        map:
-          name: cn
-          displayName: displayName
-      groups:
-        dn: dc=fed,dc=cclrc,dc=ac,dc=uk
-        options:
-          filter: (objectClass=group)
 
 catalog:
   readonly: true
@@ -113,3 +98,37 @@ catalog:
             minutes: 60
           timeout:
             minutes: 30
+    ldapOrg:
+      default:
+        target: ldap://ralfed.cclrc.ac.uk
+        bind:
+          dn: uid=ldap-reader-user,ou=people,ou=example,dc=example,dc=net
+          secret: dW5hdXRoZW50aWNhdGVkIExEQVAK
+        schedule:
+          frequency: PT1H
+          timeout: PT10M
+        users:
+          dn: ou=dls,dc=fed,dc=cclrc,dc=ac,dc=uk
+          options:
+            filter: (memberOf=cn=DLSLTD_Staff,OU=Automatic Groups,DC=fed,DC=cclrc,DC=ac,DC=uk)
+            paged: true
+          map:
+            name: cn
+            displayName: displayName
+        groups:
+          dn: dc=fed,dc=cclrc,dc=ac,dc=uk
+          options:
+            filter: (objectClass=group)
+
+search:
+  collators:
+    catalog:
+      schedule:
+        initialDelay: { seconds: 3 }
+        frequency: { minutes: 10 }
+        timeout: { minutes: 15 }
+    techdocs:
+      schedule:
+        initialDelay: { seconds: 3 }
+        frequency: { minutes: 10 }
+        timeout: { minutes: 15 }
