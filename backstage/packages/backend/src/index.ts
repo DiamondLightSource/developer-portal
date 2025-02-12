@@ -1,4 +1,3 @@
-import { legacyPlugin } from '@backstage/backend-common';
 import { createBackend } from '@backstage/backend-defaults';
 import {
   catalogPluginGitlabFillerProcessorModule,
@@ -42,6 +41,6 @@ backend.add(import('@backstage/plugin-search-backend-module-techdocs'));
 // Techdocs
 backend.add(import('@backstage/plugin-techdocs-backend'));
 
-backend.add(legacyPlugin('scaffolder', import('./plugins/scaffolder')));
+// backend.add(legacyPlugin('scaffolder', import('./plugins/scaffolder')));
 
 backend.start();
