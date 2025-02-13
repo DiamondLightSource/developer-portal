@@ -54,10 +54,14 @@ auth:
   environment: development
   providers:
     guest: {}
-    github:
+    gitlab:
       development:
-        clientId: ${GITHUB_APP_CLIENT_ID}
-        clientSecret: ${GITHUB_APP_SECRET}
+        clientId: ${AUTH_GITLAB_CLIENT_ID}
+        clientSecret: ${AUTH_GITLAB_CLIENT_SECRET}
+        audience: https://gitlab.diamond.ac.uk
+        signIn:
+          resolvers:
+            - resolver: usernameMatchingUserEntityName
 
 catalog:
   readonly: true
