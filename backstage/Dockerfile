@@ -19,14 +19,14 @@ COPY plugins/viewdocs-react/package.json plugins/viewdocs-react/package.json
 ENV CYPRESS_INSTALL_BINARY=0
 RUN --mount=type=cache,target=/root/.cache/yarn,sharing=locked \
     yarn global add node-gyp \
-    && yarn install --frozen-lockfile 
+    && yarn install --frozen-lockfile
 
 COPY ./ ./
 
 RUN yarn run tsc
 
-RUN yarn --cwd packages/app build 
-RUN yarn --cwd packages/backend build 
+RUN yarn --cwd packages/app build
+RUN yarn --cwd packages/backend build
 
 RUN mkdir packages/backend/dist/skeleton packages/backend/dist/bundle \
     && tar xzf packages/backend/dist/skeleton.tar.gz -C packages/backend/dist/skeleton \
@@ -36,7 +36,7 @@ FROM docker.io/library/nginx:1.27.3-alpine-slim as frontend
 
 WORKDIR /app
 
-RUN apk add --no-cache jq
+RUN apk add --no-cache jq sed
 
 COPY --from=build /app/packages/app/dist /usr/share/nginx/html
 COPY --chmod=700 container_utils/inject-config.sh /docker-entrypoint.d/40-inject-config.sh
