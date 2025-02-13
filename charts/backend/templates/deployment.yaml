@@ -66,6 +66,16 @@ spec:
                 secretKeyRef:
                   name: {{ include "common.names.fullname" $ }}
                   key: gitlab-token
+            - name: AUTH_GITLAB_CLIENT_ID
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "common.names.fullname" $ }}
+                  key: auth-gitlab-client-id
+            - name: AUTH_GITLAB_CLIENT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "common.names.fullname" $ }}
+                  key: auth-gitlab-client-secret
             - name: AWS_ACCESS_KEY_ID
               valueFrom:
                 secretKeyRef:

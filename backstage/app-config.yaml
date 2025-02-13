@@ -53,22 +53,15 @@ techdocs:
 auth:
   environment: development
   providers:
-    # guest: {}
-    # github:
-    #   development:
-    #     clientId: ${GITHUB_APP_CLIENT_ID}
-    #     clientSecret: ${GITHUB_APP_SECRET}
+    guest: {}
     gitlab:
       development:
         clientId: ${AUTH_GITLAB_CLIENT_ID}
         clientSecret: ${AUTH_GITLAB_CLIENT_SECRET}
         audience: https://gitlab.diamond.ac.uk
-        ## uncomment if using a custom redirect URI
-        # callbackUrl: https://${BASE_URL}/api/auth/gitlab/handler/frame
-        # signIn:
-        #   resolvers:
-        #     # See https://backstage.io/docs/auth/gitlab/provider#resolvers for more resolvers
-        #     - resolver: usernameMatchingUserEntityName
+        signIn:
+          resolvers:
+            - resolver: usernameMatchingUserEntityName
 
 catalog:
   readonly: true
