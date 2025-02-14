@@ -1,15 +1,50 @@
 import { createBackend } from '@backstage/backend-defaults';
+import { createBackendModule } from '@backstage/backend-plugin-api';
+import { gitlabAuthenticator } from '@backstage/plugin-auth-backend-module-gitlab-provider';
+import {
+  authProvidersExtensionPoint,
+  createOAuthProviderFactory,
+} from '@backstage/plugin-auth-node';
 import {
   catalogPluginGitlabFillerProcessorModule,
   gitlabPlugin,
 } from '@immobiliarelabs/backstage-plugin-gitlab-backend';
 
+const customAuth = createBackendModule({
+  // This ID must be exactly "auth" because that's the plugin it targets
+  pluginId: 'auth',
+  // This ID must be unique, but can be anything
+  moduleId: 'custom-auth-provider',
+  register(reg) {
+    reg.registerInit({
+      deps: { providers: authProvidersExtensionPoint },
+      async init({ providers }) {
+        providers.registerProvider({
+          providerId: 'gitlab',
+          factory: createOAuthProviderFactory({
+            authenticator: gitlabAuthenticator,
+            async signInResolver(info, ctx) {
+              console.log(info);
+              const userEntity = 'user:default/guest';
+              return ctx.issueToken({
+                claims: {
+                  sub: userEntity,
+                  ent: [userEntity],
+                },
+              });
+            },
+          }),
+        });
+      },
+    });
+  },
+});
+
 const backend = createBackend();
 
 // Auth
 backend.add(import('@backstage/plugin-auth-backend'));
-backend.add(import('@backstage/plugin-auth-backend-module-guest-provider'));
-backend.add(import('@backstage/plugin-auth-backend-module-gitlab-provider'));
+backend.add(customAuth);
 
 // Catalog with Scaffolder module
 backend.add(import('@backstage/plugin-catalog-backend'));

@@ -53,15 +53,11 @@ techdocs:
 auth:
   environment: development
   providers:
-    guest: {}
     gitlab:
       development:
         clientId: ${AUTH_GITLAB_CLIENT_ID}
         clientSecret: ${AUTH_GITLAB_CLIENT_SECRET}
         audience: https://gitlab.diamond.ac.uk
-        signIn:
-          resolvers:
-            - resolver: usernameMatchingUserEntityName
 
 catalog:
   readonly: true
