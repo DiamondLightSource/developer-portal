@@ -32,7 +32,7 @@ RUN mkdir packages/backend/dist/skeleton packages/backend/dist/bundle \
     && tar xzf packages/backend/dist/skeleton.tar.gz -C packages/backend/dist/skeleton \
     && tar xzf packages/backend/dist/bundle.tar.gz -C packages/backend/dist/bundle
 
-FROM docker.io/library/nginx:1.27.3-alpine-slim as frontend
+FROM docker.io/library/nginx:1.27.4-alpine-slim as frontend
 
 WORKDIR /app
 
