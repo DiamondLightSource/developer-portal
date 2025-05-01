@@ -14,10 +14,10 @@ jobs:
         uses: actions/checkout@v4.2.2
 
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3.8.0
+        uses: docker/setup-buildx-action@v3.10.0
 
       - name: Create ENV file
         run: touch .devcontainer/.env
 
       - name: Build dev container
-        uses: devcontainers/ci@v0.3.1900000349
+        uses: devcontainers/ci@v0.3.1900000417
