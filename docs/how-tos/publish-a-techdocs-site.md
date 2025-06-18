@@ -72,9 +72,9 @@ npx @techdocs/cli publish --entity <NAMESPACE/KIND/NAME> --publisher-type awsS3 
           run: pip install -r docs-requirements.txt
 
         - name: Set node
-          uses: actions/setup-node@v3
+          uses: actions/setup-node@v4.2.0
           with:
-          node-version: 18.x
+          node-version: 20.x
 
         - name: Generate docs
           run: npx @techdocs/cli generate --no-docker
@@ -96,7 +96,7 @@ npx @techdocs/cli publish --entity <NAMESPACE/KIND/NAME> --publisher-type awsS3 
 !!! example "Example GitLab Workflow"
 
     ```yaml
-    image: node:18-bullseye
+    image: node:20-bullseye
 
     variables:
       GIT_SUBMODULE_STRATEGY: recursive

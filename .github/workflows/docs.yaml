@@ -19,7 +19,7 @@ jobs:
       - name: Set node
         uses: actions/setup-node@v4.2.0
         with:
-          node-version: 18
+          node-version: 20
 
       - name: Install yarn dependencies
         uses: borales/actions-yarn@v5.0.0
@@ -53,12 +53,12 @@ jobs:
       - name: Set node
         uses: actions/setup-node@v4.2.0
         with:
-          node-version: 18.x
+          node-version: 20.x
 
       - name: Generate docs
         run: npx @techdocs/cli generate --no-docker --omitTechdocsCoreMkdocsPlugin
 
-      - name: Create docs artifact 
+      - name: Create docs artifact
         uses: actions/upload-artifact@v4.6.0
         with:
           name: techdocs-common
