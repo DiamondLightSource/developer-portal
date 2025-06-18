@@ -16,7 +16,7 @@ jobs:
       - name: Set node
         uses: actions/setup-node@v4.2.0
         with:
-          node-version: 18
+          node-version: 20
 
       - name: Install yarn dependencies
         uses: borales/actions-yarn@v5.0.0
@@ -46,7 +46,7 @@ jobs:
       - name: Set node
         uses: actions/setup-node@v4.2.0
         with:
-          node-version: 18
+          node-version: 20
 
       - name: Install yarn dependencies
         uses: borales/actions-yarn@v5.0.0
