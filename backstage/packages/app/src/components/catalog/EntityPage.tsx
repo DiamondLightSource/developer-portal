@@ -69,6 +69,7 @@ import {
 import { Button, Grid } from '@material-ui/core';
 import React from 'react';
 import { EntityAboutCard } from '../AboutCard/AboutCard';
+import { ReadmeCard } from '@axis-backstage/plugin-readme';
 
 const TECHDOCS_ANNOTATION = 'backstage.io/techdocs-ref';
 const ANNOTATIONS_DOCS_URL =
@@ -147,8 +148,11 @@ const entityWarningContent = (
 const overviewContent = (
   <Grid container spacing={3} alignItems="stretch">
     {entityWarningContent}
-    <Grid item md={6}>
+    <Grid item xs={12} md={6}>
       <EntityAboutCard variant="gridItem" />
+    </Grid>
+    <Grid item xs={12} md={4}>
+      <ReadmeCard />
     </Grid>
     <Grid item md={6} xs={12}>
       <EntityCatalogGraphCard variant="gridItem" height={400} />
