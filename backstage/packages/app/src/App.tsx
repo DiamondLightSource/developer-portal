@@ -1,6 +1,11 @@
 import { createApp } from '@backstage/app-defaults';
 import { AppRouter, FlatRoutes } from '@backstage/core-app-api';
-import { AlertDisplay, OAuthRequestDialog } from '@backstage/core-components';
+import {
+  AlertDisplay,
+  OAuthRequestDialog,
+  SignInPage,
+} from '@backstage/core-components';
+import { githubAuthApiRef } from '@backstage/core-plugin-api';
 import { apiDocsPlugin } from '@backstage/plugin-api-docs';
 import {
   CatalogEntityPage,
@@ -39,6 +44,22 @@ import { searchPage } from './components/search/SearchPage';
 import { PrefixNavigate } from './components/utils/PrefixNavigate';
 
 const app = createApp({
+  components: {
+    SignInPage: props => (
+      <SignInPage
+        {...props}
+        providers={[
+          'guest',
+          {
+            id: 'github-auth-provider',
+            title: 'GitHub',
+            message: 'Sign in using GitHub',
+            apiRef: githubAuthApiRef,
+          },
+        ]}
+      />
+    ),
+  },
   apis,
   bindRoutes({ bind }) {
     bind(catalogPlugin.externalRoutes, {

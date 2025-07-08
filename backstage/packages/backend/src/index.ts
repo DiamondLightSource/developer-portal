@@ -1,107 +1,45 @@
+import { legacyPlugin } from '@backstage/backend-common';
+import { createBackend } from '@backstage/backend-defaults';
 import {
-  CacheManager,
-  createServiceBuilder,
-  DatabaseManager,
-  getRootLogger,
-  loadBackendConfig,
-  notFoundHandler,
-  ServerTokenManager,
-  SingleHostDiscovery,
-  UrlReaders,
-  useHotMemoize,
-} from '@backstage/backend-common';
-import { TaskScheduler } from '@backstage/backend-tasks';
-import { Config } from '@backstage/config';
-import { DefaultIdentityClient } from '@backstage/plugin-auth-node';
-import { ServerPermissionClient } from '@backstage/plugin-permission-node';
-import Router from 'express-promise-router';
-import auth from './plugins/auth';
-import catalog from './plugins/catalog';
-import gitlab from './plugins/gitlab';
-import proxy from './plugins/proxy';
-import scaffolder from './plugins/scaffolder';
-import search from './plugins/search';
-import techdocs from './plugins/techdocs';
-import { PluginEnvironment } from './types';
+  catalogPluginGitlabFillerProcessorModule,
+  gitlabPlugin,
+} from '@immobiliarelabs/backstage-plugin-gitlab-backend';
 
-function makeCreateEnv(config: Config) {
-  const root = getRootLogger();
-  const reader = UrlReaders.default({ logger: root, config });
-  const discovery = SingleHostDiscovery.fromConfig(config);
-  const cacheManager = CacheManager.fromConfig(config);
-  const databaseManager = DatabaseManager.fromConfig(config, { logger: root });
-  const tokenManager = ServerTokenManager.noop();
-  const taskScheduler = TaskScheduler.fromConfig(config);
+const backend = createBackend();
+backend.add(import('@backstage/plugin-auth-backend'));
+backend.add(import('@backstage/plugin-auth-backend-module-github-provider'));
+backend.add(import('@backstage/plugin-auth-backend-module-guest-provider'));
 
-  const identity = DefaultIdentityClient.create({
-    discovery,
-  });
-  const permissions = ServerPermissionClient.fromConfig(config, {
-    discovery,
-    tokenManager,
-  });
+// Catalog with Scaffolder module
+backend.add(import('@backstage/plugin-catalog-backend'));
+backend.add(
+  import('@backstage/plugin-catalog-backend-module-scaffolder-entity-model'),
+);
+// LDAP identity provider
+backend.add(import('@backstage/plugin-catalog-backend-module-ldap'));
+// GitHub entity provider
+backend.add(import('@backstage/plugin-catalog-backend-module-github'));
+// GitLab entity provider
+backend.add(import('@backstage/plugin-catalog-backend-module-gitlab'));
+// Placeholder resolver for openapi and asyncapi
+backend.add(import('@backstage/plugin-catalog-backend-module-openapi'));
 
-  root.info(`Created UrlReader ${reader}`);
+// GitLab
+backend.add(gitlabPlugin);
+backend.add(catalogPluginGitlabFillerProcessorModule);
 
-  return (plugin: string): PluginEnvironment => {
-    const logger = root.child({ type: 'plugin', plugin });
-    const database = databaseManager.forPlugin(plugin);
-    const cache = cacheManager.forPlugin(plugin);
-    const scheduler = taskScheduler.forPlugin(plugin);
-    return {
-      logger,
-      database,
-      cache,
-      config,
-      reader,
-      discovery,
-      tokenManager,
-      scheduler,
-      permissions,
-      identity,
-    };
-  };
-}
+// Proxy
+backend.add(import('@backstage/plugin-proxy-backend'));
 
-async function main() {
-  const config = await loadBackendConfig({
-    argv: process.argv,
-    logger: getRootLogger(),
-  });
-  const createEnv = makeCreateEnv(config);
+// Search - Lunr as search engine
+backend.add(import('@backstage/plugin-search-backend'));
+// Catalog and Techdocs collators
+backend.add(import('@backstage/plugin-search-backend-module-catalog'));
+backend.add(import('@backstage/plugin-search-backend-module-techdocs'));
 
-  const catalogEnv = useHotMemoize(module, () => createEnv('catalog'));
-  const scaffolderEnv = useHotMemoize(module, () => createEnv('scaffolder'));
-  const authEnv = useHotMemoize(module, () => createEnv('auth'));
-  const proxyEnv = useHotMemoize(module, () => createEnv('proxy'));
-  const techdocsEnv = useHotMemoize(module, () => createEnv('techdocs'));
-  const searchEnv = useHotMemoize(module, () => createEnv('search'));
-  const gitlabEnv = useHotMemoize(module, () => createEnv('gitlab'));
+// Techdocs
+backend.add(import('@backstage/plugin-techdocs-backend'));
 
-  const apiRouter = Router();
-  apiRouter.use('/catalog', await catalog(catalogEnv));
-  apiRouter.use('/scaffolder', await scaffolder(scaffolderEnv));
-  apiRouter.use('/auth', await auth(authEnv));
-  apiRouter.use('/techdocs', await techdocs(techdocsEnv));
-  apiRouter.use('/proxy', await proxy(proxyEnv));
-  apiRouter.use('/search', await search(searchEnv));
-  apiRouter.use('/gitlab', await gitlab(gitlabEnv));
+backend.add(legacyPlugin('scaffolder', import('./plugins/scaffolder')));
 
-  // Add backends ABOVE this line; this 404 handler is the catch-all fallback
-  apiRouter.use(notFoundHandler());
-
-  const service = createServiceBuilder(module)
-    .loadConfig(config)
-    .addRouter('/api', apiRouter);
-
-  await service.start().catch(err => {
-    console.log(err);
-    process.exit(1);
-  });
-}
-
-module.hot?.accept();
-main().catch(error => {
-  console.error('Backend failed to start up', error);
-  process.exit(1);
-});
+backend.start();
