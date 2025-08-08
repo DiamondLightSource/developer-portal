@@ -1,4 +1,4 @@
-FROM docker.io/library/node:20-bookworm-slim AS build
+FROM docker.io/library/node:23-bookworm-slim AS build
 
 WORKDIR /app
 
@@ -44,7 +44,7 @@ COPY container_utils/default.conf.template /etc/nginx/templates/default.conf.tem
 
 EXPOSE 80
 
-FROM docker.io/library/node:20-bookworm-slim as backend
+FROM docker.io/library/node:23-bookworm-slim as backend
 
 WORKDIR /app
 
