@@ -5,7 +5,7 @@ metadata:
   title: Developer Portal
   description: The diamond developer portal.
   annotations:
-    diamond.ac.uk/viewdocs-url: https://dev-guide.diamond.ac.uk
+    backstage.io/techdocs-ref: dir:.
 spec:
   owner: user:mef65357
 
