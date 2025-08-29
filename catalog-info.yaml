@@ -7,7 +7,7 @@ metadata:
   annotations:
     diamond.ac.uk/viewdocs-url: https://dev-guide.diamond.ac.uk
 spec:
-  owner: user:enu43627
+  owner: user:mef65357
 
 ---
 
@@ -24,7 +24,7 @@ spec:
   type: service
   lifecycle: production
   system: developer-portal
-  owner: user:enu43627
+  owner: user:mef65357
   dependsOn:
     - component:developer-guide
     - resource:developer-portal-techdocs-bucket
@@ -42,7 +42,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: production
-  owner: user:enu43627
+  owner: user:mef65357
   system: developer-portal
   definition: |
     openapi: 3.0.0
@@ -65,7 +65,7 @@ spec:
   type: website
   lifecycle: production
   system: developer-portal
-  owner: user:enu43627
+  owner: user:mef65357
   consumesApis:
     - developer-portal-backend-rest
 
@@ -80,4 +80,4 @@ metadata:
 spec:
   type: s3-bucket
   system: developer-portal
-  owner: enu43627
+  owner: mef65357
