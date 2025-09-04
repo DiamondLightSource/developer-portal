@@ -10,7 +10,6 @@ import {
   Typography,
 } from '@material-ui/core';
 import CategoryIcon from '@material-ui/icons/Category';
-import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -45,37 +44,6 @@ const SoftwareCatalogCard = () => {
   );
 };
 
-const DeveloperGuideCard = () => {
-  const navigate = useNavigate();
-  const orgName =
-    useApi(configApiRef).getOptionalString('organization.name') ?? 'Backstage';
-
-  return (
-    <Card style={{ height: '100%' }}>
-      <CardActionArea onClick={() => navigate('/guide')}>
-        <CardContent>
-          <Typography variant="h5">
-            <LibraryBooksIcon /> Developer Guide
-          </Typography>
-          <Typography variant="body2">
-            Extensive documentation on developing software at {orgName}.
-            Including Tutorials, How-Tos, Explanations & References.
-          </Typography>
-        </CardContent>
-        <CardActions>
-          <Button
-            size="medium"
-            color="primary"
-            onClick={() => navigate('/guide')}
-          >
-            Visit
-          </Button>
-        </CardActions>
-      </CardActionArea>
-    </Card>
-  );
-};
-
 export const HomePage = () => {
   const orgName =
     useApi(configApiRef).getOptionalString('organization.name') ?? 'Backstage';
@@ -91,9 +59,6 @@ export const HomePage = () => {
         >
           <Grid item xs={12} md={6} lg={4}>
             <SoftwareCatalogCard />
-          </Grid>
-          <Grid item xs={12} md={6} lg={4}>
-            <DeveloperGuideCard />
           </Grid>
         </Grid>
       </Content>
