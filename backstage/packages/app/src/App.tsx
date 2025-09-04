@@ -63,8 +63,14 @@ const routes = (
       <HomePage />
     </Route>
     <Route path="/catalog" element={<CatalogIndexPage />} />
-    <Route path="/guide" element={<DeveloperGuidePage />} />
-    <Route path="/portal-docs" element={<PortalDocsPage />} />
+    <Route
+      path="/guide/:namespace/:kind/:name"
+      element={<DeveloperGuidePage />}
+    />
+    <Route
+      path="/portal-docs/:namespace/:kind/:name"
+      element={<PortalDocsPage />}
+    />
     <Route
       path="/catalog/:namespace/:kind/:name"
       element={<CatalogEntityPage />}
