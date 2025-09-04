@@ -68,7 +68,7 @@ export const Root = ({ children }: PropsWithChildren<{}>) => (
         <SidebarItem icon={CategoryIcon} to="/catalog" text="Catalog" />
         <SidebarItem
           icon={LibraryBooksIcon}
-          to="/guide"
+          to="https://dev-guide.diamond.ac.uk"
           text="Developer Guide"
         />
         {/* End global nav */}

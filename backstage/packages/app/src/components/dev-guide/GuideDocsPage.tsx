@@ -1,18 +1,21 @@
 import { PageWithHeader } from '@backstage/core-components';
-import { TechDocsReaderPageContent } from '@backstage/plugin-techdocs';
-import { TechDocsReaderPageProvider } from '@backstage/plugin-techdocs-react';
 import React from 'react';
 
 export const DeveloperGuidePage = () => (
   <PageWithHeader title="Developer Guide" themeId="documentation">
-    <TechDocsReaderPageProvider
-      entityRef={{
-        kind: 'component',
-        namespace: 'default',
-        name: 'developer-guide',
-      }}
-    >
-      <TechDocsReaderPageContent />
-    </TechDocsReaderPageProvider>
+    <div style={{ padding: '24px' }}>
+      <h2>Developer Guide</h2>
+      <p>
+        The Developer Guide has moved to{' '}
+        <a
+          href="https://dev-guide.diamond.ac.uk"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: 'blue', textDecoration: 'underline' }}
+        >
+          https://dev-guide.diamond.ac.uk
+        </a>
+      </p>
+    </div>
   </PageWithHeader>
 );
