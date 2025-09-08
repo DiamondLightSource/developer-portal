@@ -44,7 +44,7 @@ import {
 import {
   EntityGithubActionsContent,
   isGithubActionsAvailable,
-} from '@backstage/plugin-github-actions';
+} from '@backstage-community/plugin-github-actions';
 import {
   EntityGroupProfileCard,
   EntityMembersListCard,
