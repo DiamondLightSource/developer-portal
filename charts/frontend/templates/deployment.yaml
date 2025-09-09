@@ -20,7 +20,9 @@ spec:
       {{- else }}
       serviceAccountName: {{ default "default" .Values.serviceAccount.name }}
       {{- end }}
-      securityContext: {{ include "common.tplvalues.render" ( dict "value" .Values.securityContext "context" $ )}}
+      {{- with .Values.securityContext }}
+      securityContext: {{ include "common.tplvalues.render" (dict "value" . "context" $ )}}
+      {{- end }}
       imagePullSecrets: {{ include "common.images.renderPullSecrets" ( dict "images" ( list .Values.image ) "context" $ ) }}
       containers:
         - name: {{ include "common.names.name" $ }}
