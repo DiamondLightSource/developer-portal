@@ -12,6 +12,10 @@ spec:
     repoURL: https://github.com/diamondlightsource/developer-portal
     targetRevision: {{ .Values.frontend.targetRevision }}
     path: charts/frontend
+    helm:
+      valueFiles:
+        - values.yaml
+        - dev-values.yaml
   destination:
     name: {{ .Values.destination.name }}
     server: {{ .Values.destination.server }}

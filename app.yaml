@@ -18,3 +18,28 @@ spec:
     automated:
       prune: true
       selfHeal: true
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: developer-portal-dev
+  namespace: dev-portal
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: dev-portal
+  source:
+    repoURL: https://github.com/diamondlightsource/developer-portal
+    targetRevision: dev
+    path: charts/apps
+    helm:
+      valueFiles:
+        - values.yaml
+        - dev-values.yaml
+  destination:
+    name: argus
+    namespace: dev-portal
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
