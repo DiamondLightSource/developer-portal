@@ -2,7 +2,7 @@ apiVersion: v2
 name: developer-portal
 description: An ArgoCD App of Apps for deploying the Developer Portal
 type: application
-version: 0.1.1
+version: 0.2.0
 dependencies:
   - name: common
     repository: https://charts.bitnami.com/bitnami
