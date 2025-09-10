@@ -1,0 +1,17 @@
+project: ""
+destination:
+  name: pollux
+  server: ""
+  namespace: dev-portal
+
+postgresql:
+  enabled: true
+  targetRevision: 15.5.32
+
+backend:
+  enabled: true
+  targetRevision: dev
+
+frontend:
+  enabled: true
+  targetRevision: dev
