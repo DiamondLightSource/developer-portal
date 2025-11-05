@@ -14,6 +14,9 @@ spec:
     chart: postgresql
     helm:
       valuesObject:
+        image:
+          registry: docker.io
+          repository: bitnamilegacy/postgresql
         auth:
           username: backstage
         primary:
