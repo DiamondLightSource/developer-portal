@@ -83,7 +83,7 @@ each print an encrypted token that is safe to commit and push to GitHub.
 
 ### GitLab API Token
 
-The GitLab API token is maintaine under a machine user account and can be rotated via a
+The GitLab API token is maintain under a machine user account and can be rotated via a
 POST request with the existing token. There are separate tokens for dev-portal and
 dev-portal-dev. The script works for both depending on which cluster is currently
 active. To rotate the dev-portal token, run
@@ -104,6 +104,10 @@ New encrypted gitlab-token for developer-portal-dev-backend:
 <encrypted-token>
 ```
 
+If the token has already expired, you will need to request a new one from a GitLab
+admin. With this you can use the following process for GitHub API tokens to manually
+create the encrypted version for the sealed secret.
+
 ### GitHub API Token
 
 The GitHub API token is slightly more complicated. Currently it is linked to a user
@@ -111,11 +115,11 @@ account and needs to be manually rotated and copied in the user GitHub developer
 settings. The same token is used for both dev-portal and dev-portal-dev, but the
 SealedSecret needs to be encrypted by the specific cluster it will be applied to.
 Again the script will handle this if the correct cluster is active. To update the
-dev-portal token, run
+dev-portal token, copy it to your clipboard and run
 
 ```bash
 $ module load argus
-$  util/encrypt-github-token.sh <unencrypted-token>
+$ util/encrypt-github-token.sh $(xclip -o -selection clipboard)
 New encrypted github-token for developer-portal-backend:
 <encrypted-token>
 ```
@@ -124,11 +128,12 @@ or for the dev-portal-dev token
 
 ```bash
 $ module load pollux
-$  util/encrypt-github-token.sh <unencrypted-token>
+$ util/encrypt-github-token.sh $(xclip -o -selection clipboard)
 New encrypted github-token for developer-portal-backend:
 <encrypted-token>
 ```
 
-Note the whitespace before the command can prevent the unencrypted token being stored in
-your shell history (requires `HIST_IGNORE_SPACE` for zsh or `HISTCONTROL=ignorespace`
-for bash).
+You can also pass the literal token into the command, but doing it this way means then
+token can't be saved to your shell history. A space before the command can also prevent the
+unencrypted token being in your shell history (requires `HIST_IGNORE_SPACE` for zsh or
+`HISTCONTROL=ignorespace` for bash), but then you can't recall the command.
