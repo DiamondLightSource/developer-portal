@@ -78,12 +78,25 @@ The portal uses GitHub and GitLab API tokens to query repositories, search for
 `catalog.info` files and populate the catalog. These tokens expire after a configurable
 period - generally 3 months. Tokens must be rolled over before this time elapses for the
 catalog to continue updating, which requires updating the sealed secrets in the values
-file for the specific deployment.  There are two scripts to automate this process. They
+file for the specific deployment. There are two scripts to automate this process. They
 each print an encrypted token that is safe to commit and push to GitHub.
+
+### Required Tools
+
+This process requires `xclip` and `yq`.
+
+To install xclip on RHEL:
+
+```bash
+$ sudo yum install xclip
+```
+
+See the [yq GitHub repo](https://github.com/mikefarah/yq?tab=readme-ov-file#install) for its install instructions.
+
 
 ### GitLab API Token
 
-The GitLab API token is maintain under a machine user account and can be rotated via a
+The GitLab API token is maintained under a machine user account and can be rotated via a
 POST request with the existing token. There are separate tokens for dev-portal and
 dev-portal-dev. The script works for both depending on which cluster is currently
 active. To rotate the dev-portal token, run
@@ -137,3 +150,11 @@ You can also pass the literal token into the command, but doing it this way mean
 token can't be saved to your shell history. A space before the command can also prevent the
 unencrypted token being in your shell history (requires `HIST_IGNORE_SPACE` for zsh or
 `HISTCONTROL=ignorespace` for bash), but then you can't recall the command.
+
+#### Creating a GitHub Personal Access Token
+
+1. Go to user GitHub profile settings
+2. Left side panel > Developer settings
+3. Left side panel > Personal access tokens > Tokens (classic)
+4. Create new token with the required scopes (see Necessary Secrets)
+5. Copy the token into the script
