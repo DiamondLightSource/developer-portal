@@ -5,7 +5,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 RUN yarn global add \
-    markdownlint-cli2 markdown-it-admon
+    markdownlint-cli2@0.17.2 markdown-it-admon
 
 COPY docs/requirements.txt docs/requirements.txt
 

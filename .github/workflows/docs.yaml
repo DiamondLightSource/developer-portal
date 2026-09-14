@@ -24,7 +24,7 @@ jobs:
       - name: Install yarn dependencies
         uses: borales/actions-yarn@v5.0.0
         with:
-          cmd: global add markdownlint-cli2 markdown-it-admon
+          cmd: global add markdownlint-cli2@0.17.2 markdown-it-admon
 
       - name: Lint with markdownlint-cli2
         run: >
