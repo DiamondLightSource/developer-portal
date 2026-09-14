@@ -6,7 +6,7 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
     --mount=type=cache,target=/var/lib/apt,sharing=locked \
     apt-get update \
     && apt-get install -y --no-install-recommends python3-pip \
-        python3 g++ build-essential git \
+    python3 g++ build-essential git \
     && yarn config set python /usr/bin/python3
 
 RUN pip install --break-system-packages copier
@@ -18,7 +18,7 @@ COPY plugins/viewdocs-react/package.json plugins/viewdocs-react/package.json
 
 ENV CYPRESS_INSTALL_BINARY=0
 RUN --mount=type=cache,target=/root/.cache/yarn,sharing=locked \
-    yarn global add node-gyp \
+    yarn global add node-gyp@10.2.0 \
     && yarn install --frozen-lockfile
 
 COPY ./ ./
@@ -52,13 +52,13 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
     --mount=type=cache,target=/var/lib/apt,sharing=locked \
     apt-get update \
     && apt-get install -y --no-install-recommends \
-        python3 g++ build-essential \
+    python3 g++ build-essential \
     && yarn config set python /usr/bin/python3
 
 COPY --from=build /app/package.json /app/yarn.lock /app/packages/backend/dist/skeleton ./
 
 RUN --mount=type=cache,target=/root/.cache/yarn,sharing=locked \
-    yarn global add node-gyp \
+    yarn global add node-gyp@10.2.0 \
     && yarn install --frozen-lockfile --production
 
 COPY --from=build /app/packages/backend/dist/bundle ./
