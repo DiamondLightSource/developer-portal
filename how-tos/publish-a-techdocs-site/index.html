@@ -1452,7 +1452,7 @@
 <span class="w">      </span><span class="nt">env</span><span class="p">:</span>
 <span class="w">        </span><span class="nt">AWS_ACCESS_KEY_ID</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.TECHDOCS_S3_ACCESS_KEY_ID }}</span>
 <span class="w">        </span><span class="nt">AWS_SECRET_ACCESS_KEY</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.TECHDOCS_S3_SECRET_ACCESS_KEY }}</span>
-<span class="w">        </span><span class="nt">AWS_REGION</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;eu-west-2&quot;</span>
+<span class="w">        </span><span class="nt">AWS_REGION</span><span class="p">:</span><span class="w"> </span><span class="s">"eu-west-2"</span>
 </code></pre></div>
 </div>
 <div class="admonition example">
@@ -1473,7 +1473,7 @@
 <span class="nt">publish_techdocs</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">stage</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">publish_techdocs</span>
 <span class="w">  </span><span class="nt">rules</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">if</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$CI_COMMIT_REF_NAME == &quot;main&quot;</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">if</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$CI_COMMIT_REF_NAME == "main"</span>
 <span class="w">  </span><span class="nt">tags</span><span class="p">:</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">argus</span>
 <span class="w">  </span><span class="nt">script</span><span class="p">:</span>
@@ -1486,7 +1486,7 @@
 <span class="w">      </span><span class="no">--awsEndpoint https://s3.echo.stfc.ac.uk</span>
 <span class="w">      </span><span class="no">--awsS3ForcePathStyle</span>
 <span class="w">  </span><span class="nt">variables</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">AWS_REGION</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;eu-west-2&quot;</span>
+<span class="w">    </span><span class="nt">AWS_REGION</span><span class="p">:</span><span class="w"> </span><span class="s">"eu-west-2"</span>
 </code></pre></div>
 </div>
 <h2 id="annotate-entity">Annotate Entity<a class="headerlink" href="#annotate-entity" title="Permanent link">&para;</a></h2>
