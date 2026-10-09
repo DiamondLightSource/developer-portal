@@ -1,4 +1,4 @@
-FROM docker.io/library/node:20-bookworm
+FROM docker.io/library/node:22.23.3-bookworm
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends python3-pip \
