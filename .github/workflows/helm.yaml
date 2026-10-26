@@ -19,10 +19,10 @@ jobs:
         uses: azure/setup-helm@v5
 
       - name: Setup Python
-        uses: actions/setup-python@v7.0.0
+        uses: actions/setup-python@v7.1.0
 
       - name: Setup chart-testing
-        uses: helm/chart-testing-action@v2.8.0
+        uses: helm/chart-testing-action@v2.9.0
 
       - name: Install chart dependencies
         run: helm repo add bitnami https://charts.bitnami.com/bitnami
